@@ -1,0 +1,40 @@
+title: "OpenGeoMetadata"
+remote_theme: pmarsceill/just-the-docs
+description: Documentation about OpenGeoMetadata
+# baseurl: "/opengeometadata.github.io"
+# url: "https://opengeometadata.org"
+
+# Set a path/url to a logo that will be displayed instead of the title
+logo: "assets/images/ogm_logo.png"
+
+# Magic to make URLs resolve both locally and on GitHub.
+# See https://help.github.com/articles/repository-metadata-on-github-pages/.
+repository: OpenGeoMetadata/opengeometadata.github.io
+
+# Enable or disable the site search
+# Supports true (default) or false
+search_enabled: true
+
+# Aux links for the upper right navigation
+aux_links:
+  "OpenGeoMetadata on GitHub":
+    - "//github.com/OpenGeoMetadata/opengeometadata.github.io"
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
+
+# Footer content
+# appears at the bottom of every page's main content
+footer_content: "Copyright &copy; 2021. Distributed by an <a href=\"https://github.com/OpenGeoMetadata/opengeometadata.github.io/blob/main/LICENSE\">Apache license.</a>"
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
