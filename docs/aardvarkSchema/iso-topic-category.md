@@ -15,8 +15,8 @@ nav_order: 11
 | Multiplicity          | 0-19                    |
 | Field type            | string                  |
 | Purpose               | To provide a dedicated field that is restricted to ISO Topic Categories only |
-| Entry Guidelines      | Insert one or more of the ISO Topic Categories from this list. |
-| Commentary            | Although ISO Topic categories are well-established and widely used, the spellings of these terms vary across domains and disciplines. The GeoBlacklight Metadata Application Profile recommends that the terms are capitalized and spaced for better readability. |
+| Entry Guidelines      | Insert one or more of the ISO Topic Categories from the list (see below). |
+| Commentary            | Although ISO Topic categories are well established and widely used, the spellings of these terms vary across domains and disciplines. The GeoBlacklight Metadata Application Profile recommends that the terms are capitalized and spaced for better readability. |
 | Controlled Vocabulary | yes - strict            |
 | Example value         | "Imagery and Base Maps" |
 | Element Set           | DCAT                    |

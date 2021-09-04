@@ -20,7 +20,7 @@ GeoBlacklight Metadata Schema (2021)
 
 ## Introducing Aardvark
 
-This document introduces Aardvark, the new metadata application profile schema for GeoBlacklight. This schema incorporates additional fields for better descriptions of a wider range of resources, as well as syntactical updates in order to improve interoperability between institutions and between schemas.
+Aardvark is the new metadata application profile schema for GeoBlacklight. It replaces the Version 1.0 metadata schema. Aardvark incorporates additional fields for better descriptions of a wider range of resources, as well as syntactical updates in order to improve interoperability between institutions and between schemas.
 
 
 ## Why is this called Aardvark?
@@ -35,11 +35,11 @@ GeoBlacklight and its original metadata application schema (1.0) are well-suited
 *   a lack of fields for statements about rights
 *   a lack of clarity around how to define relationships between items
 *   few options for describing other types of resources, such as scanned maps, collections, and websites
-*   mandatory fields that did not have applicable values (i.e. Geometry Type)
-*   single-valued fields that could have multiple values (i.e. Language, Publisher)
+*   mandatory fields that did not have applicable values (i.e. **Geometry Type**)
+*   single-valued fields that could have multiple values (i.e. **Language**, **Publisher**)
 *   fields with names that were not intuitive for new users
 
-The minimal nature of the original GeoBlacklight schema combined with the growing environment of customized local fields has presented obstacles for new adopters. Instead of being able to rely on the official application schema to meet all or most of their needs, they must develop local solutions. Ultimately, in order to use GeoBlacklight, many adopters implemented custom fields. [A review of extant custom fields in 2020](https://github.com/geoblacklight/geoblacklight/issues/937) revealed that at least six institutions had added or altered fields in the GeoBlacklight schema. Altogether, over 20 custom fields were in use. The result of these custom fields was metadata that was not fully interoperable across institutions. For example, three schools had implemented three different fields for indicating rights or licenses.
+The minimal nature of the original GeoBlacklight schema combined with the growing environment of customized local fields has presented obstacles for new adopters. Instead of being able to rely on the official application schema to meet all or most of their needs, they must develop local solutions. Ultimately, in order to use GeoBlacklight, many adopters implemented custom fields. [A review of extant custom fields](https://github.com/geoblacklight/geoblacklight/issues/937) in 2020 revealed that at least six institutions had added or altered fields in the GeoBlacklight schema. Altogether, over 20 custom fields were in use. The result of these custom fields was metadata that was not fully interoperable across institutions. For example, three schools had implemented three different fields for indicating rights or licenses.
 
 
 ## Who came up with the schema?
@@ -85,151 +85,57 @@ The GeoBlacklight Metadata Schema Workgroup consisted of 16 people from 12 insti
 
 **Helpful Metadata Terminology used by the Workgroup**
 
-*   **URI**: This is the name we give to the metadata element itself. For example, the URI for the GeoBlacklight subject field is `dct_subject_sm`
+*   **URI**: This is the name we give to the metadata element itself. For example, the URI for the GeoBlacklight subject field is `dct_subject_sm`.
 *   **Namespace**: This is how we signify which family of standards or schemas an element belongs to. For the GeoBlacklight schema, this takes the form of the URI’s prefix. For the URI `dct_subject_sm`,  `dct_` is the prefix and signifies that this element is from Dublin Core.
-*   **Solr field type**: This is the suffix appended to the URI and indicates what kind of Solr field should be indexed. For `dct_subject_sm`, the `_sm` stands for String Multiple. It indicates that the field type is a string and that it can have multiple values
+*   **Solr field type**: This is the suffix appended to the URI and indicates what kind of Solr field should be indexed. For `dct_subject_sm`, the `_sm` stands for String Multiple. It indicates that the field type is a string and that it can have multiple values.
 *   **Value**: This is the information that is entered in a field. It may be free text (literal value) or a URI/code (nonliteral value).
 
 
 ## What is different about the new schema?
 
-### New elements for Rights
+### New elements for rights
 
 One of the highest priorities for the Workgroup was to identify appropriate elements to capture rights information. This information is required at many participating institutions, and was the cause of multiple custom fields at different institutions that served the same purpose.
 
-After examining how rights are implemented for different projects, notably the Digital Public Library of America (DPLA) and [RightsStatements.org,](https://rightsstatements.org) we recommend three new fields and a renaming of one field. This change is the one instance in which we recommend that an existing GeoBlacklight element with application functionality is replaced by another.
+After examining how rights are implemented for different projects, notably the Digital Public Library of America (DPLA) and [RightsStatements.org,](https://rightsstatements.org) we recommended three new fields and a renaming of one field. This change is the one instance in which we recommended that an existing GeoBlacklight element with application functionality be replaced by another.
 
-The new set of Rights elements are:
+The new set of rights elements are:
 
-
-<table>
-  <tr>
-   <td><strong>Label</strong>
-   </td>
-   <td><strong>URI</strong>
-   </td>
-   <td><strong>description & entry guidelines</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Access Rights
-   </td>
-   <td>dct_accessRights_s
-   </td>
-   <td>One of two possible values, "Public" or "Restricted"; controls whether a user can preview or download an item. This element replaces dc_rights_s
-   </td>
-  </tr>
-  <tr>
-   <td>Rights
-   </td>
-   <td>dct_rights_sm
-   </td>
-   <td>Free text of generic, catch-all access and usage rights. Repeatable. Can include clickable links.
-   </td>
-  </tr>
-  <tr>
-   <td>License
-   </td>
-   <td>dct_license_sm
-   </td>
-   <td>Repeatable (or Single?) URI. Recommended sources https://creativecommons.org/licenses/by/4.0/ or https://opendatacommons.org/
-   </td>
-  </tr>
-  <tr>
-   <td>Rights Holder
-   </td>
-   <td>dct_rightsHolder_sm
-   </td>
-   <td>A person or organization owning or managing rights over the resource. Probably free text
-   </td>
-  </tr>
-</table>
+| Label              | URI                     | Description and Entry Guidelines |
+|:-------------------|:------------------------|:---------------------------------|
+| Access Rights      | `dct_accessRights_s`    | One of two possible values, "Public" or "Restricted"; controls whether a user can preview or download an item. This element replaces `dc_rights_s`. |
+| Rights             | `dct_rights_sm`         | Free-text field for generic, catch-all access and usage rights. Can include clickable links. |
+| License            | `dct_license_sm`        | Field for one or more URIs. Recommended sources are [Creative Commons](https://creativecommons.org/) or [Open Data Commons](https://opendatacommons.org/). |
+| Rights Holder      | `dct_rightsHolder_sm`   | Free-text field for the person or organization owning or managing rights over the resource. |
 
 
 ### New elements for item relations
 
-One of the thorniest issues we tackled was how to define item relations. We identified four new relationships, redefined two, and added a general, catch-all Relation field. The value for each field should be the ID (slug) of the related item.
+One of the thorniest issues we tackled was how to define item relations. We identified four new relationships, redefined two, and added a general, catch-all **Relation** field. The value for each field should be the ID (slug) of the related item.
 
-Currently, GeoBlacklight has an Item Relations widget that displays items identified in the Source field. We recommend that the application be updated to use the same widget for each of these fields. Note that this is additive functionality; the metadata record will still be valid in the current schema, but these relationships will not display in the interface until new development is done.
+Currently, GeoBlacklight has an Item Relations widget that displays items identified in the **Source** field. We recommend that the application be updated to use the same widget for each of these fields. Note that this is additive functionality; the metadata record will still be valid in the current schema, but these relationships will not display in the interface until new development is done.
 
-The new set of Relationship elements are:
+The new set of relationship elements are:
 
-<table>
-  <tr>
-   <td><strong>Label</strong>
-   </td>
-   <td><strong>URI</strong>
-   </td>
-   <td><strong>description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Source
-   </td>
-   <td>dct_source_sm
-   </td>
-   <td>For items that have been derived from another item (ex. digitized shapefile from historical map).
-   </td>
-  </tr>
-  <tr>
-   <td>Is Part Of
-   </td>
-   <td>dct_isPartOf_sm
-   </td>
-   <td>For items that are a subset of another item (ex. page in a book). This value type is changing from free-text in Version 1.0 to an ID (slug) in the new schema.
-   </td>
-  </tr>
-  <tr>
-   <td>Member Of
-   </td>
-   <td>pcdm_memberOf_sm
-   </td>
-   <td>For items in a collection
-   </td>
-  </tr>
-  <tr>
-   <td>Replaces
-   </td>
-   <td>dct_replaces_sm
-   </td>
-   <td>To refer to an item that has been deprecated
-   </td>
-  </tr>
-  <tr>
-   <td>Is Replaced By
-   </td>
-   <td>dct_isReplacedBy_sm
-   </td>
-   <td>To point user to new item
-   </td>
-  </tr>
-  <tr>
-   <td>Version
-   </td>
-   <td>dct_isVersionOf_sm
-   </td>
-   <td>To indicate that an item is a part of a series of resources that are updated or altered
-   </td>
-  </tr>
-  <tr>
-   <td>Relation
-   </td>
-   <td>dct_relation_sm
-   </td>
-   <td>For a general purpose relation
-   </td>
-  </tr>
-</table>
+| Label              | URI                     | Description and Entry Guidelines |
+|:-------------------|:------------------------|:---------------------------------|
+| Source             | `dct_source_sm`         | For items that have been derived from another item (e.g. a digitized shapefile from a historical map). |
+| Is Part Of         | `dct_isPartOf_sm`       | For items that are a subset of another item (e.g. a page in a book). This value type is changing from free-text in Version 1.0 to an ID (slug) in the new schema. |
+| Member Of          | `pcdm_memberOf_sm`      | For items in a collection.       |
+| Replaces           | `dct_replaces_sm`       | To refer to an item that has been deprecated. |
+| Is Replaced By     | `dct_isReplacedBy_sm`   | To point the user to a new item. |
+| Version            | `dct_isVersionOf_sm`    | To indicate that an item is part of a series of resources that are updated or altered. |
+| Relation            | `dct_relation_sm`      | For a general purpose relation.  |
 
 
 ### Consistent namespaces for all metadata element URIs
 
 The new version always gives preference to elements found in established schemas over custom fields.
 
-*   <strong><code>dct_ :</code></strong> This signifies that the field is part of the [Dublin Core Metadata Initiative (DCMI) Metadata Terms.](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) Any Dublin Core fields from the GeoBlacklight Schema 1.0 were updated to use the dct_ namespace.
-*   <strong><code>dcat_</code></strong> : Thati signifies that the field is from the [Data Catalog Vocabulary (DCAT) Version 2.](https://www.w3.org/TR/vocab-dcat-2/)
-*   <strong><code>pcdm_ </code></strong>: This refers to the [Portland Common Data Model](https://github.com/duraspace/pcdm/wiki), which is a framework for many digital repository systems. We drew from it to establish one of the item relationship fields
-*   <strong><code>gbl_</code></strong> : This stands for GeoBlacklight and is for any field that is application-specific or has no analogous term in other schemas.
+* **`dct_`**: This signifies that the field is part of the [Dublin Core Metadata Initiative (DCMI) Metadata Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/). Any Dublin Core fields from the GeoBlacklight Schema 1.0 were updated to use the `dct_` namespace.
+* **`dcat_`**: This signifies that the field is from the [Data Catalog Vocabulary (DCAT) Version 2](https://www.w3.org/TR/vocab-dcat-2/).
+* **`pcdm_`**: This refers to the [Portland Common Data Model](https://github.com/duraspace/pcdm/wiki), which is a framework for many digital repository systems. We drew from it to establish one of the item relationship fields.
+* **`gbl_`**: This stands for GeoBlacklight and is used for any field that is application-specific or has no analogous term in other schemas.
 
 
 ### Multivalued elements whenever possible
@@ -239,154 +145,39 @@ The original schema features several descriptive metadata fields that only accep
 
 ## How do I convert my Version 1.0 metadata into Aardvark?
 
-Most of the elements from Version 1.0 can be crosswalked directly into Aardvark. The values for these elements are exactly the same; only the URI name has changed.  The following chart shows the mapping from GeoBlacklight version 1.0 into corresponding Aardvark fields. Note that this does not include all fields in either schema - only the ones that can be crosswalked.
+Most of the elements from Version 1.0 can be crosswalked directly into Aardvark. The values for these elements are exactly the same - only the URI name has changed.  The following chart shows the mapping from GeoBlacklight version 1.0 into corresponding Aardvark fields. Note that this does not include all fields in either schema, only the ones that can be crosswalked.
 
-<table>
-  <tr>
-   <td><strong>GBL 1.0</strong>
-   </td>
-   <td><strong>GBL Aardvark</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><code>dc_title_s</code>
-   </td>
-   <td><code>dct_title_s</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>dc_description_s</code>
-   </td>
-   <td><code>dct_description_sm</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>dc_language_sm</code>
-   </td>
-   <td><code>dct_language_sm</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>dc_creator_sm</code>
-   </td>
-   <td><code>dct_creator_sm</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>dc_publisher_s</code>
-   </td>
-   <td><code>dct_publisher_sm</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>dct_provenance_s</code>
-   </td>
-   <td><code>schema_provider_s</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>dc_subject_sm</code>
-   </td>
-   <td><code>dct_subject_sm</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>dct_temporal_sm</code>
-   </td>
-   <td><code>dct_temporal_sm</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>dct_issued_s</code>
-   </td>
-   <td><code>dct_issued_s</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>solr_year_i</code>
-   </td>
-   <td><code>gbl_indexYear_i</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>dct_spatial_sm</code>
-   </td>
-   <td><code>dct_spatial_sm</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>solr_geom</code>
-   </td>
-   <td><code>locn_geometry</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>dc_source_sm</code>
-   </td>
-   <td><code>dct_source_sm</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>dc_rights_s</code>
-   </td>
-   <td><code>dct_accessRights_s</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>dc_format_s</code>
-   </td>
-   <td><code>dct_format_s</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>layer_id_s</code>
-   </td>
-   <td><code>gbl_wxsIdentifier_s</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>dct_references_s</code>
-   </td>
-   <td><code>dct_references_s</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>layer_slug_s</code>
-   </td>
-   <td><code>id</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>dc_identifier_s</code>
-   </td>
-   <td><code>dct_identifier_sm</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>layer_modified_dt</code>
-   </td>
-   <td><code>gbl_mdModified_dt</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>geoblacklight_version</code>
-   </td>
-   <td><code>gbl_mdVersion_s</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>suppressed_b</code>
-   </td>
-   <td><code>gbl_suppressed_b</code>
-   </td>
-  </tr>
-</table>
+| GBL 1.0                 | GBL Aardvark            |
+|:------------------------|:------------------------|
+| `dc_title_s`            | `dct_title_s`           |
+| `dc_description_s`      | `dct_description_sm`    |
+| `dc_language_sm`        | `dct_language_sm`       |
+| `dc_creator_sm`         | `dct_creator_sm`        |
+| `dc_publisher_s`        | `dct_publisher_sm`      |
+| `dct_provenance_s`      | `schema_provider_s`     |
+| `dc_subject_sm`         | `dct_subject_sm`        |
+| `dct_temporal_sm`       | `dct_temporal_sm`       |
+| `dct_issued_s`          | `dct_issued_s`          |
+| `solr_year_i`           | `gbl_indexYear_i`       |
+| `dct_spatial_sm`        | `dct_spatial_sm`        |
+| `solr_geom`             | `locn_geometry`         |
+| `dc_source_sm`          | `dct_source_sm`         |
+| `dc_rights_s`           | `dct_accessRights_s`    |
+| `dc_format_s`           | `dct_format_s`          |
+| `layer_id_s`            | `gbl_wxsIdentifier_s`   |
+| `dct_references_s`      | `dct_references_s`      |
+| `layer_slug_s`          | `id`                    |
+| `dc_identifier_s`       | `dct_identifier_sm`     |
+| `layer_modified_dt`     | `gbl_mdModified_dt`     |
+| `geoblacklight_version` | `gbl_mdVersion_s`       |
+| `suppressed_b`          | `gbl_suppressed_b`      |
 
-The GeoBlacklight community is working to develop tools within GeoCombine that will systematically convert 1.0 metadata into Aardvark. In the meantime, [this python script can be used to batch convert json files.](https://github.com/BTAA-Geospatial-Data-Project/GBL-Schema-Update)
+
+The GeoBlacklight community is working to develop tools within GeoCombine that will systematically convert 1.0 metadata into Aardvark. In the meantime, [this python script](https://github.com/BTAA-Geospatial-Data-Project/GBL-Schema-Update) can be used to batch convert JSON files.
 
 
 ## Will Aardvark work with my GeoBlacklight installation?
 
-You will need to upgrade to at least GeoBlacklight version 3.3 to test out Aardvark. [All previously hardcoded field names were removed in GeoBlacklight version 3.3.](https://github.com/geoblacklight/geoblacklight/pull/1020) This means that field names are defined in the settings.yml file and can be configured to use Aardvark. However, only the fields in the crosswalk will have display, facet, or other functionality enabled by default in version 3.3.
+You will need to upgrade to at least GeoBlacklight version 3.3 to test out Aardvark. All previously hardcoded field names were removed in GeoBlacklight version 3.3 (see [this pull request](https://github.com/geoblacklight/geoblacklight/pull/1020) for more information). This means that field names are defined in the `settings.yml` file and can be configured to use Aardvark. However, only the fields in the crosswalk will have display, facet, or other functionality enabled by default in version 3.3.
 
-Some of the new fields in Aardvark will be tied to default application functionality beginning with Version 4.0. We plan to include item relation widgets for the new relationships (such as Member Of and Is Version Of) and reorganize the facets to include the new categories (such as Resource Class and Resource Type).
+Some of the new fields in Aardvark will be tied to default application functionality beginning with Version 4.0. We plan to include item relation widgets for the new relationships (such as **Member Of** and **Is Version Of**) and reorganize the facets to include the new categories (such as Resource Class and Resource Type).
