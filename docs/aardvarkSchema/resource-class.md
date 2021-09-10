@@ -28,6 +28,7 @@ nav_order: 8
 | :----------- |
 | Collections  |
 | Datasets     |
+| Imagery      |
 | Maps         |
 | Web Services |
 | Websites     |
