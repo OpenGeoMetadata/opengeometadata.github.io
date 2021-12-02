@@ -18,6 +18,6 @@ nav_order: 39
 | Entry Guidelines      | Only one of two values are allowed: True or False.                                                                                                                                      |
 | Commentary            | This field is useful for multipart items with identical metadata, such as pages in an atlas or series.                                                                                  |
 | Controlled Vocabulary | yes - strict                                                                                                                                                                            |
-| Example value         | True                                                                                                                                                                                    |
+| Example value         | true                                                                                                                                                                                    |
 | Element Set           | GBL                                                                                                                                                                                     |
 | Group                 | Administrative                                                                                                                                                                          |
