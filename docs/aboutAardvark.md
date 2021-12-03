@@ -158,7 +158,7 @@ Most of the elements from Version 1.0 can be crosswalked directly into Aardvark.
 | `dc_subject_sm`         | `dct_subject_sm`        |
 | `dct_temporal_sm`       | `dct_temporal_sm`       |
 | `dct_issued_s`          | `dct_issued_s`          |
-| `solr_year_i`           | `gbl_indexYear_i`       |
+| `solr_year_i`           | `gbl_indexYear_im`       |
 | `dct_spatial_sm`        | `dct_spatial_sm`        |
 | `solr_geom`             | `locn_geometry`         |
 | `dc_source_sm`          | `dct_source_sm`         |
