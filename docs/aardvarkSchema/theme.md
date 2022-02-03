@@ -5,7 +5,7 @@ parent: Aardvark Schema
 nav_order: 11
 ---
 
-## ISO Topic Category (Theme)
+## Theme
 
 | Label                 | Theme      |
 |:----------------------|:------------------------|
