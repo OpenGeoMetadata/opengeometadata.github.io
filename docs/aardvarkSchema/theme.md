@@ -16,7 +16,7 @@ nav_order: 11
 | Field type            | string                  |
 | Purpose               | To provide a dedicated field that is restricted to terms based on ISO Topic Categories|
 | Entry Guidelines      | Insert one or more of the Themes from the list (see below). |
-| Commentary            | Although ISO Topic categories are well established and widely used, the spellings of these terms vary across domains and disciplines. The Aardvark Profile indicates shortened terms for better readability, and adds two new values: "Events" and "Land Cover" (split from ImageryBaseMapsEarthCover). |
+| Commentary            | Although ISO Topic categories are well established and widely used, the spellings of these terms vary across domains and disciplines. The Aardvark Profile uses shortened terms for better readability, and adds two new values: "Events" and "Land Cover" (split from ImageryBaseMapsEarthCover). |
 | Controlled Vocabulary | yes - strict            |
 | Example value         | "Imagery"               |
 | Element Set           | DCAT                    |
