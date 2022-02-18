@@ -148,7 +148,7 @@ The original schema features several descriptive metadata fields that only accep
 ### Crosswalkable elements
 Most of the elements from Version 1.0 can be crosswalked directly into Aardvark. The values for these elements are exactly the same - only the URI name has changed.  The following chart shows the mapping from GeoBlacklight version 1.0 into corresponding Aardvark fields. Note that this does not include all fields in either schema, only the ones that can be crosswalked.
 
-| GBL 1.0                 | GBL Aardvark            |new namespace |single to multiple |completely different URI name|
+| GBL 1.0                 | OGM Aardvark            |new namespace |single to multiple |completely different URI name|
 |:------------------------|:------------------------|:-------------:|:-----------------:|:---------------------------:| 
 | `dc_title_s`            | `dct_title_s`           |X         |                   ||
 | `dc_description_s`      | `dct_description_sm`    |X         |X                  ||
