@@ -146,32 +146,66 @@ The original schema features several descriptive metadata fields that only accep
 ## How do I convert my Version 1.0 metadata into Aardvark?
 
 ### Crosswalkable elements
-Most of the elements from Version 1.0 can be crosswalked directly into Aardvark. The values for these elements are exactly the same - only the URI name has changed.  The following chart shows the mapping from GeoBlacklight version 1.0 into corresponding Aardvark fields. Note that this does not include all fields in either schema, only the ones that can be crosswalked.
+Most of the elements from GBL Version 1.0 can be crosswalked directly into OGM Aardvark. The values for these elements are the same - only the URI name has changed or the field has been converted to an array.  The following chart shows the mapping from GeoBlacklight version 1.0 into corresponding Aardvark fields.
 
-| GBL 1.0                 | OGM Aardvark            |No Change|New Namespace|Single to Multiple|New URI|
-|:------------------------|:------------------------|:-------:|:------:|:-------:|:--------:| 
-| `dc_title_s`            | `dct_title_s`           |         |X       |           |            |
-| `dc_description_s`      | `dct_description_sm`    |         |X       |X          |            |
-| `dc_language_sm`        | `dct_language_sm`       |         |X       |           |            |
-| `dc_creator_sm`         | `dct_creator_sm`        |         |X       |           |            |
-| `dc_publisher_s`        | `dct_publisher_sm`      |         |X       |X          |            |
-| `dct_provenance_s`      | `schema_provider_s`     |         |        |           |X           |
-| `dc_subject_sm`         | `dct_subject_sm`        |         |X       |           |            |
-| `dct_temporal_sm`       | `dct_temporal_sm`       |X        |        |           |            |
-| `dct_issued_s`          | `dct_issued_s`          |X        |        |           |            |
-| `solr_year_i`           | `gbl_indexYear_im`      |         |        |           |X           |
-| `dct_spatial_sm`        | `dct_spatial_sm`        |X        |        |           |            |
-| `solr_geom`             | `locn_geometry`         |         |        |           |X           |
-| `dc_source_sm`          | `dct_source_sm`         |         |X       |           |            |
-| `dc_rights_s`           | `dct_accessRights_s`    |         |        |           |X           |
-| `dc_format_s`           | `dct_format_s`          |         |X       |           |            |
-| `layer_id_s`            | `gbl_wxsIdentifier_s`   |         |        |           |X           |
-| `dct_references_s`      | `dct_references_s`      |X        |        |           |            |
-| `layer_slug_s`          | `id`                    |         |        |           |X           |
-| `dc_identifier_s`       | `dct_identifier_sm`     |         |X       |X          |            |
-| `layer_modified_dt`     | `gbl_mdModified_dt`     |         |        |           |X           |
-| `geoblacklight_version` | `gbl_mdVersion_s`       |         |        |           |X           |
-| `suppressed_b`          | `gbl_suppressed_b`      |         |X       |           |            |
+|  # |       Label       |        GBL 1.0        |      OGM Aardvark    |                Note               |
+|:--:|:-----------------:|:---------------------:|:--------------------:|:---------------------------------:|
+| 01 |       Title       | dc_title_s            | dct_title_s          |           new namespace           |
+| 02 | Alternative Title |                       | dct_alternative_sm   |             new field             |
+| 03 |    Description    | dc_description_s      | dct_description_sm   |new namespace; single to multi-valued|
+| 04 |      Language     | dc_language_s or _sm_ | dct_language_sm      |new namespace; single to multi-valued|
+| 05 |      Creator      | dc_creator_sm         | dct_creator_sm       |           new namespace           |
+| 06 |     Publisher     | dc_publisher_s        | dct_publisher_sm     |new namespace; single to multi-valued|
+| 07 |      Provider     | dct_provenance_s      | schema_provider_s    |            new URI name           |
+| 08 |   Resource Class  |                       | gbl_resourceClass_sm |             new field             |
+| 09 |   Resource Type   |                       | gbl_resourceType_sm  |             new field             |
+| 10 |      Subject      | dc_subject_sm         | dct_subject_sm       |           new namespace           |
+| 11 |       Theme       |                       | dcat_theme_sm        |             new field             |
+| 12 |      Keyword      |                       | dcat_keyword_sm      |             new field             |
+| 13 | Temporal Coverage | dct_temporal_sm       | dct_temporal_sm      |             no change             |
+| 14 |    Date Issued    | dct_issued_s          | dct_issued_s         |             no change             |
+| 15 |     Index Year    | solr_year_i           | gbl_indexYear_im     |         single to multi-valued        |
+| 16 |     Date Range    |                       | gbl_dateRange_drsim  |             newfield              |
+| 17 |  Spatial Coverage | dct_spatial_sm        | dct_spatial_sm       |             no change             |
+| 18 |      Geometry     |                       | locn_geometry        |             new field             |
+| 19 |    Bounding Box   |                       | dcat_bbox            |             new field             |
+| 20 |      Centroid     |                       | dcat_centroid        |             new field             |
+| 21 |      Relation     |                       | dct_relation_sm      |             new field             |
+| 22 |     Member Of     |                       | pcdm_memberOf_sm     |             new field             |
+| 23 |     Is Part Of    |                       | dct_isPartOf_sm      |new field (see Elements with a crosswalk)|
+| 24 |       Source      | dc_source_sm          | dct_source_sm        |           new namespace           |
+| 25 |      Version      |                       | dct_isVersionOf_sm   |             new field             |
+| 26 |      Replaces     |                       | dct_replaces_sm      |             new field             |
+| 27 |   Is Replaced By  |                       | dct_isReplacedBy_sm  |             new field             |
+| 28 |       Rights      |                       | dct_rights_sm        |             new field             |
+| 29 |   Rights Holder   |                       | dct_rightsHolder_sm  |             new field             |
+| 30 |      License      |                       | dct_license_sm       |             new field             |
+| 31 |   Access Rights   | dc_rights_s           | dct_accessRights_s   |            new URI name           |
+| 32 |       Format      | dc_format_s           | dct_format_s         |           new namespace           |
+| 33 |     File Size     |                       | gbl_fileSize_s       |             new field             |
+| 34 |   WxS Identifier  | layer_id_s            | gbl_wxsIdentifier_s  |            new URI name           |
+| 35 |     References    | dct_references_s      | dct_references_s     |             no change             |
+| 36 |         ID        | layer_slug_s          | id                   |            new URI name           |
+| 37 |     Identifier    | dc_identifier_        | dct_identifier_sm    |new namespace; single to multi-valued |
+| 38 |      Modified     | layer_modified_dt     | gbl_mdModified_dt    |            new URI name           |
+| 39 |  Metadata Version | geoblacklight_version | gbl_mdVersion_s      |            new URI name           |
+| 40 |     Suppressed    | suppressed_b          | gbl_suppressed_b     |           new namespace           |
+| 41 |   Georeferenced   |                       | gbl_georeferenced_b  |             new field             |
+
+### Elements without a crosswalk
+There are three elements in GBL 1.0 that do not directly translate into OGM Aardvark. While they have been replaced with similar fields in OGM Aardvark, the **values themselves** would need to be altered during crosswalking.
+
+* **Type (dc_type_s)**
+  * GBL 1.0 Description: This single-valued GBL 1.0 field observes the Dublin Core controlled vocabulary for Type, including Dataset, Image, Collection, Interactive Resource, or Physical Object.
+  * Similar Aardvark element: This has been replaced in Aardvark with the multi-valued [Resource Class](../aardvarkSchema/resource-class/), which uses a custom controlled vocabular of Collections, Datasets, Imagery, Maps, Web services, and/or Other.
+
+* **Geometry Type (layer_geom_type_s)**
+  * GBL 1.0 Description: This single-valued GBL 1.0 field differentiates between between vector (Point, Line, Polygon), raster (Raster, Image), nonspatial formats (table), or a combination (Mixed)
+  * Similar Aardvark element: This has been replaced in Aardvark with the multi-valued [Resource Type](../aardvarkSchema/resource-type/), which uses a controlled vocabulary drawn from Library of Congress cartographic genres and GIS geometries.
+
+* **Is Part Of (dct_isPartOf_sm)**
+  * GBL 1.0 Description: This multi-valued GBL 1.0 plain text field is for writing out the name of a collection. (ex. `dct_isPartOf_sm:"Village Maps of India"`)
+  * Similar Aardvark element: The URI is the same in Aardvark, but it is now a nonliteral field. The value must be one or more IDs that reference another record within the system. (ex. `dct_isPartOf_sm:"princeton-z603r079s"`)
 
 
 
