@@ -148,30 +148,31 @@ The original schema features several descriptive metadata fields that only accep
 ### Crosswalkable elements
 Most of the elements from Version 1.0 can be crosswalked directly into Aardvark. The values for these elements are exactly the same - only the URI name has changed.  The following chart shows the mapping from GeoBlacklight version 1.0 into corresponding Aardvark fields. Note that this does not include all fields in either schema, only the ones that can be crosswalked.
 
-| GBL 1.0                 | OGM Aardvark            |new namespace |single to multiple |completely different URI name|
-|:------------------------|:------------------------|:-----------|:-----------|:-----------|:-----------| 
-| `dc_title_s`            | `dct_title_s`           ||X         |                   ||
-| `dc_description_s`      | `dct_description_sm`    ||X         |X                  ||
-| `dc_language_sm`        | `dct_language_sm`       ||X         |                   ||
-| `dc_creator_sm`         | `dct_creator_sm`        ||X         |                   ||
-| `dc_publisher_s`        | `dct_publisher_sm`      ||X         |X                  ||
-| `dct_provenance_s`      | `schema_provider_s`     ||          |                   |X|
-| `dc_subject_sm`         | `dct_subject_sm`        ||X         |                   ||
-| `dct_temporal_sm`       | `dct_temporal_sm`       |X|          |                   ||
-| `dct_issued_s`          | `dct_issued_s`          |X|          |                   ||
-| `solr_year_i`           | `gbl_indexYear_im`      ||          |                   |X|
-| `dct_spatial_sm`        | `dct_spatial_sm`        |X|          |                   ||
-| `solr_geom`             | `locn_geometry`         ||          |                   |X|
-| `dc_source_sm`          | `dct_source_sm`         ||X         |                   ||
-| `dc_rights_s`           | `dct_accessRights_s`    ||          |                   |X|
-| `dc_format_s`           | `dct_format_s`          ||X         |                   ||
-| `layer_id_s`            | `gbl_wxsIdentifier_s`   ||          |                   |X|
-| `dct_references_s`      | `dct_references_s`      |X|          |                   ||
-| `layer_slug_s`          | `id`                    ||          |                   |X|
-| `dc_identifier_s`       | `dct_identifier_sm`     ||X         |X                  ||
-| `layer_modified_dt`     | `gbl_mdModified_dt`     ||          |                   |X|
-| `geoblacklight_version` | `gbl_mdVersion_s`       ||          |                   |X|
-| `suppressed_b`          | `gbl_suppressed_b`      ||X         |                   ||
+| GBL 1.0                 | OGM Aardvark            |No Change|New Namespace|Single to Multiple|New URI|
+|:------------------------|:------------------------|:-------:|:------:|:-------:|:--------:| 
+| `dc_title_s`            | `dct_title_s`           |         |X       |           |            |
+| `dc_description_s`      | `dct_description_sm`    |         |X       |X          |            |
+| `dc_language_sm`        | `dct_language_sm`       |         |X       |           |            |
+| `dc_creator_sm`         | `dct_creator_sm`        |         |X       |           |            |
+| `dc_publisher_s`        | `dct_publisher_sm`      |         |X       |X          |            |
+| `dct_provenance_s`      | `schema_provider_s`     |         |        |           |X           |
+| `dc_subject_sm`         | `dct_subject_sm`        |         |X       |           |            |
+| `dct_temporal_sm`       | `dct_temporal_sm`       |X        |        |           |            |
+| `dct_issued_s`          | `dct_issued_s`          |X        |        |           |            |
+| `solr_year_i`           | `gbl_indexYear_im`      |         |        |           |X           |
+| `dct_spatial_sm`        | `dct_spatial_sm`        |X        |        |           |            |
+| `solr_geom`             | `locn_geometry`         |         |        |           |X           |
+| `dc_source_sm`          | `dct_source_sm`         |         |X       |           |            |
+| `dc_rights_s`           | `dct_accessRights_s`    |         |        |           |X           |
+| `dc_format_s`           | `dct_format_s`          |         |X       |           |            |
+| `layer_id_s`            | `gbl_wxsIdentifier_s`   |         |        |           |X           |
+| `dct_references_s`      | `dct_references_s`      |X        |        |           |            |
+| `layer_slug_s`          | `id`                    |         |        |           |X           |
+| `dc_identifier_s`       | `dct_identifier_sm`     |         |X       |X          |            |
+| `layer_modified_dt`     | `gbl_mdModified_dt`     |         |        |           |X           |
+| `geoblacklight_version` | `gbl_mdVersion_s`       |         |        |           |X           |
+| `suppressed_b`          | `gbl_suppressed_b`      |         |X       |           |            |
+
 
 
 The GeoBlacklight community is working to develop tools within GeoCombine that will systematically convert 1.0 metadata into Aardvark. In the meantime, [this python script](https://github.com/BTAA-Geospatial-Data-Project/GBL-Schema-Update) can be used to batch convert JSON files.
