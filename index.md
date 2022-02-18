@@ -16,20 +16,19 @@ A shared repository for geospatial metadata
 
 ---
 
-## About Us
+## About
+OpenGeoMetadata is a federated metadata-sharing community. The goal of participating in OpenGeoMetadata is to enable other institutions to find and use your institution’s metadata in their own local repositories, increasing the visibility and discoverability of your geospatial assets.
 
-OpenGeoMetadata is a federated metadata-sharing community. Our core purpose is to facilitate sharing geospatial metadata that uses the GeoBlacklight metadata schema. Contributors are invited to share their metadata via our GitHub organization, which allows other institutions to periodically harvest and ingest the records into their own GeoBlacklight instances for wider exposure.
+## How OpenGeoMetadata works
+Each collaborating institution creates and maintains its own geospatial metadata repository within the [OpenGeoMetadata GitHub organization](https://github.com/opengeometadata). This ensures that each institution has a unique namespace and can manage its own internal users who can collaborate on their metadata, while still enabling machine-harvestable metadata under a common organization. It also means that each institution is responsible for enforcing its own metadata standards.
 
+## Metadata standards
+Many different metadata standards and schemas can be shared in OpenGeoMetadata. A common approach is to share JSON files in a lightweight metadata schema (documented on this site) that was designed especially for the discovery platform [GeoBlacklight](https://github.com/geoblacklight). These files can be ingested into any GeoBlacklight instance, and the harvesting process can be done manually or with the help of [GeoCombine](https://github.com/OpenGeoMetadata/GeoCombine), a Ruby-based toolkit designed to automate the harvesting process.
+
+Institutions may prefer to use other geospatial metadata standards in addition to – or instead of – the GeoBlacklight schema, such as ISO 19115 or the FGDC Content Standard for Digital Geospatial Metadata. Traditional library catalogs may use general purpose standards, such as MARC or MODS. Any institution is welcome to maintain an OpenGeoMetadata repository even if they do not use GeoBlacklight.
+
+## History
 The initiative was launched in 2015 as a collaboration between MIT, Princeton, and Stanford, and it has grown to include over 20 contributing organizations. It is a sister initiative to [GeoBlacklight](https://geoblacklight.org), an open-source Ruby on Rails software application for discovering geospatial content, and supports that work by providing a space to share GeoBlacklight-compliant metadata.
 
-## How Does It Work?
-
-Each collaborating organization creates its own individual repository within the OpenGeoMetadata organization. This ensures that it has a unique namespace (example: [edu.stanford.purl](https://github.com/OpenGeoMetadata/edu.stanford.purl)) and can manage its own internal users. It also means that enforcement of metadata standards is left up to each organization.
-
-We recommend adopting a standard repository structure. Individual metadata records for each layer are contained within unique directories in a pear tree structure, and a file `layers.json` stored in the main directory links each unique identifier to its directory location. Check out [this example from Stanford](https://github.com/OpenGeoMetadata/edu.stanford.purl/tree/master/bc/899/yk/4538) to see how a typical repository is structured.
-
-To get started as a contributor, visit our [GitHub respositories](https://github.com/OpenGeoMetadata) or our [GitHub wiki](https://github.com/OpenGeoMetadata/metadatarepository/wiki).
-<br>
-<br>
-<br>
-*Content from [OpenGeoMetadata](https://www.fgdc.gov/metadata/events/iso-geospatial-metadata-implementation-forum/2015/OpenGeoMetadataPresentation) by Kim Durante and Jack Reed*
+## Contribute to developing OpenGeoMetadata
+Do you have an idea or question about how OpenGeoMetadata is working? Contribute your comments, proposals, and questions here: [OpenGeoMetadata/metadatarepository](https://github.com/OpenGeoMetadata/metadatarepository/issues).
