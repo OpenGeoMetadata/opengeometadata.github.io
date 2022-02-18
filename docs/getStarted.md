@@ -10,6 +10,9 @@ nav_order: 2
 Make it easy for others to find and use your geospatial metadata
 {: .fs-6 .fw-300 }
 
+Contributors are invited to share their metadata via our GitHub organization, which allows other institutions to periodically harvest and ingest the records into their own catalogs for wider exposure. Follow the steps below to get started.
+
+
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -18,19 +21,7 @@ Make it easy for others to find and use your geospatial metadata
 
 ---
 
-## How OpenGeoMetadata works
-
-The goal of participating in OpenGeoMetadata is to enable other institutions to find and use your institution’s metadata in their own local repositories, increasing the visibility and discoverability of your geospatial assets.
-
-Each collaborating institution creates and maintains its own geospatial metadata repository within the [OpenGeoMetadata organization](https://github.com/opengeometadata). This ensures that each institution has a unique namespace and can manage its own internal users who can collaborate on their metadata, while still enabling machine-harvestable metadata under a common organization. It also means that each institution is responsible for enforcing its own metadata standards.
-
-**What metadata schema can we use?**
-
-Many different metadata standards and schemas can be shared in OpenGeoMetadata. A common approach is to share JSON files in a lightweight metadata schema (documented on this site) that was designed especially for the discovery platform [GeoBlacklight](https://github.com/geoblacklight). These files can be ingested into any GeoBlacklight instance, and the harvesting process can be done manually or with the help of [GeoCombine](https://github.com/OpenGeoMetadata/GeoCombine), a Ruby-based toolkit designed to automate the harvesting process. Note that GeoCombine will harvest all metadata records in an OpenGeoMetadata repository that end with the extension `.json`, regardless of how the records are structured.
-
-Institutions may prefer to use other geospatial metadata standards in addition to – or instead of – the GeoBlacklight schema, such as ISO 19115 or the FGDC Content Standard for Digital Geospatial Metadata. Traditional library catalogs may use general purpose standards, such as MARC or MODS. Any institution is welcome to maintain an OpenGeoMetadata repository even if they do not use GeoBlacklight.
-
-## Nominate a team member to become an organization owner
+## Submit a request to set up a new repository for your organization
 
 To get started, identify one member from your institution who will be added to the OpenGeoMetadata organization as an owner. Owners are able to create, enable, and manage rights for their own institution's team (e.g., add collaborators, contributors, and reviewers).
 
@@ -68,7 +59,7 @@ layer125/
 ### Categorical
 {: .no_toc }
 
-Some institutions may want to organize their records into logical groupings. For example, folders could be named for the Resource Class (i.e., Datasets, Maps), Collection, Date of Accession, or other attribute. In the following example, an institution has divided records by their collection:
+Some institutions may want to organize their records into logical groupings. For example, folders could be named for the Resource Class (i.e., Datasets, Maps), Collection, Date of Accession, or other attribute. With this structure, multiple layer files could be placed in the same directory, providing they have unique filenames. In the following example, an institution has divided records by their collection:
 
 ```
 Datasets/
@@ -89,8 +80,7 @@ bb509gh7292: bb/509/gh/7292
 bc899yk4538: bc/899/yk/4538
 ```
 
-Institutions may choose to use a combination of structures, such as hashed directories within categorical folders.
-{: .note}
+
 
 A hashed directory structure makes it easy to include additional materials and documentation related to an individual resource. For example, a directory might contain metadata in multiple geospatial metadata formats, as well as auxiliary files like preview images. See the [edu.stanford.purl](https://github.com/OpenGeoMetadata/edu.stanford.purl/tree/master/bc/899/yk/4538) repository for an example:
 ```
@@ -102,11 +92,14 @@ A hashed directory structure makes it easy to include additional materials and d
                 preview.jpg
 ```
 
+Institutions may choose to use a combination of structures, such as hashed directories within categorical folders.
+{: .note}
+
 ## Determine the file-naming rules for your metadata
 
-There are two main approaches to naming metadata files.
+There are two main approaches to naming metadata files: naming by the item's ID or naming by the file's metadata standard.
 
-### Naming by item ID
+### 1. Naming by item ID
 {: .no_toc }
 
 Each record has a unique filename based on the item’s ID. This allows multiple records to be stored in the same directory. See the [edu.harvard](https://github.com/OpenGeoMetadata/edu.harvard) repository for an example:
@@ -121,14 +114,14 @@ Each record has a unique filename based on the item’s ID. This allows multiple
            ...
 ```
 
-### Naming by metadata standard
+### 2. Naming by metadata standard
 {: .no_toc }
 
-All records use the same filename pattern, such as `*/geoblacklight.json` or `*/fgdc.json`. This requires each layer to have its own folder in a hashed directory structure.
+All records use the same filename pattern, such as `*/geoblacklight.json` or `*/fgdc.json`. This requires each layer to have its own folder.
 
 **Optional: layers.json**
 
-Adopting this file-naming approach can make it difficult for end-users to find the relevant metadata files for an item of interest. Including a `layers.json` file in the main repository folder allows for easy mapping of layers to their location within an organization's repository (e.g., `Layer-Id : Folder`). See the [edu.stanford.purl](https://github.com/OpenGeoMetadata/edu.stanford.purl/blob/master/layers.json) repository for an example:
+Adopting the file-naming by metadata standard approach can make it difficult for end-users to find the relevant metadata files for an item of interest. Including a `layers.json` file in the main repository folder allows for easy mapping of layers to their location within an organization's repository (e.g., `Layer-Id : Folder`). See the [edu.stanford.purl](https://github.com/OpenGeoMetadata/edu.stanford.purl/blob/master/layers.json) repository for an example:
 
 ```
 {
@@ -138,6 +131,9 @@ Adopting this file-naming approach can make it difficult for end-users to find t
   ...
 }
 ```
+
+GeoCombine will harvest all metadata records in an OpenGeoMetadata repository that end with the extension `.json`, regardless of how the records are structured. The one exception is files named `layers.json` - this file will be skipped during ingest.
+{: .note}
 
 ## Document your repository
 
@@ -168,6 +164,4 @@ Information about your metadata:
 Contact information; whether or not your repository is open for metadata contributions and enhancements.
 ```
 
-## Contribute to developing OpenGeoMetadata
 
-Do you have an idea or question about how OpenGeoMetadata is working? Contribute your comments, proposals, and questions here: [OpenGeoMetadata/metadatarepository](https://github.com/OpenGeoMetadata/metadatarepository/issues).
