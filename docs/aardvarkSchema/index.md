@@ -27,7 +27,7 @@ Details about the Aardvark GeoBlacklight Metadata Schema (2021)
 | 08 | **[Resource Class](https://opengeometadata.github.io/docs/aardvarkSchema/resource-class)**     | `gbl_resourceClass_sm` | <span class="text-red-300">**Required**</span> |
 | 09 | [Resource Type](https://opengeometadata.github.io/docs/aardvarkSchema/resource-type)           | `gbl_resourceType_sm`  | Recommended |
 | 10 | [Subject](https://opengeometadata.github.io/docs/aardvarkSchema/subject)                       | `dct_subject_sm`       | Optional    |
-| 11 | [ISO Topic Category](https://opengeometadata.github.io/docs/aardvarkSchema/iso-topic-category) | `dcat_theme_sm`        | Optional    |
+| 11 | [Theme](https://opengeometadata.github.io/docs/aardvarkSchema/theme)                           | `dcat_theme_sm`        | Optional    |
 | 12 | [Keyword](https://opengeometadata.github.io/docs/aardvarkSchema/keyword)                       | `dcat_keyword_sm`      | Optional    |
 | 13 | [Temporal Coverage](https://opengeometadata.github.io/docs/aardvarkSchema/temporal-coverage)   | `dct_temporal_sm`      | Recommended |
 | 14 | [Date Issued](https://opengeometadata.github.io/docs/aardvarkSchema/date-issued)               | `dct_issued_s`         | Optional    |
