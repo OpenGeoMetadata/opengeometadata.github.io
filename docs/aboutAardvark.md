@@ -172,7 +172,7 @@ Most of the elements from GBL Version 1.0 can be crosswalked directly into OGM A
 | 12 |      Keyword      |                          | `dcat_keyword_sm`      |             new field             |
 | 13 | Temporal Coverage | `dct_temporal_sm`        | `dct_temporal_sm`      |             no change             |
 | 14 |    Date Issued    | `dct_issued_s`           | `dct_issued_s`         |             no change             |
-| 15 |     Index Year    | `solr_year_i`            | `gbl_indexYear_im`     |new field; single to multi-valued  |
+| 15 |     Index Year    | `solr_year_i`            | `gbl_indexYear_im`     |new URI name; single to multi-valued|
 | 16 |     Date Range    |                          | `gbl_dateRange_drsim`  |             new field             |
 | 17 |  Spatial Coverage | `dct_spatial_sm`         | `dct_spatial_sm`       |             no change             |
 | 18 |      Geometry     |                          | `locn_geometry`        |             new field             |
@@ -180,7 +180,7 @@ Most of the elements from GBL Version 1.0 can be crosswalked directly into OGM A
 | 20 |      Centroid     |                          | `dcat_centroid`        |             new field             |
 | 21 |      Relation     |                          | `dct_relation_sm`      |             new field             |
 | 22 |     Member Of     |                          | `pcdm_memberOf_sm`     |             new field             |
-| 23 |     Is Part Of    |                          | `dct_isPartOf_sm`      |new URI name (see [Elements without a crosswalk](http://localhost:4000/docs/aboutAardvark/#elements-without-a-crosswalk))|
+| 23 |     Is Part Of    |                          | `dct_isPartOf_sm`      |new value type (see [Elements without a crosswalk](http://localhost:4000/docs/aboutAardvark/#elements-without-a-crosswalk))|
 | 24 |       Source      | `dc_source_sm`           | `dct_source_sm`        |           new namespace           |
 | 25 |      Version      |                          | `dct_isVersionOf_sm`   |             new field             |
 | 26 |      Replaces     |                          | `dct_replaces_sm`      |             new field             |
