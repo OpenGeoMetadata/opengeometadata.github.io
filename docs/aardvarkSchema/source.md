@@ -2,14 +2,14 @@
 layout: default
 title: Source
 parent: Aardvark Schema
-nav_order: 23
+nav_order: 24
 ---
 
 ## Source
 
 | Label                 | Source                                                                                                   |
 |:----------------------|:---------------------------------------------------------------------------------------------------------|
-| Aardvark-id           | 23                                                                                                       |
+| Aardvark-id           | 24                                                                                                       |
 | URI                   | `dct_source_sm`                                                                                          |
 | Obligation            | Optional                                                                                                 |
 | Multiplicity          | 0-*                                                                                                      |
