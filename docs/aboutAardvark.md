@@ -180,7 +180,7 @@ Most of the elements from GBL Version 1.0 can be crosswalked directly into OGM A
 | 20 |      Centroid     |                          | `dcat_centroid`        |             new field             |
 | 21 |      Relation     |                          | `dct_relation_sm`      |             new field             |
 | 22 |     Member Of     |                          | `pcdm_memberOf_sm`     |             new field             |
-| 23 |     Is Part Of    |                          | `dct_isPartOf_sm`      |new value type (see [Elements without a crosswalk](http://localhost:4000/docs/aboutAardvark/#elements-without-a-crosswalk))|
+| 23 |     Is Part Of    |                          | `dct_isPartOf_sm`      |new value type (see [Elements without a crosswalk](#elements-without-a-crosswalk))|
 | 24 |       Source      | `dc_source_sm`           | `dct_source_sm`        |           new namespace           |
 | 25 |      Version      |                          | `dct_isVersionOf_sm`   |             new field             |
 | 26 |      Replaces     |                          | `dct_replaces_sm`      |             new field             |
