@@ -10,7 +10,7 @@ nav_order: 19
 | Label                 | Centroid                                                                                     |
 |:----------------------|:---------------------------------------------------------------------------------------------|
 | Aardvark-id           | 19                                                                                           |
-| URI                   | `dcat_centroid_ss`                                                                           |
+| URI                   | `dcat_centroid`                                                                              |
 | Obligation            | Optional                                                                                     |
 | Multiplicity          | 0-1                                                                                          |
 | Field type            | string                                                                                       |

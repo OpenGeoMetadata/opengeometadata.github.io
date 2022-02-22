@@ -34,8 +34,9 @@ Details about the Aardvark GeoBlacklight Metadata Schema (2021)
 | 15 | [Index Year](aardvarkSchema/index-year)                 | `gbl_indexYear_im`     | Recommended |
 | 16 | [Date Range](aardvarkSchema/date-range)                 | `gbl_dateRange_drsim`  | Optional    |
 | 17 | [Spatial Coverage](aardvarkSchema/spatial-coverage)     | `dct_spatial_sm`       | Recommended |
-| 18 | [Spatial Extent](aardvarkSchema/spatial-extent)         | `locn_geometry`        | Recommended |
-| 19 | [Centroid](aardvarkSchema/centroid)                     | `dcat_centroid_ss`     | Optional    |
+| 18 | [Location Geometry](aardvarkSchema/location-geometry)   | `locn_geometry`        | Recommended |
+|  ? | [Bounding Box](aardvarkSchema/bounding-box)             | `dcat_bbox`            | Recommended |
+| 19 | [Centroid](aardvarkSchema/centroid)                     | `dcat_centroid`        | Optional    |
 | 20 | [Relation](aardvarkSchema/relation)                     | `dct_relation_sm`      | Optional    |
 | 21 | [Member Of](aardvarkSchema/member-of)                   | `pcdm_memberOf_sm`     | Optional    |
 | 22 | [Is Part Of](aardvarkSchema/is-part-of)                 | `dct_isPartOf_sm`      | Optional    |
