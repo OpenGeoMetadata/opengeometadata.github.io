@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Spatial Extent
+title: Geometry
 parent: Aardvark Schema
 nav_order: 18
 ---
 
-## Spatial Extent
+## Geometry
 
-| Label                 | Spatial Extent                                                                                                           |
+| Label                 | Geometry                                                                                                        |
 |:----------------------|:-------------------------------------------------------------------------------------------------------------------------|
 | Aardvark-id           | 18                                                                                                                       |
 | URI                   | `locn_geometry`                                                                                                          |
