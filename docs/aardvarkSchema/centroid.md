@@ -14,7 +14,7 @@ nav_order: 19
 | Obligation            | Optional                                                                                     |
 | Multiplicity          | 0-1                                                                                          |
 | Field type            | string                                                                                       |
-| Purpose               | To display the center point of a resource or otherwise a geotagged point on a map            |
+| Purpose               | To display the center point of a resource           |
 | Entry Guidelines      | Enter two decimal degree coordinates separated by a comma in this order: longitude,latitude. |
 | Commentary            | This field is currently only supported by customizations to the GeoBlacklight application.   |
 | Controlled Vocabulary | no                                                                                           |
