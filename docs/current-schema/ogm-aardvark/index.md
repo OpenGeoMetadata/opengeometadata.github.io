@@ -1,15 +1,16 @@
 ---
 layout: default
-title: Aardvark Schema
-nav_order: 4
+title: OGM Aardvark
+parent: Current Schema
+nav_order: 2
 has_children: true
 has_toc: false
-permalink: /docs/aardvarkSchema
+permalink: /docs/current-schema/ogm-aardvark
 ---
 
-# Aardvark Schema
+# OGM Aardvark
 
-Details about the Aardvark GeoBlacklight Metadata Schema (2021)
+Overview of the OpenGeoMetadata Aardvark metadata schema (2021)
 {: .fs-6 .fw-300 }
 
 

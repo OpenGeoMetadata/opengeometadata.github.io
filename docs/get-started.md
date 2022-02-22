@@ -12,7 +12,7 @@ Make it easy for others to find and use your geospatial metadata
 
 Contributors are invited to share their metadata via our GitHub organization, which allows other institutions to periodically harvest and ingest the records into their own catalogs for wider exposure. Follow the steps below to get started.
 
-
+---
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -163,5 +163,3 @@ Information about your metadata:
 
 Contact information; whether or not your repository is open for metadata contributions and enhancements.
 ```
-
-

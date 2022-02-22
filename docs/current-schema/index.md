@@ -1,15 +1,21 @@
 ---
 layout: default
-title: About Aardvark
-nav_order: 3
+title: Current Schema
+nav_order: 4
+has_children: true
+has_toc: true
+permalink: /docs/current-schemas
 ---
 
-# About Aardvark
+# Current Schema
 {: .no_toc }
 
-GeoBlacklight Metadata Schema (2021)
+Details about the newest OpenGeoMetadata metadata schema
 {: .fs-6 .fw-300 }
 
+OGM Aardvark is the new metadata application profile schema for GeoBlacklight. Launched in 2021, it replaces the GeoBlacklight version 1.0 metadata schema ([GBL 1.0](../../legacy-schemas/gbl-1.0)). Aardvark incorporates additional fields for better descriptions of a wider range of resources, as well as syntactical updates in order to improve interoperability between institutions and between schemas.
+
+---
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -17,11 +23,6 @@ GeoBlacklight Metadata Schema (2021)
 {:toc}
 
 ---
-
-## Introducing Aardvark
-
-Aardvark is the new metadata application profile schema for GeoBlacklight. It replaces the Version 1.0 metadata schema. Aardvark incorporates additional fields for better descriptions of a wider range of resources, as well as syntactical updates in order to improve interoperability between institutions and between schemas.
-
 
 ## Why is this called Aardvark?
 
@@ -180,7 +181,7 @@ Most of the elements from GBL Version 1.0 can be crosswalked directly into OGM A
 | 20 |      Centroid     |                          | `dcat_centroid`        |             new field             |
 | 21 |      Relation     |                          | `dct_relation_sm`      |             new field             |
 | 22 |     Member Of     |                          | `pcdm_memberOf_sm`     |             new field             |
-| 23 |     Is Part Of    |                          | `dct_isPartOf_sm`      |new value type (see [Elements without a crosswalk](http://localhost:4000/docs/aboutAardvark/#elements-without-a-crosswalk))|
+| 23 |     Is Part Of    |                          | `dct_isPartOf_sm`      |new value type (see [Elements without a crosswalk](../../aardvarkSchema/resource-class/#elements-without-a-crosswalk))|
 | 24 |       Source      | `dc_source_sm`           | `dct_source_sm`        |           new namespace           |
 | 25 |      Version      |                          | `dct_isVersionOf_sm`   |             new field             |
 | 26 |      Replaces     |                          | `dct_replaces_sm`      |             new field             |
