@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Spatial Extent
+title: Bounding Box
 parent: Aardvark Schema
 nav_order: 18.5
 ---
 
 ## Spatial Extent
 
-| Label                 | Spatial Extent                                                                                                           |
+| Label                 | Bounding Box                                                                                                        |
 |:--------------------- |:------------------------------------------------------------------------------------------------------------------------ |
 | Aardvark-id           | ?                                                                                                                        |
 | URI                   | `dcat_bbox`                                                                                                              |
