@@ -2,19 +2,19 @@
 layout: default
 title: Centroid
 parent: Aardvark Schema
-nav_order: 19
+nav_order: 20
 ---
 
 ## Centroid
 
 | Label                 | Centroid                                                                                     |
 |:----------------------|:---------------------------------------------------------------------------------------------|
-| Aardvark-id           | 19                                                                                           |
-| URI                   | `dcat_centroid_ss`                                                                           |
+| Aardvark-id           | 20                                                                                           |
+| URI                   | `dcat_centroid`                                                                              |
 | Obligation            | Optional                                                                                     |
 | Multiplicity          | 0-1                                                                                          |
 | Field type            | string                                                                                       |
-| Purpose               | To display the center point of a resource or otherwise a geotagged point on a map            |
+| Purpose               | To display the center point of a resource           |
 | Entry Guidelines      | Enter two decimal degree coordinates separated by a comma in this order: longitude,latitude. |
 | Commentary            | This field is currently only supported by customizations to the GeoBlacklight application.   |
 | Controlled Vocabulary | no                                                                                           |

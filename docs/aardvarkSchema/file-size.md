@@ -2,14 +2,14 @@
 layout: default
 title: File Size
 parent: Aardvark Schema
-nav_order: 32
+nav_order: 33
 ---
 
 ## File Size
 
 | Label                 | File Size                                                                                                                                                   |
 |:----------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Aardvark-id           | 32                                                                                                                                                          |
+| Aardvark-id           | 33                                                                                                                                                          |
 | URI                   | `gbl_fileSize_s`                                                                                                                                            |
 | Obligation            | Optional                                                                                                                                                    |
 | Multiplicity          | 0-1                                                                                                                                                         |
