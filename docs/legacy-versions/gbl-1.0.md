@@ -1,16 +1,16 @@
 ---
 layout: default
 title: GBL 1.0
-parent: Legacy Schemas
+parent: Legacy Versions
 nav_order: 2
 ---
 
 # GBL 1.0
 
-Overview of the GeoBlacklight 1.0 metadata schema
+GeoBlacklight metadata schema version 1.0
 {: .fs-6 .fw-300 }
 
-This is a legacy format. As of 2022, the GeoBlacklight Community recommends using the [OGM Aardvark schema](../../aardvarkSchema).
+This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardvark](../../current-schema/ogm-aardvark) for GeoBlacklight versions 4.0 and higher.
 
 ---
 

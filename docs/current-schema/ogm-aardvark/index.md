@@ -10,7 +10,7 @@ permalink: /docs/current-schema/ogm-aardvark
 
 # OGM Aardvark
 
-Overview of the OpenGeoMetadata Aardvark metadata schema (2021)
+OpenGeoMetadata Aardvark metadata schema (2021)
 {: .fs-6 .fw-300 }
 
 

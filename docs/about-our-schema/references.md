@@ -1,14 +1,14 @@
 ---
 layout: default
-title: External References
-parent: About Our Schemas
+title: References
+parent: About Our Schema
 nav_order: 4
 ---
 
-# External References
+# References
 {: .no_toc }
 
-Subtitle
+Explaining the "References" field and how it works
 {: .fs-6 .fw-300 }
 
 ---

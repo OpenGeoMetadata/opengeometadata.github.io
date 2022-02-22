@@ -4,16 +4,18 @@ title: Current Schema
 nav_order: 4
 has_children: true
 has_toc: true
-permalink: /docs/current-schemas
+permalink: /docs/current-schema
 ---
 
 # Current Schema
 {: .no_toc }
 
-Details about the newest OpenGeoMetadata metadata schema
+Details about the new OpenGeoMetadata metadata schema, OGM Aardvark
 {: .fs-6 .fw-300 }
 
-OGM Aardvark is the new metadata application profile schema for GeoBlacklight. Launched in 2021, it replaces the GeoBlacklight version 1.0 metadata schema ([GBL 1.0](../../legacy-schemas/gbl-1.0)). Aardvark incorporates additional fields for better descriptions of a wider range of resources, as well as syntactical updates in order to improve interoperability between institutions and between schemas.
+OGM Aardvark is the newest metadata application profile schema for GeoBlacklight. Launched in 2021, it replaces the GeoBlacklight metadata schema version 1.0 ([GBL 1.0](../../legacy-schemas/gbl-1.0)). Aardvark incorporates additional fields for better descriptions of a wider range of resources, as well as syntactical updates in order to improve interoperability between institutions and between schemas.
+
+OGM Aardvark was intentionally developed with cross-application in mind and can be used to describe geospatial assets of all kinds. For GeoBlacklight users, it is the recommended schema for installations starting with GeoBlacklight version 4.0.
 
 ---
 ## Table of contents
