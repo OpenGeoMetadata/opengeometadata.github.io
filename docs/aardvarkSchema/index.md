@@ -15,8 +15,8 @@ Details about the Aardvark GeoBlacklight Metadata Schema (2021)
 
 ## List of Fields
 
-| Aardvark-id     | Label                  | URI                | Obligation  |
-|:----------------|:-----------------------|:-------------------|:------------|
+|    | Label                                                   | URI                    | Obligation  |
+|:---|:--------------------------------------------------------|:-----------------------|:------------|
 | 01 | **[Title](aardvarkSchema/title)**                       | `dct_title_s`          | <span class="text-red-300">**Required**</span> |
 | 02 | [Alternative Title](aardvarkSchema/alternative-title)   | `dct_alternative_sm`   | Optional    |
 | 03 | [Description](aardvarkSchema/description)               | `dct_description_sm`   | Recommended |
