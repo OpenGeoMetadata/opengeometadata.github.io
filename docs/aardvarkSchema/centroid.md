@@ -2,14 +2,14 @@
 layout: default
 title: Centroid
 parent: Aardvark Schema
-nav_order: 19
+nav_order: 20
 ---
 
 ## Centroid
 
 | Label                 | Centroid                                                                                     |
 |:----------------------|:---------------------------------------------------------------------------------------------|
-| Aardvark-id           | 19                                                                                           |
+| Aardvark-id           | 20                                                                                           |
 | URI                   | `dcat_centroid`                                                                              |
 | Obligation            | Optional                                                                                     |
 | Multiplicity          | 0-1                                                                                          |

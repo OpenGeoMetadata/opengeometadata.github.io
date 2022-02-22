@@ -2,14 +2,14 @@
 layout: default
 title: Rights Holder
 parent: Aardvark Schema
-nav_order: 28
+nav_order: 29
 ---
 
 ## Rights Holder
 
 | Label                 | Rights Holder                                                                                                                                                                                                                  |
 |:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Aardvark-id           | 28                                                                                                                                                                                                                             |
+| Aardvark-id           | 29                                                                                                                                                                                                                             |
 | URI                   | `dct_rightsHolder_sm`                                                                                                                                                                                                          |
 | Obligation            | Optional                                                                                                                                                                                                                       |
 | Multiplicity          | 0-*                                                                                                                                                                                                                            |

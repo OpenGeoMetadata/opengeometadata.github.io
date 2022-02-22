@@ -2,14 +2,14 @@
 layout: default
 title: Metadata Version
 parent: Aardvark Schema
-nav_order: 38
+nav_order: 39
 ---
 
 ## Metadata Version
 
 | Label                 | Metadata Version                                                                  |
 |:----------------------|:----------------------------------------------------------------------------------|
-| Aardvark-id           | 38                                                                                |
+| Aardvark-id           | 39                                                                                |
 | URI                   | `gbl_mdVersion_s`                                                                 |
 | Obligation            | Required                                                                          |
 | Multiplicity          | 1-1                                                                               |

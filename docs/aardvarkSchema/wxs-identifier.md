@@ -2,14 +2,14 @@
 layout: default
 title: WxS Identifier
 parent: Aardvark Schema
-nav_order: 33
+nav_order: 34
 ---
 
 ## WxS Identifier
 
 | Label                 | WxS Identifier                                                                                                                                                        |
 |:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Aardvark-id           | 33                                                                                                                                                                    |
+| Aardvark-id           | 34                                                                                                                                                                    |
 | URI                   | `gbl_wxsIdentifier_s`                                                                                                                                                 |
 | Obligation            | Conditional                                                                                                                                                           |
 | Multiplicity          | 0-1 or 1-1                                                                                                                                                            |

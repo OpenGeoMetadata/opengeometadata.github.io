@@ -2,14 +2,14 @@
 layout: default
 title: Bounding Box
 parent: Aardvark Schema
-nav_order: 18.5
+nav_order: 19
 ---
 
 ## Bounding Box
 
-| Label                 | Bounding Box                                                                                                        |
+| Label                 | Bounding Box                                                                                                             |
 |:--------------------- |:------------------------------------------------------------------------------------------------------------------------ |
-| Aardvark-id           | ?                                                                                                                        |
+| Aardvark-id           | 19                                                                                                                       |
 | URI                   | `dcat_bbox`                                                                                                              |
 | Obligation            | Recommended                                                                                                              |
 | Multiplicity          | 0-1                                                                                                                      |

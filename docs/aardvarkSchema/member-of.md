@@ -2,14 +2,14 @@
 layout: default
 title: Member Of
 parent: Aardvark Schema
-nav_order: 21
+nav_order: 22
 ---
 
 ## Member Of
 
 | Label                 | Member Of                                                                                        |
 |:----------------------|:-------------------------------------------------------------------------------------------------|
-| Aardvark-id           | 21                                                                                               |
+| Aardvark-id           | 22                                                                                               |
 | URI                   | `pcdm_memberOf_sm`                                                                               |
 | Obligation            | Optional                                                                                         |
 | Multiplicity          | 0-*                                                                                              |

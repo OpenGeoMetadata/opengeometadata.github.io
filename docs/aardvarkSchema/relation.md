@@ -2,14 +2,14 @@
 layout: default
 title: Relation
 parent: Aardvark Schema
-nav_order: 20
+nav_order: 21
 ---
 
 ## Relation
 
 | Label                 | Relation                                                             |
 |:----------------------|:---------------------------------------------------------------------|
-| Aardvark-id           | 20                                                                   |
+| Aardvark-id           | 21                                                                   |
 | URI                   | `dct_relation_sm`                                                    |
 | Obligation            | Optional                                                             |
 | Multiplicity          | 0-*                                                                  |
