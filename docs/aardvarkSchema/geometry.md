@@ -18,6 +18,6 @@ nav_order: 18
 | Entry Guidelines      | This may be a bounding box or more complex geometry. For a bounding box, it should be in this format: ENVELOPE(w,e,n,s). |
 | Commentary            | This field can contain any valid ENVELOPE or WKT string.  Since this field is not repeatable, multiple polygons should be represented using the "MULTIPOLYGON" syntax.  |
 | Controlled Vocabulary | no                                                                                                                       |
-| Example value         | For bounding boxes: "ENVELOPE(-117.312, -115.39, 84.31, 83.1)"<br>For polygon geometries: "POLYGON((1 8, 1 9, 2 9, 2 8, 1 8))"<br>or "MULTIPOLYGON (((30 20, 45 40, 10 40, 30 20)),((15 5, 40 10, 10 20, 5 10, 15 5)))"  |
+| Example value         | Simple bounding box: "ENVELOPE(-111.1, -104.0, 45.0, 40.9)"<br>Bermuda Triangle: "POLYGON((-80 25, -65 18, -64 33, -80 25))"<br>Split bounding box for Alaska: "MULTIPOLYGON (((-179.3 51.1, -129.9 51.1, -129.9 71.5, -179.3 71.5, -179.3 51.1)),((172.3 51.2, 179.9 51.2, 179.9 53.1, 172.3 53.1, 172.3 51.2)))"  |
 | Element Set           | LOCN                                                                                                              |
 | Group                 | Spatial                                                                                                                  |
