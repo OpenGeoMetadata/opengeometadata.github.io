@@ -1,8 +1,12 @@
 ---
 layout: default
 title: Is Part Of
+<<<<<<< HEAD:docs/current-schema/ogm-aardvark/is-part-of.md
 parent: OGM Aardvark
 grand_parent: Current Schema
+=======
+parent: Aardvark Schema
+>>>>>>> main:docs/aardvarkSchema/is-part-of.md
 nav_order: 23
 ---
 

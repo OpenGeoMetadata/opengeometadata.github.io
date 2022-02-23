@@ -1,8 +1,12 @@
 ---
 layout: default
 title: Identifier
+<<<<<<< HEAD:docs/current-schema/ogm-aardvark/identifier.md
 parent: OGM Aardvark
 grand_parent: Current Schema
+=======
+parent: Aardvark Schema
+>>>>>>> main:docs/aardvarkSchema/identifier.md
 nav_order: 37
 ---
 

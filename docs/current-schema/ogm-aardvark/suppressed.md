@@ -1,8 +1,12 @@
 ---
 layout: default
 title: Suppressed
+<<<<<<< HEAD:docs/current-schema/ogm-aardvark/suppressed.md
 parent: OGM Aardvark
 grand_parent: Current Schema
+=======
+parent: Aardvark Schema
+>>>>>>> main:docs/aardvarkSchema/suppressed.md
 nav_order: 40
 ---
 

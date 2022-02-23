@@ -1,8 +1,12 @@
 ---
 layout: default
 title: ID
+<<<<<<< HEAD:docs/current-schema/ogm-aardvark/id.md
 parent: OGM Aardvark
 grand_parent: Current Schema
+=======
+parent: Aardvark Schema
+>>>>>>> main:docs/aardvarkSchema/id.md
 nav_order: 36
 ---
 

@@ -1,8 +1,12 @@
 ---
 layout: default
 title: Is Replaced By
+<<<<<<< HEAD:docs/current-schema/ogm-aardvark/is-replaced-by.md
 parent: OGM Aardvark
 grand_parent: Current Schema
+=======
+parent: Aardvark Schema
+>>>>>>> main:docs/aardvarkSchema/is-replaced-by.md
 nav_order: 27
 ---
 

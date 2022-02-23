@@ -1,8 +1,12 @@
 ---
 layout: default
 title: Member Of
+<<<<<<< HEAD:docs/current-schema/ogm-aardvark/member-of.md
 parent: OGM Aardvark
 grand_parent: Current Schema
+=======
+parent: Aardvark Schema
+>>>>>>> main:docs/aardvarkSchema/member-of.md
 nav_order: 22
 ---
 

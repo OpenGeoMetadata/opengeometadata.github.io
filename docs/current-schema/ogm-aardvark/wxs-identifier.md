@@ -1,8 +1,12 @@
 ---
 layout: default
 title: WxS Identifier
+<<<<<<< HEAD:docs/current-schema/ogm-aardvark/wxs-identifier.md
 parent: OGM Aardvark
 grand_parent: Current Schema
+=======
+parent: Aardvark Schema
+>>>>>>> main:docs/aardvarkSchema/wxs-identifier.md
 nav_order: 34
 ---
 

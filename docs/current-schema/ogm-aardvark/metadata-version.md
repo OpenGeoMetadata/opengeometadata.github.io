@@ -1,8 +1,12 @@
 ---
 layout: default
 title: Metadata Version
+<<<<<<< HEAD:docs/current-schema/ogm-aardvark/metadata-version.md
 parent: OGM Aardvark
 grand_parent: Current Schema
+=======
+parent: Aardvark Schema
+>>>>>>> main:docs/aardvarkSchema/metadata-version.md
 nav_order: 39
 ---
 

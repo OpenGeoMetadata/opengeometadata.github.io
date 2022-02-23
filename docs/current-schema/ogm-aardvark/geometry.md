@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Geometry
-parent: OGM Aardvark
-grand_parent: Current Schema
+parent: Aardvark Schema
 nav_order: 18
 ---
 
