@@ -1,12 +1,10 @@
 ---
 layout: default
 title: Rights
-<<<<<<< HEAD:docs/current-schema/ogm-aardvark/rights.md
+
 parent: OGM Aardvark
 grand_parent: Current Schema
-=======
-parent: Aardvark Schema
->>>>>>> main:docs/aardvarkSchema/rights.md
+
 nav_order: 28
 ---
 

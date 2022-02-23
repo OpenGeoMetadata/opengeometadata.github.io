@@ -1,12 +1,10 @@
 ---
 layout: default
 title: Source
-<<<<<<< HEAD:docs/current-schema/ogm-aardvark/source.md
+
 parent: OGM Aardvark
 grand_parent: Current Schema
-=======
-parent: Aardvark Schema
->>>>>>> main:docs/aardvarkSchema/source.md
+
 nav_order: 24
 ---
 

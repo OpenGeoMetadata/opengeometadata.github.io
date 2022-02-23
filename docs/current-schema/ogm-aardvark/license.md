@@ -1,12 +1,10 @@
 ---
 layout: default
 title: License
-<<<<<<< HEAD:docs/current-schema/ogm-aardvark/license.md
+
 parent: OGM Aardvark
 grand_parent: Current Schema
-=======
-parent: Aardvark Schema
->>>>>>> main:docs/aardvarkSchema/license.md
+
 nav_order: 30
 ---
 

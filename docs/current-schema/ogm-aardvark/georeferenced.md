@@ -1,12 +1,8 @@
 ---
 layout: default
 title: Georeferenced
-<<<<<<< HEAD:docs/current-schema/ogm-aardvark/georeferenced.md
 parent: OGM Aardvark
 grand_parent: Current Schema
-=======
-parent: Aardvark Schema
->>>>>>> main:docs/aardvarkSchema/georeferenced.md
 nav_order: 41
 ---
 

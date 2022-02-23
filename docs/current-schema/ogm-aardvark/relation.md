@@ -1,12 +1,10 @@
 ---
 layout: default
 title: Relation
-<<<<<<< HEAD:docs/current-schema/ogm-aardvark/relation.md
+
 parent: OGM Aardvark
 grand_parent: Current Schema
-=======
-parent: Aardvark Schema
->>>>>>> main:docs/aardvarkSchema/relation.md
+
 nav_order: 21
 ---
 
