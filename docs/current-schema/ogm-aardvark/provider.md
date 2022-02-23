@@ -10,7 +10,7 @@ nav_order: 7
 
 | Label                 | Provider                |
 |:----------------------|:------------------------|
-| Aardvark-id           | 07                      |
+| Order           | 07                      |
 | URI                   | `schema_provider_s`     |
 | Obligation            | Recommended             |
 | Multiplicity          | 1-1                     |

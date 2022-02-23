@@ -12,7 +12,7 @@ nav_order: 23
 
 | Label                 | Is Part Of                                                                                        |
 | :-------------------- | :------------------------------------------------------------------------------------------------ |
-| Aardvark-id           | 23                                                                                                |
+| Order           | 23                                                                                                |
 | URI                   | `dct_isPartOf_sm`                                                                                 |
 | Obligation            | Optional                                                                                          |
 | Multiplicity          | 0-\*                                                                                              |

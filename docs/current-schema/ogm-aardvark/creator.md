@@ -10,7 +10,7 @@ nav_order: 5
 
 | Label                 | Creator                 |
 |:----------------------|:------------------------|
-| Aardvark-id           | 05                      |
+| Order           | 05                      |
 | URI                   | `dct_creator_sm`        |
 | Obligation            | Recommended             |
 | Multiplicity          | 0-\*                    |

@@ -10,7 +10,7 @@ nav_order: 15
 
 | Label                 | Index Year                                                   |
 |:----------------------|:-------------------------------------------------------------|
-| Aardvark-id           | 15                                                           |
+| Order           | 15                                                           |
 | URI                   | `gbl_indexYear_im`                                           |
 | Obligation            | Recommended                                                  |
 | Multiplicity          | 1-*                                                          |

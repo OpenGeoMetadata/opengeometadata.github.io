@@ -10,7 +10,7 @@ nav_order: 4
 
 | Label                 | Language                |
 |:----------------------|:------------------------|
-| Aardvark-id           | 04                      |
+| Order           | 04                      |
 | URI                   | `dct_language_sm`       |
 | Obligation            | Optional                |
 | Multiplicity          | 0-\*                    |

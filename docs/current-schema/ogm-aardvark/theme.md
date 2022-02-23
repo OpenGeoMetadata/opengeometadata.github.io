@@ -10,7 +10,7 @@ nav_order: 11
 
 | Label                 | Theme      |
 |:----------------------|:------------------------|
-| Aardvark-id           | 11                      |
+| Order           | 11                      |
 | URI                   | `dcat_theme_sm`         |
 | Obligation            | Optional                |
 | Multiplicity          | 0-19                    |

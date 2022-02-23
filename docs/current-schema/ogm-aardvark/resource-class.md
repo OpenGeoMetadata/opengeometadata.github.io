@@ -10,7 +10,7 @@ nav_order: 8
 
 | Label                 | Resource Class          |
 |:----------------------|:------------------------|
-| Aardvark-id           | 08                      |
+| Order           | 08                      |
 | URI                   | `gbl_resourceClass_sm`  |
 | Obligation            | Required                |
 | Multiplicity          | 1-5                     |

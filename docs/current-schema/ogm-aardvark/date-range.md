@@ -10,7 +10,7 @@ nav_order: 16
 
 | Label                 | Date Range                                                                                         |
 |:----------------------|:---------------------------------------------------------------------------------------------------|
-| Aardvark-id           | 16                                                                                                 |
+| Order           | 16                                                                                                 |
 | URI                   | `gbl_dateRange_drsim`                                                                              |
 | Obligation            | Optional                                                                                           |
 | Multiplicity          | 0-*                                                                                                |

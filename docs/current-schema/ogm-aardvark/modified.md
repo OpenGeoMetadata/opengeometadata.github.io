@@ -12,7 +12,7 @@ nav_order: 38
 
 | Label                 | Modified                                                                                  |
 |:----------------------|:------------------------------------------------------------------------------------------|
-| Aardvark-id           | 38                                                                                        |
+| Order           | 38                                                                                        |
 | URI                   | `gbl_mdModified_dt`                                                                       |
 | Obligation            | Required                                                                                  |
 | Multiplicity          | 0-1                                                                                       |

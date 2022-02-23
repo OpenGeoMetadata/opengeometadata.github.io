@@ -10,7 +10,7 @@ nav_order: 1
 
 | Label                 | Title                   |
 |:----------------------|:------------------------|
-| Aardvark-id           | 01                      |
+| Order           | 01                      |
 | URI                   | `dct_title_s`           |
 | Obligation            | Required                |
 | Multiplicity          | 1-1                     |

@@ -10,7 +10,7 @@ nav_order: 10
 
 | Label                 | Subject                 |
 |:----------------------|:------------------------|
-| Aardvark-id           | 10                      |
+| Order           | 10                      |
 | URI                   | `dct_subject_sm`        |
 | Obligation            | Optional                |
 | Multiplicity          | 0-\*                    |

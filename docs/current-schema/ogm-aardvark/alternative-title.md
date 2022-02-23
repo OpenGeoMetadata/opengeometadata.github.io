@@ -10,7 +10,7 @@ nav_order: 2
 
 | Label                 | Alternative Title       |
 |:----------------------|:------------------------|
-| Aardvark-id           | 02                      |
+| Order           | 02                      |
 | URI                   | `dct_alternative_sm`    |
 | Obligation            | Optional                |
 | Multiplicity          | 0-\*                    |

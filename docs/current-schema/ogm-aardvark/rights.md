@@ -12,7 +12,7 @@ nav_order: 28
 
 | Label                 | Rights                  |
 |:----------------------|:------------------------|
-| Aardvark-id           | 28                      |
+| Order           | 28                      |
 | URI                   | `dct_rights_sm`         |
 | Obligation            | Recommended             |
 | Multiplicity          | 0-*                     |

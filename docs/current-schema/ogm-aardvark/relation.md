@@ -12,7 +12,7 @@ nav_order: 21
 
 | Label                 | Relation                                                             |
 |:----------------------|:---------------------------------------------------------------------|
-| Aardvark-id           | 21                                                                   |
+| Order           | 21                                                                   |
 | URI                   | `dct_relation_sm`                                                    |
 | Obligation            | Optional                                                             |
 | Multiplicity          | 0-*                                                                  |
