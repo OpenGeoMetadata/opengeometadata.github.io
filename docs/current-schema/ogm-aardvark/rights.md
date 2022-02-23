@@ -1,15 +1,16 @@
 ---
 layout: default
 title: Rights
-parent: Aardvark Schema
-nav_order: 27
+parent: OGM Aardvark
+grand_parent: Current Schema
+nav_order: 28
 ---
 
 ## Rights
 
 | Label                 | Rights                  |
 |:----------------------|:------------------------|
-| Aardvark-id           | 27                      |
+| Aardvark-id           | 28                      |
 | URI                   | `dct_rights_sm`         |
 | Obligation            | Recommended             |
 | Multiplicity          | 0-*                     |

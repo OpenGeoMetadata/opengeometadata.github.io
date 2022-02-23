@@ -1,15 +1,16 @@
 ---
 layout: default
 title: Suppressed
-parent: Aardvark Schema
-nav_order: 39
+parent: OGM Aardvark
+grand_parent: Current Schema
+nav_order: 40
 ---
 
 ## Suppressed
 
 | Label                 | Suppressed                                                                                                                                                                              |
 |:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Aardvark-id           | 39                                                                                                                                                                                      |
+| Aardvark-id           | 40                                                                                                                                                                                      |
 | URI                   | `gbl_suppressed_b`                                                                                                                                                                      |
 | Obligation            | Optional                                                                                                                                                                                |
 | Multiplicity          | 0-1                                                                                                                                                                                     |

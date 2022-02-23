@@ -2,7 +2,7 @@
 layout: default
 title: How to Publish Metadata in Solr
 parent: Helpful Resources
-nav_order: 4
+nav_order: 3
 ---
 
 # How to Publish Metadata in Solr

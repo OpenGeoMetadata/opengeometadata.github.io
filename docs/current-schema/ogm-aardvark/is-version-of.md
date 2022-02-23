@@ -1,15 +1,16 @@
 ---
 layout: default
 title: Is Version Of
-parent: Aardvark Schema
-nav_order: 24
+parent: OGM Aardvark
+grand_parent: Current Schema
+nav_order: 25
 ---
 
 ## Is Version Of
 
 | Label                 | Version                                                                                                                                        |
 |:----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Aardvark-id           | 24                                                                                                                                             |
+| Aardvark-id           | 25                                                                                                                                             |
 | URI                   | `dct_isVersionOf_sm`                                                                                                                           |
 | Obligation            | Optional                                                                                                                                       |
 | Multiplicity          | 0-*                                                                                                                                            |

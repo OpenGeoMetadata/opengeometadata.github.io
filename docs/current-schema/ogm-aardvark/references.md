@@ -1,15 +1,16 @@
 ---
 layout: default
 title: References
-parent: Aardvark Schema
-nav_order: 34
+parent: OGM Aardvark
+grand_parent: Current Schema
+nav_order: 35
 ---
 
 ## References
 
 | Label                 | References                                                                                                                                                                                                       |
 |:----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Aardvark-id           | 34                                                                                                                                                                                                               |
+| Aardvark-id           | 35                                                                                                                                                                                                               |
 | URI                   | `dct_references_s`                                                                                                                                                                                               |
 | Obligation            | Recommended                                                                                                                                                                                                      |
 | Multiplicity          | 0-1                                                                                                                                                                                                              |

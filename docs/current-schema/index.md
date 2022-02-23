@@ -178,8 +178,8 @@ Most of the elements from GBL Version 1.0 can be crosswalked directly into OGM A
 | 15 |     Index Year    | `solr_year_i`            | `gbl_indexYear_im`     |new URI name; single to multi-valued|
 | 16 |     Date Range    |                          | `gbl_dateRange_drsim`  |             new field             |
 | 17 |  Spatial Coverage | `dct_spatial_sm`         | `dct_spatial_sm`       |             no change             |
-| 18 |      Geometry     |                          | `locn_geometry`        |             new field             |
-| 19 |    Bounding Box   |                          | `dcat_bbox`            |             new field             |
+| 18 |      Geometry     | `solr_geom`              | `locn_geometry`        |             new field             |
+| 19 |    Bounding Box   | `solr_geom`              | `dcat_bbox`            |             new field             |
 | 20 |      Centroid     |                          | `dcat_centroid`        |             new field             |
 | 21 |      Relation     |                          | `dct_relation_sm`      |             new field             |
 | 22 |     Member Of     |                          | `pcdm_memberOf_sm`     |             new field             |

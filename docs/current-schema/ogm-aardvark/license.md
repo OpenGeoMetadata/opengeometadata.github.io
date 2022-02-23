@@ -1,15 +1,16 @@
 ---
 layout: default
 title: License
-parent: Aardvark Schema
-nav_order: 29
+parent: OGM Aardvark
+grand_parent: Current Schema
+nav_order: 30
 ---
 
 ## License
 
 | Label                 | License                                                                                                                                         |
 |:----------------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| Aardvark-id           | 29                                                                                                                                              |
+| Aardvark-id           | 30                                                                                                                                              |
 | URI                   | `dct_license_sm`                                                                                                                                |
 | Obligation            | Optional                                                                                                                                        |
 | Multiplicity          | 0-*                                                                                                                                             |

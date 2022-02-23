@@ -1,15 +1,16 @@
 ---
 layout: default
 title: Format
-parent: Aardvark Schema
-nav_order: 31
+parent: OGM Aardvark
+grand_parent: Current Schema
+nav_order: 32
 ---
 
 ## Format
 
 | Label                 | Format                                                                                                                                                                                                                                                                                        |
 |:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Aardvark-id           | 31                                                                                                                                                                                                                                                                                            |
+| Aardvark-id           | 32                                                                                                                                                                                                                                                                                            |
 | URI                   | `dct_format_s`                                                                                                                                                                                                                                                                                |
 | Obligation            | Conditional                                                                                                                                                                                                                                                                                   |
 | Multiplicity          | 0-1 or 1-1                                                                                                                                                                                                                                                                                    |

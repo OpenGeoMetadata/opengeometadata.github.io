@@ -1,15 +1,16 @@
 ---
 layout: default
 title: Is Part Of
-parent: Aardvark Schema
-nav_order: 22
+parent: OGM Aardvark
+grand_parent: Current Schema
+nav_order: 23
 ---
 
 ## Is Part Of
 
 | Label                 | Is Part Of                                                                                        |
 | :-------------------- | :------------------------------------------------------------------------------------------------ |
-| Aardvark-id           | 22                                                                                                |
+| Aardvark-id           | 23                                                                                                |
 | URI                   | `dct_isPartOf_sm`                                                                                 |
 | Obligation            | Optional                                                                                          |
 | Multiplicity          | 0-\*                                                                                              |

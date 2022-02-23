@@ -3,14 +3,14 @@ layout: default
 title: Access Rights
 parent: OGM Aardvark
 grand_parent: Current Schema
-nav_order: 30
+nav_order: 31
 ---
 
 ## Access Rights
 
 | Label                 | Access Rights                                                                                                                                                                                                                                    |
 |:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Aardvark-id           | 30                                                                                                                                                                                                                                               |
+| Aardvark-id           | 31                                                                                                                                                                                                                                               |
 | URI                   | `dct_accessRights_s`                                                                                                                                                                                                                             |
 | Obligation            | Required                                                                                                                                                                                                                                         |
 | Multiplicity          | 1-1                                                                                                                                                                                                                                              |

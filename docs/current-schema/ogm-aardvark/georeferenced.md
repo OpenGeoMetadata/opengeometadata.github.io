@@ -1,15 +1,16 @@
 ---
 layout: default
 title: Georeferenced
-parent: Aardvark Schema
-nav_order: 40
+parent: OGM Aardvark
+grand_parent: Current Schema
+nav_order: 41
 ---
 
 ## Georeferenced
 
 | Label                 | Georeferenced                                                                                                                                                                                                          |
 |:----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Aardvark-id           | 40                                                                                                                                                                                                                     |
+| Aardvark-id           | 41                                                                                                                                                                                                                     |
 | URI                   | `gbl_georeferenced_b`                                                                                                                                                                                                  |
 | Obligation            | Optional                                                                                                                                                                                                               |
 | Multiplicity          | 0-1                                                                                                                                                                                                                    |

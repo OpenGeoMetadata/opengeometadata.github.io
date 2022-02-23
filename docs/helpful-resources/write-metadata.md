@@ -2,7 +2,7 @@
 layout: default
 title: How to Write Metadata
 parent: Helpful Resources
-nav_order: 2
+nav_order: 1
 ---
 
 # How to Write Metadata

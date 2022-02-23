@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Index Year
-parent: Aardvark Schema
+parent: OGM Aardvark
+grand_parent: Current Schema
 nav_order: 15
 ---
 

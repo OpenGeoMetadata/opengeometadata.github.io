@@ -1,15 +1,16 @@
 ---
 layout: default
 title: Is Replaced By
-parent: Aardvark Schema
-nav_order: 26
+parent: OGM Aardvark
+grand_parent: Current Schema
+nav_order: 27
 ---
 
 ## Is Replaced By
 
 | Label                 | Is Replaced By                                                                                                                                                                                                                                                                                                  |
 |:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Aardvark-id           | 26                                                                                                                                                                                                                                                                                                              |
+| Aardvark-id           | 27                                                                                                                                                                                                                                                                                                              |
 | URI                   | `dct_isReplacedBy_sm`                                                                                                                                                                                                                                                                                           |
 | Obligation            | Optional                                                                                                                                                                                                                                                                                                        |
 | Multiplicity          | 0-*                                                                                                                                                                                                                                                                                                             |
