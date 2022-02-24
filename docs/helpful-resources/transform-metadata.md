@@ -20,9 +20,8 @@ subtitle
 
 ---
 
-## Heading
+## Crosswalking from other metadata schemas
 
-Description
 Step 2 of the metadata workflow is to convert or transfer information from some or all of the fields to the GeoBlacklight schema.  The result of this process is one or more JSON files that will be parsed and indexed by Solr.  These JSON files will serve as the content to be shown in the GeoBlacklight application.
 
 From the previous section on authoring metadata, a finished metadata file could look like the following example in ISO 19139 format:
