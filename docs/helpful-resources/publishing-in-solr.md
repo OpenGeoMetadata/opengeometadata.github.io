@@ -5,14 +5,12 @@ parent: Helpful Resources
 nav_order: 4
 ---
 
-
 # Publishing Metadata in Solr
 {: .no_toc }
 
 How to publish metadata records in Solr for GeoBlacklight integration
 {: .fs-6 .fw-300 }
 
----
 ---
 ## Table of contents
 {: .no_toc .text-delta }
@@ -22,9 +20,9 @@ How to publish metadata records in Solr for GeoBlacklight integration
 
 ---
 
-## Adding Metadata Records to Solr
+## Add metadata records to Solr
 
-Metadata for GeoBlacklight instances is stored and indexed in Solr. The Solr application identifies each metadata record as a “document.” The process of adding documents to Solr is called “indexing.” 
+Metadata for GeoBlacklight instances is stored and indexed in Solr. The Solr application identifies each metadata record as a “document.” The process of adding documents to Solr is called “indexing.”
 
 **Option A: Manually indexing**
 
@@ -34,14 +32,15 @@ If you have access to your Solr Dashboard panel, you can add records manually by
 
 It is often more practical to use a process for batch adding, updating, and deleting the records. Most of the available processes are in the form of command-line scripts. See [Scripts and Tools](../../helpful-resources/scripts-and-tools) for examples.
 
-## Viewing Solr Metadata within GeoBlacklight
+## View Solr metadata within GeoBlacklight
 
 The raw metadata files can be viewed by appending terms to the end of an item's show page URL.
 
 ### .xml
 {: .no_toc }
 
-* produces a Dublin Core XML document in the [OAI_DC schema](https://www.openarchives.org/OAI/2.0/oai_dc.xsd). The fields for this document can be adjusted in the `solr_document.rb`, which is found here: `app/models/solr_document.rb`. Example: https://geo.btaa.org/catalog/145055E1-87EF-4D13-B138-4DC3907F3677.xml.
+* Produces a Dublin Core XML document in the [OAI_DC schema](https://www.openarchives.org/OAI/2.0/oai_dc.xsd). The fields for this document can be adjusted in the `solr_document.rb`, which is found here: `app/models/solr_document.rb`.
+* Example: [https://geo.btaa.org/catalog/145055E1-87EF-4D13-B138-4DC3907F3677.xml](https://geo.btaa.org/catalog/145055E1-87EF-4D13-B138-4DC3907F3677.xml)
 
 ### .json
 {: .no_toc }
