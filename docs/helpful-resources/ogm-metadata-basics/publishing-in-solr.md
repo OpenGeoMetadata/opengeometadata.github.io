@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Publishing in Solr
-parent: Helpful Resources
-nav_order: 4
+parent: OGM Metadata Basics
+grand_parent: Helpful Resources
+nav_order: 5
 ---
 
 # Publishing Metadata in Solr
@@ -30,7 +31,7 @@ If you have access to your Solr Dashboard panel, you can add records manually by
 
 **Option B: Indexing via scripts**
 
-It is often more practical to use a process for batch adding, updating, and deleting the records. Most of the available processes are in the form of command-line scripts. See [Scripts and Tools](../../helpful-resources/scripts-and-tools) for examples.
+It is often more practical to use a process for batch adding, updating, and deleting the records. Most of the available processes are in the form of command-line scripts. See [Scripts and Tools](../../../helpful-resources/scripts-and-tools) for examples.
 
 ## View Solr metadata within GeoBlacklight
 

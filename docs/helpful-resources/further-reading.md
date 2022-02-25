@@ -8,9 +8,6 @@ nav_order: 7
 # Further Reading
 {: .no_toc }
 
-Additional resources about the OGM metadata schema
-{: .fs-6 .fw-300 }
-
 ---
 
 ## Resources from the GeoBlacklight Community

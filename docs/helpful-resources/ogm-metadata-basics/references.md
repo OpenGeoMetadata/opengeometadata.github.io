@@ -28,7 +28,7 @@ The field `dct_references_s` defines external services and references using the 
 * key:value 1 = "URI":"https://example.com"
 * key:value 2 = "URI":"https://otherexample.com"
 
-To format this field in JSON, double quotations `"` must be escaped with a backslash `\`. See [Escaped Characters](../the-basics/#escaped-characters) for more information.
+To format this field in JSON, double quotations `"` must be [escaped](../#escaped-characters) with a backslash `\`.
 
 ```json
 {
@@ -84,7 +84,7 @@ To enable multiple downloads:
 * Create one or more objects inside the array. These are enclosed in {curly brackets}.
 * Inside the object, define two `key:value` pairs separated by a comma.
 * Enclose each key and each value in double quotes.
-* [Escape](../the-basics/#escaped-characters) double quotations `"` with a backslash `\`
+* [Escape](../#escaped-characters) double quotations `"` with a backslash `\`
 
 In formatted JSON, this would look like:
 ```json

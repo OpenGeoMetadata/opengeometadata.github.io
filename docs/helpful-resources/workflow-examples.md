@@ -8,9 +8,6 @@ nav_order: 5
 # Workflow Examples
 {: .no_toc }
 
-subtitle
-{: .fs-6 .fw-300 }
-
 ---
 ## Table of contents
 {: .no_toc .text-delta }
@@ -31,4 +28,4 @@ Take, for example, the [metadata for this layer](https://github.com/OpenGeoMetad
 
 ## Metadata tools and resources
 
-For scripts and other tools to automate or validate metadata workflows, see the [Scripts and Tools page](scripts-and-tools.md).
+For scripts and other tools to automate or validate metadata workflows, see [Scripts and Tools](../scripts-and-tools).

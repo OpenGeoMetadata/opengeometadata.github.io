@@ -21,7 +21,7 @@ Important field elements and special fields worth noting
 
 ---
 
-See the [current schema](../../current-schema/ogm-aardvark) for a full description of fields, expected values, and obligations.
+See the [current schema](../../../current-schema/ogm-aardvark) for a full description of fields, expected values, and obligations.
 
 ## Field elements
 
