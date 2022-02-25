@@ -31,4 +31,4 @@ Take, for example, the [metadata for this layer](https://github.com/OpenGeoMetad
 
 ## Metadata tools and resources
 
-For scripts and other tools to automate or validate metadata workflows, see the [Scripts and Tools page](/scripts-and-tools.md).
+For scripts and other tools to automate or validate metadata workflows, see the [Scripts and Tools page](docs/helpful-resources/scripts-and-tools.md).
