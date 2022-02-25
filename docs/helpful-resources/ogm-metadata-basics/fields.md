@@ -1,15 +1,13 @@
 ---
 layout: default
 title: Fields
-parent: About Our Schema
-nav_order: 3
+parent: OGM Metadata Basics
+grand_parent: Helpful Resources
+nav_order: 2
 ---
 
 # Fields
 {: .no_toc }
-
-Important field elements and special fields worth noting
-{: .fs-6 .fw-300 }
 
 ---
 ## Table of contents
@@ -20,9 +18,9 @@ Important field elements and special fields worth noting
 
 ---
 
-See the [current schema](../../current-schema/ogm-aardvark) for a full description of fields, expected values, and obligations.
+See the [current schema](../../../current-schema/ogm-aardvark) for a full description of fields, expected values, and obligations.
 
-## Field Elements
+## How fields are named
 
 ### Suffixes
 {: .no_toc }
@@ -40,7 +38,7 @@ Solr uses the suffix of a metadata element to determine what kind of field it is
 
 Altering suffixes can result in metadata schema incompatibilities across institutions. Any deviations in element names causes Solr to treat the elements as separate fields: for example `dct_subject_s` and `dct_subject_sm` would be stored separately. If GeoBlacklight is set up to display a facet for `dct_subject_s`, it will not pick up values stored in `dct_subject_sm` in the filter. Therefore, if you are gathering metadata from other institutions, make sure to inspect their metadata fields to determine if there will be inconsistencies in your Solr index.
 
-## Fields Related to Identity
+## Fields related to identity
 
 There are three fields that relate to a layer's identity.
 
@@ -75,20 +73,10 @@ This is a general purpose field that can contain one or more persistent identife
 * `urn:example.org:ad0e6ebc-824e-4450-a0d9-987f2232724f`
 * `5864 .L7 E635 1998 .G7`
 
-## Custom Fields
+## Custom fields
 
 If an organization wishes to implement a custom metadata field for their GeoBlacklight instance, the naming schema should reference the organization as follows: `organization_elementName_solrFieldType`.
 
 Examples:
 * `b1g_code_s` - Internal code that organizes items by their source collection
 * `nyu_addl_dspace_s` - A 5 digit number that is the "internal identifier" for DSpace, the repository software that mints handles for all NYU's items. The internal id must be paired with the handle in order to post metadata and data via the system API.
-
-## Deprecated Fields
-
-Fields are occasionally deprecated during revisions of the schemas. See the [GBL 1.0 --> OGM Aardvark](../about-ogm-aardvark/#crosswalkable-and-new-elements) crosswalk table for a complete list of deprecated field names from the most recent update. In addition, these previous deprecated fields may occur in older metadata records:
-
-* `uuid`
-* `dc_relation_sm`
-* `georss_box_s`
-* `georss_point_s`
-* `georss_polygon_s`

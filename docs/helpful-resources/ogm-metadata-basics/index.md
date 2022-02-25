@@ -1,14 +1,17 @@
 ---
 layout: default
-title: The Basics
-parent: About Our Schema
-nav_order: 2
+title: OGM Metadata Basics
+parent: Helpful Resources
+nav_order: 1
+has_children: true
+has_toc: false
+permalink: /docs/helpful-resources/ogm-metadata-basics
 ---
 
-# The Basics
+# OGM Metadata Basics
 {: .no_toc }
 
-How OGM metadata is structured
+The basics of the OpenGeoMetadata metadata structure
 {: .fs-6 .fw-300 }
 
 ---
@@ -20,7 +23,7 @@ How OGM metadata is structured
 
 ---
 
-## Overview
+## Purpose
 
 The OGM metadata schema is designed for GIS resource discovery and focuses mainly on discovery use cases. Text search, faceted search and refinement, and spatial search and relevancy are among the primary features that the schema enables. It:
 
@@ -36,15 +39,15 @@ The schemas are organized around "layers" as the unit of description. Each layer
 
 "A layer is a specific unit of data that contains a set of geospatial features, a metadata description, and a feature catalog. For example, a census layer would have the geometries of census tracts and the demographic results within each tract." [(Hardy and Durante 2014)](http://journal.code4lib.org/articles/9710)
 
-## Unique Keys
+## Unique keys
 
 Metadata for GeoBlacklight instances is stored and indexed in Solr, which uses a "Unique Key Field" as the identifier for each document. The OGM Aardvark schema was designed with `id` as the Unique Key Field (in GBL 1.0, this field was called `layer_slug_s`). Each item must have a unique key.
 
-## JSON Format
+## JSON format
 
 OGM metadata is formatted as flat JSON files.
 
-### Terms to Know
+### Terms to know
 {: .no_toc }
 
 #### Key:value pairs
@@ -64,11 +67,10 @@ OGM metadata is formatted as flat JSON files.
   * consist of `key:value` pairs inside {curly brackets}
   * brackets are often put on a separate line to aid in readability
 
-```
+```json
 {
   "geoblacklight_version": "1.0",
-  "dc_identifier_s": "https://cugir.library.cornell.edu/catalog/cugir-007950",
-  ...
+  "dc_identifier_s": "https://cugir.library.cornell.edu/catalog/cugir-007950"
 }
 ```
 
@@ -79,25 +81,29 @@ OGM metadata is formatted as flat JSON files.
   * surrounded by [square brackets]
   * used for fields that can have multiple values, such as `dct_subject_sm` or multiple download links within the `dct_references_s` element.
 
-```
-"dct_subject_sm": [
+```json
+{
+  "dct_subject_sm": [
     "Continental margins",
     "Multibeam mapping",
     "Elevation",
     "Imagery and Base Maps",
     "Inland Waters"
   ]
+}
 ```
 
-#### Escaped Characters
+#### Escaped characters
 {: .no_toc }
 
-  * certain characters are reserved for the JSON format, including double quotations `"` and forward slash `/`
+  * certain characters are reserved for the JSON format, including double quotations `"`
   * if these characters are present in a string, they must be preceded by a backslash `\` in order for the JSON to function properly
-  * the parentheses `"` and forward slashes `/` in URLs must be escaped with a backslash `\`
+  * double quotations `"` within strings must be escaped with a backslash `\`
 
-```
-"dct_references_s": "{\"http:\/\/schema.org/url\":\"http:\/\/purl.stanford.edu\/dp018hs9766\",\"http:\/\/schema.org/downloadUrl\":\"http://stacks.stanford.edu/file/druid:dp018hs9766/data.zip\"}"
+```json
+{
+  "dct_references_s": "{\"http://schema.org/url\":\"http://purl.stanford.edu/dp018hs9766\",\"http://schema.org/downloadUrl\":\"http://stacks.stanford.edu/file/druid:dp018hs9766/data.zip\"}"
+}
 ```
 
 #### "Stringified JSON"
