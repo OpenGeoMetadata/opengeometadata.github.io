@@ -31,6 +31,6 @@ nav_order: 8
 | Datasets     |
 | Imagery      |
 | Maps         |
-| Web Services |
+| Web services |
 | Websites     |
 | Other        |

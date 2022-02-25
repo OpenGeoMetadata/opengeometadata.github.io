@@ -83,13 +83,3 @@ If an organization wishes to implement a custom metadata field for their GeoBlac
 Examples:
 * `b1g_code_s` - Internal code that organizes items by their source collection
 * `nyu_addl_dspace_s` - A 5 digit number that is the "internal identifier" for DSpace, the repository software that mints handles for all NYU's items. The internal id must be paired with the handle in order to post metadata and data via the system API.
-
-## Deprecated Fields
-
-Fields are occasionally deprecated during revisions of the schemas. See the [GBL 1.0 --> OGM Aardvark](../about-ogm-aardvark/#crosswalkable-and-new-elements) crosswalk table for a complete list of deprecated field names from the most recent update. In addition, these previous deprecated fields may occur in older metadata records:
-
-* `uuid`
-* `dc_relation_sm`
-* `georss_box_s`
-* `georss_point_s`
-* `georss_polygon_s`
