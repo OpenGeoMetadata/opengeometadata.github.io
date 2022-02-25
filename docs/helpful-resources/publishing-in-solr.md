@@ -8,23 +8,19 @@ nav_order: 4
 # Publishing Metadata in Solr
 {: .no_toc }
 
-subtitle
+How to publish metadata records in Solr for GeoBlacklight integration
 {: .fs-6 .fw-300 }
 
 ---
-## Table of contents
-{: .no_toc .text-delta }
 
-1. TOC
-{:toc}
+## Adding Metadata Records to Solr
 
----
+Metadata for GeoBlacklight instances is stored and indexed in Solr. The Solr application identifies each metadata record as a “document.” The process of adding documents to Solr is called “indexing.” 
 
-## Publishing Metadata in Solr
+**Option A: Manually indexing**
 
-Metadata for GeoBlacklight instances is stored and indexed in Solr.
+If you have access to your Solr Dashboard panel, you can add records manually by pasting them into the Documents pane.
 
-### Adding Metadata Records to Solr
-{: .no_toc }
+**Option B: Indexing via scripts**
 
-The Solr application identifies each metadata record as a “document.” The process of adding documents to Solr is called “indexing.” If you have access to your Solr Dashboard panel, you can add records manually by pasting them into the Documents pane. However, it is more practical to use a process for batch adding, updating, and deleting the records. Most of the available processes are in the form of command-line scripts. See the Tools and Resources page for examples.
+It is often more practical to use a process for batch adding, updating, and deleting the records. Most of the available processes are in the form of command-line scripts. See [Scripts and Tools](../../helpful-resources/scripts-and-tools) for examples.
