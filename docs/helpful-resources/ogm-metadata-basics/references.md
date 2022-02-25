@@ -21,20 +21,20 @@ Explaining the "References" field and how it works
 
 ---
 
-## JSON Formatting
+## JSON formatting
 
 The field `dct_references_s` defines external services and references using the [Cat-Interop](https://github.com/OSGeo/Cat-Interop) approach. The field value is a serialized JSON array of key/value pairs. Keys represent XML namespace URIs, and values represent the URL.
 
 * key:value 1 = "URI":"https://example.com"
 * key:value 2 = "URI":"https://otherexample.com"
 
-To format this field in JSON, double quotations `"` and forward slashes `/` must be escaped with a backslash `\`. See [Escaped Characters](../the-basics/#escaped-characters) for more information.
+To format this field in JSON, double quotations `"` must be escaped with a backslash `\`. See [Escaped Characters](../the-basics/#escaped-characters) for more information.
 
 ```json
 {
   "dct_references_s": "{
-    \"http:\/\/schema.org/url\":\"http:\/\/purl.stanford.edu/bm662dm5913\",
-    \"http:\/\/schema.org/downloadUrl\":\"http:\/\/stacks.stanford.edu\/file\/druid:bm662dm5913\/data.zip\"
+    \"http://schema.org/url\":\"http://purl.stanford.edu/bm662dm5913\",
+    \"http://schema.org/downloadUrl\":\"http://stacks.stanford.edu/file/druid:bm662dm5913/data.zip\"
     }"
 }
 ```
@@ -68,14 +68,14 @@ These are URIs that can be used as keys in the `dct_references_s` field.
 | ArcGIS DynamicMapLayer    | `urn:x-esri:serviceType:ArcGIS#DynamicMapLayer` | Preview an ArcGIS DynamicMapLayer Service |
 | ArcGIS ImageMapLayer      | `urn:x-esri:serviceType:ArcGIS#ImageMapLayer`   | Previews a ArcGIS ImageMapLayer Service |
 
-### URIs for Specific Institutions
+### URIs for specific institutions
 {: .no_toc }
 
 | Type                      | Reference URI                                   | Function in GeoBlacklight               |
 |:--------------------------|:------------------------------------------------|:----------------------------------------|
 | Harvard Geospatial Library email download | `http://schema.org/DownloadAction` | Retrieve a file via email from the Harvard Geospatial Library |
 
-## How to Configure Multiple Download Links
+## How to configure multiple download links
 
 Beginning with GeoBlacklight version 3.0, multiple download links and file formats can be included in the `dct_references_s` field. For more details on this update, see [this pull request](https://github.com/geoblacklight/geoblacklight/pull/916).
 
@@ -84,18 +84,18 @@ To enable multiple downloads:
 * Create one or more objects inside the array. These are enclosed in {curly brackets}.
 * Inside the object, define two `key:value` pairs separated by a comma.
 * Enclose each key and each value in double quotes.
-* [Escape](../the-basics/#escaped-characters) double quotations `"` and forward slashes `/` with a backslash `\`
+* [Escape](../the-basics/#escaped-characters) double quotations `"` with a backslash `\`
 
 In formatted JSON, this would look like:
 ```json
 {
-  "dct_references_s": "{\"http:\/\/schema.org\/downloadUrl\":[
+  "dct_references_s": "{\"http://schema.org/downloadUrl\":[
     {
-      \"url\":\"https:\/\/example.com\",
+      \"url\":\"https://example.com\",
       \"label\":\"Shapefile\"
     },
     {
-      \"url\":\"https:\/\/otherexample.com\",
+      \"url\":\"https://otherexample.com\",
       \"label\":\"KMZ\"
     }]
   }"
@@ -105,46 +105,46 @@ In formatted JSON, this would look like:
 ### Examples
 {: .no_toc }
 
-For an exmaple of a complete JSON file with multiple downloads, see [this record](https://github.com/geoblacklight/geoblacklight/blob/master/spec/fixtures/solr_documents/multiple-downloads.json).
+For an exmaple of a complete JSON file with multiple downloads, see [this record](https://github.com/geoblacklight/geoblacklight/blob/main/spec/fixtures/solr_documents/multiple-downloads.json).
 
-**Single Download**
+**Single download**
 
 ```json
 {
-  "dct_references_s": "{\"http:\/\/schema.org\/downloadUrl\":\"https:\/\/cugir-data.s3.amazonaws.com\/00\/79\/50\/cugir-007950.zip\"}"
+  "dct_references_s": "{\"http://schema.org/downloadUrl\":\"https://cugir-data.s3.amazonaws.com/00/79/50/cugir-007950.zip\"}"
 }
 ```
 
-**Single Download as an Array**
+**Single download as an array**
 
 When using an array for downloads, the value after the `"label"` key will be used as the text in the Download panel button.
 
 ```json
 {
-  "dct_references_s": "{\"http:\/\/schema.org\/downloadUrl\":[
+  "dct_references_s": "{\"http://schema.org/downloadUrl\":[
     {
-      \"url\":\"https:\/\/cugir-data.s3.amazonaws.com\/00\/79\/50\/cugir-007950.zip\",
+      \"url\":\"https://cugir-data.s3.amazonaws.com/00/79/50/cugir-007950.zip\",
       \"label\":\"Shapefile\"
     }]
   }"
 }
 ```
 
-**Multiple Downloads**
+**Multiple downloads**
 
 ```json
 {
-  "dct_references_s": "{\"http:\/\/schema.org\/downloadUrl\":[
+  "dct_references_s": "{\"http://schema.org/downloadUrl\":[
     {
-      \"url\":\"https:\/\/cugir-data.s3.amazonaws.com\/00\/79\/50\/cugir-007950.zip\",
+      \"url\":\"https://cugir-data.s3.amazonaws.com/00/79/50/cugir-007950.zip\",
       \"label\":\"Shapefile\"
     },
     {
-      \"url\":\"https:\/\/cugir-data.s3.amazonaws.com\/00\/79\/50\/agBROO.pdf\",
+      \"url\":\"https://cugir-data.s3.amazonaws.com/00/79/50/agBROO.pdf\",
       \"label\":\"PDF\"
     },
     {
-      \"url\":\"https:\/\/cugir-data.s3.amazonaws.com\/00\/79\/50\/agBROO2011.kmz\",
+      \"url\":\"https://cugir-data.s3.amazonaws.com/00/79/50/agBROO2011.kmz\",
       \"label\":\"KMZ\"
     }]
   }"

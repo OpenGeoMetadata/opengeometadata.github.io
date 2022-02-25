@@ -9,7 +9,7 @@ permalink: /docs/helpful-resources
 
 # Helpful Resources
 
-subtitle
+Extra resources to help you get started with OpenGeoMetadata
 {: .fs-6 .fw-300 }
 
-Description
+This section has step-by-step guides, examples, and links to external resources to help you get started working with the OpenGeoMetadata scheme in a GeoBlacklight environment.
