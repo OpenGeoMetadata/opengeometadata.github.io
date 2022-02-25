@@ -1,8 +1,9 @@
 ---
 layout: default
 title: References
-parent: About Our Schema
-nav_order: 4
+parent: OGM Metadata Basics
+grand_parent: Helpful Resources
+nav_order: 3
 ---
 
 # References

@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Fields
-parent: About Our Schema
-nav_order: 3
+parent: OGM Metadata Basics
+grand_parent: Helpful Resources
+nav_order: 2
 ---
 
 # Fields

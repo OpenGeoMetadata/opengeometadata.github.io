@@ -2,7 +2,7 @@
 layout: default
 title: Workflow Examples
 parent: Helpful Resources
-nav_order: 4
+nav_order: 5
 ---
 
 # Workflow Examples
