@@ -9,9 +9,6 @@ nav_order: 2
 # Fields
 {: .no_toc }
 
-Important field elements and special fields worth noting
-{: .fs-6 .fw-300 }
-
 ---
 ## Table of contents
 {: .no_toc .text-delta }
@@ -23,7 +20,7 @@ Important field elements and special fields worth noting
 
 See the [current schema](../../../current-schema/ogm-aardvark) for a full description of fields, expected values, and obligations.
 
-## Field elements
+## How fields are named
 
 ### Suffixes
 {: .no_toc }
