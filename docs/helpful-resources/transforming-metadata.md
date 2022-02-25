@@ -1,11 +1,11 @@
 ---
 layout: default
-title: How to Transform Metadata
+title: Transforming Metadata
 parent: Helpful Resources
-nav_order: 2
+nav_order: 3
 ---
 
-# How to Transform Metadata
+# Transforming Metadata
 {: .no_toc }
 
 ---

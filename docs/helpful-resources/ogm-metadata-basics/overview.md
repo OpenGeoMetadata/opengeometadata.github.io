@@ -1,14 +1,15 @@
 ---
 layout: default
-title: The Basics
-parent: About Our Schema
-nav_order: 2
+title: Overview
+parent: OGM Metadata Basics
+grand_parent: Helpful Resources
+nav_order: 1
 ---
 
-# The Basics
+# Overview
 {: .no_toc }
 
-How OGM metadata is structured
+The basics of the OGM metadata structure
 {: .fs-6 .fw-300 }
 
 ---
@@ -20,7 +21,7 @@ How OGM metadata is structured
 
 ---
 
-## Overview
+## Purpose
 
 The OGM metadata schema is designed for GIS resource discovery and focuses mainly on discovery use cases. Text search, faceted search and refinement, and spatial search and relevancy are among the primary features that the schema enables. It:
 

@@ -1,11 +1,11 @@
 ---
 layout: default
-title: How to Write Metadata
+title: Writing Metadata
 parent: Helpful Resources
-nav_order: 1
+nav_order: 2
 ---
 
-# How to Write Metadata
+# Writing Metadata
 {: .no_toc }
 
 subtitle

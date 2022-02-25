@@ -1,11 +1,11 @@
 ---
 layout: default
-title: How to Publish Metadata in Solr
+title: Publishing in Solr
 parent: Helpful Resources
-nav_order: 3
+nav_order: 4
 ---
 
-# How to Publish Metadata in Solr
+# Publishing Metadata in Solr
 {: .no_toc }
 
 subtitle
