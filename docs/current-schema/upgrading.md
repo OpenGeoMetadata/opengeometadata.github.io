@@ -19,8 +19,7 @@ parent: Current Schema
 
 ---
 
-## Full Crosswalk Table
-
+## Full crosswalk table
 
 Most of the elements from GBL 1.0 can be crosswalked directly into OGM Aardvark. The values for these elements are the same - only the URI name has changed or the field has been converted to an array.  
 
@@ -77,11 +76,11 @@ There are three elements in GBL 1.0 that do not directly translate into OGM Aard
 
 **Type (dc_type_s)**
 * GBL 1.0 Description: This single-valued GBL 1.0 field observes the Dublin Core controlled vocabulary for Type, including Dataset, Image, Collection, Interactive Resource, or Physical Object.
-* Similar Aardvark element: This has been replaced in Aardvark with the multi-valued [Resource Class](../aardvarkSchema/resource-class/), which uses a custom controlled vocabulary of Collections, Datasets, Imagery, Maps, Web services, and/or Other.
+* Similar Aardvark element: This has been replaced in Aardvark with the multi-valued [Resource Class](../ogm-aardvark/resource-class/), which uses a custom controlled vocabulary of Collections, Datasets, Imagery, Maps, Web services, and/or Other.
 
 **Geometry Type (layer_geom_type_s)**
 * GBL 1.0 Description: This single-valued GBL 1.0 field differentiates between vector (Point, Line, Polygon), raster (Raster, Image), non-spatial formats (Table), or a combination (Mixed).
-* Similar Aardvark element: This has been replaced in Aardvark with the multi-valued [Resource Type](../aardvarkSchema/resource-type/), which uses a controlled vocabulary drawn from Library of Congress cartographic genres and GIS geometries.
+* Similar Aardvark element: This has been replaced in Aardvark with the multi-valued [Resource Type](../ogm-aardvark/resource-type/), which uses a controlled vocabulary drawn from Library of Congress cartographic genres and GIS geometries.
 
 **Is Part Of (dct_isPartOf_sm)**
 * GBL 1.0 Description: This multi-valued GBL 1.0 plain text field is for writing out the name of a collection. Example: `dct_isPartOf_sm:"Village Maps of India"`
@@ -90,12 +89,18 @@ There are three elements in GBL 1.0 that do not directly translate into OGM Aard
 ## Tools and techniques for upgrading
 
 ### XSLTs for ISO and FGDC
+{: .no_toc }
+
 New XSLTs to transform from ISO 19139 or FGDC to OGM Aardvark will be available here: [https://github.com/OpenGeoMetadata/GeoCombine/tree/main/lib/xslt](https://github.com/OpenGeoMetadata/GeoCombine/tree/main/lib/xslt)
 
 ### Programmatic conversion of JSON files
+{: .no_toc }
+
 This basic [Python script](https://github.com/BTAA-Geospatial-Data-Project/GBL-Schema-Update) can batch convert GBL 1.0 json files to OGM Aardvark. However, note the three elements listed above that do not have direct crosswalks.
 
 ### Spreadsheet manipulation
+{: .no_toc }
+
 This technique combines automatic conversions and manual edits:
 1. Convert your GBL 1.0 metadata files to a CSV.
 2. Manually augment and adjust values using spreadsheet functions.

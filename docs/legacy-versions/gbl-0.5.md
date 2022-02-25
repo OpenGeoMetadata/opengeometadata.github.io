@@ -13,7 +13,10 @@ GeoBlacklight metadata schema version 0.5
 This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardvark](../../current-schema/ogm-aardvark) for GeoBlacklight versions 4.0 and higher.
 
 ---
-The earliest metadata schema for GeoBlacklight included these now deprecated fields:
+
+## Deprecated fields
+
+The earliest metadata schema for GeoBlacklight included these now-deprecated fields:
 
 * `uuid`
 * `dc_relation_sm`
