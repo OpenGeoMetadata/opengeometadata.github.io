@@ -16,11 +16,11 @@ Step 2 of the metadata workflow is to convert or transfer information from some 
 
 From the previous section on authoring metadata, a finished metadata file could look like the following example in ISO 19139 format:
 
-![ISO Metadata ](https://github.com/OpenGeoMetadata/opengeometadata.github.io/blob/main/assets/images/ISO_snippet.png)
+![ISO Metadata ](/../assets/images/ISO_snippet.png)
 
 The process of transforming metadata from the above formats to the GeoBlacklight schema involves mapping or “crosswalking” fields from one format to another.
 
-![ISO to GBL Crosswalk](https://github.com/OpenGeoMetadata/opengeometadata.github.io/blob/main/assets/images/ISO-GBL.jpg)
+![ISO to GBL Crosswalk](/../assets/images/ISO-GBL.jpg)
 
 
 Most institutions have their own unique set of tools and workflows to perform this transformation.  These workflows may differ depending on the type of item to be referenced.  In most cases, automation of this process is desired although technically, the JSON files could be created manually.
