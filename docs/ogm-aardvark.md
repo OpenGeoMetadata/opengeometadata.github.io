@@ -2,10 +2,9 @@
 layout: default
 title: OGM Aardvark
 parent: Current Schema
-nav_order: 2
+nav_order: 1
 has_children: true
 has_toc: false
-permalink: /docs/current-schema/ogm-aardvark
 ---
 
 # OGM Aardvark

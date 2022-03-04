@@ -3,7 +3,7 @@ layout: default
 title: Home
 nav_order: 1
 description: "Documentation about OpenGeoMetadata"
-permalink: /
+permalink: /home
 ---
 
 # Welcome to OpenGeoMetadata

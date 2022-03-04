@@ -23,7 +23,7 @@ description: Documentation about OpenGeoMetadata
 # See https://help.github.com/articles/repository-metadata-on-github-pages/.
 repository: OpenGeoMetadata/opengeometadata.github.io
 
-permalink: pretty
+permalink: /:basename
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"
 , "docs/tests/"
 ]

@@ -2,7 +2,7 @@
 layout: default
 title: Workflow Examples
 parent: Helpful Resources
-nav_order: 5
+nav_order: 2
 ---
 
 # Workflow Examples
@@ -28,4 +28,4 @@ Take, for example, the [metadata for this layer](https://github.com/OpenGeoMetad
 
 ## Metadata tools and resources
 
-For scripts and other tools to automate or validate metadata workflows, see [Scripts and Tools](../scripts-and-tools).
+For scripts and other tools to automate or validate metadata workflows, see [Scripts and Tools](scripts-and-tools).

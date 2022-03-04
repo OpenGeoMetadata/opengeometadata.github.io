@@ -5,7 +5,6 @@ parent: Helpful Resources
 nav_order: 1
 has_children: true
 has_toc: false
-permalink: /docs/helpful-resources/ogm-metadata-basics
 ---
 
 # OGM Metadata Basics
