@@ -3,7 +3,7 @@ layout: default
 title: Fields
 parent: OGM Metadata Basics
 grand_parent: Helpful Resources
-nav_order: 2
+nav_order: 1
 ---
 
 # Fields
@@ -18,7 +18,7 @@ nav_order: 2
 
 ---
 
-See the [current schema](../../../current-schema/ogm-aardvark) for a full description of fields, expected values, and obligations.
+See the [current schema](ogm-aardvark) for a full description of fields, expected values, and obligations.
 
 ## How fields are named
 

@@ -2,7 +2,7 @@
 layout: default
 title: Scripts and Tools
 parent: Helpful Resources
-nav_order: 6
+nav_order: 3
 ---
 
 # Scripts and Tools

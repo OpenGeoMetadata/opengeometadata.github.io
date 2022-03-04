@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Upgrading
-nav_order: 3
-has_toc: true
+nav_order: 2
+has_toc: false
 parent: Current Schema
 
 ---
@@ -76,11 +76,11 @@ There are three elements in GBL 1.0 that do not directly translate into OGM Aard
 
 **Type (dc_type_s)**
 * GBL 1.0 Description: This single-valued GBL 1.0 field observes the Dublin Core controlled vocabulary for Type, including Dataset, Image, Collection, Interactive Resource, or Physical Object.
-* Similar Aardvark element: This has been replaced in Aardvark with the multi-valued [Resource Class](../ogm-aardvark/resource-class/), which uses a custom controlled vocabulary of Collections, Datasets, Imagery, Maps, Web services, and/or Other.
+* Similar Aardvark element: This has been replaced in Aardvark with the multi-valued [Resource Class](ogm-aardvark/resource-class), which uses a custom controlled vocabulary of Collections, Datasets, Imagery, Maps, Web services, and/or Other.
 
 **Geometry Type (layer_geom_type_s)**
 * GBL 1.0 Description: This single-valued GBL 1.0 field differentiates between vector (Point, Line, Polygon), raster (Raster, Image), non-spatial formats (Table), or a combination (Mixed).
-* Similar Aardvark element: This has been replaced in Aardvark with the multi-valued [Resource Type](../ogm-aardvark/resource-type/), which uses a controlled vocabulary drawn from Library of Congress cartographic genres and GIS geometries.
+* Similar Aardvark element: This has been replaced in Aardvark with the multi-valued [Resource Type](ogm-aardvark/resource-type), which uses a controlled vocabulary drawn from Library of Congress cartographic genres and GIS geometries.
 
 **Is Part Of (dct_isPartOf_sm)**
 * GBL 1.0 Description: This multi-valued GBL 1.0 plain text field is for writing out the name of a collection. Example: `dct_isPartOf_sm:"Village Maps of India"`

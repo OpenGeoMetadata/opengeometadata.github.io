@@ -3,7 +3,7 @@ layout: default
 title: References
 parent: OGM Metadata Basics
 grand_parent: Helpful Resources
-nav_order: 3
+nav_order: 2
 ---
 
 # References
