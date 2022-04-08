@@ -6,7 +6,7 @@ nav_exclude: true
 
 ---
 
-# About Aardvark
+# About OGM Aardvark
 {: .no_toc }
 
 Details about the OpenGeoMetadata metadata schema, OGM Aardvark
