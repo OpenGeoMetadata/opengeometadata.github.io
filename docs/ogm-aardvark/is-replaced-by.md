@@ -1,10 +1,7 @@
 ---
 layout: default
 title: Is Replaced By
-
 parent: OGM Aardvark
-grand_parent: Current Schema
-
 nav_order: 27
 ---
 

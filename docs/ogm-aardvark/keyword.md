@@ -2,7 +2,6 @@
 layout: default
 title: Keyword
 parent: OGM Aardvark
-grand_parent: Current Schema
 nav_order: 12
 ---
 

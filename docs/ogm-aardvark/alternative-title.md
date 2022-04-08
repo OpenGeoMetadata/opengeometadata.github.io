@@ -2,7 +2,6 @@
 layout: default
 title: Alternative Title
 parent: OGM Aardvark
-grand_parent: Current Schema
 nav_order: 2
 ---
 
