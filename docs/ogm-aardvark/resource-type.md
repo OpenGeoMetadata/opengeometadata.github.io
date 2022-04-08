@@ -30,10 +30,12 @@ nav_order: 9
 | Aerial photographs                                         | LOC    |
 | Aerial views                                               | LOC    |
 | Aeronautical charts                                        | LOC    |
+| Annotations                                                | GBL    |
 | Armillary spheres                                          | LOC    |
 | Astronautical charts                                       | LOC    |
 | Astronomical models                                        | LOC    |
 | Atlases                                                    | LOC    |
+| Basemaps                                                   | GBL    |
 | Bathymetric maps                                           | LOC    |
 | Block diagrams                                             | LOC    |
 | Bottle-charts                                              | LOC    |
@@ -94,6 +96,7 @@ nav_order: 9
 | Satellite imagery                                          | GBL    |
 | Statistical maps                                           | LOC    |
 | Stick charts                                               | LOC    |
+| Streetview photographs                                     | GBL    |
 | Strip maps                                                 | LOC    |
 | Table data                                                 | GBL    |
 | Thematic maps                                              | LOC    |
