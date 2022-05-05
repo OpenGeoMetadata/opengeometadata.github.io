@@ -1,10 +1,7 @@
 ---
 layout: default
 title: WxS Identifier
-
 parent: OGM Aardvark
-grand_parent: Current Schema
-
 nav_order: 34
 ---
 

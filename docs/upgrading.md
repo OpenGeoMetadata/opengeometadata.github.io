@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Upgrading
-nav_order: 2
+nav_order: 4
 has_toc: false
-parent: Current Schema
+parent: Helpful Resources
 
 ---
 

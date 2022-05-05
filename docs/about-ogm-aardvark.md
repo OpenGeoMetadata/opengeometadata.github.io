@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Current Schema
-nav_order: 3
-has_children: true
+title: About OGM Aardvark
+has_children: false
+nav_exclude: true
+
 ---
 
-# Current Schema
+# About OGM Aardvark
 {: .no_toc }
 
 Details about the OpenGeoMetadata metadata schema, OGM Aardvark
