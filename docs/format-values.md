@@ -1,5 +1,14 @@
 ## GeoBlacklight Format Controlled Vocabulary
 
+---
+layout: default
+title: Format Values
+has_toc: false
+---
+# Format Values
+{: .no_toc }
+----------
+
 #### Type: Dataset
 | Format | Associated Geometry Type(s) |
 |:----------------------------|:-------------|

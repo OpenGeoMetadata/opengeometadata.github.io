@@ -94,7 +94,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 | Type							| string|
 | Description					| The name of the institution that holds the resource or acts as the custodian for the metadata record|
 | Entry Guidelines				| The value for this field should be one of the agreed upon shortened names for each institution. This will embed the correct icon into the search results and item pages.|
-| Controlled Vocabulary			| This repository contains the insitutions that have shared icons: https://github.com/geoblacklight/geoblacklight-icons|
+| Controlled Vocabulary			| This repository contains the insitutions that have shared icons: [https://github.com/geoblacklight/geoblacklight-icons](https://github.com/geoblacklight/geoblacklight-icons)|
 | Element Set					| DCMI Metadata Terms|
 | Example						| "Stanford"|
 | Commentary |This field indicates the institution that contributed the resource. The current community of practice is for this field to hold the name of the university or institution that has created the GeoBlacklight metadata record and/or hosts the dataset. Projects are encouraged to submit their institutional icon to the GeoBlacklight Icons repository to display with the resource.|
