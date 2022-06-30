@@ -1,15 +1,16 @@
-## GeoBlacklight Format Controlled Vocabulary
-
 ---
 layout: default
 title: Format Values
-has_toc: false
+has_children: false
+nav_exclude: true
+
 ---
 # Format Values
 {: .no_toc }
 ----------
 
 #### Type: Dataset
+
 | Format | Associated Geometry Type(s) |
 |:----------------------------|:-------------|
 |ArcGRID		|Raster				|
@@ -48,11 +49,13 @@ has_toc: false
 
 
 #### Type: Interactive Resource
+
 | Format |
 |:----------------------------|
 |Web Application|
 
 #### Type: Physical Object
+
 | Format |
 |:----------------------------|
 |Cartographic Material|
