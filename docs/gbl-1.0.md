@@ -185,10 +185,10 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 | Type							| string|
 | Description					| This indicates the file format of the data. If a download link is included, this value displays on the item page in the button under the download widget|
 | Entry Guidelines				| Choose from set values (see Format list)|
-| Controlled Vocabulary			| [Format Controlled Vocabulary](Format-values)|
+| Controlled Vocabulary			| [Format Controlled Vocabulary](format-values)|
 | Element Set					| Dublin Core Metadata Element Set|
 | Example						| "Shapefile"|
-| Commentary | A long list of formats is available [here.](Format-values) The most important thing to remember about the `dc_format_s` field is that it is required for Download functionality if using a single value string for downloads. (pre-GeoBlacklight version 3.0). [See the Multiple Downloads guide for more details](https://github.com/geoblacklight/geoblacklight/wiki/Multiple-Download-Links)|
+| Commentary | The most important thing to remember about the `dc_format_s` field is that it is required for Download functionality if using a single value string for downloads. (pre-GeoBlacklight version 3.0). [See the Multiple Downloads guide for more details](more-about-references#how-to-configure-multiple-download-links)|
 
 ### Language
 
@@ -227,7 +227,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 | Controlled Vocabulary			| no|
 | Element Set					| Dublin Core Metadata Element Set|
 | Example						| "stanford-vr593vj7147"|
-| Commentary |The `dc_source_sm` field exists to indicate parent-child relationships between records. Common uses include: individual sheets within a map series that can point to a Shapefile that serves as an index map, individual Shapefile layers that have been derived from a Geodatabase that can point to the record for the GeoDatabase, or collection-level and related individual layer records. [See Using the Data Relations Widget](Using-data-relations-widget) for more information.|
+| Commentary |The `dc_source_sm` field exists to indicate parent-child relationships between records. Common uses include: individual sheets within a map series that can point to a Shapefile that serves as an index map, individual Shapefile layers that have been derived from a Geodatabase that can point to the record for the GeoDatabase, or collection-level and related individual layer records. [See Using the Data Relations Widget](https://geoblacklight.org/guides.html#using-the-data-relations-widget) for more information.|
 
 ### Subject
 
@@ -236,7 +236,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 | Required						| no|
 | Type							| array|
 | Description					| These are theme or topic keywords|
-| Entry Guidelines				| These should be consistent and chosen from a controlled vocabulary. Use sentence style capitalization, where only the first word of a phrase is capitalized. [This list](Subjects) shows commonly used terms in GeoBlacklight records.|
+| Entry Guidelines				| These should be consistent and chosen from a controlled vocabulary. Use sentence style capitalization, where only the first word of a phrase is capitalized.
 | Controlled Vocabulary			| Recommended thesauri are [ISO Topic Categories](https://www2.usgs.gov/science/about/thesaurus-full.php?thcode=15) and Library of Congress Subject Headings.|
 | Element Set					| Dublin Core Metadata Element Set|
 | Example						| "Census", "Human settlements"|
@@ -250,10 +250,10 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 | Type							| string|
 | Description					| This is a general element to indicate the larger genre of the resource|
 | Entry Guidelines				| Choose from Dublin Core Type values|
-| Controlled Vocabulary			| [Type Controlled Vocabulary](Type-values)|
+| Controlled Vocabulary			| [Type Controlled Vocabulary](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7)|
 | Element Set					| Dublin Core Metadata Element Set|
 | Example						| "Dataset"|
-| Commentary | The `dc_type_s` field is optional, but it can be useful for categorizing between datasets, scanned maps, and collections. The GeoBlacklight schema observes the Dublin Core controlled vocabulary for [Type](Type-values)|
+| Commentary | The `dc_type_s` field is optional, but it can be useful for categorizing between datasets, scanned maps, and collections. The GeoBlacklight 1.0 schema observes the Dublin Core controlled vocabulary for [Type](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7)|
 
 ### Is Part Of
 
@@ -288,11 +288,11 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 | Required						| no|
 | Type							| string|
 | Description					| This element is a hash of key/value pairs for different types of external links. It integrates external services and references using the CatInterOp approach|
-| Entry Guidelines				| See [External References](External-references)|
-| Controlled Vocabulary			| [References URIs](External-references)|
+| Entry Guidelines				| See [External References](https://opengeometadata.org/docs/more-about-references|
+| Controlled Vocabulary			| [References URIs](more-about-references#reference-uris)|
 | Element Set					| DCMI Metadata Terms|
 | Example						|`"dct_references_s": "{\"http://schema.org/url\":\"http://purl.stanford.edu/bm662dm5913\",\"http://schema.org/downloadUrl\":\"http://stacks.stanford.edu/file/druid:bm662dm5913/data.zip\"}"`|
-| Commentary | All of the external links for the resource are added to the `dct_references_s` field as a serialized JSON array of key/value pairs. The download key/value pair is unique, because the value can be an array. [See this Multiple Downloads guide for more information.](https://github.com/geoblacklight/geoblacklight/wiki/Multiple-Download-Links)|
+| Commentary | All of the external links for the resource are added to the `dct_references_s` field as a serialized JSON array of key/value pairs. The download key/value pair is unique, because the value can be an array. [See this Multiple Downloads guide for more information.](more-about-references#how-to-configure-multiple-download-links)|
 
 ### Spatial Coverage
 
@@ -328,7 +328,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 | Type							| string|
 | Description					| This element shows up as Data type in GeoBlacklight, and each value has an associated icon|
 | Entry Guidelines				| Choose from set values (see Controlled Vocabulary Lists)|
-| Controlled Vocabulary			| [Geometry Type Controlled Vocabulary](Geometry-type-values)|
+| Controlled Vocabulary			| [Geometry Type Controlled Vocabulary](1.0-geometry-type)|
 | Element Set					| GeoBlacklight|
 | Example						| "Polygon"|
 | Commentary |This field helps to differentiate between vector (Point, Line, Polygon), raster (Raster, Image), nonspatial formats (table), or a combination (Mixed). If processing metadata from a geospatial web server, this value may be programmatically determined. However, in many cases, it must be manually determined. The field is tied to icons for the resource, and provides the user with visual clues to the item. However, if the element is troublesome or unnecessary for a particular institution, it can be omitted.|
