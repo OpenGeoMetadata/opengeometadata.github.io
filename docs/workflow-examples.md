@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Workflow Examples
-parent: Helpful Resources
-nav_order: 2
+parent: Metadata
+nav_order: 5
 ---
 
 # Workflow Examples

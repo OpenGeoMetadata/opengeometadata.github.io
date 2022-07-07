@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Publishing in Solr
-parent: OGM Metadata Basics
-grand_parent: Helpful Resources
+parent: Metadata
 nav_order: 4
 ---
 

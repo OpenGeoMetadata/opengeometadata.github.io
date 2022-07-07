@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Writing Metadata
-parent: OGM Metadata Basics
-grand_parent: Helpful Resources
+parent: Metadata
 nav_order: 3
 ---
 

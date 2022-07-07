@@ -1,8 +1,7 @@
 ---
 layout: default
-title: References
-parent: OGM Metadata Basics
-grand_parent: Helpful Resources
+title: External References
+parent:  Metadata
 nav_order: 2
 ---
 

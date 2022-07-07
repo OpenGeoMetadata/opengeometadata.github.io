@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Get Started
+title: Repositories
 nav_order: 2
 ---
 
-# Get Started with OpenGeoMetadata
+# Get Started with OpenGeoMetadata Repositories
 {: .no_toc }
 
 Make it easy for others to find and use your geospatial metadata
