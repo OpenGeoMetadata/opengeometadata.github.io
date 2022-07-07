@@ -1,7 +1,6 @@
 ---
 layout: default
 title: About OGM Aardvark
-has_children: false
 nav_exclude: true
 parent:  Metadata Resources
 
