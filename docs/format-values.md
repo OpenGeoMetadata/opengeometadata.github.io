@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Format Values
-has_children: false
 nav_exclude: true
 
 ---
