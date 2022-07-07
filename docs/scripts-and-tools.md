@@ -40,7 +40,7 @@ These scripts can be downloaded and used locally for creating, transforming, and
 
 | Overview     | A JSON file for validating the structural form of the GBL metadata. |
 
-### Convert MARC files to GeoBlacklight Metadata files (link TBD)
+### [Convert MARC files to GeoBlacklight Metadata files](https://github.com/mjanowiecki/geoportal/tree/main/aardvark)
 {: .no_toc }
 
 | Overview     | A preliminary workflow to convert MARC metadata for historic and print maps into JSON metadata according to the GeoBlacklight 1.0 Metadata Schema. |
