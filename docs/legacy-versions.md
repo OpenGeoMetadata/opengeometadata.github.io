@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Legacy Versions
-nav_order: 4
-has_children: true
-has_toc: false
+has_children: false
+has_toc: true
+parent: Metadata
+nav_order: 8
 ---
 
 # Legacy Versions

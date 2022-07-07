@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Scripts and Tools
-parent: Helpful Resources
-nav_order: 3
+parent: Metadata
+nav_order: 6
 ---
 
 # Scripts and Tools
