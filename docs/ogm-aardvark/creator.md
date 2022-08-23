@@ -9,7 +9,7 @@ nav_order: 5
 
 | Label                 | Creator                 |
 |:----------------------|:------------------------|
-| Order           | 05                      |
+| Order                 | 05                      |
 | URI                   | `dct_creator_sm`        |
 | Obligation            | Recommended             |
 | Multiplicity          | 0-\*                    |
@@ -18,6 +18,6 @@ nav_order: 5
 | Entry Guidelines      | The suggested controlled vocabulary is the [Library of Congress Name Authority File](https://id.loc.gov/authorities/names.html). |
 | Commentary            | This field is best reserved for instances in which an individual person has collected, produced, or generated analyses of data (as opposed to an agency releasing a data product or resource). It can be a person or an organization. |
 | Controlled Vocabulary | no                      |
-| Example value         | "Geological Survey (U.S.)" |
+| Example value         | `["Geological Survey (U.S.)"]` |
 | Element Set           | DCMI                    |
 | Group                 | Bibliographic - entity  |

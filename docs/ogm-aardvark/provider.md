@@ -9,7 +9,7 @@ nav_order: 7
 
 | Label                 | Provider                |
 |:----------------------|:------------------------|
-| Order           | 07                      |
+| Order                 | 07                      |
 | URI                   | `schema_provider_s`     |
 | Obligation            | Recommended             |
 | Multiplicity          | 1-1                     |
@@ -18,6 +18,6 @@ nav_order: 7
 | Entry Guidelines      | The value for this field is ideally be one of the names for each institution that have been coded in the GeoBlacklight application. This will embed the correct icon into the search results and item pages. |
 | Commentary            | This field previously was known as "Provenance". If the value matches one of the [SVG images](https://github.com/geoblacklight/geoblacklight/tree/main/app/assets/images/blacklight) in the application, it will display as an icon next to the title. GeoBlacklight organizations are encouraged to submit institutional icons to the project. |
 | Controlled Vocabulary | yes - not strict        |
-| Example value         | "University of Minnesota" |
+| Example value         | `"University of Minnesota"` |
 | Element Set           | schema.org              |
 | Group                 | Administrative - entity |

@@ -9,7 +9,7 @@ nav_order: 9
 
 | Label                 | Resource Type           |
 |:----------------------|:------------------------|
-| Order           | 09                      |
+| Order                 | 09                      |
 | URI                   | `gbl_resourceType_sm`   |
 | Obligation            | Recommended             |
 | Multiplicity          | 0-\*                    |
@@ -18,7 +18,7 @@ nav_order: 9
 | Entry Guidelines      | Choose one or more terms from the list (see below).  Other terms are allowed. |
 | Commentary            | This field combines an established list of terms for scanned maps (Cartographic Genres) and a custom list for geospatial data types. Additional terms are welcome - please submit them to the community for review and inclusion into the official vocabulary. |
 | Controlled Vocabulary | yes - not strict        |
-| Example value         | "Point data"            |
+| Example value         | `["Point data"]`        |
 | Element Set           | GBL                     |
 | Group                 | Categories              |
 

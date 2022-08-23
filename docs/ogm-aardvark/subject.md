@@ -9,7 +9,7 @@ nav_order: 10
 
 | Label                 | Subject                 |
 |:----------------------|:------------------------|
-| Order           | 10                      |
+| Order                 | 10                      |
 | URI                   | `dct_subject_sm`        |
 | Obligation            | Optional                |
 | Multiplicity          | 0-\*                    |
@@ -18,6 +18,6 @@ nav_order: 10
 | Entry Guidelines      | Any value is allowed, but controlled vocabularies are encouraged. |
 | Commentary            |                         |
 | Controlled Vocabulary | no                      |
-| Example value         |                         |
+| Example value         | `["Elections", "Voting"]` |
 | Element Set           | DCMI                    |
 | Group                 | Categories              |

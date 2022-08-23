@@ -9,7 +9,7 @@ nav_order: 4
 
 | Label                 | Language                |
 |:----------------------|:------------------------|
-| Order           | 04                      |
+| Order                 | 04                      |
 | URI                   | `dct_language_sm`       |
 | Obligation            | Optional                |
 | Multiplicity          | 0-\*                    |
@@ -18,6 +18,6 @@ nav_order: 4
 | Entry Guidelines      | Enter a 3-letter code using the ISO 639-3 standard. |
 | Commentary            | This field is intended to indicate the language of the dataset, map, and/or supporting documentation. |
 | Controlled Vocabulary | yes - not strict (see the [Library of Congress standards](https://www.loc.gov/standards/iso639-2/php/code_list.php)) |
-| Example value         | "eng"                   |
+| Example value         | `["eng"]`               |
 | Element Set           | DCMI                    |
 | Group                 | Bibliographic - general |
