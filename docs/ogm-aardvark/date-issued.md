@@ -12,7 +12,7 @@ nav_order: 14
 | Order                 | 14 |
 | URI                   | `dct_issued_s` |
 | Obligation            | Optional |
-| Multiplicity          | 0-1 |
+| Multivalued           | false |
 | Field type            | string |
 | Purpose               | To provide the user with the date when an item was published, and for administrators to determine the age of the resource |
 | Entry Guidelines      | A single year is the preferred format. For more precise dates, use the ISO format without the time value: YYYY-MM-DD or YYYY-MM. |

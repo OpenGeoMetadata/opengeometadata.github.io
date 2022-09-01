@@ -12,7 +12,7 @@ nav_order: 32
 | Order                 | 32 |
 | URI                   | `dct_format_s` |
 | Obligation            | Conditional |
-| Multiplicity          | 0-1 or 1-1 |
+| Multivalued           | false |
 | Field type            | string |
 | Purpose               | To display to the user the name of the file type as a text string in the download button |
 | Entry Guidelines      | Required if the download URL is configured as a single key:value pair. |

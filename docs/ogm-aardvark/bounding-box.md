@@ -12,7 +12,7 @@ nav_order: 19
 | Order                 | 19 |
 | URI                   | `dcat_bbox` |
 | Obligation            | Recommended |
-| Multiplicity          | 0-1 |
+| Multivalued           | false |
 | Field type            | string |
 | Purpose               | To support overlap ratio boosting in spatial searches |
 | Entry Guidelines      | This should be a bounding box in this format: ENVELOPE(w,e,n,s). |

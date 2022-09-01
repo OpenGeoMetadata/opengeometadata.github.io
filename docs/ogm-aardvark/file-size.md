@@ -12,7 +12,7 @@ nav_order: 33
 | Order                 | 33 |
 | URI                   | `gbl_fileSize_s` |
 | Obligation            | Optional |
-| Multiplicity          | 0-1 |
+| Multivalued           | false |
 | Field type            | string |
 | Purpose               | To inform the user of the size of the file download |
 | Entry Guidelines      | Enter the size in megabytes. |

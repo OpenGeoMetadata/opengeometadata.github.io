@@ -12,8 +12,8 @@ nav_order: 10
 | Order                 | 10                      |
 | URI                   | `dct_subject_sm`        |
 | Obligation            | Optional                |
-| Multiplicity          | 0-\*                    |
-| Field type            | string                  |
+| Multivalued           | true                    |
+| Field type            | array of strings        |
 | Purpose               | To provide an all-purpose field for subjects |
 | Entry Guidelines      | Any value is allowed, but controlled vocabularies are encouraged. |
 | Commentary            |                         |

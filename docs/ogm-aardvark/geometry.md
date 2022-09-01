@@ -12,7 +12,7 @@ nav_order: 18
 | Order                 | 18 |
 | URI                   | `locn_geometry` |
 | Obligation            | Recommended |
-| Multiplicity          | 0-1 |
+| Multivalued           | false |
 | Field type            | string |
 | Purpose               | To display the extent of the resource and to power the map search |
 | Entry Guidelines      | This may be a bounding box or more complex geometry. For a bounding box, it should use the ENVELOPE(w,e,n,s) syntax. For a more complex geometry, it should use the WKT ("well-known text") POLYGON or MULTIPOLYGON syntax. Note that WKT polygon vertices should be defined in counter-clockwise order. |

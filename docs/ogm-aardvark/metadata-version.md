@@ -12,7 +12,7 @@ nav_order: 39
 | Order                 | 39 |
 | URI                   | `gbl_mdVersion_s` |
 | Obligation            | Required |
-| Multiplicity          | 1-1 |
+| Multivalued           | false |
 | Field type            | string |
 | Purpose               | To clarify which GeoBlacklight metadata schema is being used                      |
 | Entry Guidelines      | Enter the string: Aardvark. |

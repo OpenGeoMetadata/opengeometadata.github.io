@@ -12,8 +12,8 @@ nav_order: 21
 | Order                 | 21 |
 | URI                   | `dct_relation_sm` |
 | Obligation            | Optional |
-| Multiplicity          | 0-* |
-| Field type            | string |
+| Multivalued           | true |
+| Field type            | array of strings |
 | Purpose               | To link items with a general, unspecified relationship to each other |
 | Entry Guidelines      | Enter only the ID of the related item(s).                            |
 | Commentary            | |

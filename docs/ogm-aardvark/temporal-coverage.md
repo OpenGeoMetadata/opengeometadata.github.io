@@ -12,8 +12,8 @@ nav_order: 13
 | Order                 | 13 |
 | URI                   | `dct_temporal_sm` |
 | Obligation            | Recommended |
-| Multiplicity          | 0-* |
-| Field type            | string |
+| Multivalued           | true |
+| Field type            | array of strings |
 | Purpose               | To provide the user with a free text description of the time period or ranges of what is depicted in the resource |
 | Entry Guidelines      | This is a text string and can indicate uncertainty. |
 | Commentary            | Since this field is multi-valued, multiple strings can be used to indicate the time period the resource depicts, when the data was collected, and/or when the resources was created. |

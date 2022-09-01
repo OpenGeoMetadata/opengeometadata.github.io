@@ -12,7 +12,7 @@ nav_order: 1
 | Order                 | 01                      |
 | URI                   | `dct_title_s`           |
 | Obligation            | Required                |
-| Multiplicity          | 1-1                     |
+| Multivalued           | false                   |
 | Field type            | string                  |
 | Purpose               | To provide the user with the name of the resource |
 | Entry Guidelines      | Titles should include place names and dates when available. |

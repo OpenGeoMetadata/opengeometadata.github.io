@@ -12,8 +12,8 @@ nav_order: 37
 | Order                 | 37 |
 | URI                   | `dct_identifier_sm` |
 | Obligation            | Recommended |
-| Multiplicity          | 0-* |
-| Field type            | string |
+| Multivalued           | true |
+| Field type            | array of strings |
 | Purpose               | To provide a general purpose field for identifiers |
 | Entry Guidelines      | This may include a DOI, catalog number, and/or other system number. |
 | Commentary            | This field is not displayed in the interface. At least one value would be ideally a persistent identifier or permalink (such as a [PURL](https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator) or [Handle](https://en.wikipedia.org/wiki/Handle_System). Additional values can be for other identifiers used by the resource, such as the call number, OCLC number, or other system identifier. |

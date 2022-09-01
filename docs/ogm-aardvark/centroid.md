@@ -12,7 +12,7 @@ nav_order: 20
 | Order                 | 20 |
 | URI                   | `dcat_centroid` |
 | Obligation            | Optional |
-| Multiplicity          | 0-1 |
+| Multivalued           | false |
 | Field type            | string |
 | Purpose               | To display the center point of a resource           |
 | Entry Guidelines      | Enter two decimal degree coordinates separated by a comma in this order: longitude,latitude. |

@@ -12,8 +12,8 @@ nav_order: 24
 | Order                 | 24 |
 | URI                   | `dct_source_sm` |
 | Obligation            | Optional |
-| Multiplicity          | 0-* |
-| Field type            | string |
+| Multivalued           | true |
+| Field type            | array of strings |
 | Purpose               | To link items that have been derived from another item (e.g. a digitized shapefile from a historical map) |
 | Entry Guidelines      | Enter the ID of the item(s) from which the resource was derived. |
 | Commentary            | |

@@ -12,8 +12,8 @@ nav_order: 28
 | Order                 | 28                      |
 | URI                   | `dct_rights_sm`         |
 | Obligation            | Recommended             |
-| Multiplicity          | 0-*                     |
-| Field type            | string                  |
+| Multivalued           | true                    |
+| Field type            | array of strings        |
 | Purpose               | To provide a free text field for rights information, such as usage, access, or copyright |
 | Entry Guidelines      | Enter free text of generic, catch-all access and usage rights. It can include clickable links; all access and usage rights. |
 | Commentary            | This field is intended to be flexible to accommodate different types of rights and disclaimers. Users are encouraged to adopt one of the [rightsstatements.org](https://rightsstatements.org/en/) statements. |

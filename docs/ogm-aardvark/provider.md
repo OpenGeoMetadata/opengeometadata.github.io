@@ -12,7 +12,7 @@ nav_order: 7
 | Order                 | 07                      |
 | URI                   | `schema_provider_s`     |
 | Obligation            | Recommended             |
-| Multiplicity          | 1-1                     |
+| Multivalued           | false                   |
 | Field type            | string                  |
 | Purpose               | To clarify which organization is holds the resource or acts as the custodian for the metadata record and to help users understand which resources they can access |
 | Entry Guidelines      | The value for this field is ideally be one of the names for each institution that have been coded in the GeoBlacklight application. This will embed the correct icon into the search results and item pages. |

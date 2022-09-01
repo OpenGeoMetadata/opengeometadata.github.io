@@ -12,7 +12,7 @@ nav_order: 36
 | Order                 | 36 |
 | URI                   | `id` |
 | Obligation            | Required |
-| Multiplicity          | 1-1 |
+| Multivalued           | false |
 | Field type            | string |
 | Purpose               | To provide a unique alpha-numeric ID for the item that will act as the primary key in Solr and to create a unique landing page for the item |
 | Entry Guidelines      | This string must be a globally unique value. The value should be alpha-numeric characters separated by dashes. |

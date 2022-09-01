@@ -12,8 +12,8 @@ nav_order: 30
 | Order                 | 30 |
 | URI                   | `dct_license_sm` |
 | Obligation            | Optional |
-| Multiplicity          | 0-* |
-| Field type            | string |
+| Multivalued           | true |
+| Field type            | array of strings |
 | Purpose               | To provide URI links to specific, known licenses |
 | Entry Guidelines      | Enter only a URI. Recommended sources are [Creative Commons](https://creativecommons.org) or [Open Data Commons](https://opendatacommons.org/). |
 | Commentary            | This field is only for URIs of known licenses. Do not enter a rightsstatement.org statement here, because those belong in the [Rights](https://opengeometadata.github.io/docs/aardvarkSchema/rights) field. |

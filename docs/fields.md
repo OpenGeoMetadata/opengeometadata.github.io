@@ -29,12 +29,12 @@ Solr uses the suffix of a metadata element to determine what kind of field it is
 
 | Field Suffix | Type                     | Description                     | Example   |
 |:-------------|:-------------------------|:--------------------------------|:----------|
-| `_b`         | Boolean                  | Values can be "TRUE" or "FALSE" | `gbl_georeferenced_b`|
-| `_im`        | Integer, multi-valued    | Digits                          | `gbl_indexYear_im`|
-| `_drsim`     | Date range, multi-valued | Date range in a specified format: “[1980 TO 1995]” | `gbl_dateRange_drsim` |
-| `_dt`        | Date                     | Date and time in a specified format: YYYY-MM-DDThh:mm:ssZ | `gbl_mdModified_dt`|
+| `_b`         | Boolean                  | Values can be `true` or `false` | `gbl_georeferenced_b`|
+| `_im`        | Integer, multivalued     | Digits                          | `gbl_indexYear_im`|
+| `_drsim`     | Date range, multivalued  | Date range in a specified string format: "[1980 TO 1995]" | `gbl_dateRange_drsim` |
+| `_dt`        | Date                     | Date and time in a specified string format: "YYYY-MM-DDThh:mm:ssZ" | `gbl_mdModified_dt`|
 | `_s`         | String                   | Single string of text           | `dct_title_s` |
-| `_sm`        | String, multi-valued     | Multiple strings of text        | `dct_subject_sm` |
+| `_sm`        | String, multivalued      | Multiple strings of text        | `dct_subject_sm` |
 
 Altering suffixes can result in metadata schema incompatibilities across institutions. Any deviations in element names causes Solr to treat the elements as separate fields: for example `dct_subject_s` and `dct_subject_sm` would be stored separately. If GeoBlacklight is set up to display a facet for `dct_subject_s`, it will not pick up values stored in `dct_subject_sm` in the filter. Therefore, if you are gathering metadata from other institutions, make sure to inspect their metadata fields to determine if there will be inconsistencies in your Solr index.
 

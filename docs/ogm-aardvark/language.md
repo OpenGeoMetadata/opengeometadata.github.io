@@ -12,8 +12,8 @@ nav_order: 4
 | Order                 | 04                      |
 | URI                   | `dct_language_sm`       |
 | Obligation            | Optional                |
-| Multiplicity          | 0-\*                    |
-| Field type            | string                  |
+| Multivalued           | true                    |
+| Field type            | array of strings        |
 | Purpose               | To provide the user with the language of the map |
 | Entry Guidelines      | Enter a 3-letter code using the ISO 639-3 standard. |
 | Commentary            | This field is intended to indicate the language of the dataset, map, and/or supporting documentation. |
