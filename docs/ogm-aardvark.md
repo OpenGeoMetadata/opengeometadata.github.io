@@ -16,6 +16,89 @@ OpenGeoMetadata Aardvark metadata schema (2021)
 
 
 ## List of Fields
+<div style="columns:3; margin-bottom:1em; line-height:1.1">
+
+(R) = Required \
+(C) = Conditionally Required \
+(S) = Suggested \
+
+### Descriptive
+- [Title](ogm-aardvark/title) (R)
+- [Alternative Title](ogm-aardvark/alternative-title)
+- [Description](ogm-aardvark/description) (S)
+- [Language](ogm-aardvark/language)
+
+### Credits
+- [Creator](ogm-aardvark/creator) (S)
+- [Publisher](ogm-aardvark/publisher) (S)
+- [Provider](ogm-aardvark/provider) (S)
+
+### Categories
+- [Resource Class](ogm-aardvark/resource-class) (R)
+- [Resource Type](ogm-aardvark/resource-type) (S)
+- [Subject](ogm-aardvark/subject)
+- [Theme](ogm-aardvark/theme)
+- [Keyword](ogm-aardvark/keyword)
+
+<div style="break-inside:avoid">
+
+### Temporal
+- [Temporal Coverage](ogm-aardvark/temporal-coverage) (S)
+- [Date Issued](ogm-aardvark/date-issued)
+- [Index Year](ogm-aardvark/index-year) (S)
+- [Date Range](ogm-aardvark/date-range)
+
+</div>
+
+### Spatial
+- [Spatial Coverage](ogm-aardvark/spatial-coverage) (S)
+- [Geometry](ogm-aardvark/geometry) (S)
+- [Bounding Box](ogm-aardvark/bounding-box) (S)
+- [Centroid](ogm-aardvark/centroid)
+- [Georeferenced](ogm-aardvark/georeferenced)
+
+
+### Relations
+- [Relation](ogm-aardvark/relation)
+- [Member Of](ogm-aardvark/member-of)
+- [Is Part Of](ogm-aardvark/is-part-of)
+- [Source](ogm-aardvark/source)
+- [Is Version Of](ogm-aardvark/is-version-of)
+- [Replaces](ogm-aardvark/replaces)
+- [Is Replaced By](ogm-aardvark/is-replaced-by)
+
+<div style="break-inside:avoid">
+
+### Rights
+- [Rights](ogm-aardvark/rights) (S)
+- [Rights Holder](ogm-aardvark/rights-holder)
+- [License](ogm-aardvark/license)
+- [Access Rights](ogm-aardvark/access-rights) (R)
+
+</div>
+
+### Object
+- [Format](ogm-aardvark/format) (C)
+- [File Size](ogm-aardvark/file-size)
+
+### Links
+- [References](ogm-aardvark/references) (S)
+- [WxS Identifier](ogm-aardvark/wxs-identifier)
+
+### Identifiers
+- [ID](ogm-aardvark/id) (R)
+- [Identifier](ogm-aardvark/identifier) (S)
+
+### Admin
+- [Modified](ogm-aardvark/modified) (R)
+- [Metadata Version](ogm-aardvark/metadata-version) (R)
+- [Suppressed](ogm-aardvark/suppressed)
+
+</div>
+
+
+
+## Table of Fields
 
 | Group  | Label                                                   | URI                    | Obligation  |
 |:---|:--------------------------------------------------------|:-----------------------|:------------|
