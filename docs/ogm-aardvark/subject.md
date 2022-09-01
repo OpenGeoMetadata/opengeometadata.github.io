@@ -9,7 +9,6 @@ nav_order: 10
 
 | Label                 | Subject                 |
 |:----------------------|:------------------------|
-| Order                 | 10                      |
 | URI                   | `dct_subject_sm`        |
 | Obligation            | Optional                |
 | Multivalued           | true                    |

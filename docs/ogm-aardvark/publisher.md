@@ -9,7 +9,6 @@ nav_order: 6
 
 | Label                 | Publisher               |
 |:----------------------|:------------------------|
-| Order                 | 06                      |
 | URI                   | `dct_publisher_sm`      |
 | Obligation            | Recommended             |
 | Multivalued           | true                    |

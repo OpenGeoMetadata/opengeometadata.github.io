@@ -9,7 +9,6 @@ nav_order: 13
 
 | Label                 | Temporal Coverage |
 |:----------------------|:------------------|
-| Order                 | 13 |
 | URI                   | `dct_temporal_sm` |
 | Obligation            | Recommended |
 | Multivalued           | true |

@@ -9,7 +9,6 @@ nav_order: 19
 
 | Label                 | Bounding Box |
 |:--------------------- |:------------ |
-| Order                 | 19 |
 | URI                   | `dcat_bbox` |
 | Obligation            | Recommended |
 | Multivalued           | false |

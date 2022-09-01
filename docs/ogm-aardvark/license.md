@@ -9,7 +9,6 @@ nav_order: 30
 
 | Label                 | License |
 |:----------------------|:--------|
-| Order                 | 30 |
 | URI                   | `dct_license_sm` |
 | Obligation            | Optional |
 | Multivalued           | true |

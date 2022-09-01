@@ -9,7 +9,6 @@ nav_order: 39
 
 | Label                 | Metadata Version |
 |:----------------------|:-----------------|
-| Order                 | 39 |
 | URI                   | `gbl_mdVersion_s` |
 | Obligation            | Required |
 | Multivalued           | false |

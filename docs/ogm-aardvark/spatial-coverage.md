@@ -9,7 +9,6 @@ nav_order: 17
 
 | Label                 | Spatial Coverage |
 |:----------------------|:-----------------|
-| Order                 | 17 |
 | URI                   |`dct_spatial_sm` |
 | Obligation            | Recommended |
 | Multivalued           | true |

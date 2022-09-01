@@ -9,7 +9,6 @@ nav_order: 25
 
 | Label                 | Version |
 |:----------------------|:--------|
-| Order                 | 25 |
 | URI                   | `dct_isVersionOf_sm` |
 | Obligation            | Optional |
 | Multivalued           | true |

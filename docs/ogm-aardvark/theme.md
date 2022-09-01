@@ -9,7 +9,6 @@ nav_order: 11
 
 | Label                 | Theme      |
 |:----------------------|:------------------------|
-| Order                 | 11                      |
 | URI                   | `dcat_theme_sm`         |
 | Obligation            | Optional                |
 | Multivalued           | true                    |

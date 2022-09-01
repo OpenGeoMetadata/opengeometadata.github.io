@@ -9,7 +9,6 @@ nav_order: 15
 
 | Label                 | Index Year |
 |:----------------------|:-----------|
-| Order                 | 15 |
 | URI                   | `gbl_indexYear_im` |
 | Obligation            | Recommended |
 | Multivalued           | true |

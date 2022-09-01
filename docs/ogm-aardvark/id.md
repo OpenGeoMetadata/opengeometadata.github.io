@@ -9,7 +9,6 @@ nav_order: 36
 
 | Label                 | ID       |
 |:----------------------|:---------|
-| Order                 | 36 |
 | URI                   | `id` |
 | Obligation            | Required |
 | Multivalued           | false |

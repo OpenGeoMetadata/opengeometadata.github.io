@@ -9,7 +9,6 @@ nav_order: 20
 
 | Label                 | Centroid |
 |:----------------------|:---------|
-| Order                 | 20 |
 | URI                   | `dcat_centroid` |
 | Obligation            | Optional |
 | Multivalued           | false |

@@ -9,7 +9,6 @@ nav_order: 7
 
 | Label                 | Provider                |
 |:----------------------|:------------------------|
-| Order                 | 07                      |
 | URI                   | `schema_provider_s`     |
 | Obligation            | Recommended             |
 | Multivalued           | false                   |

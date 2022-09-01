@@ -9,7 +9,6 @@ nav_order: 27
 
 | Label                 | Is Replaced By |
 |:----------------------|:---------------|
-| Order                 | 27 |
 | URI                   | `dct_isReplacedBy_sm` |
 | Obligation            | Optional |
 | Multivalued           | true |

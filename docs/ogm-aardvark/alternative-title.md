@@ -9,7 +9,6 @@ nav_order: 2
 
 | Label                 | Alternative Title       |
 |:----------------------|:------------------------|
-| Order                 | 02                      |
 | URI                   | `dct_alternative_sm`    |
 | Obligation            | Optional                |
 | Multivalued           | true                    |

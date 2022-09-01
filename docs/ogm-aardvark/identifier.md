@@ -9,7 +9,6 @@ nav_order: 37
 
 | Label                 | Identifier |
 |:----------------------|:-----------|
-| Order                 | 37 |
 | URI                   | `dct_identifier_sm` |
 | Obligation            | Recommended |
 | Multivalued           | true |

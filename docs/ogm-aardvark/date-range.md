@@ -9,7 +9,6 @@ nav_order: 16
 
 | Label                 | Date Range |
 |:----------------------|:-----------|
-| Order                 | 16 |
 | URI                   | `gbl_dateRange_drsim` |
 | Obligation            | Optional |
 | Multivalued           | true |

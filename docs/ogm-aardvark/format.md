@@ -9,7 +9,6 @@ nav_order: 32
 
 | Label                 | Format |
 |:----------------------|:-------|
-| Order                 | 32 |
 | URI                   | `dct_format_s` |
 | Obligation            | Conditional |
 | Multivalued           | false |

@@ -9,7 +9,6 @@ nav_order: 22
 
 | Label                 | Member Of |
 |:----------------------|:----------|
-| Order                 | 22 |
 | URI                   | `pcdm_memberOf_sm` |
 | Obligation            | Optional |
 | Multivalued           | true |

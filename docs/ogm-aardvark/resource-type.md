@@ -9,7 +9,6 @@ nav_order: 9
 
 | Label                 | Resource Type           |
 |:----------------------|:------------------------|
-| Order                 | 09                      |
 | URI                   | `gbl_resourceType_sm`   |
 | Obligation            | Recommended             |
 | Multivalued           | true                    |

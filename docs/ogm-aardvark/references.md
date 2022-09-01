@@ -9,7 +9,6 @@ nav_order: 35
 
 | Label                 | References |
 |:----------------------|:-----------|
-| Order                 | 35 |
 | URI                   | `dct_references_s` |
 | Obligation            | Recommended |
 | Multivalued           | false |

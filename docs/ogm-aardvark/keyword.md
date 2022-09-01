@@ -9,7 +9,6 @@ nav_order: 12
 
 | Label                 | Keyword |
 |:----------------------|:--------|
-| Order                 | 12 |
 | URI                   | `dcat_keyword_sm` |
 | Obligation            | Optional |
 | Multivalued           | true |

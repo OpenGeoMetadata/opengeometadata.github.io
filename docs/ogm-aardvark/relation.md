@@ -9,7 +9,6 @@ nav_order: 21
 
 | Label                 | Relation |
 |:----------------------|:---------|
-| Order                 | 21 |
 | URI                   | `dct_relation_sm` |
 | Obligation            | Optional |
 | Multivalued           | true |

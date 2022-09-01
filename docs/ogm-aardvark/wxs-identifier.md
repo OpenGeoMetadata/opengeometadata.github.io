@@ -9,7 +9,6 @@ nav_order: 34
 
 | Label                 | WxS Identifier |
 |:----------------------|:---------------|
-| Order           | 34 |
 | URI                   | `gbl_wxsIdentifier_s` |
 | Obligation            | Conditional |
 | Multivalued           | false |

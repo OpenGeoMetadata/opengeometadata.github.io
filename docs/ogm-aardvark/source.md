@@ -9,7 +9,6 @@ nav_order: 24
 
 | Label                 | Source |
 |:----------------------|:-------|
-| Order                 | 24 |
 | URI                   | `dct_source_sm` |
 | Obligation            | Optional |
 | Multivalued           | true |

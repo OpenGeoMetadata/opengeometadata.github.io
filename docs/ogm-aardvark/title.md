@@ -9,7 +9,6 @@ nav_order: 1
 
 | Label                 | Title                   |
 |:----------------------|:------------------------|
-| Order                 | 01                      |
 | URI                   | `dct_title_s`           |
 | Obligation            | Required                |
 | Multivalued           | false                   |

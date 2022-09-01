@@ -9,7 +9,6 @@ nav_order: 18
 
 | Label                 | Geometry |
 |:----------------------|:---------|
-| Order                 | 18 |
 | URI                   | `locn_geometry` |
 | Obligation            | Recommended |
 | Multivalued           | false |

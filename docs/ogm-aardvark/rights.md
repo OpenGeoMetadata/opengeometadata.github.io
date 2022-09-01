@@ -9,7 +9,6 @@ nav_order: 28
 
 | Label                 | Rights                  |
 |:----------------------|:------------------------|
-| Order                 | 28                      |
 | URI                   | `dct_rights_sm`         |
 | Obligation            | Recommended             |
 | Multivalued           | true                    |

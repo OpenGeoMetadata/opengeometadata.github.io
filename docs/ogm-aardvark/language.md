@@ -9,7 +9,6 @@ nav_order: 4
 
 | Label                 | Language                |
 |:----------------------|:------------------------|
-| Order                 | 04                      |
 | URI                   | `dct_language_sm`       |
 | Obligation            | Optional                |
 | Multivalued           | true                    |

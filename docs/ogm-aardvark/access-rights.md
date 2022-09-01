@@ -9,7 +9,6 @@ nav_order: 31
 
 | Label                 | Access Rights |
 |:----------------------|:--------------|
-| Order                 | 31 |
 | URI                   | `dct_accessRights_s` |
 | Obligation            | Required |
 | Multivalued           | false |

@@ -9,7 +9,6 @@ nav_order: 40
 
 | Label                 | Suppressed |
 |:----------------------|:-----------|
-| Order                 | 40 |
 | URI                   | `gbl_suppressed_b` |
 | Obligation            | Optional |
 | Multivalued           | false |

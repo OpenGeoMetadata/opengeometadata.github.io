@@ -9,7 +9,6 @@ nav_order: 5
 
 | Label                 | Creator                 |
 |:----------------------|:------------------------|
-| Order                 | 05                      |
 | URI                   | `dct_creator_sm`        |
 | Obligation            | Recommended             |
 | Multivalued           | true                    |

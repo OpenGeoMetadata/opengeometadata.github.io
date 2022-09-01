@@ -9,7 +9,6 @@ nav_order: 23
 
 | Label                 | Is Part Of |
 | :-------------------- | :----------|
-| Order                 | 23 |
 | URI                   | `dct_isPartOf_sm` |
 | Obligation            | Optional |
 | Multivalued           | true |

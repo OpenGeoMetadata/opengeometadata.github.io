@@ -9,7 +9,6 @@ nav_order: 14
 
 | Label                 | Date Issued |
 |:----------------------|:------------|
-| Order                 | 14 |
 | URI                   | `dct_issued_s` |
 | Obligation            | Optional |
 | Multivalued           | false |

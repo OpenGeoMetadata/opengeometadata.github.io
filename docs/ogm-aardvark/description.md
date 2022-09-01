@@ -9,7 +9,6 @@ nav_order: 3
 
 | Label                 | Description             |
 |:----------------------|:------------------------|
-| Order                 | 03                      |
 | URI                   | `dct_description_sm`    |
 | Obligation            | Recommended             |
 | Multivalued           | true                    |

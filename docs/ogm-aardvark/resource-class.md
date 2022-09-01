@@ -9,7 +9,6 @@ nav_order: 8
 
 | Label                 | Resource Class          |
 |:----------------------|:------------------------|
-| Order                 | 08                      |
 | URI                   | `gbl_resourceClass_sm`  |
 | Obligation            | Required                |
 | Multivalued           | true                    |

@@ -9,7 +9,6 @@ nav_order: 41
 
 | Label                 | Georeferenced |
 |:----------------------|:--------------|
-| Order                 | 41 |
 | URI                   | `gbl_georeferenced_b` |
 | Obligation            | Optional |
 | Multivalued           | false |

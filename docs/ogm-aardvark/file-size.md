@@ -9,7 +9,6 @@ nav_order: 33
 
 | Label                 | File Size |
 |:----------------------|:----------|
-| Order                 | 33 |
 | URI                   | `gbl_fileSize_s` |
 | Obligation            | Optional |
 | Multivalued           | false |

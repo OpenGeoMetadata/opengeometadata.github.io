@@ -9,7 +9,6 @@ nav_order: 38
 
 | Label                 | Modified |
 |:----------------------|:---------|
-| Order                 | 38 |
 | URI                   | `gbl_mdModified_dt` |
 | Obligation            | Required |
 | Multivalued           | false |
