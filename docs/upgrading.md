@@ -96,12 +96,15 @@ New XSLTs to transform from ISO 19139 or FGDC to OGM Aardvark will be available 
 ### Programmatic conversion of JSON files
 {: .no_toc }
 
-This basic [Python script](https://github.com/BTAA-Geospatial-Data-Project/GBL-Schema-Update) can batch convert GBL 1.0 json files to OGM Aardvark. However, note the three elements listed above that do not have direct crosswalks.
+This basic Python script, https://github.com/OpenGeoMetadata/gbl-1_to_aardvark, can batch convert GBL 1.0 json files to OGM Aardvark. However, note the three elements listed above that do not have direct crosswalks.
 
 ### Spreadsheet manipulation
 {: .no_toc }
 
+This Python script will convert a batch of JSONs to a CSV file: https://github.com/geobtaa/workflows/blob/main/editing/json2csv.py
+This Python script will convert CSVs to Aardvark JSONS: https://github.com/jhu-library-applications/geoportal/tree/main/aardvark
+
 This technique combines automatic conversions and manual edits:
 1. Convert your GBL 1.0 metadata files to a CSV.
-2. Manually augment and adjust values using spreadsheet functions.
-3. Convert your spreadsheet to OGM Aardvark JSONs.
+2. Manually augment and adjust column names and values using spreadsheet functions.
+3. Convert your spreadsheet to OGM Aardvark JSONs. 
