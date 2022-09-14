@@ -115,77 +115,117 @@ OGM metadata is formatted as flat JSON files.
 ### Example
 {: .no_toc }
 
-This is an example of a complete OGM Aardvark JSON file from the [Big Ten Geoportal](https://github.com/BTAA-Geospatial-Data-Project/geoportal/blob/develop/test/fixtures/files/btaa_documents/b1g_description_multiple.json). It contains several custom namespaced fields, indicated by the `b1g` prefix:
+This is an example of a complete OGM Aardvark JSON file:
 
 ```json
 {
-  "id": "18bed919-fc86-4e02-a909-15f8bb9899bb",
-  "model_name_ssi": "Document",
-  "model_pk_ssi": "6ecf0720-52f4-49d3-b44e-32335e0c6dac",
-  "gbl_mdVersion_s": "Aardvark",
-  "dct_title_s": "Map of Part of the Province of Manitoba",
+  "dct_title_s": "Racial Covenants [Hennepin County, Minnesota] (1910-1955)",
   "dct_alternative_sm": [
-    "Map of part of the province of Manitoba shewing Dominion lands surveyed and lands disposed of."
+    "Racial Covenants in Hennepin County"
   ],
   "dct_description_sm": [
-    "1 map : col. ; 61 x 97 cm.",
-    "Has table of distances from Winnipeg and Emerson.",
-    "Shows lands owned by Canadian Pacific Railway, schools and Hudson Bay Company."
+    "This data was compiled by the Mapping Prejudice Project and shows the location of racial covenants recorded in Hennepin County between 1910 and 1955. Racial covenants were legal clauses embedded in property records that restricted ownership and occupancy of land parcels based on race. These covenants dramatically reshaped the demographic landscape of Hennepin County in the first half of the twentieth century. In 1948, the United States Supreme Court ruled racial covenants to be legally unenforceable in the Shelly v. Kraemer decision. Racial covenants continued to be inserted into property records, however, prompting the Minnesota state legislature to outlaw the recording of new racial covenants in 1953. The same legislative body made covenants illegal in 1962. The practice was formally ended nationally with the passage of the Fair Housing Act in 1968."
   ],
   "dct_language_sm": [
     "eng"
   ],
-  "gbl_resourceClass_sm": [
-    "Maps"
+  "dct_creator_sm": [
+    "Ehrman-Solberg, Kevin",
+    "Petersen, Penny",
+    "Mills, Marguerite",
+    "Delegard, Kirsten",
+    "Mattke, Ryan"
   ],
-  "dct_subject_sm": [
-    "Railroads"
+  "dct_publisher_sm": [
+    "University of Minnesota Mapping Prejudice Project"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets",
+    "Web services"
+  ],
+  "gbl_resourceType_sm": [
+    "Polygon data",
+    "Vector data"
+  ],
+  "dcat_theme_sm": [
+    "Society"
   ],
   "dcat_keyword_sm": [
-    "Real property Manitoba Maps."
+    "Minneapolis",
+    "racial covenants}segregation",
+    "redlining",
+    "real estate"
   ],
-  "dct_issued_s": "1881",
-  "gbl_dateRange_drsim": [
-    "[1881 TO 1881]"
+  "dct_temporal_sm": [
+    "1910-1955"
   ],
+  "dct_issued_s": "2020-12",
   "gbl_indexYear_im": [
-    1881
+    "1910"
+  ],
+  "gbl_dateRange_drsim": [
+    "[1910 TO 1955]"
   ],
   "dct_spatial_sm": [
-    "Manitoba,  Canada",
-    "Canada",
-    "Canada"
+    "Bloomington, Minnesota",
+    "Brooklyn Center, Minnesota",
+    "Brooklyn Park, Minnesota",
+    "Champlin, Minnesota",
+    "Crystal, Minnesota",
+    "Deephaven, Minnesota",
+    "Eden Prairie, Minnesota",
+    "Edina, Minnesota",
+    "Golden Valley, Minnesota",
+    "Greenwood, Minnesota",
+    "Hopkins, Minnesota",
+    "Maple Grove, Minnesota",
+    "Maple Plain, Minnesota",
+    "Medina, Minnesota",
+    "Minneapolis, Minnesota",
+    "Minnetonka, Minnesota",
+    "Minnetonka Beach, Minnesota",
+    "Minnetrista, Minnesota",
+    "Mound, Minnesota",
+    "Orono, Minnesota",
+    "Osseo, Minnesota",
+    "Plymouth, Minnesota",
+    "Rays Lynnhurst, Minnesota",
+    "Richfield, Minnesota",
+    "Robbinsdale, Minnesota",
+    "Shorewood, Minnesota",
+    "St. Anthony, Minnesota",
+    "St. Louis Park, Minnesota",
+    "Tonka Bay, Minnesota",
+    "Wayzata, Minnesota",
+    "Woodland, Minnesota",
+    "Hennepin County, Minnesota",
+    "Minnesota"
   ],
-  "b1g_geonames_sm": [
-    "http://sws.geonames.org/6065171"
-  ],
-  "locn_geometry": "ENVELOPE(-101.63,-94.87,51.07,49)",
-  "dcat_centroid_ss": "50.035,-98.25",
+  "locn_geometry": "POLYGON((-93.77 45.24, -93.17 45.24, -93.17 44.78, -93.77 44.78, -93.77 45.24))",
+  "dcat_bbox": "ENVELOPE(-93.77,-93.17,45.24,44.78)",
+  "dcat_centroid": "45.01,-93.47",
   "pcdm_memberOf_sm": [
-    "07d-01"
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
   ],
-  "dct_format_s": "JPEG",
-  "dct_references_s": "{\"http://schema.org/url\":\"https://quod.lib.umich.edu/c/clark1ic/x-003280519/39015091910987\",\"http://iiif.io/api/presentation#manifest\":\"https://quod.lib.umich.edu/cgi/i/image/api/search/clark1ic:003280519\"}",
-  "b1g_image_ss": "https://quod.lib.umich.edu/cgi/i/image/api/image/clark1ic:003280519:39015091910987/full/res:1/0/native.jpg",
-  "b1g_access_s": "{}",
-  "dct_identifier_sm": [
-    "G 3481 .G46 1881 .C3",
-    "003280519",
-    "39015091910987"
+  "dct_isPartOf_sm": [
+    "05d-12",
+    "05d-03"
   ],
-  "geomg_id_s": "18bed919-fc86-4e02-a909-15f8bb9899bb",
-  "schema_provider_s": "University of Michigan",
-  "b1g_code_s": "07d-01",
-  "b1g_status_s": "Active",
-  "b1g_dct_accrualMethod_s": "MARC",
-  "b1g_dateAccessioned_sm": [
-    "2021-04-16"
+  "dct_rights_sm": [
+    "Content distributed via the University of Minnesota's Digital Conservancy may be subject to additional license and use restrictions applied by the depositor."
   ],
-  "b1g_publication_state_s": "published",
+  "dct_license_sm": [
+    "http://creativecommons.org/licenses/by-nc/3.0/us/"
+  ],
   "dct_accessRights_s": "Public",
-  "gbl_mdModified_dt": "2021-05-08T17:18:30Z",
-  "date_created_dtsi": "2021-04-16T19:03:14Z",
-  "date_modified_dtsi": "2021-05-08T17:18:30Z",
-  "b1g_geom_import_id_ssi": "260"
+  "dct_format_s": "Shapefile",
+  "dct_references_s": "{\"http://schema.org/url\":\"https://doi.org/10.13020/a88t-yb14\",\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/217209/Hennepin_County_Racial_Covenants_Codebook.txt\",\"urn:x-esri:serviceType:ArcGIS#FeatureLayer\":\"https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/Hennepin_County_Racial_Covenants/FeatureServer/0\",\"http://schema.org/downloadUrl\":[{\"label\":\"covenants shapefile (4.554Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/217209/Hennepin_County_Racial_Covenants.zip\"},{\"label\":\"covenants CSV (9.925Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/217209/Hennepin_County_Racial_Covenants_Table.csv\"}]}",
+  "id": "0455d309-e4e9-473e-8c3f-b42a6a2e16fc",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/a88t-yb14"
+  ],
+  "gbl_mdModified_dt": "2022-09-14T20:18:27Z",
+  "gbl_mdVersion_s": "Aardvark"
 }
 ```
