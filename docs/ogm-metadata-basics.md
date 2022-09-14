@@ -153,7 +153,8 @@ This is an example of a complete OGM Aardvark JSON file:
   ],
   "dcat_keyword_sm": [
     "Minneapolis",
-    "racial covenants}segregation",
+    "racial covenants",
+    "segregation",
     "redlining",
     "real estate"
   ],
