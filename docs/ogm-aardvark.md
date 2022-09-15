@@ -17,11 +17,7 @@ OpenGeoMetadata Aardvark metadata schema (2021)
 
 ## Fields by Group
 
-<div style="columns:3; margin-bottom:1em; line-height:1.1" markdown="1">
-
-(R) = Required  
-(C) = Conditionally Required  
-(S) = Suggested  
+<div style="float:left; margin-right: 3em; line-height:1.1" markdown="1">
 
 ### Descriptive
 - [Title](ogm-aardvark/title) (R)
@@ -47,6 +43,9 @@ OpenGeoMetadata Aardvark metadata schema (2021)
 - [Index Year](ogm-aardvark/index-year) (S)
 - [Date Range](ogm-aardvark/date-range)
 
+</div>
+<div style="float:left; margin-right: 3em; line-height:1.1" markdown="1">
+
 ### Spatial
 - [Spatial Coverage](ogm-aardvark/spatial-coverage) (S)
 - [Geometry](ogm-aardvark/geometry) (S)
@@ -69,6 +68,9 @@ OpenGeoMetadata Aardvark metadata schema (2021)
 - [License](ogm-aardvark/license)
 - [Access Rights](ogm-aardvark/access-rights) (R)
 
+</div>
+<div style="float:left; margin-right: 3em; line-height:1.1" markdown="1">
+
 ### Object
 - [Format](ogm-aardvark/format) (C)
 - [File Size](ogm-aardvark/file-size)
@@ -86,8 +88,15 @@ OpenGeoMetadata Aardvark metadata schema (2021)
 - [Metadata Version](ogm-aardvark/metadata-version) (R)
 - [Suppressed](ogm-aardvark/suppressed)
 
+----
+
+(R) = Required  
+(C) = Conditionally Required  
+(S) = Suggested  
+
 </div>
 
+<br style="clear:left">
 
 ## Fields in Alphabetical Order
 
