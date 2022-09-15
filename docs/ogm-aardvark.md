@@ -16,11 +16,12 @@ OpenGeoMetadata Aardvark metadata schema (2021)
 
 
 ## Fields by Group
-<div style="columns:3; margin-bottom:1em; line-height:1.1">
 
-(R) = Required \
-(C) = Conditionally Required \
-(S) = Suggested
+<div style="columns:3; margin-bottom:1em; line-height:1.1" markdown="1">
+
+(R) = Required  
+(C) = Conditionally Required  
+(S) = Suggested  
 
 ### Descriptive
 - [Title](ogm-aardvark/title) (R)
@@ -40,15 +41,11 @@ OpenGeoMetadata Aardvark metadata schema (2021)
 - [Theme](ogm-aardvark/theme)
 - [Keyword](ogm-aardvark/keyword)
 
-<div style="break-inside:avoid">
-
 ### Temporal
 - [Temporal Coverage](ogm-aardvark/temporal-coverage) (S)
 - [Date Issued](ogm-aardvark/date-issued)
 - [Index Year](ogm-aardvark/index-year) (S)
 - [Date Range](ogm-aardvark/date-range)
-
-</div>
 
 ### Spatial
 - [Spatial Coverage](ogm-aardvark/spatial-coverage) (S)
@@ -56,7 +53,6 @@ OpenGeoMetadata Aardvark metadata schema (2021)
 - [Bounding Box](ogm-aardvark/bounding-box) (S)
 - [Centroid](ogm-aardvark/centroid)
 - [Georeferenced](ogm-aardvark/georeferenced)
-
 
 ### Relations
 - [Relation](ogm-aardvark/relation)
@@ -67,15 +63,11 @@ OpenGeoMetadata Aardvark metadata schema (2021)
 - [Replaces](ogm-aardvark/replaces)
 - [Is Replaced By](ogm-aardvark/is-replaced-by)
 
-<div style="break-inside:avoid">
-
 ### Rights
 - [Rights](ogm-aardvark/rights) (S)
 - [Rights Holder](ogm-aardvark/rights-holder)
 - [License](ogm-aardvark/license)
 - [Access Rights](ogm-aardvark/access-rights) (R)
-
-</div>
 
 ### Object
 - [Format](ogm-aardvark/format) (C)
@@ -95,7 +87,6 @@ OpenGeoMetadata Aardvark metadata schema (2021)
 - [Suppressed](ogm-aardvark/suppressed)
 
 </div>
-
 
 
 ## Fields in Alphabetical Order
