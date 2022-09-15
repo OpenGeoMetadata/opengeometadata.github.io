@@ -26,11 +26,7 @@ The OGM metadata schema is designed for GIS resource discovery and focuses mainl
 
 ## Fields by Group
 
-<div style="columns:3; margin-bottom:1em; line-height:1.1" markdown="1">
-
-(R) = Required  
-(C) = Conditionally Required  
-(S) = Suggested  
+<div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
 
 ### Descriptive
 - [Title](ogm-aardvark/title) (R)
@@ -56,6 +52,9 @@ The OGM metadata schema is designed for GIS resource discovery and focuses mainl
 - [Index Year](ogm-aardvark/index-year) (S)
 - [Date Range](ogm-aardvark/date-range)
 
+</div>
+<div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
+
 ### Spatial
 - [Spatial Coverage](ogm-aardvark/spatial-coverage) (S)
 - [Geometry](ogm-aardvark/geometry) (S)
@@ -78,6 +77,9 @@ The OGM metadata schema is designed for GIS resource discovery and focuses mainl
 - [License](ogm-aardvark/license)
 - [Access Rights](ogm-aardvark/access-rights) (R)
 
+</div>
+<div style="float:left; line-height:1.1" markdown="1">
+
 ### Object
 - [Format](ogm-aardvark/format) (C)
 - [File Size](ogm-aardvark/file-size)
@@ -95,8 +97,15 @@ The OGM metadata schema is designed for GIS resource discovery and focuses mainl
 - [Metadata Version](ogm-aardvark/metadata-version) (R)
 - [Suppressed](ogm-aardvark/suppressed)
 
+----
+
+(R) = Required  
+(C) = Conditionally Required  
+(S) = Suggested  
+
 </div>
 
+<br style="clear:left">
 
 ## Fields in Alphabetical Order
 
