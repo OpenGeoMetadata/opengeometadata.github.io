@@ -1,46 +1,19 @@
 ---
 layout: default
-title: OGM Metadata Basics
-parent: Helpful Resources
-nav_order: 1
-has_children: true
+title: JSON Format
+parent: Resources
+nav_order: 2
 has_toc: false
 ---
 
-# OGM Metadata Basics
+# JSON Format
 {: .no_toc }
-
-The basics of the OpenGeoMetadata metadata structure
 {: .fs-6 .fw-300 }
 
----
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
 
 ---
 
-## Purpose
 
-The OGM metadata schema is designed for GIS resource discovery and focuses mainly on discovery use cases. Text search, faceted search and refinement, and spatial search and relevancy are among the primary features that the schema enables. It:
-
-* is based on [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/), with custom elements added for spatial values
-* is designed for discovery - to help users _find_ items
-* is not designed for complete technical documentation, such as a GIS dataset's processing history
-* includes elements for external links, such as downloads, web services, or supplemental metadata
-* requires records to be formatted as JSON files
-
-## Layers
-
-The schemas are organized around "layers" as the unit of description. Each layer corresponds to a single set of data that can be described, downloaded, and (often) previewed. For example, this shapefile of [census boundaries](https://earthworks.stanford.edu/catalog/stanford-rf385pb1942) is considered a single layer in GeoBlacklight.
-
-"A layer is a specific unit of data that contains a set of geospatial features, a metadata description, and a feature catalog. For example, a census layer would have the geometries of census tracts and the demographic results within each tract." [(Hardy and Durante 2014)](http://journal.code4lib.org/articles/9710)
-
-## Unique keys
-
-Metadata for GeoBlacklight instances is stored and indexed in Solr, which uses a "Unique Key Field" as the identifier for each document. The OGM Aardvark schema was designed with `id` as the Unique Key Field (in GBL 1.0, this field was called `layer_slug_s`). Each item must have a unique key.
 
 ## JSON format
 

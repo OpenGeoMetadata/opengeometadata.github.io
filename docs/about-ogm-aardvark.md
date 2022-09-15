@@ -15,6 +15,8 @@ OGM Aardvark is a discovery metadata schema for geospatial resources. It was int
 
 It is also the newest metadata application profile schema for GeoBlacklight. Launched in 2021, it replaces the GeoBlacklight metadata schema version 1.0 ([GBL 1.0](gbl-1.0)). Compared to GBL 1.0, Aardvark incorporates additional fields for better descriptions of a wider range of resources, as well as syntactical updates in order to improve interoperability between institutions and between schemas. For GeoBlacklight users, it is the recommended schema for installations starting with GeoBlacklight version 4.0.
 
+For more information, see the [Upgrade Guide.](upgrading)
+
 ---
 ## Table of contents
 {: .no_toc .text-delta }
@@ -82,70 +84,6 @@ The GeoBlacklight Metadata Schema Workgroup consisted of 16 people from 12 insti
 * Stephen Appel (University of Wisconsin-Milwaukee)
 * Susan Powell (UC Berkeley)
 * Tom Brittnacher (UC Santa Barbara)
-
-
-**Helpful Metadata Terminology used by the Workgroup**
-
-*   **URI**: This is the name we give to the metadata element itself. For example, the URI for the GeoBlacklight subject field is `dct_subject_sm`.
-*   **Namespace**: This is how we signify which family of standards or schemas an element belongs to. For the GeoBlacklight schema, this takes the form of the URI’s prefix. For the URI `dct_subject_sm`,  `dct_` is the prefix and signifies that this element is from Dublin Core.
-*   **Solr field type**: This is the suffix appended to the URI and indicates what kind of Solr field should be indexed. For `dct_subject_sm`, the `_sm` stands for String Multiple. It indicates that the field type is a string and that it can have multiple values.
-*   **Value**: This is the information that is entered in a field. It may be free text (literal value) or a URI/code (nonliteral value).
-
-## What are the differences between GBL 1.0 and OGM Aardvark?
-
-### New elements for rights
-{: .no_toc }
-
-One of the highest priorities for the Metadata Workgroup was to identify appropriate elements to capture rights information. This information is required at many participating institutions, and was the cause of multiple custom fields at different institutions that served the same purpose.
-
-After examining how rights are implemented for different projects, notably the Digital Public Library of America (DPLA) and [RightsStatements.org,](https://rightsstatements.org) we recommended three new fields and a renaming of one field. This change is the one instance in which we recommended that an existing GeoBlacklight element with application functionality be replaced by another.
-
-The new set of rights elements are:
-
-| Label              | URI                     | Description and Entry Guidelines |
-|:-------------------|:------------------------|:---------------------------------|
-| Access Rights      | `dct_accessRights_s`    | One of two possible values, "Public" or "Restricted"; controls whether a user can preview or download an item. This element replaces `dc_rights_s`. |
-| Rights             | `dct_rights_sm`         | Free-text field for generic, catch-all access and usage rights. Can include clickable links. |
-| License            | `dct_license_sm`        | Field for one or more URIs. Recommended sources are [Creative Commons](https://creativecommons.org/) or [Open Data Commons](https://opendatacommons.org/). |
-| Rights Holder      | `dct_rightsHolder_sm`   | Free-text field for the person or organization owning or managing rights over the resource. |
-
-
-### New elements for item relations
-{: .no_toc }
-
-The new schema includes seven relationship fields. The value for each field should be the ID (slug) of the related item.
-
-GeoBlacklight version 3.4 and earlier has an Item Relations widget that displays items identified in the **Source** field. Beginning with version 4, this has been updated to use the same widget for each of these fields
-
-The new set of relationship elements are:
-
-| Label              | URI                     | Description and Entry Guidelines |
-|:-------------------|:------------------------|:---------------------------------|
-| Source             | `dct_source_sm`         | For items that have been derived from another item (e.g. a digitized shapefile from a historical map). |
-| Is Part Of         | `dct_isPartOf_sm`       | For items that are a subset of another item (e.g. a page in a book). This value type is changing from free-text in Version 1.0 to an ID (slug) in the new schema. |
-| Member Of          | `pcdm_memberOf_sm`      | For items in a collection.       |
-| Replaces           | `dct_replaces_sm`       | To refer to an item that has been deprecated. |
-| Is Replaced By     | `dct_isReplacedBy_sm`   | To point the user to a new item. |
-| Version            | `dct_isVersionOf_sm`    | To indicate that an item is part of a series of resources that are updated or altered. |
-| Relation            | `dct_relation_sm`      | For a general purpose relation.  |
-
-
-### Consistent namespaces for all metadata element URIs
-{: .no_toc }
-
-The new version always gives preference to elements found in established schemas over custom fields.
-
-* **`dct_`**: This signifies that the field is part of the [Dublin Core Metadata Initiative (DCMI) Metadata Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/). Any Dublin Core fields from the GeoBlacklight Schema 1.0 were updated to use the `dct_` namespace.
-* **`dcat_`**: This signifies that the field is from the [Data Catalog Vocabulary (DCAT) Version 2](https://www.w3.org/TR/vocab-dcat-2/).
-* **`pcdm_`**: This refers to the [Portland Common Data Model](https://github.com/duraspace/pcdm/wiki), which is a framework for many digital repository systems. We drew from it to establish one of the item relationship fields.
-* **`gbl_`**: This stands for GeoBlacklight and is used for any field that is application-specific or has no analogous term in other schemas.
-
-
-### Multivalued elements whenever possible
-{: .no_toc }
-
-The original schema features several descriptive metadata fields that only accept one value. The new schema expands many of these to multiple. This changes the URI suffix from `_s` to` _sm`. Although it will not affect the GeoBlacklight functionality, this practice may conflict with indexing, as Solr will treat `dct_publisher_s` as a different field than `dct_publisher_sm`.
-
 
 ## Will Aardvark work with my GeoBlacklight installation?
 

@@ -12,7 +12,6 @@ permalink: /
 A shared repository for geospatial metadata
 {: .fs-6 .fw-300 }
 
-[View our GitHub repositories](https://github.com/OpenGeoMetadata){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ---
 
