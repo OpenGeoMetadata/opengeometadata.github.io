@@ -302,13 +302,13 @@ Currently, the OpenGeoMetadata community has two tools that can do batch convers
 
 This technique combines automatic conversions and manual edits:
 
-1. Convert your GBL 1.0 metadata files to a CSV. (This Python script will convert a batch of JSONs to a CSV file)[https://github.com/geobtaa/workflows/blob/main/editing/json2csv.py)
+1. Convert your GBL 1.0 metadata files to a CSV. [This Python script will convert a batch of JSONs to a CSV file](https://github.com/geobtaa/workflows/blob/main/editing/json2csv.py)
 
 
 2. Manually augment and adjust column names and values using spreadsheet functions.
 
 
-3. Convert your spreadsheet to OGM Aardvark JSONs. ]This Python script will convert CSVs to Aardvark JSONS](https://github.com/jhu-library-applications/geoportal/tree/main/aardvark)
+3. Convert your spreadsheet to OGM Aardvark JSONs. [This Python script will convert CSVs to Aardvark JSONS](https://github.com/jhu-library-applications/geoportal/tree/main/aardvark)
 
 
 
