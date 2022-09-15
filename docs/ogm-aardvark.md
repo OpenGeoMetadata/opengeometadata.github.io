@@ -17,7 +17,7 @@ OpenGeoMetadata Aardvark metadata schema (2021)
 
 ## Fields by Group
 
-<div style="float:left; margin-right: 3em; line-height:1.1" markdown="1">
+<div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
 
 ### Descriptive
 - [Title](ogm-aardvark/title) (R)
@@ -44,7 +44,7 @@ OpenGeoMetadata Aardvark metadata schema (2021)
 - [Date Range](ogm-aardvark/date-range)
 
 </div>
-<div style="float:left; margin-right: 3em; line-height:1.1" markdown="1">
+<div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
 
 ### Spatial
 - [Spatial Coverage](ogm-aardvark/spatial-coverage) (S)
@@ -69,7 +69,7 @@ OpenGeoMetadata Aardvark metadata schema (2021)
 - [Access Rights](ogm-aardvark/access-rights) (R)
 
 </div>
-<div style="float:left; margin-right: 3em; line-height:1.1" markdown="1">
+<div style="float:left; line-height:1.1" markdown="1">
 
 ### Object
 - [Format](ogm-aardvark/format) (C)
