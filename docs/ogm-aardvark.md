@@ -14,16 +14,6 @@ has_toc: false
 [How to Upgrade from GBL 1.0](upgrading){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Legacy Schemas](legacy-versions){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
-The OGM metadata schema is designed for GIS resource discovery and focuses mainly on discovery use cases. Text search, faceted search and refinement, and spatial search and relevancy are among the primary features that the schema enables. It:
-
-* is based on [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/), with custom elements added for spatial values
-* is designed for discovery - to help users _find_ items
-* is not designed for complete technical documentation, such as a GIS dataset's processing history
-* includes elements for external links, such as downloads, web services, or supplemental metadata
-* requires records to be formatted as JSON files
-
-
-
 ## Fields by Group
 
 <div style="float:left; margin-right:5em; line-height:1.1" markdown="1">

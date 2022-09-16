@@ -11,6 +11,14 @@ nav_exclude: true
 Details about the OpenGeoMetadata metadata schema, OGM Aardvark
 {: .fs-6 .fw-300 }
 
+
+* based on [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/), with custom elements added for spatial values
+* designed for discovery - to help users _find_ items
+* not designed for complete technical documentation, such as a GIS dataset's processing history
+* includes elements for external links, such as downloads, web services, or supplemental metadata
+* requires records to be formatted as JSON files
+{: .feature}
+
 OGM Aardvark is a discovery metadata schema for geospatial resources. It was intentionally developed with cross-application in mind and can be used to describe geospatial assets of all kinds.
 
 It is also the newest metadata application profile schema for GeoBlacklight. Launched in 2021, it replaces the GeoBlacklight metadata schema version 1.0 ([GBL 1.0](gbl-1.0)). Compared to GBL 1.0, Aardvark incorporates additional fields for better descriptions of a wider range of resources, as well as syntactical updates in order to improve interoperability between institutions and between schemas. For GeoBlacklight users, it is the recommended schema for installations starting with GeoBlacklight version 4.0.
