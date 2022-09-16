@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Legacy Versions
-nav_order: 4
+nav_exclude: true
 has_children: true
 has_toc: false
 ---

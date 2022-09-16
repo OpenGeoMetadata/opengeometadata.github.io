@@ -14,6 +14,22 @@
     font-size: 1em;
     padding-bottom: .125rem; }
 
+.feature {
+  background: rgba(44, 132, 250, 0.2);
+  border-left: 4px solid #183385;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  font-size: 1em;
+  margin: 1px; }
+  .feature::before {
+    color: #183385;
+    content: "Main Features";
+    display: block;
+    font-weight: bold;
+    font-size: 1em;
+    padding-bottom: .125rem; }
+
 .site-nav, .site-header, .site-footer {
   width: 100%;
 }

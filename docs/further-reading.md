@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Further Reading
-parent: Helpful Resources
-nav_order: 5
+parent: Resources
+nav_order: 6
 ---
 
 # Further Reading

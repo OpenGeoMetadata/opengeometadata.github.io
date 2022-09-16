@@ -1,12 +1,11 @@
 ---
 layout: default
-title: Writing Metadata
-parent: OGM Metadata Basics
-grand_parent: Helpful Resources
-nav_order: 3
+title: Creating Metadata
+parent: Resources
+nav_order: 1
 ---
 
-# Writing Metadata
+# Creating Metadata
 {: .no_toc }
 
 How to create metadata records in the OpenGeoMetadata schema
@@ -20,6 +19,13 @@ How to create metadata records in the OpenGeoMetadata schema
 {:toc}
 
 ---
+## Custom fields
+
+If an organization wishes to implement a custom metadata field for their GeoBlacklight instance, the naming schema should reference the organization as follows: `organization_elementName_solrFieldType`.
+
+Examples:
+* `b1g_code_s` - Internal code that organizes items by their source collection
+* `nyu_addl_dspace_s` - A 5 digit number that is the "internal identifier" for DSpace, the repository software that mints handles for all NYU's items. The internal id must be paired with the handle in order to post metadata and data via the system API.
 
 ## Create or collect metadata records
 

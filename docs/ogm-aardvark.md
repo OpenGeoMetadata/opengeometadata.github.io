@@ -1,19 +1,18 @@
 ---
 layout: default
-title: OGM Aardvark
+title: Schema
 nav_order: 3
-has_children: true
+has_children: false
 has_toc: false
 ---
 
-# OGM Aardvark
+# Open GeoMetadata (OGM) Aardvark Schema
 
-OpenGeoMetadata Aardvark metadata schema (2021)
 {: .fs-6 .fw-300 }
 
 [About OGM Aardvark](about-ogm-aardvark){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [How to Upgrade from GBL 1.0](upgrading){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-
+[Legacy Schemas](legacy-versions){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ## Fields by Group
 

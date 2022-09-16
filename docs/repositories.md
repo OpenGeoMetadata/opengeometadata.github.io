@@ -1,14 +1,17 @@
 ---
 layout: default
-title: Get Started
+title: Repositories
 nav_order: 2
 ---
 
-# Get Started with OpenGeoMetadata
+# OpenGeoMetadata Repositories
 {: .no_toc }
+
+[View our GitHub repositories](https://github.com/OpenGeoMetadata){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 Make it easy for others to find and use your geospatial metadata
 {: .fs-6 .fw-300 }
+
 
 Contributors are invited to share their metadata via our GitHub organization, which allows other institutions to periodically harvest and ingest the records into their own catalogs for wider exposure. Follow the steps below to get started.
 
