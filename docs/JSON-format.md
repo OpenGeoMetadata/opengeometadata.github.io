@@ -88,7 +88,7 @@ OGM metadata is formatted as flat JSON files.
 ### Example
 {: .no_toc }
 
-This is an example of a complete OGM Aardvark JSON file:
+This is an example of a complete OGM Aardvark JSON file. Note that it contains a custom (local) field, `b1g_code_s`, which is documented on the BTAA Geospatial Information Network Metadata handbook at [https://geobtaa.github.io/metadata/b1g-custom-elements/#code](https://geobtaa.github.io/metadata/b1g-custom-elements/#code)
 
 ```json
 {
@@ -200,6 +200,7 @@ This is an example of a complete OGM Aardvark JSON file:
     "https://doi.org/10.13020/a88t-yb14"
   ],
   "gbl_mdModified_dt": "2022-09-14T20:18:27Z",
-  "gbl_mdVersion_s": "Aardvark"
+  "gbl_mdVersion_s": "Aardvark",
+  "b1g_code_s": "05d-03"
 }
 ```
