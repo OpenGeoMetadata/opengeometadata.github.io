@@ -93,6 +93,16 @@ The GeoBlacklight Metadata Schema Workgroup consisted of 16 people from 12 insti
 * Susan Powell (UC Berkeley)
 * Tom Brittnacher (UC Santa Barbara)
 
+**Metadata Interest Group Members**
+Refinements to OpenGeoMetadata have continued through the work of the ongoing Metadata Interest Group, which formed after the Workgroup sunsetted:
+
+* Karen Majewicz (University of Minnesota/BTAA)
+* Keith Jenkins (Cornell University)
+* Lena Denis (Johns Hopkins University)
+* Marc McGee (Harvard University)
+* Rebecca Seifried (UMass Amherst)
+
+
 ## Will Aardvark work with my GeoBlacklight installation?
 
 You will need to upgrade to at least GeoBlacklight version 3.3 to test out Aardvark. All previously hardcoded field names were removed in GeoBlacklight version 3.3 (see [this pull request](https://github.com/geoblacklight/geoblacklight/pull/1020) for more information). This means that field names are defined in the `settings.yml` file and can be configured to use Aardvark. However, only the fields in the crosswalk will have display, facet, or other functionality enabled by default in version 3.3.
