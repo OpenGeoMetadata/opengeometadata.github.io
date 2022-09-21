@@ -21,6 +21,7 @@ nav_order: 35
 | Element Set           | DCMI |
 | Group                 | Distribution |
 
+
 ## JSON formatting
 
 The field `dct_references_s` defines external services and references using the [Cat-Interop](https://github.com/OSGeo/Cat-Interop) approach. The field value is a serialized JSON array of key/value pairs. Keys represent XML namespace URIs, and values represent the URL.
@@ -28,7 +29,7 @@ The field `dct_references_s` defines external services and references using the 
 * key:value 1 = "URI":"https://example.com"
 * key:value 2 = "URI":"https://otherexample.com"
 
-To format this field in JSON, double quotations `"` must be [escaped](../#escaped-characters) with a backslash `\`.
+To format this field in JSON, double quotations `"` must be [escaped](../JSON-format#escaped-characters) with a backslash `\`.
 
 ```json
 {
@@ -84,7 +85,7 @@ To enable multiple downloads:
 * Create one or more objects inside the array. These are enclosed in {curly brackets}.
 * Inside the object, define two `key:value` pairs separated by a comma.
 * Enclose each key and each value in double quotes.
-* [Escape](../#escaped-characters) double quotations `"` with a backslash `\`
+* [Escape](../JSON-format#escaped-characters) double quotations `"` with a backslash `\`
 
 In formatted JSON, this would look like:
 ```json
