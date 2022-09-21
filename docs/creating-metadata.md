@@ -43,7 +43,7 @@ The most commonly used tool for creating geospatial metadata is Esri’s ArcCata
 
 **Option B: Create metadata in the OGM schema directly**
 
-Other repositories skip Option A and create records directly in the OpenGeoMetadata metadata schema. Although users benefit from the more complete information that can be added to an FGDC or ISO document, these standards are not needed to run GeoBlacklight. These repositories often use a spreadsheet or a Dublin-Core-based metadata editor to create the records. Scripts can be used to convert spreadsheets (in .csv format) to JSON in the OpenGeoMetadata schema. See [Scripts and Tools](scripts-and-tools) for example scripts.
+Other repositories skip Option A and create records directly in the OpenGeoMetadata metadata schema. Although users benefit from the more complete information that can be added to an FGDC or ISO document, these standards are not needed to run GeoBlacklight. These repositories often use a spreadsheet or a Dublin-Core-based metadata editor to create the records. Scripts can be used to convert spreadsheets (in .csv format) to JSON in the OpenGeoMetadata schema. See [Workflows and Tools](workflows-and-tools) for example scripts.
 
 ### For resources with existing metadata files
 {: .no_toc }
@@ -69,7 +69,7 @@ Most institutions have their own unique set of tools and workflows to perform th
 
 The process, whether automated or manual, typically involves parsing the existing metadata record, extracting the values from selected fields and inserting the value into a new JSON document under the corresponding OpenGeoMetadata schema field. In most cases the values can simply be copied over as is, although some additional formatting may be necessary.
 
-See [Scripts and Tools](scripts-and-tools) to view custom scripts and tools for additional metadata authoring techniques.
+See [Workflows and Tools](workflows-and-tools) to view custom scripts and tools for additional metadata authoring techniques.
 
 Helpful reminders:
 

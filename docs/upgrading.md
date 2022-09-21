@@ -26,7 +26,7 @@ parent: Resources
 
 **Terminology used on this page**
 
-*   **GBL 1.0**: The legacy metadata schema designed for GeoBlacklight versions 2.0-3.7. [The schema is documented on this Legacy page.](/gbl-1.0)
+*   **GBL 1.0**: The legacy metadata schema designed for GeoBlacklight versions 2.0-3.7. [The schema is documented on this Legacy page.](gbl-1.0)
 *   **OGM Aardvark**: The new metadata schema that is compatible with GeoBlacklight version 4.0.
 *   **GeoBlacklight**: When spelled out, GeoBlacklight refers to [the application itself](https://geoblacklight.org), not its namesake legacy metadata schema, GBL 1.0.
 *   **URI**: This is the name we give to the metadata element itself. For example, the URI for the Subject field is `dct_subject_sm`. 
