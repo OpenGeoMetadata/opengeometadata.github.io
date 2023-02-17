@@ -6,7 +6,7 @@ has_children: false
 has_toc: false
 ---
 
-# Open GeoMetadata (OGM) Aardvark Schema
+# OpenGeoMetadata (OGM) Aardvark Schema
 
 {: .fs-6 .fw-300 }
 
