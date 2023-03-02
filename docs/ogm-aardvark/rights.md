@@ -10,7 +10,7 @@ nav_order: 28
 | Label                 | Rights                  |
 |:----------------------|:------------------------|
 | URI                   | `dct_rights_sm`         |
-| Obligation            | Recommended             |
+| Obligation            | Suggested             |
 | Multivalued           | true                    |
 | Field type            | array of strings        |
 | Purpose               | To provide a free text field for rights information, such as usage, access, or copyright |

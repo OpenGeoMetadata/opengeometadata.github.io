@@ -10,7 +10,7 @@ nav_order: 35
 | Label                 | References |
 |:----------------------|:-----------|
 | URI                   | `dct_references_s` |
-| Obligation            | Recommended |
+| Obligation            | Suggested |
 | Multivalued           | false |
 | Field type            | string (serialized JSON) |
 | Purpose               | To provide external URLs for accessing or describing the resource |

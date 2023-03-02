@@ -10,7 +10,7 @@ nav_order: 37
 | Label                 | Identifier |
 |:----------------------|:-----------|
 | URI                   | `dct_identifier_sm` |
-| Obligation            | Recommended |
+| Obligation            | Suggested |
 | Multivalued           | true |
 | Field type            | array of strings |
 | Purpose               | To provide a general purpose field for identifiers |

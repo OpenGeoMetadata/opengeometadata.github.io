@@ -10,7 +10,7 @@ nav_order: 6
 | Label                 | Publisher               |
 |:----------------------|:------------------------|
 | URI                   | `dct_publisher_sm`      |
-| Obligation            | Recommended             |
+| Obligation            | Suggested             |
 | Multivalued           | true                    |
 | Field type            | array of strings        |
 | Purpose               | To credit the entity that first made a new version of something available |

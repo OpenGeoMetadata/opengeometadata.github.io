@@ -10,7 +10,7 @@ nav_order: 18
 | Label                 | Geometry |
 |:----------------------|:---------|
 | URI                   | `locn_geometry` |
-| Obligation            | Recommended |
+| Obligation            | Suggested |
 | Multivalued           | false |
 | Field type            | string |
 | Purpose               | To display the extent of the resource and to power the map search |

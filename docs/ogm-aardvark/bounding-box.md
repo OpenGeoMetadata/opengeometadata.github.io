@@ -10,7 +10,7 @@ nav_order: 19
 | Label                 | Bounding Box |
 |:--------------------- |:------------ |
 | URI                   | `dcat_bbox` |
-| Obligation            | Recommended |
+| Obligation            | Suggested |
 | Multivalued           | false |
 | Field type            | string |
 | Purpose               | To support overlap ratio boosting in spatial searches |

@@ -10,7 +10,7 @@ nav_order: 7
 | Label                 | Provider                |
 |:----------------------|:------------------------|
 | URI                   | `schema_provider_s`     |
-| Obligation            | Recommended             |
+| Obligation            | Suggested             |
 | Multivalued           | false                   |
 | Field type            | string                  |
 | Purpose               | To clarify which organization is holds the resource or acts as the custodian for the metadata record and to help users understand which resources they can access |

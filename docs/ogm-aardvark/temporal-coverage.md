@@ -10,7 +10,7 @@ nav_order: 13
 | Label                 | Temporal Coverage |
 |:----------------------|:------------------|
 | URI                   | `dct_temporal_sm` |
-| Obligation            | Recommended |
+| Obligation            | Suggested |
 | Multivalued           | true |
 | Field type            | array of strings |
 | Purpose               | To provide the user with a free text description of the time period or ranges of what is depicted in the resource |

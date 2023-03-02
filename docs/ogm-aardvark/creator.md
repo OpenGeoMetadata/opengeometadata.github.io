@@ -10,7 +10,7 @@ nav_order: 5
 | Label                 | Creator                 |
 |:----------------------|:------------------------|
 | URI                   | `dct_creator_sm`        |
-| Obligation            | Recommended             |
+| Obligation            | Suggested             |
 | Multivalued           | true                    |
 | Field type            | array of strings        |
 | Purpose               | To credit the person/organization that collected or authored the resource |
