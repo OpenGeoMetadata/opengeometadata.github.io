@@ -23,6 +23,7 @@ has_toc: false
 - [Alternative Title](ogm-aardvark/alternative-title)
 - [Description](ogm-aardvark/description) (S)
 - [Language](ogm-aardvark/language)
+- [Display Note](ogm-aardvark/display-note)
 
 ### Credits
 - [Creator](ogm-aardvark/creator) (S)
