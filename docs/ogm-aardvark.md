@@ -103,44 +103,43 @@ has_toc: false
 | Label                                                   | URI                    | Obligation  |
 |:--------------------------------------------------------|:-----------------------|:------------|
 | **[Access Rights](ogm-aardvark/access-rights)**       | `dct_accessRights_s`   | <span class="text-red-300">**Required**</span> |
-| [Alternative Title](ogm-aardvark/alternative-title)   | `dct_alternative_sm`   | optional    |
-| [Bounding Box](ogm-aardvark/bounding-box)             | `dcat_bbox`            | suggested   |
-| [Centroid](ogm-aardvark/centroid)                     | `dcat_centroid`        | optional    |
-| [Creator](ogm-aardvark/creator)                       | `dct_creator_sm`       | suggested   |
-| [Date Issued](ogm-aardvark/date-issued)               | `dct_issued_s`         | optional    |
-| [Date Range](ogm-aardvark/date-range)                 | `gbl_dateRange_drsim`  | optional    |
-| [Description](ogm-aardvark/description)               | `dct_description_sm`   | suggested   |
-| [Display Note](ogm-aardvark/display-note)             | `gbl_displayNote_sm`   | optional    |
-| [File Size](ogm-aardvark/file-size)                   | `gbl_fileSize_s`       | optional    |
+| [Alternative Title](ogm-aardvark/alternative-title)   | `dct_alternative_sm`   | Optional    |
+| [Bounding Box](ogm-aardvark/bounding-box)             | `dcat_bbox`            | Suggested |
+| [Centroid](ogm-aardvark/centroid)                     | `dcat_centroid`        | Optional    |
+| [Creator](ogm-aardvark/creator)                       | `dct_creator_sm`       | Suggested |
+| [Date Issued](ogm-aardvark/date-issued)               | `dct_issued_s`         | Optional    |
+| [Date Range](ogm-aardvark/date-range)                 | `gbl_dateRange_drsim`  | Optional    |
+| [Description](ogm-aardvark/description)               | `dct_description_sm`   | Suggested |
+| [File Size](ogm-aardvark/file-size)                   | `gbl_fileSize_s`       | Optional    |
 | [Format](ogm-aardvark/format)                         | `dct_format_s`         | Conditional |
-| [Geometry](ogm-aardvark/geometry)                     | `locn_geometry`        | suggested   |
-| [Georeferenced](ogm-aardvark/georeferenced)           | `gbl_georeferenced_b`  | optional    |
+| [Geometry](ogm-aardvark/geometry)                     | `locn_geometry`        | Suggested |
+| [Georeferenced](ogm-aardvark/georeferenced)           | `gbl_georeferenced_b`  | Optional    |
 | **[ID](ogm-aardvark/id)**                             | `id`                   | <span class="text-red-300">**Required**</span> |
-| [Identifier](ogm-aardvark/identifier)                 | `dct_identifier_sm`    | suggested   |
-| [Index Year](ogm-aardvark/index-year)                 | `gbl_indexYear_im`     | suggested   |
-| [Is Part Of](ogm-aardvark/is-part-of)                 | `dct_isPartOf_sm`      | optional    |
-| [Is Replaced By](ogm-aardvark/is-replaced-by)         | `dct_isReplacedBy_sm`  | optional    |
-| [Is Version Of](ogm-aardvark/is-version-of)           | `dct_isVersionOf_sm`   | optional    |
-| [Keyword](ogm-aardvark/keyword)                       | `dcat_keyword_sm`      | optional    |
-| [Language](ogm-aardvark/language)                     | `dct_language_sm`      | optional    |
-| [License](ogm-aardvark/license)                       | `dct_license_sm`       | optional    |
-| [Member Of](ogm-aardvark/member-of)                   | `pcdm_memberOf_sm`     | optional    |
+| [Identifier](ogm-aardvark/identifier)                 | `dct_identifier_sm`    | Suggested |
+| [Index Year](ogm-aardvark/index-year)                 | `gbl_indexYear_im`     | Suggested |
+| [Is Part Of](ogm-aardvark/is-part-of)                 | `dct_isPartOf_sm`      | Optional    |
+| [Is Replaced By](ogm-aardvark/is-replaced-by)         | `dct_isReplacedBy_sm`  | Optional    |
+| [Is Version Of](ogm-aardvark/is-version-of)           | `dct_isVersionOf_sm`   | Optional    |
+| [Keyword](ogm-aardvark/keyword)                       | `dcat_keyword_sm`      | Optional    |
+| [Language](ogm-aardvark/language)                     | `dct_language_sm`      | Optional    |
+| [License](ogm-aardvark/license)                       | `dct_license_sm`       | Optional    |
+| [Member Of](ogm-aardvark/member-of)                   | `pcdm_memberOf_sm`     | Optional    |
 | **[Metadata Version](ogm-aardvark/metadata-version)** | `gbl_mdVersion_s`      | <span class="text-red-300">**Required**</span> |
 | **[Modified](ogm-aardvark/modified)**                 | `gbl_mdModified_dt`    | <span class="text-red-300">**Required**</span> |
-| [Provider](ogm-aardvark/provider)                     | `schema_provider_s`    | suggested   |
-| [Publisher](ogm-aardvark/publisher)                   | `dct_publisher_sm`     | suggested   |
-| [References](ogm-aardvark/references)                 | `dct_references_s`     | suggested   |
-| [Relation](ogm-aardvark/relation)                     | `dct_relation_sm`      | optional    |
-| [Replaces](ogm-aardvark/replaces)                     | `dct_replaces_sm`      | optional    |
+| [Provider](ogm-aardvark/provider)                     | `schema_provider_s`    | Suggested |
+| [Publisher](ogm-aardvark/publisher)                   | `dct_publisher_sm`     | Suggested |
+| [References](ogm-aardvark/references)                 | `dct_references_s`     | Suggested |
+| [Relation](ogm-aardvark/relation)                     | `dct_relation_sm`      | Optional    |
+| [Replaces](ogm-aardvark/replaces)                     | `dct_replaces_sm`      | Optional    |
 | **[Resource Class](ogm-aardvark/resource-class)**     | `gbl_resourceClass_sm` | <span class="text-red-300">**Required**</span> |
-| [Resource Type](ogm-aardvark/resource-type)           | `gbl_resourceType_sm`  | suggested   |
-| [Rights Holder](ogm-aardvark/rights-holder)           | `dct_rightsHolder_sm`  | optional    |
-| [Rights](ogm-aardvark/rights)                         | `dct_rights_sm`        | suggested   |
-| [Source](ogm-aardvark/source)                         | `dct_source_sm`        | optional    |
-| [Spatial Coverage](ogm-aardvark/spatial-coverage)     | `dct_spatial_sm`       | suggested   |
-| [Subject](ogm-aardvark/subject)                       | `dct_subject_sm`       | optional    |
-| [Suppressed](ogm-aardvark/suppressed)                 | `gbl_suppressed_b`     | optional    |
-| [Temporal Coverage](ogm-aardvark/temporal-coverage)   | `dct_temporal_sm`      | suggested   |
-| [Theme](ogm-aardvark/theme)                           | `dcat_theme_sm`        | optional    |
+| [Resource Type](ogm-aardvark/resource-type)           | `gbl_resourceType_sm`  | Suggested |
+| [Rights Holder](ogm-aardvark/rights-holder)           | `dct_rightsHolder_sm`  | Optional    |
+| [Rights](ogm-aardvark/rights)                         | `dct_rights_sm`        | Suggested |
+| [Source](ogm-aardvark/source)                         | `dct_source_sm`        | Optional    |
+| [Spatial Coverage](ogm-aardvark/spatial-coverage)     | `dct_spatial_sm`       | Suggested |
+| [Subject](ogm-aardvark/subject)                       | `dct_subject_sm`       | Optional    |
+| [Suppressed](ogm-aardvark/suppressed)                 | `gbl_suppressed_b`     | Optional    |
+| [Temporal Coverage](ogm-aardvark/temporal-coverage)   | `dct_temporal_sm`      | Suggested |
+| [Theme](ogm-aardvark/theme)                           | `dcat_theme_sm`        | Optional    |
 | **[Title](ogm-aardvark/title)**                       | `dct_title_s`          | <span class="text-red-300">**Required**</span> |
-| [WxS Identifier](ogm-aardvark/wxs-identifier)         | `gbl_wxsIdentifier_s`  | conditional |
+| [WxS Identifier](ogm-aardvark/wxs-identifier)         | `gbl_wxsIdentifier_s`  | Conditional |

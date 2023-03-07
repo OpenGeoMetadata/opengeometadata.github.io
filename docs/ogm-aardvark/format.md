@@ -10,7 +10,7 @@ nav_order: 32
 | Label                 | Format |
 |:----------------------|:-------|
 | URI                   | `dct_format_s` |
-| Obligation            | Conditional |
+| Obligation            | Conditionally Required |
 | Multivalued           | false |
 | Field type            | string |
 | Purpose               | To display to the user the name of the file type as a text string in the download button |

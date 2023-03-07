@@ -10,7 +10,7 @@ nav_order: 3
 | Label                 | Description             |
 |:----------------------|:------------------------|
 | URI                   | `dct_description_sm`    |
-| Obligation            | Recommended             |
+| Obligation            | Suggested             |
 | Multivalued           | true                    |
 | Field type            | array of strings        |
 | Purpose               | To provide the user with a summary of the resource |

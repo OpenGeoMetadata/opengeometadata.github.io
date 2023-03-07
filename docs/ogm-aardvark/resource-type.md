@@ -10,7 +10,7 @@ nav_order: 9
 | Label                 | Resource Type           |
 |:----------------------|:------------------------|
 | URI                   | `gbl_resourceType_sm`   |
-| Obligation            | Recommended             |
+| Obligation            | Suggested             |
 | Multivalued           | true                    |
 | Field type            | array of strings        |
 | Purpose               | To provide a secondary level of categories for classifying the spatial type or structure of a dataset |

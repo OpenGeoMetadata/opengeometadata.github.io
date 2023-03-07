@@ -10,7 +10,7 @@ nav_order: 15
 | Label                 | Index Year |
 |:----------------------|:-----------|
 | URI                   | `gbl_indexYear_im` |
-| Obligation            | Recommended |
+| Obligation            | Suggested |
 | Multivalued           | true |
 | Field type            | array of integers |
 | Purpose               | To power time slider widgets that rely on integers for dates |

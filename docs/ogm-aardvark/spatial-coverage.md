@@ -10,7 +10,7 @@ nav_order: 17
 | Label                 | Spatial Coverage |
 |:----------------------|:-----------------|
 | URI                   |`dct_spatial_sm` |
-| Obligation            | Recommended |
+| Obligation            | Suggested |
 | Multivalued           | true |
 | Field type            | array of strings |
 | Purpose               | To provide the user with a list of searchable and selectable place names |
