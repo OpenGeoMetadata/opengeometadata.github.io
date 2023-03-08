@@ -110,6 +110,7 @@ has_toc: false
 | [Date Issued](ogm-aardvark/date-issued)               | `dct_issued_s`         | Optional    |
 | [Date Range](ogm-aardvark/date-range)                 | `gbl_dateRange_drsim`  | Optional    |
 | [Description](ogm-aardvark/description)               | `dct_description_sm`   | Suggested |
+| [Display Note](ogm-aardvark/display-note)             | `gbl_displayNote_sm`   | Optional    |
 | [File Size](ogm-aardvark/file-size)                   | `gbl_fileSize_s`       | Optional    |
 | [Format](ogm-aardvark/format)                         | `dct_format_s`         | Conditional |
 | [Geometry](ogm-aardvark/geometry)                     | `locn_geometry`        | Suggested |
