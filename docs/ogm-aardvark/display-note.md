@@ -5,9 +5,9 @@ parent: OGM Aardvark
 nav_order: 4.5
 ---
 
-## Description
+## Display Note
 
-| Label                 | Description             |
+| Label                 | Display Note            |
 |:----------------------|:------------------------|
 | URI                   | `gbl_displayNote_sm`    |
 | Obligation            | Optional                |
