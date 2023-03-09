@@ -17,4 +17,4 @@ If you have access to your Solr Dashboard panel, you can add records manually by
 
 **Option B: Indexing via scripts**
 
-It is often more practical to use a process for batch adding, updating, and deleting the records. Most of the available processes are in the form of command-line scripts. See the [Tools](tools.md) for examples.
+It is often more practical to use a process for batch adding, updating, and deleting the records. Most of the available processes are in the form of command-line scripts. See the [Metadata Tools](metadata-tools.md) for examples.

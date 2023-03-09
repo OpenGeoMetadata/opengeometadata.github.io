@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # About OpenGeoMetadata Repositories
 
 OpenGeoMetadata is a federated metadata-sharing community. The goal of participating in OpenGeoMetadata is to enable other institutions to find and use your institution’s metadata in their own local repositories, increasing the visibility and discoverability of your geospatial assets.

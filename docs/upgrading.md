@@ -1,99 +1,13 @@
 # Upgrade Guide for converting Metadata from GBL 1.0 to OGM Aardvark
 
 
-**Terminology used on this page**
-
-*   **GBL 1.0**: The legacy metadata schema designed for GeoBlacklight versions 2.0-3.7. [The schema is documented on this Legacy page.](gbl-1.0)
-*   **OGM Aardvark**: The new metadata schema that is compatible with GeoBlacklight version 4.0.
-*   **GeoBlacklight**: When spelled out, GeoBlacklight refers to [the application itself](https://geoblacklight.org), not its namesake legacy metadata schema, GBL 1.0.
-*   **URI**: This is the name we give to the metadata element itself. For example, the URI for the Subject field is `dct_subject_sm`. 
-*   **Namespace**: This is how we signify which family of standards or schemas an element belongs to. For the GeoBlacklight schema, this takes the form of the URI’s prefix. For the URI `dct_subject_sm`,  `dct_` is the prefix and signifies that this element is from Dublin Core.
-*   **Solr field type**: This is the suffix appended to the URI and indicates what kind of Solr field should be indexed. For `dct_subject_sm`, the `_sm` stands for String Multiple. It indicates that the field type is a string and that it can have multiple values.
-*   **Value**: This is the information that is entered in a field. It may be free text (literal value) or a URI/code (nonliteral value).
-
-
-------------
-## What are the differences between GBL 1.0 and OGM Aardvark?
-
-### New elements for rights
-
-The new set of rights elements are:
-
-| Label              | URI                     | Description and Entry Guidelines |
-|:-------------------|:------------------------|:---------------------------------|
-| Access Rights      | `dct_accessRights_s`    | One of two possible values, "Public" or "Restricted"; controls whether a user can preview or download an item. This element replaces `dc_rights_s`. |
-| Rights             | `dct_rights_sm`         | Free-text field for generic, catch-all access and usage rights. Can include clickable links. |
-| License            | `dct_license_sm`        | Field for one or more URIs. Recommended sources are [Creative Commons](https://creativecommons.org/) or [Open Data Commons](https://opendatacommons.org/). |
-| Rights Holder      | `dct_rightsHolder_sm`   | Free-text field for the person or organization owning or managing rights over the resource. |
-
-
-### New elements for item relations
-
-The new schema includes seven relationship fields. The value for each field should be the ID (slug) of the related item.
-
-GeoBlacklight version 3.4 and earlier has an Item Relations widget that displays items identified in the **Source** field. Beginning with version 4, this has been updated to use the same widget for each of these fields
-{: .note}
-
-The new set of relationship elements are:
-
-| Label              | URI                     | Description and Entry Guidelines |
-|:-------------------|:------------------------|:---------------------------------|
-| Source             | `dct_source_sm`         | For items that have been derived from another item (e.g. a digitized shapefile from a historical map). |
-| Is Part Of         | `dct_isPartOf_sm`       | For items that are a subset of another item (e.g. a page in a book). This value type is changing from free-text in Version 1.0 to an ID (slug) in the new schema. |
-| Member Of          | `pcdm_memberOf_sm`      | For items in a collection.       |
-| Replaces           | `dct_replaces_sm`       | To refer to an item that has been deprecated. |
-| Is Replaced By     | `dct_isReplacedBy_sm`   | To point the user to a new item. |
-| Version            | `dct_isVersionOf_sm`    | To indicate that an item is part of a series of resources that are updated or altered. |
-| Relation            | `dct_relation_sm`      | For a general purpose relation.  |
-
-
-### Consistent namespaces for all metadata element URIs
-
-OGM Aardvark gives preference to elements found in established schemas over custom fields.
-
-* **`dct_`**: This signifies that the field is part of the [Dublin Core Metadata Initiative (DCMI) Metadata Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/). Any Dublin Core fields from GBL 1.0 were updated to use the `dct_` namespace, instead of `dc_`.
-* **`dcat_`**: This signifies that the field is from the [Data Catalog Vocabulary (DCAT) Version 2](https://www.w3.org/TR/vocab-dcat-2/).
-* **`pcdm_`**: This refers to the [Portland Common Data Model](https://github.com/duraspace/pcdm/wiki), which is a framework for many digital repository systems. We drew from it to establish one of the item relationship fields.
-* **`gbl_`**: This stands for GeoBlacklight and is used for any field that is application-specific or has no analogous term in other schemas.
-
-
-### Multivalued elements whenever possible
-
-The original schema features several descriptive metadata fields that only accept one value. The new schema expands many of these to multiple. This changes the URI suffix from `_s` to` _sm`. Although it will not affect the GeoBlacklight functionality, this practice may conflict with indexing, as Solr will treat `dct_publisher_s` as a different field than `dct_publisher_sm`.
-
-----------
-## Crosswalks
-
----------
-### Elements without a crosswalk
-
-
-Most of the elements from GBL 1.0 can be crosswalked directly into OGM Aardvark. The values for these elements are the same - only the URI name has changed or the field has been converted to an array.  
-
-However, there are three elements in GBL 1.0 that do not directly translate into OGM Aardvark. While they have been replaced with similar fields in OGM Aardvark, the **values themselves** would need to be altered during crosswalking.
-
-**Type (dc_type_s)**
-* GBL 1.0 Description: This single-valued GBL 1.0 field observes the Dublin Core controlled vocabulary for Type, including Dataset, Image, Collection, Interactive Resource, or Physical Object.
-* Similar Aardvark element: This has been replaced in Aardvark with the multi-valued [Resource Class](ogm-aardvark/resource-class), which uses a custom controlled vocabulary of Collections, Datasets, Imagery, Maps, Web services, and/or Other.
-
-**Geometry Type (layer_geom_type_s)**
-* GBL 1.0 Description: This single-valued GBL 1.0 field differentiates between vector (Point, Line, Polygon), raster (Raster, Image), non-spatial formats (Table), or a combination (Mixed).
-* Similar Aardvark element: This has been replaced in Aardvark with the multi-valued [Resource Type](ogm-aardvark/resource-type), which uses a controlled vocabulary drawn from Library of Congress cartographic genres and GIS geometries.
-
-**Is Part Of (dct_isPartOf_sm)**
-* GBL 1.0 Description: This multi-valued GBL 1.0 plain text field is for writing out the name of a collection. Example: `dct_isPartOf_sm:"Village Maps of India"`
-* Similar Aardvark element: The URI is the same in Aardvark, but it is now a non-literal field. The value must be one or more IDs that reference another record within the system. Example: `dct_isPartOf_sm:"princeton-z603r079s"`
-
-------
-## Tools and techniques for upgrading
-
 The following options are three ways to upgrade GBL 1.0 metadata into OGM Aardvark.  The figures include references to Solr, the search index that powers a GeoBlacklight instance.
 
-### Option 1: Re-run the metadata pipeline with a new crosswalk
+## Option 1: Re-run the metadata pipeline with a new crosswalk
 
 <figure>
   <img
-  src="images/transform-option1.png"
+  src="/images/transform-option1.png"
   alt="metadata-pipline">
   <figcaption align = "center">Fig.1 - Metadata pipeline showing a conversion from standards metadata</figcaption>
 </figure>
@@ -120,11 +34,11 @@ This option involves updating your local transformation workflow that extracts v
 
 -----
 
-### Option 2: Programmatically convert the JSON files
+## Option 2: Programmatically convert the JSON files
 
 <figure>
   <img
-  src="images/transform-option2.png"
+  src="/images/transform-option2.png"
   alt="convert-jsons">
   <figcaption align = "center">Fig.2 - Programmatic transformation process using Geoblacklight 1.0 Metadata JSONs</figcaption>
 </figure>
@@ -163,11 +77,11 @@ Currently, the OpenGeoMetadata community has two tools that can do batch convers
 * will not include some fields that are new in OGM Aardvark, such as Rights or License. To take advantage of those fields, use Option 1 or 3.
 
 -----
-### Option 3: Conversion with manual remediation
+## Option 3: Conversion with manual remediation
 
 <figure>
   <img
-  src="/../assets/images/transform-option3.png"
+  src="/images/transform-option3.png"
   alt="manual-remediation">
   <figcaption align = "center">Fig.3 - Transformation process that includes manual remediation</figcaption>
 </figure>

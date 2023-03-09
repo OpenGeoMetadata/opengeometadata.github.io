@@ -42,7 +42,7 @@ Most institutions have their own unique set of tools and workflows to perform th
 
 The process, whether automated or manual, typically involves parsing the existing metadata record, extracting the values from selected fields and inserting the value into a new JSON document under the corresponding OpenGeoMetadata schema field. In most cases the values can simply be copied over as is, although some additional formatting may be necessary.
 
-See [Workflows and Tools](workflows-and-tools) to view custom scripts and tools for additional metadata authoring techniques.
+See [Metadata Tools](metadata-tools.md) to view custom scripts and tools for additional metadata authoring techniques.
 
 !!! tip
 

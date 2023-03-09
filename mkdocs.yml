@@ -5,22 +5,27 @@ theme:
     highlightjs: true
     logo: images/ogm-icon.png
     palette:
-       primary: black
-       accent: indigo
+       primary: indigo
+#        accent: indigo
     features:
         - navigation.tabs
         - navigation.tabs.sticky
         - navigation.tracking
         - navigation.expand
         - navigation.sections
-        - toc.integrate
+#         - toc.integrate
 
     
 plugins:
   - search
+  - table-reader
 
 extra_css:
   - stylesheets/extra.css
+  
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
 
 markdown_extensions:
   - abbr
@@ -28,6 +33,11 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - admonition
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed:
@@ -35,7 +45,7 @@ markdown_extensions:
   - toc:
         toc_depth: 2
         permalink: true
-
+        
 nav:
 
 - Home: 'index.md'
@@ -43,12 +53,15 @@ nav:
 - Reference:
       Metadata Schemas:
             - 'Aardvark Schema': 'ogm-aardvark.md'
+            - ' Legacy Versions': 'legacy-versions.md'
             - 'GBL Metadata Version 1.0': 'gbl-1.0.md'
             - 'GBL Metadata Version 0.5': 'gbl-0.5.md'
+      
       Metadata Crosswalks:
             - 'Aardvark to GBL 1.0' : 'aardvark-gbl-1-crosswalk.md'
             - 'Aardvark to FGDC and ISO': 'aardvark-fgdc-iso-crosswalk.md'
-      Supplemental information:
+      
+      Metadata Reference:
             - 'Custom Fields': 'custom-fields.md'
             - 'JSON Format': 'JSON-format.md'
             - 'Solr Field Types': 'solr-field-types.md'

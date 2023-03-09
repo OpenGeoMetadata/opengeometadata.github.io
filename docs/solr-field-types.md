@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 ## Unique keys
 
 Metadata for GeoBlacklight instances is stored and indexed in Solr, which uses a "Unique Key Field" as the identifier for each document. The OGM Aardvark schema was designed with `id` as the Unique Key Field (in GBL 1.0, this field was called `layer_slug_s`). Each item must have a unique key.
