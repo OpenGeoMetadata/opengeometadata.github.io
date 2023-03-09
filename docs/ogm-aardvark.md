@@ -1,20 +1,18 @@
 ---
-layout: default
-title: Schema
-nav_order: 3
-has_children: false
-has_toc: false
+hide:
+
+  - toc
+
 ---
 
 # OpenGeoMetadata (OGM) Aardvark Schema
 
-{: .fs-6 .fw-300 }
 
-[About OGM Aardvark](about-ogm-aardvark){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[How to Upgrade from GBL 1.0](upgrading){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Legacy Schemas](legacy-versions){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[About OGM Aardvark](about-ogm-aardvark.md){.md-button}
+[How to Upgrade from GBL 1.0](upgrading.md){.md-button}
+[Legacy Schemas](legacy-versions){.md-button}
 
-## Fields by Group
+### Fields by Group
 
 <div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
 
@@ -98,7 +96,7 @@ has_toc: false
 
 <br style="clear:left">
 
-## Fields in Alphabetical Order
+### Fields in Alphabetical Order
 
 | Label                                                   | URI                    | Obligation  |
 |:--------------------------------------------------------|:-----------------------|:------------|

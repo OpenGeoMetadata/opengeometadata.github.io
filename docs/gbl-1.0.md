@@ -1,16 +1,11 @@
 ---
-layout: default
-title: GBL 1.0
-parent: Legacy Versions
-nav_order: 1
+hide:
+  - toc
 ---
 
-# GBL 1.0
+!!! warning
 
-GeoBlacklight metadata schema version 1.0
-{: .fs-6 .fw-300 }
-
-This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardvark](ogm-aardvark) for GeoBlacklight versions 4.0 and higher.
+	This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardvark](ogm-aardvark) for GeoBlacklight versions 4.0 and higher.
 
 ---
 
@@ -44,6 +39,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 | [Modified Date](#modified-date)	  | `layer_modified_dt`    |          | X           |
 | [Suppressed](#suppressed)			    | `suppressed_b`         |          |             |
 
+## Details
 
 ### Identifier
 
@@ -63,6 +59,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Rights
 
 | Label							| Rights|
+|:----------------------|:-----------|
 | uri							| `dc_rights_s`|
 | Required						| yes|
 | Type							| string|
@@ -76,6 +73,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Title
 
 | Label							| Title|
+|:----------------------|:-----------|
 | uri							| `dc_title_s`|
 | Required						| yes|
 | Type							| string|
@@ -89,6 +87,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Provenance
 
 | Label							| Provenance|
+|:----------------------|:-----------|
 | uri							| `dct_provenance_s`|
 | Required						| yes|
 | Type							| string|
@@ -102,6 +101,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Schema Version
 
 | Label							| Schema Version|
+|:----------------------|:-----------|
 | uri							| `geoblacklight_version`	|
 | Required						| yes|
 | Type							| string|
@@ -115,6 +115,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Slug
 
 | Label							| Slug|
+|:----------------------|:-----------|
 | uri							| `layer_slug_s`|
 | Required						| yes|
 | Type							| string|
@@ -128,6 +129,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Bounding Box
 
 | Label 						| Bounding Box|
+|:----------------------|:-----------|
 | uri							| `solr_geom`|
 | Required						| yes|
 | Type							| string|
@@ -141,6 +143,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Solr Year
 
 | Label 						| Solr Year|
+|:----------------------|:-----------|
 | uri							| `solr_year_i`|
 | Required						| no|
 | Type							| integer|
@@ -154,6 +157,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Creator
 
 | Label							| Creator|
+|:----------------------|:-----------|
 | uri 							| `dc_creator_sm`|
 | Required						| no|
 | Type							| array|
@@ -167,6 +171,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Description
 
 | Label| Description|
+|:----------------------|:-----------|
 | uri							| `dc_description_s`|
 | Required						| no|
 | Type							| string|
@@ -180,6 +185,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Format
 
 | Label							| Format|
+|:----------------------|:-----------|
 | uri							| `dc_format_s`|
 | Required						| yes, if download link is included AND if download URL is configured as a single key:value pair|
 | Type							| string|
@@ -193,6 +199,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Language
 
 | Label							| Language|
+|:----------------------|:-----------|
 | uri							| `dc_language_sm`|
 | Required						| no|
 | Type							| array|
@@ -206,6 +213,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Publisher
 
 | Label							| Publisher|
+|:----------------------|:-----------|
 | uri							| `dc_publisher_s`|
 | Required						| no|
 | Type							| array|
@@ -219,6 +227,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Source
 
 | Label							| Source|
+|:----------------------|:-----------|
 | uri							| `dc_source_sm`|
 | Required						| no|
 | Type							| array|
@@ -232,6 +241,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Subject
 
 | Label							| Subject|
+|:----------------------|:-----------|
 | uri							| `dc_subject_sm`|
 | Required						| no|
 | Type							| array|
@@ -245,6 +255,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Type
 
 | Label							| Type|
+|:----------------------|:-----------|
 | uri							| `dc_type_s`|
 | Required						| no|
 | Type							| string|
@@ -258,6 +269,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Is Part Of
 
 | Label							| Is Part Of|
+|:----------------------|:-----------|
 | uri							| `dct_isPartOf_sm`|
 | Required						| no|
 | Type							| array|
@@ -271,6 +283,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Date Issued
 
 | Label							| Date Issued|
+|:----------------------|:-----------|
 | uri							| `dct_issued_s`|
 | Required						| no|
 | Type							| string|
@@ -284,6 +297,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### References
 
 | Label							| References|
+|:----------------------|:-----------|
 | uri							| `dct_references_s`|
 | Required						| no|
 | Type							| string|
@@ -297,6 +311,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Spatial Coverage
 
 | Label							| Spatial Coverage|
+|:----------------------|:-----------|
 | uri							| `dct_spatial_sm`|
 | Required						| no|
 | Type							| array|
@@ -310,6 +325,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Temporal Coverage
 
 | Label							| Temporal Coverage|
+|:----------------------|:-----------|
 | uri							| `dct_temporal_sm`|
 | Required						| no|
 | Type							| array|
@@ -323,6 +339,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Geometry Type
 
 | Label							| Geometry Type|
+|:----------------------|:-----------|
 | uri							| `layer_geom_type_s`|
 | Required						| no|
 | Type							| string|
@@ -336,6 +353,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Layer ID
 
 | Label							| Layer ID|
+|:----------------------|:-----------|
 | uri							| `layer_id_s`|
 | Required						| no|
 | Type							| string|
@@ -349,6 +367,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Modified Date
 
 | Label							| Modified Date|
+|:----------------------|:-----------|
 | uri							| `layer_modified_dt`|
 | Required						| no|
 | Type							| date-time|
@@ -362,6 +381,7 @@ This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardv
 ### Suppressed
 
 | Label							| Suppressed|
+|:----------------------|:-----------|
 | uri							| `suppressed_b`|
 | Required						| no|
 | Type							| boolean|

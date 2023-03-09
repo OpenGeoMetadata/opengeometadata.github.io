@@ -60,7 +60,7 @@ These are URIs that can be used as keys in the `dct_references_s` field.
 | Web Feature Service (WFS) | `http://www.opengis.net/def/serviceType/ogc/wfs` | Link to download vectors (GeoJSON, shapefile) |
 
 ### ArcGIS URIs
-{: .no_toc }
+
 
 | Type                      | Reference URI                                   | Function in GeoBlacklight               |
 |:--------------------------|:------------------------------------------------|:----------------------------------------|
@@ -70,7 +70,7 @@ These are URIs that can be used as keys in the `dct_references_s` field.
 | ArcGIS ImageMapLayer      | `urn:x-esri:serviceType:ArcGIS#ImageMapLayer`   | Previews a ArcGIS ImageMapLayer Service |
 
 ### URIs for specific institutions
-{: .no_toc }
+
 
 | Type                      | Reference URI                                   | Function in GeoBlacklight               |
 |:--------------------------|:------------------------------------------------|:----------------------------------------|
@@ -104,7 +104,7 @@ In formatted JSON, this would look like:
 ```
 
 ### Examples
-{: .no_toc }
+
 
 For an exmaple of a complete JSON file with multiple downloads, see [this record](https://github.com/geoblacklight/geoblacklight/blob/main/spec/fixtures/solr_documents/multiple-downloads.json).
 

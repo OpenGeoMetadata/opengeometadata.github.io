@@ -1,28 +1,5 @@
----
-layout: default
-title: Upgrade Guide
-nav_order: 5
-has_toc: false
-parent: Resources
-
----
-<style>
-    table {
-        width: 100%;
-    }
-</style>
-
 # Upgrade Guide for converting Metadata from GBL 1.0 to OGM Aardvark
-{: .no_toc }
 
----
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
 
 **Terminology used on this page**
 
@@ -85,58 +62,7 @@ OGM Aardvark gives preference to elements found in established schemas over cust
 The original schema features several descriptive metadata fields that only accept one value. The new schema expands many of these to multiple. This changes the URI suffix from `_s` to` _sm`. Although it will not affect the GeoBlacklight functionality, this practice may conflict with indexing, as Solr will treat `dct_publisher_s` as a different field than `dct_publisher_sm`.
 
 ----------
-## CROSSWALKS
-
-### Full Aardvark and GBL 1.0 crosswalk table
-
-The following chart shows the full Aardvark schema and which GBL 1.0 fields can be directly mapped.
-
-|Aardvark Label   |OGM Aardvark          |GBL 1.0                 |Note                                                                                 |
-|-----------------|----------------------|------------------------|-------------------------------------------------------------------------------------|
-|Access Rights    |`dct_accessRights_s`  |`dc_rights_s`           |new URI name                                                                         |
-|Alternative Title|`dct_alternative_sm`  |                        |new field                                                                            |
-|Bounding Box     |`dcat_bbox`           |`solr_geom`             |new field                                                                            |
-|Centroid         |`dcat_centroid`       |                        |new field                                                                            |
-|Creator          |`dct_creator_sm`      |`dc_creator_sm`         |new namespace                                                                        |
-|Date Issued      |`dct_issued_s`        |`dct_issued_s`          |no change                                                                            |
-|Date Range       |`gbl_dateRange_drsim` |                        |new field                                                                            |
-|Description      |`dct_description_sm`  |`dc_description_s`      |new namespace; single to multi-valued                                                |
-|File Size        |`gbl_fileSize_s`      |                        |new field                                                                            |
-|Format           |`dct_format_s`        |`dc_format_s`           |new namespace                                                                        |
-|Geometry         |`locn_geometry`       |`solr_geom`             |new field                                                                            |
-|Georeferenced    |`gbl_georeferenced_b` |                        |new field                                                                            |
-|ID               |`id`                  |`layer_slug_s`          |new URI name                                                                         |
-|Identifier       |`dct_identifier_sm`   |`dc_identifier_s`       |new namespace; single to multi-valued                                                |
-|Index Year       |`gbl_indexYear_im`    |`solr_year_i`           |new URI name; single to multi-valued                                                 |
-|Is Part Of       |`dct_isPartOf_sm`     |                        |new value type (see [Elements without a crosswalk](#elements-without-a-crosswalk))   |
-|Is Replaced By   |`dct_isReplacedBy_sm` |                        |new field                                                                            |
-|Keyword          |`dcat_keyword_sm`     |                        |new field                                                                            |
-|Language         |`dct_language_sm`     |`dc_language_s` or `_sm`|new namespace; single to multi-valued                                                |
-|License          |`dct_license_sm`      |                        |new field                                                                            |
-|Member Of        |`pcdm_memberOf_sm`    |                        |new field                                                                            |
-|Metadata Version |`gbl_mdVersion_s`     |`geoblacklight_version` |new URI name                                                                         |
-|Modified         |`gbl_mdModified_dt`   |`layer_modified_dt`     |new URI name                                                                         |
-|Provider         |`schema_provider_s`   |`dct_provenance_s`      |new URI name                                                                         |
-|Publisher        |`dct_publisher_sm`    |`dc_publisher_s`        |new namespace; single to multi-valued                                                |
-|References       |`dct_references_s`    |`dct_references_s`      |no change                                                                            |
-|Relation         |`dct_relation_sm`     |                        |new field                                                                            |
-|Replaces         |`dct_replaces_sm`     |                        |new field                                                                            |
-|Resource Class   |`gbl_resourceClass_sm`|                        |new field                                                                            |
-|Resource Type    |`gbl_resourceType_sm` |                        |new field                                                                            |
-|Rights           |`dct_rights_sm`       |                        |new field                                                                            |
-|Rights Holder    |`dct_rightsHolder_sm` |                        |new field                                                                            |
-|Source           |`dct_source_sm`       |`dc_source_sm`          |new namespace                                                                        |
-|Spatial Coverage |`dct_spatial_sm`      |`dct_spatial_sm`        |no change                                                                            |
-|Subject          |`dct_subject_sm`      |`dc_subject_sm`         |new namespace                                                                        |
-|Suppressed       |`gbl_suppressed_b`    |`suppressed_b`          |new namespace                                                                        |
-|Temporal Coverage|`dct_temporal_sm`     |`dct_temporal_sm`       |no change                                                                            |
-|Theme            |`dcat_theme_sm`       |                        |new field                                                                            |
-|Title            |`dct_title_s`         |`dc_title_s`            |new namespace                                                                        |
-|Version          |`dct_isVersionOf_sm`  |                        |new field                                                                            |
-|WxS Identifier   |`gbl_wxsIdentifier_s` |`layer_id_s`            |new URI name                                                                         |
-|                 |                      |`dc_type_s`             |deprecated field                                                                     |
-|                 |                      |`layer_geom_type_s`     |deprecated field                                                                     |
-|                 |                      |`dc_isPartOf_sm`        |deprecated literal field, replaced by nonliteral `dct_isPartOf_sm,`, which takes an ID|
+## Crosswalks
 
 ---------
 ### Elements without a crosswalk
@@ -167,7 +93,7 @@ The following options are three ways to upgrade GBL 1.0 metadata into OGM Aardva
 
 <figure>
   <img
-  src="/../assets/images/transform-option1.png"
+  src="images/transform-option1.png"
   alt="metadata-pipline">
   <figcaption align = "center">Fig.1 - Metadata pipeline showing a conversion from standards metadata</figcaption>
 </figure>
@@ -190,52 +116,6 @@ This option involves updating your local transformation workflow that extracts v
 * may require extra institutional support, particularly if the transformation process is part of a larger framework or connected to a repository.
 * community-developed XSLs are still a work in progress
 
-|OGM Aardvark        |FGDC CSDGM                                                                                                                                                                     |ISO 19139                                                                                                                                           |
-|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-|dct_accessRights_s  |idinfo/acconst                                                                                                                                                                 |MD_DataIdentification/resourceConstraints/MD_LegalConstraints/accessConstraints                                                                     |
-|dct_alternative_sm  |                                                                                                                                                                               |                                                                                                                                                    |
-|dcat_bbox           |idinfo/spdom/bounding/westbc AND eastbc AND northbc AND southbc                                                                                                                |MD_DataIdentification/extent/EX_Extent/geographicElement/EX_GeographicBoundingBox/west AND south AND east AND north                                 |
-|dcat_centroid       |                                                                                                                                                                               |                                                                                                                                                    |
-|dct_creator_sm      |idinfo/citation/citeinfo/originator                                                                                                                                            |MD_DataIdentification/citation/CI_Citation/citation/citedResponsibleParty/CI_ResponsibleParty/individualName OR organsationName (@type = originator)|
-|dct_issued_s        |idinfo/citation/citeinfo/pubdate                                                                                                                                               |MD_DataIdentification/citation/CI_Citation/citation/CI_Date/date                                                                                    |
-|gbl_dateRange_drsim |idinfo/timeperd/timeinfo/rngdates/begdate and idinfo/timeperd/timeinfo/rngdates/enddate                                                                                        |                                                                                                                                                    |
-|dct_description_sm  |descript/abstract                                                                                                                                                              |MD_DataIdentification/abstract                                                                                                                      |
-|gbl_fileSize_s      |distinfo/stdorder/digform/digtinfo/transize                                                                                                                                    |                                                                                                                                                    |
-|dct_format_s        |spdoinfo/direct                                                                                                                                                                |MD_Distribution/distributionFormat/MD_Format/name                                                                                                   |
-|locn_geometry       |idinfo/spdom/bounding/westbc AND eastbc AND northbc AND southbc                                                                                                                |                                                                                                                                                    |
-|gbl_georeferenced_b |                                                                                                                                                                               |                                                                                                                                                    |
-|id                  |not applicable                                                                                                                                                                 |not applicable                                                                                                                                      |
-|dct_identifier_sm   |                                                                                                                                                                               |MD_DataIdentification/citation/CI_Citation/citation/MD_Identifier/code                                                                              |
-|gbl_indexYear_im    |idinfo/timeprd/timeinfo/sngdate/caldate and idinfo/timeperd/timeinfo/mdattim/sngdate/caldate and idinfo/timeperd/timeinfo/rngdates/begdate and idinfo/keywords/temporal/tempkey|MD_DataIdentification/extent/EX_Extent/EX_TemporalExtent/extent/TimePeriod OR TimeInstant [YYYY]                                                    |
-|dct_isPartOf_sm     |                                                                                                                                                                               |                                                                                                                                                    |
-|                    |idinfo/citation/citeinfo/lworkcit/citeinfo/title                                                                                                                               |MD_AggregateInformation/aggregateDataSetName/CI_Citation/title                                                                                      |
-|dct_isReplacedBy_sm |                                                                                                                                                                               |                                                                                                                                                    |
-|dcat_keyword_sm     |                                                                                                                                                                               |                                                                                                                                                    |
-|dct_language_sm     |                                                                                                                                                                               |MD_DataIdentification/language                                                                                                                      |
-|dct_license_sm      |                                                                                                                                                                               |                                                                                                                                                    |
-|pcdm_memberOf_sm    |                                                                                                                                                                               |                                                                                                                                                    |
-|gbl_mdVersion_s     |                                                                                                                                                                               |                                                                                                                                                    |
-|gbl_mdModified_dt   |metainfo/metd                                                                                                                                                |                                                                                                                                                    |
-|schema_provider_s   |distinfo/distrib/cntinfo/cntorgp/cntorg                                                                                                                                        |MD_Distributor/CI_ResponsibleParty/organisationName                                                                                                 |
-|dct_publisher_sm    |idinfo/citation/citeinfo/pubinfo/publisher                                                                                                                                     |MD_DataIdentification/citation/CI_Citation/citation/citedResponsibleParty/CI_ResponsibleParty/individualName OR organsationName (@type = publisher) |
-|dct_references_s    |not applicable                                                                                                                                                                 |not applicable                                                                                                                                      |
-|dct_relation_sm     |                                                                                                                                                                               |                                                                                                                                                    |
-|dct_replaces_sm     |                                                                                                                                                                               |                                                                                                                                                    |
-|gbl_resourceClass_sm|idinfo/citation/citeinfo/geoform                                                                                                                                               |                                                                                                                                                    |
-|gbl_resourceType_sm |spdoinfo/ptvctinf/sdtsterm/sdtstype, idinfo/keywords/theme/themekey                                                                                                            |MD_GeometricObjectTypeCode                                                                                                                          |
-|dct_rights_sm       |idinfo/useconst, idinfo/useconst, idinfo/acconst                                                                                                                                                                |                                                                                                                                                    |
-|dct_rightsHolder_sm |                                                                                                                                                                               |                                                                                                                                                    |
-|dct_source_sm       |dataqual/lineage/srcinfo/srccite/citeinfo/title                                                                                                                                |DQ_DataQuality/lineage/LI_Lineage/source/LI_Source/sourceCitation/CI_Citation/title                                                                 |
-|dct_spatial_sm      |idinfo/keywords/place                                                                                                                                                          |MD_DataIdentification/descriptiveKeywords/MD_Keywords/keyword (@type='place')                                                                       |
-|dct_subject_sm      |idinfo/keywords/theme/themekey                                                                                                                                                 |MD_DataIdentification/descriptiveKeywords/MD_Keywords/keyword (@type='theme') AND MD_DataIdentification/topicCategory/MD_TopicCategoryCode          |
-|gbl_suppressed_b    |not applicable                                                                                                                                                                 |not applicable                                                                                                                                      |
-|dct_temporal_sm     |idinfo/timeprd/timeinfo/sngdate/caldate and idinfo/timeperd/timeinfo/mdattim/sngdate and idinfo/timeperd/timeinfo/rngdates and idinfo/keywords/temporal/tempkey                |MD_DataIdentification/extent/EX_Extent/EX_TemporalExtent/extent/TimePeriod OR TimeInstant                                                           |
-|dcat_theme_sm       |                                                                                                                                                                               |                                                                                                                                                    |
-|dct_title_s         |idinfo/citation/citeinfo/title                                                                                                                                                 |MD_DataIdentification/citation/CI_Citation/title                                                                                                    |
-|                    |                                                                                                                                                                               |hierarchyLevelName                                                                                                                                  |
-|dct_isVersionOf_sm  |                                                                                                                                                                               |                                                                                                                                                    |
-|gbl_wxsIdentifier_s |not applicable                                                                                                                                                                 |not applicable                                                                                                                                      |
-
 
 
 -----
@@ -244,7 +124,7 @@ This option involves updating your local transformation workflow that extracts v
 
 <figure>
   <img
-  src="/../assets/images/transform-option2.png"
+  src="images/transform-option2.png"
   alt="convert-jsons">
   <figcaption align = "center">Fig.2 - Programmatic transformation process using Geoblacklight 1.0 Metadata JSONs</figcaption>
 </figure>

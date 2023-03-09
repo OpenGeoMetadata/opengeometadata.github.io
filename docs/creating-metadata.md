@@ -1,40 +1,13 @@
----
-layout: default
-title: Creating Metadata
-parent: Resources
-nav_order: 1
----
-
 # Creating Metadata
-{: .no_toc }
-
 How to create metadata records in the OpenGeoMetadata schema
-{: .fs-6 .fw-300 }
 
----
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
-## Custom fields
-
-If an organization wishes to implement a custom metadata field for their GeoBlacklight instance, the naming schema should reference the organization as follows: `organization_elementName_solrFieldType`.
-
-Examples:
-* `b1g_code_s` - Internal code that organizes items by their source collection
-* `nyu_addl_dspace_s` - A 5 digit number that is the "internal identifier" for DSpace, the repository software that mints handles for all NYU's items. The internal id must be paired with the handle in order to post metadata and data via the system API.
 
 ## Create or collect metadata records
 
 Step 1 of the metadata workflow is to create or collect original metadata for each layer. Depending upon the type of resource and a repository’s chosen workflows, the format of the original metadata may be in different standards or schemas.
 
 ### For resources without metadata or with very minimal metadata
-{: .no_toc }
 
-<br>
 **Option A: Create metadata in a non-OGM geospatial standard**
 
 Many repositories begin the workflow by creating metadata for their resources in a geospatial metadata standard other than the OGM schema. In the United States, this standard is likely either the Federal Geographic Data Committee Content Standard for Digital Geospatial Metadata ([FGDC CSDGM](https://www.fgdc.gov/metadata/csdgm-standard)) or the International Organization for Standardization [(ISO) 191xx series](https://www.fgdc.gov/metadata/iso-standards).
@@ -43,10 +16,10 @@ The most commonly used tool for creating geospatial metadata is Esri’s ArcCata
 
 **Option B: Create metadata in the OGM schema directly**
 
-Other repositories skip Option A and create records directly in the OpenGeoMetadata metadata schema. Although users benefit from the more complete information that can be added to an FGDC or ISO document, these standards are not needed to run GeoBlacklight. These repositories often use a spreadsheet or a Dublin-Core-based metadata editor to create the records. Scripts can be used to convert spreadsheets (in .csv format) to JSON in the OpenGeoMetadata schema. See [Workflows and Tools](workflows-and-tools) for example scripts.
+Other repositories skip Option A and create records directly in the OpenGeoMetadata metadata schema. Although users benefit from the more complete information that can be added to an FGDC or ISO document, these standards are not needed to run GeoBlacklight. These repositories often use a spreadsheet or a Dublin-Core-based metadata editor to create the records. Scripts can be used to convert spreadsheets (in .csv format) to JSON in the OpenGeoMetadata schema. See [Workflows and Tools](/workflows-and-tools.md) for example scripts.
 
 ### For resources with existing metadata files
-{: .no_toc }
+
 
 Researchers and data providers often create geospatial metadata for their datasets, and repositories may only need to validate or augment the existing metadata records.
 
@@ -63,7 +36,7 @@ Scanned maps from library catalogs should have MARC catalog records, and they sh
 If the metadata records are in a non-OpenGeoMetadata standard, the next step is to convert or transfer information from some or all of the fields to the OpenGeoMetadata schema. The result of this process is one or more JSON files that will be parsed and indexed by Solr. These JSON files will serve as the content to be shown in the GeoBlacklight application.
 
 ### Transformation workflows
-{: .no_toc }
+
 
 Most institutions have their own unique set of tools and workflows to perform this transformation.  These workflows may differ depending on the type of item to be referenced.  In most cases, automation of this process is desired, although it is possible to create the JSON files manually.
 
@@ -71,28 +44,39 @@ The process, whether automated or manual, typically involves parsing the existin
 
 See [Workflows and Tools](workflows-and-tools) to view custom scripts and tools for additional metadata authoring techniques.
 
-Helpful reminders:
+!!! tip
 
-* The JSON files in the OpenGeoMetadata schema do not need to be stored with the data/items they are referencing.
-* Multiple items can be referenced in a single JSON file.
-* Some fields will contain the same values for each item (e.g. `gbl_mdVersion_s`)
+	* The JSON files in the OpenGeoMetadata schema do not need to be stored with the data/items they are referencing.
+	* Multiple items can be referenced in a single JSON file.
+	* Some fields will contain the same values for each item (e.g. `gbl_mdVersion_s`)
 
 ### Example
-{: .no_toc }
+
 
 A finished metadata file could look like the following example in ISO 19139 format:
 
-![ISO Metadata ](/../assets/images/ISO_snippet.png)
+![ISO Metadata ](images/ISO_snippet.png)
 
 The process of transforming metadata from the above formats to the OpenGeoMetadata schema involves mapping or “crosswalking” fields from one format to another.
 
-![ISO to GBL Crosswalk](/../assets/images/ISO-GBL.jpg)
+![ISO to GBL Crosswalk](images/ISO-GBL.jpg)
+
+
+## Example workflow
+
+At Stanford, the [metadata records](https://github.com/OpenGeoMetadata/edu.stanford.purl) are natively authored in ESRI ArcCatalog and then transformed into ISO 19139. The ISO 19139 records are then transformed to MODS for the library catalog and GeoBlacklight for the [GeoBlacklight catalog](https://earthworks.stanford.edu/).
+
+![Stanford Metadata Workflow](images/metadata_workflow.png)
+_Stanford University Metadata Workflow_
+
+Take, for example, the [metadata for this layer](https://github.com/OpenGeoMetadata/edu.stanford.purl/tree/master/rf/385/pb/1942). It has the [ISO 19139](https://github.com/OpenGeoMetadata/edu.stanford.purl/blob/master/rf/385/pb/1942/iso19139.xml) version of the metadata, along with the Feature Catalog (in [ISO 19110](https://github.com/OpenGeoMetadata/edu.stanford.purl/blob/master/rf/385/pb/1942/iso19110.xml)). We also have the transformation into [MODS](https://github.com/OpenGeoMetadata/edu.stanford.purl/blob/master/rf/385/pb/1942/mods.xml) and to [GeoBlacklight](https://github.com/OpenGeoMetadata/edu.stanford.purl/blob/master/rf/385/pb/1942/geoblacklight.json), as well as a [preview image](https://github.com/OpenGeoMetadata/edu.stanford.purl/blob/master/rf/385/pb/1942/preview.jpg). In some cases, you may even have an [HTML](http://opengeometadata.stanford.edu/metadata/edu.stanford.purl/druid:rv980rt5057/iso19139.html) version of the metadata for someone to read.
+
 
 ## Validate the metadata
 
 Once the metadata records are in the OpenGeoMetadata format, they should be validated to make sure the fields are correctly formatted. The current version of the schema is available as a [JSON-Schema file](https://github.com/geoblacklight/geoblacklight/tree/main/schema). This file format provides support for data validation with the [JSON Schema Vocabulary](http://json-schema.org).
 
 ### Recommended Method
-{: .no_toc }
+
 
 Use [GeoCombine](https://github.com/OpenGeoMetadata/GeoCombine), which has a [.valid? method](http://www.rubydoc.info/gems/geo_combine/0.1.0/GeoCombine/Geoblacklight#valid%3F-instance_method) that makes using these tools simple.

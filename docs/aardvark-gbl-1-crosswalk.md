@@ -1,0 +1,49 @@
+The following chart shows the full Aardvark schema and which GBL 1.0 fields can be directly mapped.
+
+|Aardvark Label   |OGM Aardvark          |GBL 1.0                 |Note                                                                                 |
+|-----------------|----------------------|------------------------|-------------------------------------------------------------------------------------|
+|Access Rights    |`dct_accessRights_s`  |`dc_rights_s`           |new URI name                                                                         |
+|Alternative Title|`dct_alternative_sm`  |                        |new field                                                                            |
+|Bounding Box     |`dcat_bbox`           |`solr_geom`             |new field                                                                            |
+|Centroid         |`dcat_centroid`       |                        |new field                                                                            |
+|Creator          |`dct_creator_sm`      |`dc_creator_sm`         |new namespace                                                                        |
+|Date Issued      |`dct_issued_s`        |`dct_issued_s`          |no change                                                                            |
+|Date Range       |`gbl_dateRange_drsim` |                        |new field                                                                            |
+|Description      |`dct_description_sm`  |`dc_description_s`      |new namespace; single to multi-valued                                                |
+|File Size        |`gbl_fileSize_s`      |                        |new field                                                                            |
+|Format           |`dct_format_s`        |`dc_format_s`           |new namespace                                                                        |
+|Geometry         |`locn_geometry`       |`solr_geom`             |new field                                                                            |
+|Georeferenced    |`gbl_georeferenced_b` |                        |new field                                                                            |
+|ID               |`id`                  |`layer_slug_s`          |new URI name                                                                         |
+|Identifier       |`dct_identifier_sm`   |`dc_identifier_s`       |new namespace; single to multi-valued                                                |
+|Index Year       |`gbl_indexYear_im`    |`solr_year_i`           |new URI name; single to multi-valued                                                 |
+|Is Part Of       |`dct_isPartOf_sm`     |                        |new value type (see [Elements without a crosswalk](#elements-without-a-crosswalk))   |
+|Is Replaced By   |`dct_isReplacedBy_sm` |                        |new field                                                                            |
+|Keyword          |`dcat_keyword_sm`     |                        |new field                                                                            |
+|Language         |`dct_language_sm`     |`dc_language_s` or `_sm`|new namespace; single to multi-valued                                                |
+|License          |`dct_license_sm`      |                        |new field                                                                            |
+|Member Of        |`pcdm_memberOf_sm`    |                        |new field                                                                            |
+|Metadata Version |`gbl_mdVersion_s`     |`geoblacklight_version` |new URI name                                                                         |
+|Modified         |`gbl_mdModified_dt`   |`layer_modified_dt`     |new URI name                                                                         |
+|Provider         |`schema_provider_s`   |`dct_provenance_s`      |new URI name                                                                         |
+|Publisher        |`dct_publisher_sm`    |`dc_publisher_s`        |new namespace; single to multi-valued                                                |
+|References       |`dct_references_s`    |`dct_references_s`      |no change                                                                            |
+|Relation         |`dct_relation_sm`     |                        |new field                                                                            |
+|Replaces         |`dct_replaces_sm`     |                        |new field                                                                            |
+|Resource Class   |`gbl_resourceClass_sm`|                        |new field                                                                            |
+|Resource Type    |`gbl_resourceType_sm` |                        |new field                                                                            |
+|Rights           |`dct_rights_sm`       |                        |new field                                                                            |
+|Rights Holder    |`dct_rightsHolder_sm` |                        |new field                                                                            |
+|Source           |`dct_source_sm`       |`dc_source_sm`          |new namespace                                                                        |
+|Spatial Coverage |`dct_spatial_sm`      |`dct_spatial_sm`        |no change                                                                            |
+|Subject          |`dct_subject_sm`      |`dc_subject_sm`         |new namespace                                                                        |
+|Suppressed       |`gbl_suppressed_b`    |`suppressed_b`          |new namespace                                                                        |
+|Temporal Coverage|`dct_temporal_sm`     |`dct_temporal_sm`       |no change                                                                            |
+|Theme            |`dcat_theme_sm`       |                        |new field                                                                            |
+|Title            |`dct_title_s`         |`dc_title_s`            |new namespace                                                                        |
+|Version          |`dct_isVersionOf_sm`  |                        |new field                                                                            |
+|WxS Identifier   |`gbl_wxsIdentifier_s` |`layer_id_s`            |new URI name                                                                         |
+|                 |                      |`dc_type_s`             |deprecated field                                                                     |
+|                 |                      |`layer_geom_type_s`     |deprecated field                                                                     |
+|                 |                      |`dc_isPartOf_sm`        |deprecated literal field, replaced by nonliteral `dct_isPartOf_sm,`, which takes an ID|
+

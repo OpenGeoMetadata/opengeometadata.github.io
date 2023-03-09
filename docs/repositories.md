@@ -1,28 +1,7 @@
----
-layout: default
-title: Repositories
-nav_order: 2
----
-
-# OpenGeoMetadata Repositories
-{: .no_toc }
-
-[View our GitHub repositories](https://github.com/OpenGeoMetadata){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-
-Make it easy for others to find and use your geospatial metadata
-{: .fs-6 .fw-300 }
-
+[View our GitHub repositories](https://github.com/OpenGeoMetadata){ .md-button }
 
 Contributors are invited to share their metadata via our GitHub organization, which allows other institutions to periodically harvest and ingest the records into their own catalogs for wider exposure. Follow the steps below to get started.
 
----
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
 
 ## Submit a request to set up a new repository for your organization
 
@@ -49,7 +28,7 @@ Here are some examples of each of the following conventions:
 Metadata files in GitHub can be organized within directories (i.e., folders) using various structures.
 
 ### Flat
-{: .no_toc }
+
 
 For an organization with a small number of records (e.g., 250 records), a basic, flat directory structure within a repository is acceptable. A separate directory should be created for each layer or item described, then named according to the layer's unique identifier. Each directory should contain the metadata for that layer, in whichever standardized format an institution deems appropriate. The following is an example of one directory per item:
 
@@ -60,7 +39,7 @@ layer125/
 ```
 
 ### Categorical
-{: .no_toc }
+
 
 Some institutions may want to organize their records into logical groupings. For example, folders could be named for the Resource Class (i.e., Datasets, Maps), Collection, Date of Accession, or other attribute. With this structure, multiple layer files could be placed in the same directory, providing they have unique filenames. In the following example, an institution has divided records by their collection:
 
@@ -73,7 +52,7 @@ State_Fed_Orthoimagery/
 ```
 
 ### Hashed
-{: .no_toc }
+
 
 Institutions that have a large number of records (e.g., greater than several thousand) may enhance repository performance by dividing the records into a hashed directory. This involves creating nested subdirectories, typically by using an item’s ID to programmatically name them. In the following example, the item’s ID is on the left and the set of nested folders is on the right:
 
@@ -103,7 +82,7 @@ Institutions may choose to use a combination of structures, such as hashed direc
 There are two main approaches to naming metadata files: naming by the item's ID or naming by the file's metadata standard.
 
 ### 1. Naming by item ID
-{: .no_toc }
+
 
 Each record has a unique filename based on the item’s ID. This allows multiple records to be stored in the same directory. See the [edu.harvard](https://github.com/OpenGeoMetadata/edu.harvard) repository for an example:
 
@@ -118,7 +97,7 @@ Each record has a unique filename based on the item’s ID. This allows multiple
 ```
 
 ### 2. Naming by metadata standard
-{: .no_toc }
+
 
 All records use the same filename pattern, such as `*/geoblacklight.json` or `*/fgdc.json`. This requires each layer to have its own folder.
 

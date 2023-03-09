@@ -1,0 +1,68 @@
+site_name: OpenGeoMetadata
+
+theme: 
+    name: material
+    highlightjs: true
+    logo: images/ogm-icon.png
+    palette:
+       primary: black
+       accent: indigo
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.tracking
+        - navigation.expand
+        - navigation.sections
+        - toc.integrate
+
+    
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - tables
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - toc:
+        toc_depth: 2
+        permalink: true
+
+nav:
+
+- Home: 'index.md'
+
+- Reference:
+      Metadata Schemas:
+            - 'Aardvark Schema': 'ogm-aardvark.md'
+            - 'GBL Metadata Version 1.0': 'gbl-1.0.md'
+            - 'GBL Metadata Version 0.5': 'gbl-0.5.md'
+      Metadata Crosswalks:
+            - 'Aardvark to GBL 1.0' : 'aardvark-gbl-1-crosswalk.md'
+            - 'Aardvark to FGDC and ISO': 'aardvark-fgdc-iso-crosswalk.md'
+      Supplemental information:
+            - 'Custom Fields': 'custom-fields.md'
+            - 'JSON Format': 'JSON-format.md'
+            - 'Solr Field Types': 'solr-field-types.md'
+            - 'Solr Metadata Views': 'view-solr-metadata.md'
+            - 'Metadata Tools': 'metadata-tools.md'
+
+- How-to Guides:
+      - 'Upgrading to OGM Aardvark': 'upgrading.md'
+      - 'Creating Metadata': 'creating-metadata.md'
+      - 'Publishing to Solr': 'publishing-in-solr.md'
+      - 'Share on OpenGeoMetadata': 'repositories.md'
+      
+- Explanation:
+      - 'About OGM Aardvark': 'about-ogm-aardvark.md'
+      - 'About OGM Repositories': 'about-ogm-repositories.md'
+      - 'Further reading': 'further-reading.md'
+      
