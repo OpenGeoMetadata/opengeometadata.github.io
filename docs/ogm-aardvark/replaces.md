@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Replaces
-parent: OGM Aardvark
-nav_order: 26
+hide:
+  - navigation
+  - toc
 ---
 
-## Replaces
+# Replaces
 
 | Label                 | Replaces |
 |:----------------------|:---------|

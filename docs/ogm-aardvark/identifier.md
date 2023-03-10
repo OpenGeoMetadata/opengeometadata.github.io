@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Identifier
-parent: OGM Aardvark
-nav_order: 37
+hide:
+  - navigation
+  - toc
 ---
 
-## Identifier
+# Identifier
 
 | Label                 | Identifier |
 |:----------------------|:-----------|

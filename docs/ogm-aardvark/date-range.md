@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Date Range
-parent: OGM Aardvark
-nav_order: 16
+hide:
+  - navigation
+  - toc
 ---
 
-## Date Range
+# Date Range
 
 | Label                 | Date Range |
 |:----------------------|:-----------|

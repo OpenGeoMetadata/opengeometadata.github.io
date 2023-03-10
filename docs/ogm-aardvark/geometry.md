@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Geometry
-parent: OGM Aardvark
-nav_order: 18
+hide:
+  - navigation
+  - toc
 ---
 
-## Geometry
+# Geometry
 
 | Label                 | Geometry |
 |:----------------------|:---------|

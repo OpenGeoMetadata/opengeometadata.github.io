@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Centroid
-parent: OGM Aardvark
-nav_order: 20
+hide:
+  - navigation
+  - toc
 ---
 
-## Centroid
+# Centroid
 
 | Label                 | Centroid |
 |:----------------------|:---------|

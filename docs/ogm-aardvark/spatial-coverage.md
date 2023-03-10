@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Spatial Coverage
-parent: OGM Aardvark
-nav_order: 17
+hide:
+  - navigation
+  - toc
 ---
 
-## Spatial Coverage
+# Spatial Coverage
 
 | Label                 | Spatial Coverage |
 |:----------------------|:-----------------|

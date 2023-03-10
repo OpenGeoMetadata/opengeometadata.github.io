@@ -1,11 +1,9 @@
 ---
-layout: default
-title: Theme
-parent: OGM Aardvark
-nav_order: 11
+hide:
+  - navigation
 ---
 
-## Theme
+# Theme
 
 | Label                 | Theme      |
 |:----------------------|:------------------------|

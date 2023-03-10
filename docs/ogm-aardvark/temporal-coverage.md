@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Temporal Coverage
-parent: OGM Aardvark
-nav_order: 13
+hide:
+  - navigation
+  - toc
 ---
 
-## Temporal Coverage
+# Temporal Coverage
 
 | Label                 | Temporal Coverage |
 |:----------------------|:------------------|

@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Bounding Box
-parent: OGM Aardvark
-nav_order: 19
+hide:
+  - navigation
+  - toc
 ---
 
-## Bounding Box
+# Bounding Box
 
 | Label                 | Bounding Box |
 |:--------------------- |:------------ |

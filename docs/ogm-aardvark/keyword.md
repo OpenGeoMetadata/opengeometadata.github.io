@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Keyword
-parent: OGM Aardvark
-nav_order: 12
+hide:
+  - navigation
+  - toc
 ---
 
-## Keyword
+# Keyword
 
 | Label                 | Keyword |
 |:----------------------|:--------|

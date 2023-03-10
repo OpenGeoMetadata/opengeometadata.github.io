@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Language
-parent: OGM Aardvark
-nav_order: 4
+hide:
+  - navigation
+  - toc
 ---
 
-## Language
+# Language
 
 | Label                 | Language                |
 |:----------------------|:------------------------|

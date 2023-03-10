@@ -42,7 +42,7 @@ Most institutions have their own unique set of tools and workflows to perform th
 
 The process, whether automated or manual, typically involves parsing the existing metadata record, extracting the values from selected fields and inserting the value into a new JSON document under the corresponding OpenGeoMetadata schema field. In most cases the values can simply be copied over as is, although some additional formatting may be necessary.
 
-See [Metadata Tools](metadata-tools.md) to view custom scripts and tools for additional metadata authoring techniques.
+See [Metadata Scripts](scripts.md) to view custom scripts and tools for additional metadata authoring techniques.
 
 !!! tip
 
@@ -70,13 +70,3 @@ At Stanford, the [metadata records](https://github.com/OpenGeoMetadata/edu.stanf
 _Stanford University Metadata Workflow_
 
 Take, for example, the [metadata for this layer](https://github.com/OpenGeoMetadata/edu.stanford.purl/tree/master/rf/385/pb/1942). It has the [ISO 19139](https://github.com/OpenGeoMetadata/edu.stanford.purl/blob/master/rf/385/pb/1942/iso19139.xml) version of the metadata, along with the Feature Catalog (in [ISO 19110](https://github.com/OpenGeoMetadata/edu.stanford.purl/blob/master/rf/385/pb/1942/iso19110.xml)). We also have the transformation into [MODS](https://github.com/OpenGeoMetadata/edu.stanford.purl/blob/master/rf/385/pb/1942/mods.xml) and to [GeoBlacklight](https://github.com/OpenGeoMetadata/edu.stanford.purl/blob/master/rf/385/pb/1942/geoblacklight.json), as well as a [preview image](https://github.com/OpenGeoMetadata/edu.stanford.purl/blob/master/rf/385/pb/1942/preview.jpg). In some cases, you may even have an [HTML](http://opengeometadata.stanford.edu/metadata/edu.stanford.purl/druid:rv980rt5057/iso19139.html) version of the metadata for someone to read.
-
-
-## Validate the metadata
-
-Once the metadata records are in the OpenGeoMetadata format, they should be validated to make sure the fields are correctly formatted. The current version of the schema is available as a [JSON-Schema file](https://github.com/geoblacklight/geoblacklight/tree/main/schema). This file format provides support for data validation with the [JSON Schema Vocabulary](http://json-schema.org).
-
-### Recommended Method
-
-
-Use [GeoCombine](https://github.com/OpenGeoMetadata/GeoCombine), which has a [.valid? method](http://www.rubydoc.info/gems/geo_combine/0.1.0/GeoCombine/Geoblacklight#valid%3F-instance_method) that makes using these tools simple.

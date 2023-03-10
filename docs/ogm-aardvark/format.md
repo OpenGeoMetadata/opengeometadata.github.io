@@ -1,11 +1,9 @@
 ---
-layout: default
-title: Format
-parent: OGM Aardvark
-nav_order: 32
+hide:
+  - navigation
 ---
 
-## Format
+# Format
 
 | Label                 | Format |
 |:----------------------|:-------|
@@ -15,7 +13,7 @@ nav_order: 32
 | Field type            | string |
 | Purpose               | To display to the user the name of the file type as a text string in the download button |
 | Entry Guidelines      | Required if the download URL is configured as a single key:value pair. |
-| Commentary            | See recommended values below. This field is required for basic download functionality. See the [Multiple Downloads guide](references#how-to-configure-multiple-download-links) for more details. |
+| Commentary            | See recommended values below. This field is required for basic download functionality.|
 | Controlled Vocabulary | yes - not strict |
 | Example value         | `"Shapefile"` |
 | Element Set           | DCMI |

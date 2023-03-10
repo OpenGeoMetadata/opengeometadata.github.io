@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Provider
-parent: OGM Aardvark
-nav_order: 7
+hide:
+  - navigation
+  - toc
 ---
 
-## Provider
+# Provider
 
 | Label                 | Provider                |
 |:----------------------|:------------------------|

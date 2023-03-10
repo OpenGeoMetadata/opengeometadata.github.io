@@ -1,11 +1,10 @@
----
-layout: default
-title: Index Year
-parent: OGM Aardvark
-nav_order: 15
+----
+hide:
+  - navigation
+  - toc
 ---
 
-## Index Year
+# Index Year
 
 | Label                 | Index Year |
 |:----------------------|:-----------|

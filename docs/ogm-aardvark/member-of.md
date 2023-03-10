@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Member Of
-parent: OGM Aardvark
-nav_order: 22
+hide:
+  - navigation
+  - toc
 ---
 
-## Member Of
+# Member Of
 
 | Label                 | Member Of |
 |:----------------------|:----------|

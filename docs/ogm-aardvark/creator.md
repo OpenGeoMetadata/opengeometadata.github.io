@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Creator
-parent: OGM Aardvark
-nav_order: 5
+hide:
+  - navigation
+  - toc
 ---
 
-## Creator
+# Creator
 
 | Label                 | Creator                 |
 |:----------------------|:------------------------|

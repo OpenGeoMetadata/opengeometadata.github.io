@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Rights Holder
-parent: OGM Aardvark
-nav_order: 29
+hide:
+  - navigation
+  - toc
 ---
 
-## Rights Holder
+# Rights Holder
 
 | Label                 | Rights Holder |
 |:----------------------|:--------------|

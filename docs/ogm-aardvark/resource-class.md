@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Resource Class
-parent: OGM Aardvark
-nav_order: 8
+hide:
+  - navigation
+
 ---
 
-## Resource Class
+# Resource Class
 
 | Label                 | Resource Class          |
 |:----------------------|:------------------------|
@@ -23,12 +22,10 @@ nav_order: 8
 
 ## Controlled Vocabulary
 
-| Term         |
-| :----------- |
-| Collections  |
-| Datasets     |
-| Imagery      |
-| Maps         |
-| Web services |
-| Websites     |
-| Other        |
+* Collections
+* Datasets
+* Imagery
+* Maps
+* Web services
+* Websites
+* Other

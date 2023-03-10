@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Publisher
-parent: OGM Aardvark
-nav_order: 6
+hide:
+  - navigation
+  - toc
 ---
 
-## Publisher
+# Publisher
 
 | Label                 | Publisher               |
 |:----------------------|:------------------------|

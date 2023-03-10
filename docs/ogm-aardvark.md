@@ -8,9 +8,8 @@ hide:
 # OpenGeoMetadata (OGM) Aardvark Schema
 
 
-[About OGM Aardvark](about-ogm-aardvark.md){.md-button}
-[How to Upgrade from GBL 1.0](upgrading.md){.md-button}
-[Legacy Schemas](legacy-versions.md){.md-button}
+[About OGM Aardvark](about-ogm-aardvark.md){.md-button} [How to Upgrade from GBL 1.0](upgrading.md){.md-button}
+
 
 ### Fields by Group
 
@@ -35,7 +34,7 @@ hide:
 - [Theme](ogm-aardvark/theme.md)
 - [Keyword](ogm-aardvark/keyword.md)
 
-### Temporal
+### [Temporal](../temporal-fields)
 - [Temporal Coverage](ogm-aardvark/temporal-coverage.md) (S)
 - [Date Issued](ogm-aardvark/date-issued.md)
 - [Index Year](ogm-aardvark/index-year.md) (S)
@@ -44,7 +43,7 @@ hide:
 </div>
 <div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
 
-### Spatial
+### [Spatial](../spatial-fields)
 - [Spatial Coverage](ogm-aardvark/spatial-coverage.md) (S)
 - [Geometry](ogm-aardvark/geometry.md) (S)
 - [Bounding Box](ogm-aardvark/bounding-box.md) (S)
@@ -96,7 +95,7 @@ hide:
 
 <br style="clear:left">
 
-### Fields in Alphabetical Order
+### Fields in a Sortable Table
 
 
 {{ read_csv('tables/ogm-aardvark-fields.csv') }}

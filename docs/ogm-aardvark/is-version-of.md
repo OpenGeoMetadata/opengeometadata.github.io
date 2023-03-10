@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Is Version Of
-parent: OGM Aardvark
-nav_order: 25
+hide:
+  - navigation
+  - toc
 ---
 
-## Is Version Of
+# Is Version Of
 
 | Label                 | Version |
 |:----------------------|:--------|

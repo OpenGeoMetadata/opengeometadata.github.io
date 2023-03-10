@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Alternative Title
-parent: OGM Aardvark
-nav_order: 2
+hide:
+  - navigation
+  - toc
 ---
 
-## Alternative Title
+# Alternative Title
 
 | Label                 | Alternative Title       |
 |:----------------------|:------------------------|

@@ -1,11 +1,10 @@
 ---
-layout: default
-title: File Size
-parent: OGM Aardvark
-nav_order: 33
+hide:
+  - navigation
+  - toc
 ---
 
-## File Size
+# File Size
 
 | Label                 | File Size |
 |:----------------------|:----------|

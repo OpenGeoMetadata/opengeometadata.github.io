@@ -11,7 +11,7 @@ hide:
 
 ## Deprecated fields
 
-The earliest metadata schema for GeoBlacklight included these now-deprecated fields:
+The earliest metadata schema for GeoBlacklight is the same as [GBL 1.0](gbl-1.0.md), except that it also included these now-deprecated fields:
 
 * `uuid`
 * `dc_relation_sm`

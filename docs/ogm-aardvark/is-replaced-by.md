@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Is Replaced By
-parent: OGM Aardvark
-nav_order: 27
+hide:
+  - navigation
+  - toc
 ---
 
-## Is Replaced By
+# Is Replaced By
 
 | Label                 | Is Replaced By |
 |:----------------------|:---------------|

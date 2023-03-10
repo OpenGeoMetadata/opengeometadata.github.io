@@ -1,11 +1,10 @@
 ---
-layout: default
-title: ID
-parent: OGM Aardvark
-nav_order: 36
+hide:
+  - navigation
+  - toc
 ---
 
-## ID
+# ID
 
 | Label                 | ID       |
 |:----------------------|:---------|

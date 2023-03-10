@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Relation
-parent: OGM Aardvark
-nav_order: 21
+hide:
+  - navigation
+  - toc
 ---
 
-## Relation
+# Relation
 
 | Label                 | Relation |
 |:----------------------|:---------|

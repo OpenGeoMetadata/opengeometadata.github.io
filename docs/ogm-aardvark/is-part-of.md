@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Is Part Of
-parent: OGM Aardvark
-nav_order: 23
+hide:
+  - navigation
+  - toc
 ---
 
-## Is Part Of
+# Is Part Of
 
 | Label                 | Is Part Of |
 | :-------------------- | :----------|

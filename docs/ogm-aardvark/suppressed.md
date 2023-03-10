@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Suppressed
-parent: OGM Aardvark
-nav_order: 40
+hide:
+  - navigation
+  - toc
 ---
 
-## Suppressed
+# Suppressed
 
 | Label                 | Suppressed |
 |:----------------------|:-----------|

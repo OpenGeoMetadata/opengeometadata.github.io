@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Georeferenced
-parent: OGM Aardvark
-nav_order: 41
+hide:
+  - navigation
+  - toc
 ---
 
-## Georeferenced
+# Georeferenced
 
 | Label                 | Georeferenced |
 |:----------------------|:--------------|

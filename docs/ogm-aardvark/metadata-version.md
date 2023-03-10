@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Metadata Version
-parent: OGM Aardvark
-nav_order: 39
+hide:
+  - navigation
+  - toc
 ---
 
-## Metadata Version
+# Metadata Version
 
 | Label                 | Metadata Version |
 |:----------------------|:-----------------|

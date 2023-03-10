@@ -11,7 +11,4 @@ Many different metadata standards and schemas can be shared in OpenGeoMetadata. 
 Institutions may prefer to use other geospatial metadata standards in addition to – or instead of – the GeoBlacklight schema, such as ISO 19115 or the FGDC Content Standard for Digital Geospatial Metadata. Traditional library catalogs may use general purpose standards, such as MARC or MODS. Any institution is welcome to maintain an OpenGeoMetadata repository even if they do not use GeoBlacklight.
 
 ## History
-The initiative was launched in 2015 as a collaboration between MIT, Princeton, and Stanford, and it has grown to include over 20 contributing organizations. It is a sister initiative to [GeoBlacklight](https://geoblacklight.org), an open-source Ruby on Rails software application for discovering geospatial content, and supports that work by providing a space to share GeoBlacklight-compliant metadata.
-
-### Contribute to developing OpenGeoMetadata
-Do you have an idea or question about how OpenGeoMetadata is working? Contribute your comments, proposals, and questions here: [OpenGeoMetadata/metadatarepository](https://github.com/OpenGeoMetadata/metadatarepository/issues).
+The OpenGeoMetadata initiative was launched in 2015 as a collaboration between MIT, Princeton, and Stanford, and it has grown to include over 20 contributing organizations. It is a sister initiative to [GeoBlacklight](https://geoblacklight.org), an open-source Ruby on Rails software application for discovering geospatial content, and supports that work by providing a space to share GeoBlacklight-compliant metadata.

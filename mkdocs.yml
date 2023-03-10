@@ -6,7 +6,6 @@ theme:
     logo: images/ogm-icon.png
     palette:
        primary: indigo
-#        accent: indigo
     features:
         - navigation.tabs
         - navigation.tabs.sticky
@@ -51,31 +50,38 @@ nav:
 - Home: 'index.md'
 
 - Reference:
-      Metadata Schemas:
-            - 'Aardvark Schema': 'ogm-aardvark.md'
-            - ' Legacy Versions': 'legacy-versions.md'
-            - 'GBL Metadata Version 1.0': 'gbl-1.0.md'
-            - 'GBL Metadata Version 0.5': 'gbl-0.5.md'
+      Schemas:
+            - 'OGM Aardvark': 'ogm-aardvark.md'
+            - 'GBL 1.0': 'gbl-1.0.md'
+            - 'GBL 0.5': 'gbl-0.5.md'
+            - 'Custom Fields': 'custom-fields.md'
       
-      Metadata Crosswalks:
+      Crosswalks:
             - 'Aardvark to GBL 1.0' : 'aardvark-gbl-1-crosswalk.md'
             - 'Aardvark to FGDC and ISO': 'aardvark-fgdc-iso-crosswalk.md'
+            - 'GBL 1.0 to FGDC and ISO': 'gbl1-fgdc-iso-crosswalk.md'
       
-      Metadata Reference:
-            - 'Custom Fields': 'custom-fields.md'
+      Syntax:
+            - 'Configuring External Links (dct_references_s)': 'configuring-external-links.md'
             - 'JSON Format': 'JSON-format.md'
             - 'Solr Field Types': 'solr-field-types.md'
             - 'Solr Metadata Views': 'view-solr-metadata.md'
-            - 'Metadata Tools': 'metadata-tools.md'
-
+            
+      Tools:
+            - 'Scripts': 'scripts.md'
+            - 'Applications': 'applications.md'
+            
 - How-to Guides:
       - 'Upgrading to OGM Aardvark': 'upgrading.md'
       - 'Creating Metadata': 'creating-metadata.md'
+      - 'Validating Metadata': 'validating-metadata.md'
       - 'Publishing to Solr': 'publishing-in-solr.md'
-      - 'Share on OpenGeoMetadata': 'repositories.md'
+      - 'Share on OpenGeoMetadata': 'share-on-ogm.md'
       
 - Explanation:
       - 'About OGM Aardvark': 'about-ogm-aardvark.md'
+      - 'Spatial Fields': 'spatial-fields.md'
+      - 'Temporal Fields': 'temporal-fields.md'
       - 'About OGM Repositories': 'about-ogm-repositories.md'
       - 'Further reading': 'further-reading.md'
       

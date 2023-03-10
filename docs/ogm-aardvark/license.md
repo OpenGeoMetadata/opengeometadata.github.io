@@ -1,11 +1,10 @@
 ---
-layout: default
-title: License
-parent: OGM Aardvark
-nav_order: 30
+hide:
+  - navigation
+  - toc
 ---
 
-## License
+# License
 
 | Label                 | License |
 |:----------------------|:--------|

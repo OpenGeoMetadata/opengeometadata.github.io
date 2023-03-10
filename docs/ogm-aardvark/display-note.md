@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Display Note
-parent: OGM Aardvark
-nav_order: 4.5
+hide:
+  - navigation
+  - toc
 ---
 
-## Display Note
+# Display Note
 
 | Label                 | Display Note            |
 |:----------------------|:------------------------|

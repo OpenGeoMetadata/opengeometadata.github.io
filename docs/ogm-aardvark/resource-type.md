@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Resource Type
-parent: OGM Aardvark
-nav_order: 9
+hide:
+  - navigation
+
 ---
 
-## Resource Type
+# Resource Type
 
 | Label                 | Resource Type           |
 |:----------------------|:------------------------|

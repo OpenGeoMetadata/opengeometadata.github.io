@@ -1,11 +1,10 @@
 ---
-layout: default
-title: WxS Identifier
-parent: OGM Aardvark
-nav_order: 34
+hide:
+  - navigation
+  - toc
 ---
 
-## WxS Identifier
+# WxS Identifier
 
 | Label                 | WxS Identifier |
 |:----------------------|:---------------|
@@ -14,7 +13,7 @@ nav_order: 34
 | Multivalued           | false |
 | Field type            | string |
 | Purpose               | To identify the layer or store for a WFS, WMS, or WCS web service so the application can construct the full web service link |
-| Entry Guidelines      | Only the layer name is added here. The base service endpoint URLs (e.g. "https://maps-public.geo.nyu.edu/geoserver/sdr/wms") are added to the [References](references) field. |
+| Entry Guidelines      | Only the layer name is added here. The base service endpoint URLs (e.g. "https://maps-public.geo.nyu.edu/geoserver/sdr/wms") are added to the [References](references.md) field. |
 | Commentary            | This value is only used _when_ you have WxS services listed in your references field (`dct_references_s`). The WxS Identifer is used to point to specific layers within an OGC geospatial web service. This field is not used for ArcGIS Rest Services. |
 | Controlled Vocabulary | no |
 | Example value         | `"druid:vr593vj7147"` |

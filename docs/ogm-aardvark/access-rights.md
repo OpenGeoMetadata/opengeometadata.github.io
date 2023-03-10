@@ -1,11 +1,10 @@
 ---
-layout: default
-title: Access Rights
-parent: OGM Aardvark
-nav_order: 31
+hide:
+  - navigation
+  - toc
 ---
 
-## Access Rights
+# Access Rights
 
 | Label                 | Access Rights |
 |:----------------------|:--------------|

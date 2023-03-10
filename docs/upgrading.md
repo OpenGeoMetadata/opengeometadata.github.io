@@ -7,7 +7,7 @@ The following options are three ways to upgrade GBL 1.0 metadata into OGM Aardva
 
 <figure>
   <img
-  src="/images/transform-option1.png"
+  src="images/transform-option1.png"
   alt="metadata-pipline">
   <figcaption align = "center">Fig.1 - Metadata pipeline showing a conversion from standards metadata</figcaption>
 </figure>
@@ -38,7 +38,7 @@ This option involves updating your local transformation workflow that extracts v
 
 <figure>
   <img
-  src="/images/transform-option2.png"
+  src="images/transform-option2.png"
   alt="convert-jsons">
   <figcaption align = "center">Fig.2 - Programmatic transformation process using Geoblacklight 1.0 Metadata JSONs</figcaption>
 </figure>
