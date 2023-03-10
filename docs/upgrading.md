@@ -72,13 +72,8 @@ Currently, the OpenGeoMetadata community has two tools that can do batch convers
 -----
 ## Option 3: Conversion with manual remediation
 
-<figure>
-  <img
-  src="/images/transform-option3.png"
-  alt="manual-remediation">
-  <figcaption align = "center">Fig.3 - Transformation process that includes manual remediation</figcaption>
-</figure>
-
+![manual-remediation](images/transform-option3.png)
+Fig.3 - Transformation process that includes manual remediation
 
 **Scenario**
 
