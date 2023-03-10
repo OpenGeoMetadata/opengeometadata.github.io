@@ -345,7 +345,7 @@ hide:
 | Type							| string|
 | Description					| This element shows up as Data type in GeoBlacklight, and each value has an associated icon|
 | Entry Guidelines				| Choose from set values (see Controlled Vocabulary Lists)|
-| Controlled Vocabulary			| [Geometry Type Controlled Vocabulary](1.0-geometry-type)|
+| Controlled Vocabulary			| [Geometry Type Controlled Vocabulary](1.0-geometry-type.md)|
 | Element Set					| GeoBlacklight|
 | Example						| "Polygon"|
 | Commentary |This field helps to differentiate between vector (Point, Line, Polygon), raster (Raster, Image), nonspatial formats (table), or a combination (Mixed). If processing metadata from a geospatial web server, this value may be programmatically determined. However, in many cases, it must be manually determined. The field is tied to icons for the resource, and provides the user with visual clues to the item. However, if the element is troublesome or unnecessary for a particular institution, it can be omitted.|
