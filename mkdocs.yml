@@ -4,8 +4,9 @@ theme:
     name: material
     highlightjs: true
     logo: images/ogm-icon.png
-    palette:
-       primary: indigo
+#     palette:
+#        primary: deep purple
+#        accent: deep orange
     features:
         - navigation.tabs
         - navigation.tabs.sticky
@@ -39,6 +40,9 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true 
   - toc:

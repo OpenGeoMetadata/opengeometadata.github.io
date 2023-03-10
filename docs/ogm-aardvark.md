@@ -6,12 +6,12 @@ hide:
 ---
 
 # OpenGeoMetadata (OGM) Aardvark Schema
-
+<!--
 
 [About OGM Aardvark](about-ogm-aardvark.md){.md-button} [How to Upgrade from GBL 1.0](upgrading.md){.md-button}
+-->
 
-
-### Fields by Group
+## Fields by Group
 
 <div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
 
@@ -34,7 +34,7 @@ hide:
 - [Theme](ogm-aardvark/theme.md)
 - [Keyword](ogm-aardvark/keyword.md)
 
-### [Temporal](../temporal-fields)
+### [Temporal :material-link:](../temporal-fields)
 - [Temporal Coverage](ogm-aardvark/temporal-coverage.md) (S)
 - [Date Issued](ogm-aardvark/date-issued.md)
 - [Index Year](ogm-aardvark/index-year.md) (S)
@@ -43,7 +43,7 @@ hide:
 </div>
 <div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
 
-### [Spatial](../spatial-fields)
+### [Spatial :material-link:](../spatial-fields)
 - [Spatial Coverage](ogm-aardvark/spatial-coverage.md) (S)
 - [Geometry](ogm-aardvark/geometry.md) (S)
 - [Bounding Box](ogm-aardvark/bounding-box.md) (S)
@@ -87,15 +87,21 @@ hide:
 
 ----
 
-==(R) = Required== 
-(C) = Conditionally Required  
-(S) = Suggested  
-
 </div>
 
 <br style="clear:left">
 
-### Fields in a Sortable Table
+
+!!! info "Key" 
+
+	==(R) = Required== 
+
+	(C) = Conditionally Required 
+ 
+	(S) = Suggested  
+
+
+## Fields in a Sortable Table
 
 
 {{ read_csv('tables/ogm-aardvark-fields.csv') }}
