@@ -1,0 +1,47 @@
+/* Text styles */
+
+
+# for the readthedocs theme
+.wy-nav-content  {
+    max-width: none;
+}
+  
+  
+# for the material theme
+increase default font sizep, li{
+  margin: 0 0 0.75em; 
+  font-size: 1.1em; 
+  }
+  
+
+
+increase header size and fonts.md-header__topic  {
+  font-size: 1.5em; 
+  line-height: 2em;
+  }
+  
+.md-tabs__link  {
+      font-size: 1.75em; 
+  }
+
+/* Hide main nav title */
+label[for="__drawer"] {
+    display: none;
+}
+
+
+/* 
+style the left hand nav section.md-nav--primary {
+      background-color: #eee;
+      width: 100%;
+      padding: 2em;
+      border: .1em;
+      border-style: dotted;
+      border-color: black;
+      }
+ */
+
+
+
+
+

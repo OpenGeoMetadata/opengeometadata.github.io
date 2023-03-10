@@ -4,10 +4,10 @@ Aardvark has four fields in the "temporal" group. Having multiple temporal field
 
 | Field                 | Obligation |
 |:----------------------|:---------|
-| [Temporal Coverage](temporal-coverage.md) | Suggested |
-| [Date Issued](date-issued.md)             |           |
-| [Index Year](index-year.md)               | Suggested |
-| [Date Range](date-range.md)               |           |
+| [Temporal Coverage](ogm-aardvark/temporal-coverage.md) | Suggested |
+| [Date Issued](ogm-aardvark/date-issued.md)             |           |
+| [Index Year](ogm-aardvark/index-year.md)               | Suggested |
+| [Date Range](ogm-aardvark/date-range.md)               |           |
 
 
 ## Temporal Coverage
