@@ -22,10 +22,6 @@
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
         
-          
-          
-          <meta name="theme-color" content="#4051b5">
-        
       
       
 
@@ -58,7 +54,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
   
     
     
@@ -960,13 +956,8 @@
 <h1 id="upgrade-guide-for-converting-metadata-from-gbl-10-to-ogm-aardvark">Upgrade Guide for converting Metadata from GBL 1.0 to OGM Aardvark<a class="headerlink" href="#upgrade-guide-for-converting-metadata-from-gbl-10-to-ogm-aardvark" title="Permanent link">&para;</a></h1>
 <p>The following options are three ways to upgrade GBL 1.0 metadata into OGM Aardvark.  The figures include references to Solr, the search index that powers a GeoBlacklight instance.</p>
 <h2 id="option-1-re-run-the-metadata-pipeline-with-a-new-crosswalk">Option 1: Re-run the metadata pipeline with a new crosswalk<a class="headerlink" href="#option-1-re-run-the-metadata-pipeline-with-a-new-crosswalk" title="Permanent link">&para;</a></h2>
-<figure>
-  <img
-  src="./images/transform-option1.png"
-  alt="metadata-pipline">
-  <figcaption align = "center">Fig.1 - Metadata pipeline showing a conversion from standards metadata</figcaption>
-</figure>
-
+<p><img alt="metadata-pipline" src="../images/transform-option1.png" />
+Fig.1 - Metadata pipeline showing a conversion from standards metadata</p>
 <p><strong>Scenario</strong> </p>
 <ul>
 <li>you have geospatial resources with structured metadata files in an official standard, such as ISO 19139, FGDC, MODS, or MARC</li>
@@ -989,13 +980,8 @@
 </ul>
 <hr />
 <h2 id="option-2-programmatically-convert-the-json-files">Option 2: Programmatically convert the JSON files<a class="headerlink" href="#option-2-programmatically-convert-the-json-files" title="Permanent link">&para;</a></h2>
-<figure>
-  <img
-  src="./images/transform-option2.png"
-  alt="convert-jsons">
-  <figcaption align = "center">Fig.2 - Programmatic transformation process using Geoblacklight 1.0 Metadata JSONs</figcaption>
-</figure>
-
+<p><img alt="convert-jsons" src="../images/transform-option2.png" />
+Fig.2 - Programmatic transformation process using Geoblacklight 1.0 Metadata JSONs</p>
 <p><strong>Scenario</strong> 
 * you only have GBL 1.0 metadata (no structured metadata files in an official standard)
 * you want to test your environment with the new Aardvark schema </p>

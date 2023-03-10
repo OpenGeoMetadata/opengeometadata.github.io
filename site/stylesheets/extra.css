@@ -5,6 +5,25 @@
 .wy-nav-content  {
     max-width: none;
 }
+
+:root {
+  --md-primary-fg-color: #1F4068;
+  --md-accent-fg-color: #C44601;
+  --md-primary-fg-color--light: #ADD8E6;
+  --md-primary-fg-color--dark:  #90030C;
+}
+
+/* 
+h2 {
+      color: #C44601;
+      font-weight: 400;
+}
+ */
+
+h3 {
+      color: #C44601;
+      font-weight: 400;
+}
   
   
 # for the material theme
@@ -30,9 +49,11 @@ label[for="__drawer"] {
 }
 
 
+/* style the left hand nav section */
+
 /* 
-style the left hand nav section.md-nav--primary {
-      background-color: #eee;
+.md-nav--primary {
+      background-color: #ADD8E6;
       width: 100%;
       padding: 2em;
       border: .1em;
@@ -40,6 +61,7 @@ style the left hand nav section.md-nav--primary {
       border-color: black;
       }
  */
+
 
 
 
