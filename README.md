@@ -54,10 +54,11 @@ This is the published branch containing the HTML code for the site. (We do **not
 
 ## Updating the OpenGeoMetadata website
 
+:triangular_flag_on_post: *This workflow uses the [MkDocs deploy technique.](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-mkdocs) We may want to consider using [GitHub actions](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions) instead.*
 ### Workflow overview
 
 ```mermaid
-graph TD;
+graph LR;
     A[Make changes on a new branch]-->B[Merge changes to the Main branch];
     B[Merge changes to the Main branch]--->C[Use the command line to publish content from the Main branch to the GitHub Pages branch]
 ```
