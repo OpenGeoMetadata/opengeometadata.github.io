@@ -54,15 +54,13 @@ This is the published branch containing the HTML code for the site. (We do **not
 
 ## Updating the OpenGeoMetadata website
 
+Since this site is written with Markdown files, the minimum requirement to contribute is to just edit or submit new Markdown files.  However, MkDocs is relatively simple to install and run locally. This allows you to preview changes locally before submitting them.  To get started, visit the Material for[ MkDocs Getting Started page](https://squidfunk.github.io/mkdocs-material/getting-started/) and choose an installation method.
+
 :triangular_flag_on_post: *This workflow uses the [MkDocs deploy technique.](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-mkdocs) We may want to consider using [GitHub actions](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions) instead.*
+
 ### Workflow overview
 
-```mermaid
-flowchart TD
-    A["Make changes on a new branch;"]-->B["Merge changes to the Main branch;"];
-    B["Merge changes to the Main branch;"]--->C[Use the command line to publish content from the Main branch to the GitHub Pages branch]
-```
-
+![](docs/images/github.png)
 
 :warning: This workflow may vary from how you collaborated on other GitHub Pages sites, because we don't do Pull Requests to the branch that is actually being published (gh-pages). The site is always published from a command line interfaces using `mkdocs gh-deploy`.
 
