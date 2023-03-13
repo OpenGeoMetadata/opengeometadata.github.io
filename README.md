@@ -56,11 +56,11 @@ This is the published branch containing the HTML code for the site. (We do **not
 
 ### Workflow overview
 
-	--- > Make changes on a new branch 
-
-		--- > Merge changes to the **Main** branch 
-	
-			---> Use the command line to publish content from the Main branch to the **GitHub Pages** branch.
+```mermaid
+graph TD;
+    Make changes on a new branch -->Merge changes to the **Main** branch;
+    Merge changes to the **Main** branch-->Use the command line to publish content from the Main branch to the **GitHub Pages** branch.;
+```
 
 :warning: This workflow may vary from how you collaborated on other GitHub Pages sites, because we don't do Pull Requests to the branch that is actually being published (gh-pages). The site is always published from a command line interfaces using `mkdocs gh-deploy`.
 
