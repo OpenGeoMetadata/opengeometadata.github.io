@@ -31,31 +31,36 @@ Most text editors support it and translates easily to other formats, such as HTM
 This is the working branch containing the content for the site using Markdown.
 
 * **readme.md**: the file you are reading right now
-* **mkdocs.yml**: the configuration file that identifies the theme, the extensions and the navigation
+* **mkdocs.yml**: the configuration file that identifies the theme, the extensions, and the navigation
 * **docs** folder
-	*  	/images : JPGs, PNGs, and other image files
-	*   /javascripts : extensions using javascipt (currently this is where the tableSort function lives)
-	*   /ogm-aardvark: a subfolder with markdown files for each element in the Aardvark schema
-	*   /stylesheets/extra.css : a CSS file that can define colors, fonts, and other customizations for the site
-	*   /tables : CSV files for any information to be included in tables
-* Markdown documents: The content for the site. These can all live in the same directory and are organized in the public navigation menu in the nav section of **mkdocs.yml**.
+	*  Markdown documents: The content for the site. These can all live in the same directory and are organized in the public navigation menu in the nav section of **mkdocs.yml**.
+	*  	`/ogm-aardvark`: a subfolder with markdown files for each element in the Aardvark schema
+	*  	/`images : JPGs, PNGs, and other image files
+	*   `/javascripts/tablesort.js`: the javascript function that allows users to sort tables online
+	*   `/stylesheets/extra.css` : a CSS file that can define colors, fonts, and other customizations for the site
+	*   `/tables` : CSV files for any information to be included in tables
+
 
 ### gh-pages branch
 
-This is the published branch containing the HTML code for the site. (We do not edit this branch directly).
+This is the published branch containing the HTML code for the site. (We do **not** edit this branch directly).
 
-* index.html: an HTML file containing the information in the `index.md` file in your Main branch
+* `index.html`: an HTML file containing the information in the `index.md` file in your Main branch
 * The rest of your markdown content pages with be in separate directories. The directory name is the name of the markdown file and it contains an HTML file called `index.html`
-* /images, /javascripts, and /stylesheets : same as the Main branch
-* /assets : contains **subdirectories** for `/images`, `/javascripts`, and `/stylesheets`.  These subdirectories contain the favicon and compiled code.
-* .nojekyll : GitHub Pages was developed to use the Jekyll platform to publish pages. [The existence of this file tells GitHub that the site is not using Jekyll](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/).
+* `/images`, `/javascripts`, and `/stylesheets` : same as the Main branch
+* `/assets` : contains **subdirectories** for `/images`, `/javascripts`, and `/stylesheets`.  These subdirectories contain the favicon and compiled code.
+* `.nojekyll` : The existence of this file tells GitHub that the site is not using Jekyll. [Related GitHub blog post](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/).
 
 
 ## Updating the OpenGeoMetadata website
 
 ### Workflow overview
 
-Make changes on a new branch --- > Merge changes to the **Main** branch ---> Use the command line to publish content from the Main branch to the **GitHub Pages** branch.
+	--- > Make changes on a new branch 
+
+		--- > Merge changes to the **Main** branch 
+	
+			---> Use the command line to publish content from the Main branch to the **GitHub Pages** branch.
 
 :warning: This workflow may vary from how you collaborated on other GitHub Pages sites, because we don't do Pull Requests to the branch that is actually being published (gh-pages). The site is always published from a command line interfaces using `mkdocs gh-deploy`.
 
