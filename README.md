@@ -59,7 +59,7 @@ This is the published branch containing the HTML code for the site. (We do **not
 
 ```mermaid
 flowchart TD
-    A[Make changes on a new branch]-->B[Merge changes to the Main branch];
+    A["Make changes on a new branch"]-->B["Merge changes to the Main branch"];
     B[Merge changes to the Main branch]--->C[Use the command line to publish content from the Main branch to the GitHub Pages branch]
 ```
 
