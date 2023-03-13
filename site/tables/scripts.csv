@@ -1,7 +1,0 @@
-Name,Overview
-[Convert MARC files to GeoBlacklight Metadata files](https://github.com/mjanowiecki/geoportal/tree/main/aardvark),A preliminary Python workflow to convert MARC metadata for historic and print maps into JSON metadata according to the GeoBlacklight 1.0 Metadata Schema. 
-[gbl-1_to_aardvark](https://github.com/OpenGeoMetadata/gbl-1_to_aardvark),This script will convert the crosswalkable fields in a batch of JSON files in the GeoBlacklight 1.0 schema into the OpenGeoMetadata Aardvark schema
-[gbl2aardvark](https://kgjenkins.github.io/gbl2aardvark/),A a simple javascript application that lets you easily convert GeoBlacklight 1.0 records to the new OpenGeoMetadata Aardvark schema.
-[GeoCombine](https://github.com/OpenGeoMetadata/GeoCombine),"A Ruby toolkit that is useful for cloning, updating, and indexing metadata from OpenGeoMetdata and includes a library for converting metadata between standards. [XSL sheets are found here](https://github.com/OpenGeoMetadata/GeoCombine/tree/master/lib/xslt)"
-[OGM Aardvark Metadata Scripts](https://github.com/umass-gis/metadata-scripts),Basic Pythons scripts to convert ArcGIS-generated XML files to Aardvark schema JSON files. Queries the GeoNames database to retrieve placenames for the Spatial Coverage field.
-[SdrFriend](https://github.com/NYULibraries/sdrfriend),"SdrFriend is a Ruby gem that allows people of various skill levels to interface with DSpace, GDAL, GeoServer, and other spatial data collection tools (performs rake tasks on a SDI, crosswalks csv and JSON files)."
