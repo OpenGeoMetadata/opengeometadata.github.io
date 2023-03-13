@@ -58,9 +58,8 @@ This is the published branch containing the HTML code for the site. (We do **not
 
 ```mermaid
 graph TD;
-    A[Make changes on a new branch]-->C;
-    B-->D;
-    C-->D;
+    A[Make changes on a new branch]-->B[Merge changes to the Main branch];
+    B[Merge changes to the Main branch]--->C[Use the command line to publish content from the Main branch to the GitHub Pages branch]
 ```
 
 :warning: This workflow may vary from how you collaborated on other GitHub Pages sites, because we don't do Pull Requests to the branch that is actually being published (gh-pages). The site is always published from a command line interfaces using `mkdocs gh-deploy`.
