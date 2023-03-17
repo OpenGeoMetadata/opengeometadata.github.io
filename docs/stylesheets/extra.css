@@ -6,26 +6,28 @@
     max-width: none;
 }
 
+/* 
 :root {
   --md-primary-fg-color: #1F4068;
   --md-accent-fg-color: #C44601;
   --md-primary-fg-color--light: #ADD8E6;
   --md-primary-fg-color--dark:  #90030C;
 }
-
-h2 {
-      color: #C44601;
-      font-weight: 400;
-}
-
-
-/* 
-h3 {
-      color: #C44601;
-      font-weight: 400;
-}
  */
+
+.md-typeset h2{
+      color: #000;
+      font-weight: bold;
+      font-size: 1.3em;
+}
+
+p {
+  font-size: 1.2em; 
+  }
   
+  li {
+  font-size: 1.2em; 
+  }
   
 # for the material theme
 increase default font sizep, li{
@@ -33,6 +35,9 @@ increase default font sizep, li{
   font-size: 1.1em; 
   }
   
+.center {
+      text-align: center;
+}
 
 
 increase header size and fonts.md-header__topic  {
@@ -64,7 +69,28 @@ label[for="__drawer"] {
  */
 
 
+ 
+/* (C) RESPONSIVE - 1 COLUMN ON SMALL SCREENS */
+@media screen and (max-width: 640px) {
+  #grid-col { grid-template-columns: 100%; }
+}
 
+/* (A) GRID CONTAINER */
+#grid-line {
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-gap: 20px;
+}
+ 
+/* (B) GRID CELL */
+div.cell {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+}
 
-
+/* (C) SPAN MULTIPLE COLUMNS */
+.spancol {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
 

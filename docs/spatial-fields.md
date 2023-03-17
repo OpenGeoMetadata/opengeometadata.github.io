@@ -1,6 +1,6 @@
 # Spatial fields
 
-Aardvark has five different fields in the "spatial" group:
+[OGM Aardvark](../ogm-aardvark) has five different fields in the "spatial" group:
 
 - [Spatial Coverage](ogm-aardvark/spatial-coverage.md) (S)
 - [Geometry](ogm-aardvark/geometry.md) (S)

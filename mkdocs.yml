@@ -1,135 +1,145 @@
 site_name: OpenGeoMetadata
 
 theme: 
-    name: material
-    highlightjs: true
-    logo: images/ogm-icon.png
-#     palette:
-#        primary: deep purple
+      name: material
+      highlightjs: true
+      logo: images/ogm-icon.png
+      palette:
+          primary: indigo
 #        accent: deep orange
-    features:
-        - navigation.tabs
-        - navigation.tabs.sticky
-        - navigation.tracking
-        - navigation.expand
-        - navigation.sections
-#         - toc.integrate
-
+      font:
+          text: Lucida Console
+      features:
+            - navigation.top
+            - navigation.indexes
+            - navigation.instant
+            - navigation.tabs
+            - navigation.tabs.sticky
+            - navigation.tracking
+            - navigation.sections
+            - navigation.path
+            - navigation.prune
     
 plugins:
-  - search
-  - table-reader
+      - search
+      - table-reader 
 
 extra_css:
-  - stylesheets/extra.css
+      - stylesheets/extra.css
   
 extra_javascript:
-  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
-  - javascripts/tablesort.js
+      - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+      - javascripts/tablesort.js
 
 markdown_extensions:
-  - abbr
-  - tables
-  - attr_list
-  - md_in_html
-  - admonition
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.tabbed:
-      alternate_style: true 
-  - toc:
-        toc_depth: 2
-        permalink: true
+      - abbr
+      - tables
+      - attr_list
+      - md_in_html
+      - admonition
+      - pymdownx.critic
+      - pymdownx.caret
+      - pymdownx.keys
+      - pymdownx.mark
+      - pymdownx.tilde
+      - pymdownx.details
+      - pymdownx.superfences
+      - pymdownx.snippets
+      - pymdownx.emoji:
+            emoji_index: !!python/name:materialx.emoji.twemoji
+            emoji_generator: !!python/name:materialx.emoji.to_svg
+      - pymdownx.tabbed:
+            alternate_style: true 
+      - toc:
+              toc_depth: 2
+              permalink: true
         
 nav:
+      - Home: 'index.md'
 
-- Home: 'index.md'
-
-- Reference:
-      Schemas:
-            - 'OGM Aardvark': 'ogm-aardvark.md'
-            - 'GBL 1.0': 'gbl-1.0.md'
-            - 'GBL 0.5': 'gbl-0.5.md'
-            - 'Custom Fields': 'custom-fields.md'
+      - Reference:
+            - 'reference/index.md'
+            - Schemas:
+                  - OGM Aardvark :
+                        - 'ogm-aardvark/index.md'
+                        - 'Access Rights' : 'ogm-aardvark/access-rights.md'
+                        - 'Alternative Title' : 'ogm-aardvark/alternative-title.md'
+                        - 'Bounding Box' : 'ogm-aardvark/bounding-box.md'
+                        - 'Centroid' : 'ogm-aardvark/centroid.md'
+                        - 'Creator' : 'ogm-aardvark/creator.md'
+                        - 'Date Issued' : 'ogm-aardvark/date-issued.md'
+                        - 'Date Range' : 'ogm-aardvark/date-range.md'
+                        - 'Description' : 'ogm-aardvark/description.md'
+                        - 'Display Note' : 'ogm-aardvark/display-note.md'
+                        - 'File Size' : 'ogm-aardvark/file-size.md'
+                        - 'Format' : 'ogm-aardvark/format.md'
+                        - 'Geometry' : 'ogm-aardvark/geometry.md'
+                        - 'Georeferenced' : 'ogm-aardvark/georeferenced.md'
+                        - 'Id' : 'ogm-aardvark/id.md'
+                        - 'Identifier' : 'ogm-aardvark/identifier.md'
+                        - 'Index Year' : 'ogm-aardvark/index-year.md'
+                        - 'Is Part Of' : 'ogm-aardvark/is-part-of.md'
+                        - 'Is Replaced By' : 'ogm-aardvark/is-replaced-by.md'
+                        - 'Is Version Of' : 'ogm-aardvark/is-version-of.md'
+                        - 'Keyword' : 'ogm-aardvark/keyword.md'
+                        - 'Language' : 'ogm-aardvark/language.md'
+                        - 'License' : 'ogm-aardvark/license.md'
+                        - 'Member Of' : 'ogm-aardvark/member-of.md'
+                        - 'Metadata Version' : 'ogm-aardvark/metadata-version.md'
+                        - 'Modified' : 'ogm-aardvark/modified.md'
+                        - 'Provider' : 'ogm-aardvark/provider.md'
+                        - 'Publisher' : 'ogm-aardvark/publisher.md'
+                        - 'References' : 'ogm-aardvark/references.md'
+                        - 'Relation' : 'ogm-aardvark/relation.md'
+                        - 'Replaces' : 'ogm-aardvark/replaces.md'
+                        - 'Resource Class' : 'ogm-aardvark/resource-class.md'
+                        - 'Resource Type' : 'ogm-aardvark/resource-type.md'
+                        - 'Rights Holder' : 'ogm-aardvark/rights-holder.md'
+                        - 'Rights' : 'ogm-aardvark/rights.md'
+                        - 'Source' : 'ogm-aardvark/source.md'
+                        - 'Spatial Coverage' : 'ogm-aardvark/spatial-coverage.md'
+                        - 'Subject' : 'ogm-aardvark/subject.md'
+                        - 'Suppressed' : 'ogm-aardvark/suppressed.md'
+                        - 'Temporal Coverage' : 'ogm-aardvark/temporal-coverage.md'
+                        - 'Theme' : 'ogm-aardvark/theme.md'
+                        - 'Title' : 'ogm-aardvark/title.md'
+                        - 'WxS Identifier' : 'ogm-aardvark/wxs-identifier.md'
+                  - GBL 1.0 : 
+                        - 'gbl-1.0/index.md'
+                  - 'GBL 0.5': 'gbl-0.5.md'
+                  - 'Custom Fields': 'custom-fields.md'
       
-      Crosswalks:
-            - 'Aardvark to GBL 1.0' : 'aardvark-gbl-1-crosswalk.md'
-            - 'Aardvark to FGDC and ISO': 'aardvark-fgdc-iso-crosswalk.md'
-            - 'GBL 1.0 to FGDC and ISO': 'gbl1-fgdc-iso-crosswalk.md'
+            - Crosswalks:
+                  - 'Aardvark to GBL 1.0' : 'aardvark-gbl-1-crosswalk.md'
+                  - 'Aardvark to FGDC and ISO': 'aardvark-fgdc-iso-crosswalk.md'
+                  - 'GBL 1.0 to FGDC and ISO': 'gbl1-fgdc-iso-crosswalk.md'
       
-      Syntax:
+            - Syntax:
+                  - 'Reference URIs': 'reference-uris.md'
+                  - 'JSON schema files': 'json-schema.md'
+                  - 'Solr Field Types': 'solr-field-types.md'
+                  - 'Solr Metadata Views': 'view-solr-metadata.md'
+            
+            - Tools:
+                  - 'Scripts': 'scripts.md'
+                  - 'Applications': 'applications.md'
+            
+      - How-to Guides:
+            - 'Share on OpenGeoMetadata': 'share-on-ogm.md'
+            - 'Upgrading to OGM Aardvark': 'upgrading.md'
+            - 'Creating Metadata': 'creating-metadata.md'
+            - 'Validating Metadata': 'validating-metadata.md'
+            - 'Publishing to Solr': 'publishing-in-solr.md'
             - 'Configuring External Links (dct_references_s)': 'configuring-external-links.md'
+
+      
+      - Explanation:
+            - 'About OGM Aardvark': 'about-ogm-aardvark.md'
+            - 'About OGM Repositories': 'about-ogm-repositories.md'
             - 'JSON Format': 'JSON-format.md'
-            - 'Solr Field Types': 'solr-field-types.md'
-            - 'Solr Metadata Views': 'view-solr-metadata.md'
-            
-      Tools:
-            - 'Scripts': 'scripts.md'
-            - 'Applications': 'applications.md'
-            
-- How-to Guides:
-      - 'Upgrading to OGM Aardvark': 'upgrading.md'
-      - 'Creating Metadata': 'creating-metadata.md'
-      - 'Validating Metadata': 'validating-metadata.md'
-      - 'Publishing to Solr': 'publishing-in-solr.md'
-      - 'Share on OpenGeoMetadata': 'share-on-ogm.md'
-      
-- Explanation:
-      - 'About OGM Aardvark': 'about-ogm-aardvark.md'
-      - 'Spatial Fields': 'spatial-fields.md'
-      - 'Temporal Fields': 'temporal-fields.md'
-      - 'About OGM Repositories': 'about-ogm-repositories.md'
-      - 'Further reading': 'further-reading.md'
-      
-- Aardvark:
-      - 'Access Rights' : 'ogm-aardvark/access-rights.md'
-      - 'Alternative Title' : 'ogm-aardvark/alternative-title.md'
-      - 'Bounding Box' : 'ogm-aardvark/bounding-box.md'
-      - 'Centroid' : 'ogm-aardvark/centroid.md'
-      - 'Creator' : 'ogm-aardvark/creator.md'
-      - 'Date Issued' : 'ogm-aardvark/date-issued.md'
-      - 'Date Range' : 'ogm-aardvark/date-range.md'
-      - 'Description' : 'ogm-aardvark/description.md'
-      - 'Display Note' : 'ogm-aardvark/display-note.md'
-      - 'File Size' : 'ogm-aardvark/file-size.md'
-      - 'Format' : 'ogm-aardvark/format.md'
-      - 'Geometry' : 'ogm-aardvark/geometry.md'
-      - 'Georeferenced' : 'ogm-aardvark/georeferenced.md'
-      - 'Id' : 'ogm-aardvark/id.md'
-      - 'Identifier' : 'ogm-aardvark/identifier.md'
-      - 'Index Year' : 'ogm-aardvark/index-year.md'
-      - 'Is Part Of' : 'ogm-aardvark/is-part-of.md'
-      - 'Is Replaced By' : 'ogm-aardvark/is-replaced-by.md'
-      - 'Is Version Of' : 'ogm-aardvark/is-version-of.md'
-      - 'Keyword' : 'ogm-aardvark/keyword.md'
-      - 'Language' : 'ogm-aardvark/language.md'
-      - 'License' : 'ogm-aardvark/license.md'
-      - 'Member Of' : 'ogm-aardvark/member-of.md'
-      - 'Metadata Version' : 'ogm-aardvark/metadata-version.md'
-      - 'Modified' : 'ogm-aardvark/modified.md'
-      - 'Provider' : 'ogm-aardvark/provider.md'
-      - 'Publisher' : 'ogm-aardvark/publisher.md'
-      - 'References' : 'ogm-aardvark/references.md'
-      - 'Relation' : 'ogm-aardvark/relation.md'
-      - 'Replaces' : 'ogm-aardvark/replaces.md'
-      - 'Resource Class' : 'ogm-aardvark/resource-class.md'
-      - 'Resource Type' : 'ogm-aardvark/resource-type.md'
-      - 'Rights Holder' : 'ogm-aardvark/rights-holder.md'
-      - 'Rights' : 'ogm-aardvark/rights.md'
-      - 'Source' : 'ogm-aardvark/source.md'
-      - 'Spatial Coverage' : 'ogm-aardvark/spatial-coverage.md'
-      - 'Subject' : 'ogm-aardvark/subject.md'
-      - 'Suppressed' : 'ogm-aardvark/suppressed.md'
-      - 'Temporal Coverage' : 'ogm-aardvark/temporal-coverage.md'
-      - 'Theme' : 'ogm-aardvark/theme.md'
-      - 'Title' : 'ogm-aardvark/title.md'
-      - 'WxS Identifier' : 'ogm-aardvark/wxs-identifier.md'
+            - 'Spatial Fields': 'spatial-fields.md'
+            - 'Temporal Fields': 'temporal-fields.md'
+            - 'Further reading': 'further-reading.md'
+
+ 
       

@@ -2,6 +2,8 @@
 
 OpenGeoMetadata is a federated metadata-sharing community. The goal of participating in OpenGeoMetadata is to enable other institutions to find and use your institution’s metadata in their own local repositories, increasing the visibility and discoverability of your geospatial assets.
 
+[View our GitHub repositories](https://github.com/OpenGeoMetadata){ .md-button }
+
 ## How OpenGeoMetadata works
 Each collaborating institution creates and maintains its own geospatial metadata repository within the OpenGeoMetadata [GitHub organization](https://github.com/opengeometadata). This ensures that each institution has a unique namespace and can manage its own internal users who can collaborate on their metadata, while still enabling machine-harvestable metadata under a common organization. It also means that each institution is responsible for enforcing its own metadata standards.
 

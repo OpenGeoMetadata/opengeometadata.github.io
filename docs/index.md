@@ -1,30 +1,49 @@
 ---
 hide:
-  - navigation
   - toc
+  - navigation
 ---
-# Welcome to OpenGeoMetadata
 
-<!--![Image title](images/ogm-icon.png){ align=right }-->
+# Welcome to OpenGeoMetadata
 
 OpenGeoMetadata is a discovery metadata schema for geospatial resources and an open platform for sharing metadata files.
 
 
+<div id="grid-line">
 
-!!! info inline "Schemas"
+	<div class="cell"> 
+		<a href = "reference"> <img style="float: left; padding: 1em;" src="images/ogm-logo.png"> </a>
+		<h2><a href = "reference"> Metadata Schemas</a></h2>
+	    	Looking for schema reference and how to upgrade? Visit the <a href = "reference"> schema documentation pages</a> or <a href = "upgrading"> our Upgrade Guide </a>.
+	
+	</div>
+		
+		
+	<div class="cell"> 
+		<a href = "about-ogm-repositories"><img style="float: left; padding: 1em;" src="images/github-mark.png"></a>
+		<h2><a href = "about-ogm-repositories"> Repositories</a></h2>
+	
+	    	Planning to share your metadata?  Read about our <a href = "about-ogm-repositories"> repositories</a> and learn how to <a href = "share-on-ogm"> set up your own</a>. 
+	</div>
+		
+	    
+	<div class="cell"> 
+		<a href = "ogm-aardvark"><img style="float: left; padding: 1em;" src="images/aardvark.png"></a> 
+		<h2><a href = "ogm-aardvark"> OGM Aardvark Metadata</a></h2>
+	    	Jump to the documentation for the <a href = "ogm-aardvark">Aardvark Metadata Schema</a>.
+	
+	</div>
+	
+	<div class="cell"> 
+		<a href = "gbl-1.0"><img style="float: left; padding: 1em;" src="images/geoblacklight.png"></a>
+		<h2><a href = "gbl-1.0"> GBL 1.0 Metadata</a></h2>
+	    	Jump to the documentation for the <a href = "gbl-1.0">GBL 1.0 Metadata Schema</a>.
+	
+	</div>
 
-	Looking for schema reference? Visit the documentation pages for **[OGM Aardvark](ogm-aardvark.md)** or **[GBL 1.0](gbl-1.0.md)** .
+</div>
 
+(1) 
+{ .annotate }
 
-!!! info inline "Repositories"
-
-	Planning to share your metadata? **[Read about our repositories](about-ogm-repositories.md)** and learn how to **[set up your own](share-on-ogm.md)**.
-
-!!! info inline "Upgrading"
-
-	Wanting to upgrade your metadata to the latest schema version? **[Read our upgrade guide](upgrading.md)**.
-
-
-!!! question inline
-
-	Have an idea or question about OpenGeoMetadata? **[Add an issue to GitHub](https://github.com/OpenGeoMetadata/metadata-issues/issues)**.
+1.  Aardvark icon by Brandon Kraeger from the [Noun Project](https://thenounproject.com/browse/icons/term/aardvark/)
