@@ -18,6 +18,7 @@ Participating institutions are able to create their own unique namespace. This e
 * Institutions or collaborative organizations can also choose to adopt their own name for an OpenGeoMetadata repository: `big-ten`.
 
 Here are some examples of each of the following conventions:
+
 * Princeton: [edu.princeton.arks](https://github.com/OpenGeoMetadata/edu.princeton.arks)
 * Stanford: [edu.stanford.purl](https://github.com/OpenGeoMetadata/edu.stanford.purl)
 * New York University: [edu.nyu](https://github.com/OpenGeoMetadata/edu.nyu)
@@ -74,8 +75,10 @@ A hashed directory structure makes it easy to include additional materials and d
                 preview.jpg
 ```
 
-Institutions may choose to use a combination of structures, such as hashed directories within categorical folders.
-{: .note}
+!!! note
+	
+	Institutions may choose to use a combination of structures, such as hashed directories within categorical folders.
+
 
 ## 4. Determine the file-naming rules for your metadata
 
@@ -114,8 +117,10 @@ Adopting the file-naming by metadata standard approach can make it difficult for
 }
 ```
 
-GeoCombine will harvest all metadata records in an OpenGeoMetadata repository that end with the extension `.json`, regardless of how the records are structured. The one exception is files named `layers.json` - this file will be skipped during ingest.
-{: .note}
+!!! note
+
+	GeoCombine will harvest all metadata records in an OpenGeoMetadata repository that end with the extension `.json`, regardless of how the records are structured. The one exception is files named `layers.json` - this file will be skipped during ingest.
+
 
 ## 5. Document your repository
 
