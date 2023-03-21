@@ -1,7 +1,7 @@
 # Further Reading
 
 
-## Resources from the GeoBlacklight Community
+## Community Resources
 
 * Big Ten Academic Alliance Geospatial Data Project's [Metadata Handbook](https://z.umn.edu/gbl-handbook)
 * New York University's code examples, workflow steps, and ideas for managing the Spatial Data Repository, [NYULibraries/sdr-documentation](https://github.com/NYULibraries/sdr-documentation)

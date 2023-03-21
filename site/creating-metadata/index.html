@@ -259,7 +259,9 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="OpenGeoMetadata" class="md-nav__button md-logo" aria-label="OpenGeoMetadata" data-md-component="logo">
       
@@ -527,10 +529,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#create-or-collect-metadata-records" class="md-nav__link">
+  <a href="#authoring" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Create or collect metadata records
+        Authoring
       
     </span>
   </a>
@@ -538,10 +540,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#transform-metadata-to-the-ogm-schema" class="md-nav__link">
+  <a href="#transforming" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Transform metadata to the OGM schema
+        Transforming
       
     </span>
   </a>
@@ -632,7 +634,7 @@
   <span class="md-ellipsis">
     
   
-    Configuring External Links (dct_references_s)
+    External Links
   
 
     
@@ -715,65 +717,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#create-or-collect-metadata-records" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create or collect metadata records
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#transform-metadata-to-the-ogm-schema" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Transform metadata to the OGM schema
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example workflow
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -831,7 +774,7 @@
 
 <h1 id="creating-metadata">Creating Metadata<a class="headerlink" href="#creating-metadata" title="Permanent link">&para;</a></h1>
 <p>How to create metadata records in the OpenGeoMetadata schema</p>
-<h2 id="create-or-collect-metadata-records">Create or collect metadata records<a class="headerlink" href="#create-or-collect-metadata-records" title="Permanent link">&para;</a></h2>
+<h2 id="authoring">Authoring<a class="headerlink" href="#authoring" title="Permanent link">&para;</a></h2>
 <p>Step 1 of the metadata workflow is to create or collect original metadata for each layer. Depending upon the type of resource and a repository’s chosen workflows, the format of the original metadata may be in different standards or schemas.</p>
 <h3 id="for-resources-without-metadata-or-with-very-minimal-metadata">For resources without metadata or with very minimal metadata<a class="headerlink" href="#for-resources-without-metadata-or-with-very-minimal-metadata" title="Permanent link">&para;</a></h3>
 <p><strong>Option A: Create metadata in a non-OGM geospatial standard</strong></p>
@@ -845,7 +788,7 @@
 <p>A large amount of publicly available geospatial data does not have ISO or FGDC. However, it often features some kind of discovery metadata schema that is sufficient for creating OpenGeoMetadata schema records. For example, resources from public data portals, such as Socrata or ArcGIS Hub, will have metadata available in the <a href="https://www.w3.org/TR/vocab-dcat/">DCAT schema</a>. The metadata catalog for these portals can be accessed by appending “/data.json” to the end of the portal’s base URL. Other data portals may use a custom metadata schema, but most have APIs that can be programmatically parsed to obtain metadata for each record.</p>
 <p><strong>Scanned maps</strong></p>
 <p>Scanned maps from library catalogs should have MARC catalog records, and they should be able to supply the repository with metadata in the .MRC or MARC XML file format.</p>
-<h2 id="transform-metadata-to-the-ogm-schema">Transform metadata to the OGM schema<a class="headerlink" href="#transform-metadata-to-the-ogm-schema" title="Permanent link">&para;</a></h2>
+<h2 id="transforming">Transforming<a class="headerlink" href="#transforming" title="Permanent link">&para;</a></h2>
 <p>If the metadata records are in a non-OpenGeoMetadata standard, the next step is to convert or transfer information from some or all of the fields to the OpenGeoMetadata schema. The result of this process is one or more JSON files that will be parsed and indexed by Solr. These JSON files will serve as the content to be shown in the GeoBlacklight application.</p>
 <h3 id="transformation-workflows">Transformation workflows<a class="headerlink" href="#transformation-workflows" title="Permanent link">&para;</a></h3>
 <p>Most institutions have their own unique set of tools and workflows to perform this transformation.  These workflows may differ depending on the type of item to be referenced.  In most cases, automation of this process is desired, although it is possible to create the JSON files manually.</p>
@@ -913,7 +856,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.path", "navigation.prune"], "search": "../assets/javascripts/workers/search.6c7302c4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.path", "navigation.prune", "toc.integrate"], "search": "../assets/javascripts/workers/search.6c7302c4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.7de9f34d.min.js"></script>

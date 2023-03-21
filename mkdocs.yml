@@ -19,6 +19,7 @@ theme:
             - navigation.sections
             - navigation.path
             - navigation.prune
+            - toc.integrate
     
 plugins:
       - search
@@ -53,6 +54,7 @@ markdown_extensions:
       - toc:
               toc_depth: 2
               permalink: true
+
         
 nav:
       - Home: 'index.md'
@@ -104,9 +106,9 @@ nav:
                         - 'Theme' : 'ogm-aardvark/theme.md'
                         - 'Title' : 'ogm-aardvark/title.md'
                         - 'WxS Identifier' : 'ogm-aardvark/wxs-identifier.md'
-                  - GBL 1.0 : 
-                        - 'gbl-1.0/index.md'
-                  - 'GBL 0.5': 'gbl-0.5.md'
+                  -  Legacy Schemas : 
+                        - 'GBL 1.0' : 'gbl-1.0.md'
+                        - 'GBL 0.5': 'gbl-0.5.md'
                   - 'Custom Fields': 'custom-fields.md'
       
             - Crosswalks:
@@ -130,7 +132,7 @@ nav:
             - 'Creating Metadata': 'creating-metadata.md'
             - 'Validating Metadata': 'validating-metadata.md'
             - 'Publishing to Solr': 'publishing-in-solr.md'
-            - 'Configuring External Links (dct_references_s)': 'configuring-external-links.md'
+            - 'External Links': 'configuring-external-links.md'
 
       
       - Explanation:

@@ -259,7 +259,9 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="OpenGeoMetadata" class="md-nav__button md-logo" aria-label="OpenGeoMetadata" data-md-component="logo">
       
@@ -501,10 +503,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#option-1-re-run-the-metadata-pipeline-with-a-new-crosswalk" class="md-nav__link">
+  <a href="#option-1-new-pipeline" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option 1: Re-run the metadata pipeline with a new crosswalk
+        Option 1: New pipeline
       
     </span>
   </a>
@@ -512,21 +514,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#option-2-programmatically-convert-the-json-files" class="md-nav__link">
+  <a href="#option-2-convert-jsons" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option 2: Programmatically convert the JSON files
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#option-3-conversion-with-manual-remediation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option 3: Conversion with manual remediation
+        Option 2: Convert JSONs
       
     </span>
   </a>
@@ -632,7 +623,7 @@
   <span class="md-ellipsis">
     
   
-    Configuring External Links (dct_references_s)
+    External Links
   
 
     
@@ -715,65 +706,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#option-1-re-run-the-metadata-pipeline-with-a-new-crosswalk" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option 1: Re-run the metadata pipeline with a new crosswalk
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#option-2-programmatically-convert-the-json-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option 2: Programmatically convert the JSON files
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#option-3-conversion-with-manual-remediation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option 3: Conversion with manual remediation
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -831,15 +763,16 @@
 
 <h1 id="upgrade-guide-for-converting-metadata-from-gbl-10-to-ogm-aardvark">Upgrade Guide for converting Metadata from GBL 1.0 to OGM Aardvark<a class="headerlink" href="#upgrade-guide-for-converting-metadata-from-gbl-10-to-ogm-aardvark" title="Permanent link">&para;</a></h1>
 <p>The following options are three ways to upgrade GBL 1.0 metadata into OGM Aardvark.  The figures include references to Solr, the search index that powers a GeoBlacklight instance.</p>
-<h2 id="option-1-re-run-the-metadata-pipeline-with-a-new-crosswalk">Option 1: Re-run the metadata pipeline with a new crosswalk<a class="headerlink" href="#option-1-re-run-the-metadata-pipeline-with-a-new-crosswalk" title="Permanent link">&para;</a></h2>
+<h2 id="option-1-new-pipeline">Option 1: New pipeline<a class="headerlink" href="#option-1-new-pipeline" title="Permanent link">&para;</a></h2>
+<p>Re-run the metadata pipeline with a new crosswalk</p>
 <p><img alt="metadata-pipline" src="../images/transform-option1.png" />
 Fig.1 - Metadata pipeline showing a conversion from standards metadata</p>
-<p><strong>Scenario</strong> </p>
+<h3 id="scenario">Scenario<a class="headerlink" href="#scenario" title="Permanent link">&para;</a></h3>
 <ul>
 <li>you have geospatial resources with structured metadata files in an official standard, such as ISO 19139, FGDC, MODS, or MARC</li>
 <li>your organization already has a metadata pipeline process that converts these structured files to GBL 1.0</li>
 </ul>
-<p><strong>How does it work?</strong> </p>
+<h3 id="how-does-it-work">How does it work?<a class="headerlink" href="#how-does-it-work" title="Permanent link">&para;</a></h3>
 <p>This option involves updating your local transformation workflow that extracts values from standards-based metadata files.</p>
 <ul>
 <li>
@@ -849,19 +782,22 @@ Fig.1 - Metadata pipeline showing a conversion from standards metadata</p>
 <p>For institutions that use custom tools or Python scripts, refer to the OGM Aardvark - FGDC- ISO 19139 crosswalk document to update the code. It shows crosswalks between OGM Aardvark, GBL 1.0, FGDC, and ISO.</p>
 </li>
 </ul>
-<p><strong>Considerations for Option #1</strong></p>
+<h3 id="considerations-for-option-1">Considerations for Option #1<a class="headerlink" href="#considerations-for-option-1" title="Permanent link">&para;</a></h3>
 <ul>
 <li>may require extra institutional support, particularly if the transformation process is part of a larger framework or connected to a repository.</li>
 <li>community-developed XSLs are still a work in progress</li>
 </ul>
 <hr />
-<h2 id="option-2-programmatically-convert-the-json-files">Option 2: Programmatically convert the JSON files<a class="headerlink" href="#option-2-programmatically-convert-the-json-files" title="Permanent link">&para;</a></h2>
+<h2 id="option-2-convert-jsons">Option 2: Convert JSONs<a class="headerlink" href="#option-2-convert-jsons" title="Permanent link">&para;</a></h2>
+<p>Programmatically convert the JSON files</p>
 <p><img alt="convert-jsons" src="../images/transform-option2.png" />
 Fig.2 - Programmatic transformation process using Geoblacklight 1.0 Metadata JSONs</p>
-<p><strong>Scenario</strong> 
-* you only have GBL 1.0 metadata (no structured metadata files in an official standard)
-* you want to test your environment with the new Aardvark schema </p>
-<p><strong>How does it work?</strong></p>
+<h3 id="scenario_1">Scenario<a class="headerlink" href="#scenario_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>you only have GBL 1.0 metadata (no structured metadata files in an official standard)</li>
+<li>you want to test your environment with the new Aardvark schema </li>
+</ul>
+<h3 id="how-does-it-work_1">How does it work?<a class="headerlink" href="#how-does-it-work_1" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Gather GBL 1.0 metadata JSON files on your desktop</li>
 <li>Use a script or tool to convert the files batch convert GBL 1.0 JSON files to OGM Aardvark</li>
@@ -886,30 +822,13 @@ Fig.2 - Programmatic transformation process using Geoblacklight 1.0 Metadata JSO
 <li>It features an editable crosswalk file to customize the transformation.</li>
 <li>The non-crosswalkable elements listed above (Type, Geometry Type, and Is Part Of) do not have direct crosswalks and will be copied as is into the new Aardvark JSONs.</li>
 </ul>
-<p><strong>Considerations for Option #2</strong></p>
-<ul>
-<li>
-<p>the fastest method, but is not a long-term solution and may result in incomplete metadata</p>
-</li>
-<li>
-<p>will not include some fields that are new in OGM Aardvark, such as Rights or License. To take advantage of those fields, use Option 1 or 3.</p>
-</li>
-</ul>
-<hr />
-<h2 id="option-3-conversion-with-manual-remediation">Option 3: Conversion with manual remediation<a class="headerlink" href="#option-3-conversion-with-manual-remediation" title="Permanent link">&para;</a></h2>
+<h3 id="manually-remediate-tranformated-jsons">Manually remediate tranformated JSONs<a class="headerlink" href="#manually-remediate-tranformated-jsons" title="Permanent link">&para;</a></h3>
 <p><img alt="manual-remediation" src="../images/transform-option3.png" />
 Fig.3 - Transformation process that includes manual remediation</p>
-<p><strong>Scenario</strong></p>
-<ul>
-<li>you have GBL 1.0 metadata files</li>
-<li>you want to minimize data loss and corrupted output values</li>
-<li>you have staff time available for manual work</li>
-</ul>
-<p><strong>How does it work?</strong></p>
-<p>This technique combines automatic conversions and manual edits:</p>
+<p>You may need to perform additional cleanup on the tranformed JSONs.  This technique combines automatic conversions and manual edits:</p>
 <ol>
 <li>
-<p>Convert your GBL 1.0 metadata files to a CSV. <a href="https://github.com/geobtaa/workflows/blob/main/editing/json2csv.py">This Python script will convert a batch of JSONs to a CSV file</a></p>
+<p>Convert your metadata files to a CSV. <a href="https://github.com/geobtaa/workflows/blob/main/editing/json2csv.py">This Python script will convert a batch of JSONs to a CSV file</a></p>
 </li>
 <li>
 <p>Manually augment and adjust column names and values using spreadsheet functions.</p>
@@ -918,16 +837,16 @@ Fig.3 - Transformation process that includes manual remediation</p>
 <p>Convert your spreadsheet to OGM Aardvark JSONs. <a href="https://github.com/jhu-library-applications/geoportal/tree/main/aardvark">This Python script will convert CSVs to Aardvark JSONS</a></p>
 </li>
 </ol>
-<p><strong>Considerations for Option #3</strong></p>
+<h3 id="considerations-for-option-2">Considerations for Option #2<a class="headerlink" href="#considerations-for-option-2" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
-<p>more likely to produce normalized, consistent values than Options 1 or 2.</p>
+<p>a workaround method if changing the metadata pipeline is not feasible. However, is not a long-term solution and may result in incomplete metadata.</p>
 </li>
 <li>
-<p>may require extra dedicated staff time</p>
+<p>will not include some fields that are new in OGM Aardvark, such as Rights or License. To take advantage of those fields, use Option 1 or perform additional remediation.</p>
 </li>
 <li>
-<p>could be adjusted to work with the extracted metadata from standards files </p>
+<p>manual cleanup after transformation may be labor intensive</p>
 </li>
 </ul>
 
@@ -974,7 +893,7 @@ Fig.3 - Transformation process that includes manual remediation</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.path", "navigation.prune"], "search": "../assets/javascripts/workers/search.6c7302c4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.path", "navigation.prune", "toc.integrate"], "search": "../assets/javascripts/workers/search.6c7302c4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.7de9f34d.min.js"></script>

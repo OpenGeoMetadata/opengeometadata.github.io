@@ -10,7 +10,7 @@ Details about the OpenGeoMetadata metadata schema, OGM Aardvark
 	* includes elements for external links, such as downloads, web services, or supplemental metadata
 	* requires records to be formatted as JSON files
 
-**Terminology used on this page**
+## Terminology
 
 *   **GBL 1.0**: The legacy metadata schema designed for GeoBlacklight versions 2.0-3.7. [The schema is documented on this Legacy page.](gbl-1.0.md)
 *   **OGM Aardvark**: The new metadata schema that is compatible with GeoBlacklight version 4.0.
@@ -28,12 +28,14 @@ For more information, see the [Upgrade Guide.](upgrading.md)
 
 ---
 
-## Why is this called Aardvark?
+## Background
+
+### Why is this called Aardvark?
 
 The term “aardvark” represents a new naming convention to specify metadata schema versions. This convention is intended to reduce confusion between the metadata schema version and GeoBlacklight software versions, which uses numerical-based indicators.
 
 
-## Why do we need an updated schema?
+### Why do we need an updated schema?
 
 GeoBlacklight and its original metadata application schema (1.0) are well-suited to describing single layers of GIS data served out as OGC web services and documented with supplemental metadata, such as ISO 19115 (19139). Since that time, the growing community of GeoBlacklight adopters has introduced new use cases and institutional requirements. This growth brought several challenges to the metadata application schema as it was originally conceived including:
 
@@ -46,9 +48,11 @@ GeoBlacklight and its original metadata application schema (1.0) are well-suited
 
 The minimal nature of the original GeoBlacklight schema combined with the growing environment of customized local fields has presented obstacles for new adopters. Instead of being able to rely on the official application schema to meet all or most of their needs, they must develop local solutions. Ultimately, in order to use GeoBlacklight, many adopters implemented custom fields. [A review of extant custom fields](https://github.com/geoblacklight/geoblacklight/issues/937) in 2020 revealed that at least six institutions had added or altered fields in the GeoBlacklight schema. Altogether, over 20 custom fields were in use. The result of these custom fields was metadata that was not fully interoperable across institutions. For example, three schools had implemented three different fields for indicating rights or licenses.
 
-## What are the differences between GBL 1.0 and OGM Aardvark?
+## What changed?
 
-### New elements for rights
+### What are the differences between GBL 1.0 and OGM Aardvark?
+
+#### New elements for rights
 
 The new set of rights elements are:
 
@@ -60,7 +64,7 @@ The new set of rights elements are:
 | Rights Holder      | `dct_rightsHolder_sm`   | Free-text field for the person or organization owning or managing rights over the resource. |
 
 
-### New elements for item relations
+#### New elements for item relations
 
 The new schema includes seven relationship fields. The value for each field should be the ID (slug) of the related item.
 
@@ -80,7 +84,7 @@ The new set of relationship elements are:
 | Relation            | `dct_relation_sm`      | For a general purpose relation.  |
 
 
-### Consistent namespaces for all metadata element URIs
+#### Consistent namespaces for all metadata element URIs
 
 OGM Aardvark gives preference to elements found in established schemas over custom fields.
 
@@ -90,12 +94,19 @@ OGM Aardvark gives preference to elements found in established schemas over cust
 * **`gbl_`**: This stands for GeoBlacklight and is used for any field that is application-specific or has no analogous term in other schemas.
 
 
-### Multivalued elements whenever possible
+#### Multivalued elements whenever possible
 
 The original schema features several descriptive metadata fields that only accept one value. The new schema expands many of these to multiple. This changes the URI suffix from `_s` to` _sm`. Although it will not affect the GeoBlacklight functionality, this practice may conflict with indexing, as Solr will treat `dct_publisher_s` as a different field than `dct_publisher_sm`.
 
+### Will Aardvark work with my GeoBlacklight installation?
 
-## Who came up with the schema?
+You will need to upgrade to at least GeoBlacklight version 3.3 to test out Aardvark. All previously hardcoded field names were removed in GeoBlacklight version 3.3 (see [this pull request](https://github.com/geoblacklight/geoblacklight/pull/1020) for more information). This means that field names are defined in the `settings.yml` file and can be configured to use Aardvark. However, only the fields in the crosswalk will have display, facet, or other functionality enabled by default in version 3.3.
+
+Some of the new fields in Aardvark will be tied to default application functionality beginning with Version 4.0. We plan to include item relation widgets for the new relationships (such as **Member Of** and **Is Version Of**) and reorganize the facets to include the new categories (such as Resource Class and Resource Type).
+
+## Credits
+
+### Who came up with the schema?
 
 The GeoBlacklight Metadata Schema Workgroup consisted of 16 people from 12 institutions. The workgroup formed during the Summer Community Sprint in August 2020 and met every three weeks thereafter through January 2021. The group wrapped up after the Winter Community Sprint in February 2021, during which time they consulted with application developers and finalized the recommendations for Aardvark.
 
@@ -145,8 +156,4 @@ Refinements to OpenGeoMetadata have continued through the work of the ongoing Me
 * Rebecca Seifried (UMass Amherst)
 
 
-## Will Aardvark work with my GeoBlacklight installation?
 
-You will need to upgrade to at least GeoBlacklight version 3.3 to test out Aardvark. All previously hardcoded field names were removed in GeoBlacklight version 3.3 (see [this pull request](https://github.com/geoblacklight/geoblacklight/pull/1020) for more information). This means that field names are defined in the `settings.yml` file and can be configured to use Aardvark. However, only the fields in the crosswalk will have display, facet, or other functionality enabled by default in version 3.3.
-
-Some of the new fields in Aardvark will be tied to default application functionality beginning with Version 4.0. We plan to include item relation widgets for the new relationships (such as **Member Of** and **Is Version Of**) and reorganize the facets to include the new categories (such as Resource Class and Resource Type).

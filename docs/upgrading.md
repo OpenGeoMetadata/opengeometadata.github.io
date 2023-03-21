@@ -3,18 +3,20 @@
 
 The following options are three ways to upgrade GBL 1.0 metadata into OGM Aardvark.  The figures include references to Solr, the search index that powers a GeoBlacklight instance.
 
-## Option 1: Re-run the metadata pipeline with a new crosswalk
+## Option 1: New pipeline
+
+Re-run the metadata pipeline with a new crosswalk
 
 ![metadata-pipline](images/transform-option1.png)
 Fig.1 - Metadata pipeline showing a conversion from standards metadata
 
 
-**Scenario** 
+### Scenario
 
 * you have geospatial resources with structured metadata files in an official standard, such as ISO 19139, FGDC, MODS, or MARC
 * your organization already has a metadata pipeline process that converts these structured files to GBL 1.0
 
-**How does it work?** 
+### How does it work?
 
 This option involves updating your local transformation workflow that extracts values from standards-based metadata files.
 
@@ -22,7 +24,7 @@ This option involves updating your local transformation workflow that extracts v
 
 * For institutions that use custom tools or Python scripts, refer to the OGM Aardvark - FGDC- ISO 19139 crosswalk document to update the code. It shows crosswalks between OGM Aardvark, GBL 1.0, FGDC, and ISO.
 
-**Considerations for Option #1**
+### Considerations for Option #1
 
 * may require extra institutional support, particularly if the transformation process is part of a larger framework or connected to a repository.
 * community-developed XSLs are still a work in progress
@@ -31,17 +33,19 @@ This option involves updating your local transformation workflow that extracts v
 
 -----
 
-## Option 2: Programmatically convert the JSON files
+##  Option 2: Convert JSONs
+
+Programmatically convert the JSON files
 
 ![convert-jsons](images/transform-option2.png)
 Fig.2 - Programmatic transformation process using Geoblacklight 1.0 Metadata JSONs
 
 
-**Scenario** 
+### Scenario
 * you only have GBL 1.0 metadata (no structured metadata files in an official standard)
 * you want to test your environment with the new Aardvark schema 
 
-**How does it work?**
+### How does it work?
 
 1. Gather GBL 1.0 metadata JSON files on your desktop
 2. Use a script or tool to convert the files batch convert GBL 1.0 JSON files to OGM Aardvark
@@ -63,42 +67,24 @@ Currently, the OpenGeoMetadata community has two tools that can do batch convers
    * It features an editable crosswalk file to customize the transformation.
    * The non-crosswalkable elements listed above (Type, Geometry Type, and Is Part Of) do not have direct crosswalks and will be copied as is into the new Aardvark JSONs.
 
-**Considerations for Option #2**
-
-* the fastest method, but is not a long-term solution and may result in incomplete metadata
-
-* will not include some fields that are new in OGM Aardvark, such as Rights or License. To take advantage of those fields, use Option 1 or 3.
-
------
-## Option 3: Conversion with manual remediation
+### Manually remediate tranformated JSONs
 
 ![manual-remediation](images/transform-option3.png)
 Fig.3 - Transformation process that includes manual remediation
 
-**Scenario**
+You may need to perform additional cleanup on the tranformed JSONs.  This technique combines automatic conversions and manual edits:
 
-* you have GBL 1.0 metadata files
-* you want to minimize data loss and corrupted output values
-* you have staff time available for manual work
-
-**How does it work?**
-
-This technique combines automatic conversions and manual edits:
-
-1. Convert your GBL 1.0 metadata files to a CSV. [This Python script will convert a batch of JSONs to a CSV file](https://github.com/geobtaa/workflows/blob/main/editing/json2csv.py)
-
+1. Convert your metadata files to a CSV. [This Python script will convert a batch of JSONs to a CSV file](https://github.com/geobtaa/workflows/blob/main/editing/json2csv.py)
 
 2. Manually augment and adjust column names and values using spreadsheet functions.
-
 
 3. Convert your spreadsheet to OGM Aardvark JSONs. [This Python script will convert CSVs to Aardvark JSONS](https://github.com/jhu-library-applications/geoportal/tree/main/aardvark)
 
 
+### Considerations for Option #2
 
-**Considerations for Option #3**
+* a workaround method if changing the metadata pipeline is not feasible. However, is not a long-term solution and may result in incomplete metadata.
 
-* more likely to produce normalized, consistent values than Options 1 or 2.
+* will not include some fields that are new in OGM Aardvark, such as Rights or License. To take advantage of those fields, use Option 1 or perform additional remediation.
 
-* may require extra dedicated staff time
-
-* could be adjusted to work with the extracted metadata from standards files 
+* manual cleanup after transformation may be labor intensive

@@ -2,7 +2,7 @@
 How to create metadata records in the OpenGeoMetadata schema
 
 
-## Create or collect metadata records
+## Authoring
 
 Step 1 of the metadata workflow is to create or collect original metadata for each layer. Depending upon the type of resource and a repository’s chosen workflows, the format of the original metadata may be in different standards or schemas.
 
@@ -31,7 +31,7 @@ A large amount of publicly available geospatial data does not have ISO or FGDC. 
 
 Scanned maps from library catalogs should have MARC catalog records, and they should be able to supply the repository with metadata in the .MRC or MARC XML file format.
 
-## Transform metadata to the OGM schema
+## Transforming
 
 If the metadata records are in a non-OpenGeoMetadata standard, the next step is to convert or transfer information from some or all of the fields to the OpenGeoMetadata schema. The result of this process is one or more JSON files that will be parsed and indexed by Solr. These JSON files will serve as the content to be shown in the GeoBlacklight application.
 

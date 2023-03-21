@@ -259,7 +259,9 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="OpenGeoMetadata" class="md-nav__button md-logo" aria-label="OpenGeoMetadata" data-md-component="logo">
       
@@ -530,10 +532,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-is-this-called-aardvark" class="md-nav__link">
+  <a href="#terminology" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why is this called Aardvark?
+        Terminology
       
     </span>
   </a>
@@ -541,10 +543,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-do-we-need-an-updated-schema" class="md-nav__link">
+  <a href="#background" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why do we need an updated schema?
+        Background
       
     </span>
   </a>
@@ -552,10 +554,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-are-the-differences-between-gbl-10-and-ogm-aardvark" class="md-nav__link">
+  <a href="#what-changed" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What are the differences between GBL 1.0 and OGM Aardvark?
+        What changed?
       
     </span>
   </a>
@@ -563,21 +565,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#who-came-up-with-the-schema" class="md-nav__link">
+  <a href="#credits" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Who came up with the schema?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#will-aardvark-work-with-my-geoblacklight-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Will Aardvark work with my GeoBlacklight installation?
+        Credits
       
     </span>
   </a>
@@ -737,87 +728,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why-is-this-called-aardvark" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why is this called Aardvark?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-do-we-need-an-updated-schema" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why do we need an updated schema?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-are-the-differences-between-gbl-10-and-ogm-aardvark" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What are the differences between GBL 1.0 and OGM Aardvark?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#who-came-up-with-the-schema" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Who came up with the schema?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#will-aardvark-work-with-my-geoblacklight-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Will Aardvark work with my GeoBlacklight installation?
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -885,9 +795,9 @@
 <li>requires records to be formatted as JSON files</li>
 </ul>
 </div>
-<p><strong>Terminology used on this page</strong></p>
+<h2 id="terminology">Terminology<a class="headerlink" href="#terminology" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>GBL 1.0</strong>: The legacy metadata schema designed for GeoBlacklight versions 2.0-3.7. <a href="gbl-1.0.md">The schema is documented on this Legacy page.</a></li>
+<li><strong>GBL 1.0</strong>: The legacy metadata schema designed for GeoBlacklight versions 2.0-3.7. <a href="../gbl-1.0/">The schema is documented on this Legacy page.</a></li>
 <li><strong>OGM Aardvark</strong>: The new metadata schema that is compatible with GeoBlacklight version 4.0.</li>
 <li><strong>GeoBlacklight</strong>: When spelled out, GeoBlacklight refers to <a href="https://geoblacklight.org">the application itself</a>, not its namesake legacy metadata schema, GBL 1.0.</li>
 <li><strong>URI</strong>: This is the name we give to the metadata element itself. For example, the URI for the Subject field is <code>dct_subject_sm</code>. </li>
@@ -896,12 +806,13 @@
 <li><strong>Value</strong>: This is the information that is entered in a field. It may be free text (literal value) or a URI/code (nonliteral value).</li>
 </ul>
 <p>OGM Aardvark is a discovery metadata schema for geospatial resources. It was intentionally developed with cross-application in mind and can be used to describe geospatial assets of all kinds.</p>
-<p>It is also the newest metadata application profile schema for GeoBlacklight. Launched in 2021, it replaces the GeoBlacklight metadata schema version 1.0 (<a href="gbl-1.0.md">GBL 1.0</a>). Compared to GBL 1.0, Aardvark incorporates additional fields for better descriptions of a wider range of resources, as well as syntactical updates in order to improve interoperability between institutions and between schemas. For GeoBlacklight users, it is the recommended schema for installations starting with GeoBlacklight version 4.0.</p>
+<p>It is also the newest metadata application profile schema for GeoBlacklight. Launched in 2021, it replaces the GeoBlacklight metadata schema version 1.0 (<a href="../gbl-1.0/">GBL 1.0</a>). Compared to GBL 1.0, Aardvark incorporates additional fields for better descriptions of a wider range of resources, as well as syntactical updates in order to improve interoperability between institutions and between schemas. For GeoBlacklight users, it is the recommended schema for installations starting with GeoBlacklight version 4.0.</p>
 <p>For more information, see the <a href="../upgrading/">Upgrade Guide.</a></p>
 <hr />
-<h2 id="why-is-this-called-aardvark">Why is this called Aardvark?<a class="headerlink" href="#why-is-this-called-aardvark" title="Permanent link">&para;</a></h2>
+<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
+<h3 id="why-is-this-called-aardvark">Why is this called Aardvark?<a class="headerlink" href="#why-is-this-called-aardvark" title="Permanent link">&para;</a></h3>
 <p>The term “aardvark” represents a new naming convention to specify metadata schema versions. This convention is intended to reduce confusion between the metadata schema version and GeoBlacklight software versions, which uses numerical-based indicators.</p>
-<h2 id="why-do-we-need-an-updated-schema">Why do we need an updated schema?<a class="headerlink" href="#why-do-we-need-an-updated-schema" title="Permanent link">&para;</a></h2>
+<h3 id="why-do-we-need-an-updated-schema">Why do we need an updated schema?<a class="headerlink" href="#why-do-we-need-an-updated-schema" title="Permanent link">&para;</a></h3>
 <p>GeoBlacklight and its original metadata application schema (1.0) are well-suited to describing single layers of GIS data served out as OGC web services and documented with supplemental metadata, such as ISO 19115 (19139). Since that time, the growing community of GeoBlacklight adopters has introduced new use cases and institutional requirements. This growth brought several challenges to the metadata application schema as it was originally conceived including:</p>
 <ul>
 <li>a lack of fields for statements about rights</li>
@@ -912,8 +823,9 @@
 <li>fields with names that were not intuitive for new users</li>
 </ul>
 <p>The minimal nature of the original GeoBlacklight schema combined with the growing environment of customized local fields has presented obstacles for new adopters. Instead of being able to rely on the official application schema to meet all or most of their needs, they must develop local solutions. Ultimately, in order to use GeoBlacklight, many adopters implemented custom fields. <a href="https://github.com/geoblacklight/geoblacklight/issues/937">A review of extant custom fields</a> in 2020 revealed that at least six institutions had added or altered fields in the GeoBlacklight schema. Altogether, over 20 custom fields were in use. The result of these custom fields was metadata that was not fully interoperable across institutions. For example, three schools had implemented three different fields for indicating rights or licenses.</p>
-<h2 id="what-are-the-differences-between-gbl-10-and-ogm-aardvark">What are the differences between GBL 1.0 and OGM Aardvark?<a class="headerlink" href="#what-are-the-differences-between-gbl-10-and-ogm-aardvark" title="Permanent link">&para;</a></h2>
-<h3 id="new-elements-for-rights">New elements for rights<a class="headerlink" href="#new-elements-for-rights" title="Permanent link">&para;</a></h3>
+<h2 id="what-changed">What changed?<a class="headerlink" href="#what-changed" title="Permanent link">&para;</a></h2>
+<h3 id="what-are-the-differences-between-gbl-10-and-ogm-aardvark">What are the differences between GBL 1.0 and OGM Aardvark?<a class="headerlink" href="#what-are-the-differences-between-gbl-10-and-ogm-aardvark" title="Permanent link">&para;</a></h3>
+<h4 id="new-elements-for-rights">New elements for rights<a class="headerlink" href="#new-elements-for-rights" title="Permanent link">&para;</a></h4>
 <p>The new set of rights elements are:</p>
 <table>
 <thead>
@@ -946,7 +858,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="new-elements-for-item-relations">New elements for item relations<a class="headerlink" href="#new-elements-for-item-relations" title="Permanent link">&para;</a></h3>
+<h4 id="new-elements-for-item-relations">New elements for item relations<a class="headerlink" href="#new-elements-for-item-relations" title="Permanent link">&para;</a></h4>
 <p>The new schema includes seven relationship fields. The value for each field should be the ID (slug) of the related item.</p>
 <p class="note">GeoBlacklight version 3.4 and earlier has an Item Relations widget that displays items identified in the <strong>Source</strong> field. Beginning with version 4, this has been updated to use the same widget for each of these fields</p>
 <p>The new set of relationship elements are:</p>
@@ -996,7 +908,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="consistent-namespaces-for-all-metadata-element-uris">Consistent namespaces for all metadata element URIs<a class="headerlink" href="#consistent-namespaces-for-all-metadata-element-uris" title="Permanent link">&para;</a></h3>
+<h4 id="consistent-namespaces-for-all-metadata-element-uris">Consistent namespaces for all metadata element URIs<a class="headerlink" href="#consistent-namespaces-for-all-metadata-element-uris" title="Permanent link">&para;</a></h4>
 <p>OGM Aardvark gives preference to elements found in established schemas over custom fields.</p>
 <ul>
 <li><strong><code>dct_</code></strong>: This signifies that the field is part of the <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">Dublin Core Metadata Initiative (DCMI) Metadata Terms</a>. Any Dublin Core fields from GBL 1.0 were updated to use the <code>dct_</code> namespace, instead of <code>dc_</code>.</li>
@@ -1004,9 +916,13 @@
 <li><strong><code>pcdm_</code></strong>: This refers to the <a href="https://github.com/duraspace/pcdm/wiki">Portland Common Data Model</a>, which is a framework for many digital repository systems. We drew from it to establish one of the item relationship fields.</li>
 <li><strong><code>gbl_</code></strong>: This stands for GeoBlacklight and is used for any field that is application-specific or has no analogous term in other schemas.</li>
 </ul>
-<h3 id="multivalued-elements-whenever-possible">Multivalued elements whenever possible<a class="headerlink" href="#multivalued-elements-whenever-possible" title="Permanent link">&para;</a></h3>
+<h4 id="multivalued-elements-whenever-possible">Multivalued elements whenever possible<a class="headerlink" href="#multivalued-elements-whenever-possible" title="Permanent link">&para;</a></h4>
 <p>The original schema features several descriptive metadata fields that only accept one value. The new schema expands many of these to multiple. This changes the URI suffix from <code>_s</code> to<code>_sm</code>. Although it will not affect the GeoBlacklight functionality, this practice may conflict with indexing, as Solr will treat <code>dct_publisher_s</code> as a different field than <code>dct_publisher_sm</code>.</p>
-<h2 id="who-came-up-with-the-schema">Who came up with the schema?<a class="headerlink" href="#who-came-up-with-the-schema" title="Permanent link">&para;</a></h2>
+<h3 id="will-aardvark-work-with-my-geoblacklight-installation">Will Aardvark work with my GeoBlacklight installation?<a class="headerlink" href="#will-aardvark-work-with-my-geoblacklight-installation" title="Permanent link">&para;</a></h3>
+<p>You will need to upgrade to at least GeoBlacklight version 3.3 to test out Aardvark. All previously hardcoded field names were removed in GeoBlacklight version 3.3 (see <a href="https://github.com/geoblacklight/geoblacklight/pull/1020">this pull request</a> for more information). This means that field names are defined in the <code>settings.yml</code> file and can be configured to use Aardvark. However, only the fields in the crosswalk will have display, facet, or other functionality enabled by default in version 3.3.</p>
+<p>Some of the new fields in Aardvark will be tied to default application functionality beginning with Version 4.0. We plan to include item relation widgets for the new relationships (such as <strong>Member Of</strong> and <strong>Is Version Of</strong>) and reorganize the facets to include the new categories (such as Resource Class and Resource Type).</p>
+<h2 id="credits">Credits<a class="headerlink" href="#credits" title="Permanent link">&para;</a></h2>
+<h3 id="who-came-up-with-the-schema">Who came up with the schema?<a class="headerlink" href="#who-came-up-with-the-schema" title="Permanent link">&para;</a></h3>
 <p>The GeoBlacklight Metadata Schema Workgroup consisted of 16 people from 12 institutions. The workgroup formed during the Summer Community Sprint in August 2020 and met every three weeks thereafter through January 2021. The group wrapped up after the Winter Community Sprint in February 2021, during which time they consulted with application developers and finalized the recommendations for Aardvark.</p>
 <p><strong>Workgroup Goals</strong></p>
 <ol>
@@ -1055,9 +971,6 @@ Refinements to OpenGeoMetadata have continued through the work of the ongoing Me
 <li>Marc McGee (Harvard University)</li>
 <li>Rebecca Seifried (UMass Amherst)</li>
 </ul>
-<h2 id="will-aardvark-work-with-my-geoblacklight-installation">Will Aardvark work with my GeoBlacklight installation?<a class="headerlink" href="#will-aardvark-work-with-my-geoblacklight-installation" title="Permanent link">&para;</a></h2>
-<p>You will need to upgrade to at least GeoBlacklight version 3.3 to test out Aardvark. All previously hardcoded field names were removed in GeoBlacklight version 3.3 (see <a href="https://github.com/geoblacklight/geoblacklight/pull/1020">this pull request</a> for more information). This means that field names are defined in the <code>settings.yml</code> file and can be configured to use Aardvark. However, only the fields in the crosswalk will have display, facet, or other functionality enabled by default in version 3.3.</p>
-<p>Some of the new fields in Aardvark will be tied to default application functionality beginning with Version 4.0. We plan to include item relation widgets for the new relationships (such as <strong>Member Of</strong> and <strong>Is Version Of</strong>) and reorganize the facets to include the new categories (such as Resource Class and Resource Type).</p>
 
 
 
@@ -1102,7 +1015,7 @@ Refinements to OpenGeoMetadata have continued through the work of the ongoing Me
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.path", "navigation.prune"], "search": "../assets/javascripts/workers/search.6c7302c4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.path", "navigation.prune", "toc.integrate"], "search": "../assets/javascripts/workers/search.6c7302c4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.7de9f34d.min.js"></script>

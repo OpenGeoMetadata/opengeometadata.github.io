@@ -3,15 +3,16 @@
 Contributors are invited to share their metadata via our GitHub organization, which allows other institutions to periodically harvest and ingest the records into their own catalogs for wider exposure. Follow the steps below to get started.
 
 
-## 1. Submit a request to set up a new repository for your organization
+## 1. Submit a request
 
+Submit a request to set up a new repository for your organization
 To get started, identify one member from your institution who will be added to the OpenGeoMetadata organization as an owner. Owners are able to create, enable, and manage rights for their own institution's team (e.g., add collaborators, contributors, and reviewers).
 
 Submit a request to join OpenGeoMetadata as an owner by commenting on this issue in our GitHub repo: [Add members to OpenGeoMetadata group #8](https://github.com/OpenGeoMetadata/metadatarepository/issues/8).
 
-## 2. Choose a unique namespace for your repository
+## 2. Choose a name
 
-Participating institutions are able to create their own unique namespace. This ensures that each institution maintains and is responsible for unique identifiers that correspond with items or layers in its collection.
+Choose a unique namespace for your repository. Participating institutions are able to create their own unique namespace. This ensures that each institution maintains and is responsible for unique identifiers that correspond with items or layers in its collection.
 
 * The most common format is to list the domain (.edu, .org, .uk) and then the institution’s name: `edu.institution`.
 * An institution using unique identifiers with a linked persistent URL, like [ARK](https://en.wikipedia.org/wiki/Archival_Resource_Key), may want to name their repository with a suffix: `edu.institution.arks`.
@@ -24,9 +25,9 @@ Here are some examples of each of the following conventions:
 * New York University: [edu.nyu](https://github.com/OpenGeoMetadata/edu.nyu)
 * Big Ten Academic Alliance: [big-ten](https://github.com/OpenGeoMetadata/big-ten)
 
-## 3. Select a directory structure for your repository
+## 3. Select a structure
 
-Metadata files in GitHub can be organized within directories (i.e., folders) using various structures.
+Select a directory structure for your repository. Metadata files in GitHub can be organized within directories (i.e., folders) using various structures.
 
 ### Flat
 
@@ -80,9 +81,9 @@ A hashed directory structure makes it easy to include additional materials and d
 	Institutions may choose to use a combination of structures, such as hashed directories within categorical folders.
 
 
-## 4. Determine the file-naming rules for your metadata
+## 4. Determine file names
 
-There are two main approaches to naming metadata files: naming by the item's ID or naming by the file's metadata standard.
+Determine the file-naming rules for your metadata. There are two main approaches to naming metadata files: naming by the item's ID or naming by the file's metadata standard.
 
 ### 1. Naming by item ID
 

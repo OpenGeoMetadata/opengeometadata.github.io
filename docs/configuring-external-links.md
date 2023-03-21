@@ -20,7 +20,7 @@ To format this field in JSON, double quotations `"` must be [escaped](../JSON-fo
 }
 ```
 
-## Configuring multiple download links
+## Multiple downloads
 
 Beginning with GeoBlacklight version 3.0, multiple download links and file formats can be included in the `dct_references_s` field. For more details on this update, see [this pull request](https://github.com/geoblacklight/geoblacklight/pull/916).
 
