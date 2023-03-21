@@ -6,9 +6,6 @@ theme:
       logo: images/ogm-icon.png
       palette:
           primary: indigo
-#        accent: deep orange
-      font:
-          text: Lucida Console
       features:
             - navigation.top
             - navigation.indexes
