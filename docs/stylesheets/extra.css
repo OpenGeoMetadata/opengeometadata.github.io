@@ -1,10 +1,18 @@
 /* Text styles */
 
 
+/* 
 # for the readthedocs theme
 .wy-nav-content  {
     max-width: none;
 }
+ */
+
+/* full width */
+.md-grid {
+  max-width: 90%; 
+}
+
 
 /* 
 :root {
