@@ -2,6 +2,8 @@
 hide:
   - toc
   - navigation
+
+icon: octicons/home-24
 ---
 
 # Welcome to OpenGeoMetadata
@@ -12,23 +14,21 @@ OpenGeoMetadata is a discovery metadata schema for geospatial resources and an o
 <div id="grid-line">
 
 	<div class="cell"> 
+		<a href = "about-ogm-repositories"><img style="float: left; padding: 1em;" src="images/github-mark.png"></a>
+		<h2><a href = "about-ogm-repositories"> Repositories</a></h2>
+	
+	    	Planning to share your metadata?  Read about our <a href = "about-ogm-repositories"> repositories</a> and learn how to <a href = "share-on-ogm"> set up your own</a>. 
+	</div>
+
+	<div class="cell"> 
 		<a href = "reference"> <img style="float: left; padding: 1em;" src="images/ogm-logo.png"> </a>
 		<h2><a href = "reference"> Metadata Schemas</a></h2>
 	    	Looking for schema reference and how to upgrade? Visit the <a href = "reference"> schema documentation pages</a> or <a href = "upgrading"> our Upgrade Guide </a>.
 	
 	</div>
 		
-		
 	<div class="cell"> 
-		<a href = "about-ogm-repositories"><img style="float: left; padding: 1em;" src="images/github-mark.png"></a>
-		<h2><a href = "about-ogm-repositories"> Repositories</a></h2>
-	
-	    	Planning to share your metadata?  Read about our <a href = "about-ogm-repositories"> repositories</a> and learn how to <a href = "share-on-ogm"> set up your own</a>. 
-	</div>
-		
-	    
-	<div class="cell"> 
-		<a href = "ogm-aardvark"><img style="float: left; padding: 1em;" src="images/aardvark.png"></a> 
+		<a href = "ogm-aardvark"><img style="float: left; padding: 1em;" src="images/aardvark3.png"></a> 
 		<h2><a href = "ogm-aardvark"> OGM Aardvark Metadata</a></h2>
 	    	Jump to the documentation for the <a href = "ogm-aardvark">Aardvark Metadata Schema</a>.
 	
@@ -46,4 +46,4 @@ OpenGeoMetadata is a discovery metadata schema for geospatial resources and an o
 (1) 
 { .annotate }
 
-1.  Aardvark icon by Brandon Kraeger from the [Noun Project](https://thenounproject.com/browse/icons/term/aardvark/)
+1.  Aardvark icon by Sarah Rudkin from [Noun Project](https://thenounproject.com/browse/icons/term/aardvark/) (CCBY3.0)

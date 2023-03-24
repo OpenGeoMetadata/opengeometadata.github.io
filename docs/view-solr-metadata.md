@@ -1,3 +1,5 @@
+# View Solr Metadata in GeoBlacklight
+
 GeoBlacklight will display the raw metadata for a published item. Just append one of the following extensions to the end of an item's show page URL:
 
 ### `url.xml`
@@ -46,3 +48,4 @@ Depending on your version, this will produce either:
         * `url.xml`: Dublin Core XML document
         * `url.json`: flat JSON document of all metadata associated with the item
        
+
