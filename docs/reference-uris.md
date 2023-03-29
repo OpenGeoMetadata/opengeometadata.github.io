@@ -3,9 +3,9 @@ hide:
   -toc
 ---
 
-# Reference URIs
+# [Reference URIs](../ogm-aardvark#references)
 
-These are URIs that can be used as keys in the [`dct_references_s`](ogm-aardvark/references.md) field.
+These are URIs that can be used as keys in the [`dct_references_s`](../ogm-aardvark#references) field.
 
 | Type                      | Reference URI    | Function in GeoBlacklight   |
 |:--------------------------|:--------------|:-----------------------------|

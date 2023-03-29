@@ -4,8 +4,7 @@ icon: octicons/book-24
 
 # Reference
 
-Our reference guides describe the technical aspects of OpenGeoMetadata including:
-
+Our reference guides provide metadata charts and tables including:
 
 
 ### [__Schemas:__ Documentation of each metadata field](../ogm-aardvark)

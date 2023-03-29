@@ -54,6 +54,9 @@ markdown_extensions:
                         - overrides/.icons
       - pymdownx.tabbed:
             alternate_style: true 
+            slugify: !!python/object/apply:pymdownx.slugs.slugify
+                  kwds:
+                        case: lower
       - toc:
               toc_depth: 2
               permalink: true
@@ -65,9 +68,7 @@ nav:
       - Reference:
             - 'reference/index.md'
             - Schemas:
-                  - OGM Aardvark :
-                        - 'Elements' :  'ogm-aardvark.md'
-                        - 'Controlled Vocabularies' : 'ogm-aardvark-controlled-vocabularies.md'
+                  - 'OGM Aardvark' : 'ogm-aardvark.md'
                   -  Legacy Schemas : 
                         - 'GBL 1.0' : 'gbl-1.0.md'
                         - 'GBL 0.5': 'gbl-0.5.md'
@@ -77,28 +78,31 @@ nav:
                   - 'Aardvark to FGDC and ISO': 'aardvark-fgdc-iso-crosswalk.md'
                   - 'GBL 1.0 to FGDC and ISO': 'gbl1-fgdc-iso-crosswalk.md'
       
-            - Syntax:
+            - Syntax & Controlled Values:
                   - 'Reference URIs': 'reference-uris.md'
                   - 'Solr Field Suffixes': 'solr-field-suffixes.md'
                   - 'Custom Fields': 'custom-fields.md'
                   
             - Validation:
+                  - 'Controlled Values' : 'ogm-aardvark-controlled-values.md'
                   - 'JSON schema files': 'json-schema.md'
                    
             - Tools:
                   - 'Scripts': 'scripts.md'
                   - 'Applications': 'applications.md'
             
-      - How-to Guides:
+      - How-to:
             - 'how-to-guides/index.md'
             - Repositories:
                   - 'Share on OpenGeoMetadata': 'share-on-ogm.md'
+                  - 'Harvest from OpenGeoMetadata': 'harvest-ogm.md'
             - Metadata:
-                  - 'Upgrading to OGM Aardvark': 'upgrading.md'
-                  - 'Creating Metadata': 'creating-metadata.md'
-                  - 'Validating Metadata': 'validating-metadata.md'
-                  - 'Publishing to Solr': 'publishing-in-solr.md'
-                  - 'External Links': 'configuring-external-links.md'
+                  - 'Upgrade to OGM Aardvark': 'upgrade-metadata.md'
+                  - 'Create Metadata': 'create-metadata.md'
+                  - 'Validate Metadata': 'validate-metadata.md'
+                  - 'Configure Reference Links': 'configure-external-links.md'
+            - Publishing:
+                  - 'Index in Solr': 'index-in-solr.md'
                   - 'View in GeoBlacklight': 'view-solr-metadata.md'
 
       - Explanation:
@@ -109,9 +113,8 @@ nav:
                   - 'About OGM Aardvark': 'about-ogm-aardvark.md'
                   - 'Spatial Fields': 'spatial-fields.md'
                   - 'Temporal Fields': 'temporal-fields.md'
-            - 'JSON Format': 'JSON-format.md'
-            - 'Solr Field Types': 'solr.md'
-            - 'Further reading': 'further-reading.md'
+                  - 'JSON Format': 'JSON-format.md'
+            - 'Further Reading': 'further-reading.md'
 
  
       

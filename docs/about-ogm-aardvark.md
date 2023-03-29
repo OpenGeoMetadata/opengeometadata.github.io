@@ -98,6 +98,10 @@ OGM Aardvark gives preference to elements found in established schemas over cust
 
 The original schema features several descriptive metadata fields that only accept one value. The new schema expands many of these to multiple. This changes the URI suffix from `_s` to` _sm`. Although it will not affect the GeoBlacklight functionality, this practice may conflict with indexing, as Solr will treat `dct_publisher_s` as a different field than `dct_publisher_sm`.
 
+#### More intuitive name for unique key
+
+Metadata for GeoBlacklight instances is stored and indexed in Solr, which uses a "Unique Key Field" as the identifier for each document. The OGM Aardvark schema uses the straightforward `id` as the Unique Key Field (in GBL 1.0, this field was called `layer_slug_s`).
+
 ### Will Aardvark work with my GeoBlacklight installation?
 
 You will need to upgrade to at least GeoBlacklight version 3.3 to test out Aardvark. All previously hardcoded field names were removed in GeoBlacklight version 3.3 (see [this pull request](https://github.com/geoblacklight/geoblacklight/pull/1020) for more information). This means that field names are defined in the `settings.yml` file and can be configured to use Aardvark. However, only the fields in the crosswalk will have display, facet, or other functionality enabled by default in version 3.3.

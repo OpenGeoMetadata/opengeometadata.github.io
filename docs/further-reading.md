@@ -1,6 +1,5 @@
 # Further Reading
 
-
 ## Community Resources
 
 * Big Ten Academic Alliance Geospatial Data Project's [Metadata Handbook](https://z.umn.edu/gbl-handbook)

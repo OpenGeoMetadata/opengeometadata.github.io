@@ -4,7 +4,7 @@ hide:
 
 !!! warning
 
-	This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardvark](ogm-aardvark) for GeoBlacklight versions 4.0 and higher.
+	This is a legacy format. The GeoBlacklight Community recommends using [OGM Aardvark](../ogm-aardvark) for GeoBlacklight versions 4.0 and higher.
 
 ---
 

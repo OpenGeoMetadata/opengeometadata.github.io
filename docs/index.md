@@ -23,7 +23,7 @@ OpenGeoMetadata is a discovery metadata schema for geospatial resources and an o
 	<div class="cell"> 
 		<a href = "reference"> <img style="float: left; padding: 1em;" src="images/ogm-logo.png"> </a>
 		<h2><a href = "reference"> Metadata Schemas</a></h2>
-	    	Looking for schema reference and how to upgrade? Visit the <a href = "reference"> schema documentation pages</a> or <a href = "upgrading"> our Upgrade Guide </a>.
+	    	Looking for schema reference and how to upgrade? Visit the <a href = "reference"> schema documentation pages</a> or <a href = "upgrade-metadata"> our Upgrade Guide </a>.
 	
 	</div>
 		
