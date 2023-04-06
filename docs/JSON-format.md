@@ -1,29 +1,15 @@
 ---
-layout: default
-title: JSON Format
-parent: Resources
-nav_order: 2
-has_toc: false
+hide:
+  - toc
 ---
-
-# JSON Format
-{: .no_toc }
-{: .fs-6 .fw-300 }
-
-
----
-
-
-
-## JSON format
 
 OGM metadata is formatted as flat JSON files.
 
-### Terms to know
-{: .no_toc }
+## Terms to know
 
-#### Key:value pairs
-{: .no_toc }
+
+### Key:value pairs
+
 
   * the `key` is either a metadata field name or an external reference URI
   * the `value` is the string, array, boolean, integer, etc. that goes in the field
@@ -33,8 +19,8 @@ OGM metadata is formatted as flat JSON files.
 "dct_identifier_sm": "http://purl.stanford.edu/dp018hs9766"
 ```
 
-#### Objects
-{: .no_toc }
+### Objects
+
 
   * consist of `key:value` pairs inside {curly brackets}
   * brackets are often put on a separate line to aid in readability
@@ -46,8 +32,8 @@ OGM metadata is formatted as flat JSON files.
 }
 ```
 
-#### Arrays
-{: .no_toc }
+### Arrays
+
 
   * ordered collections of items
   * surrounded by [square brackets]
@@ -65,8 +51,8 @@ OGM metadata is formatted as flat JSON files.
 }
 ```
 
-#### Escaped characters
-{: .no_toc }
+### Escaped characters
+
 
   * certain characters are reserved for the JSON format, including double quotations `"`
   * if these characters are present in a string, they must be preceded by a backslash `\` in order for the JSON to function properly
@@ -78,15 +64,15 @@ OGM metadata is formatted as flat JSON files.
 }
 ```
 
-#### "Stringified JSON"
-{: .no_toc }
+### "Stringified JSON"
+
 
   * the `dct_references_s` field in the GeoBlacklight JSON is sometimes referred to as "stringified JSON"; it looks like an object, but it is actually a string
   * the backslash `\` in the example above is an indication that this value is stringified JSON
 
 
-### Example
-{: .no_toc }
+## Example
+
 
 This is an example of a complete OGM Aardvark JSON file. Note that it contains a custom (local) field, `b1g_code_s`, which is documented on the BTAA Geospatial Information Network Metadata handbook at [https://geobtaa.github.io/metadata/b1g-custom-elements/#code](https://geobtaa.github.io/metadata/b1g-custom-elements/#code)
 

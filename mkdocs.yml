@@ -1,0 +1,120 @@
+site_name: OpenGeoMetadata
+
+theme: 
+      name: material
+      highlightjs: true
+      logo: images/ogm-icon.png
+      palette:
+          primary: indigo
+      custom_dir: overrides
+      features:
+            - navigation.top
+            - navigation.indexes
+            - navigation.instant
+            - navigation.tabs
+            - navigation.tabs.sticky
+            - navigation.tracking
+            - navigation.sections
+            - navigation.expand
+            - navigation.path
+            - navigation.prune
+            - toc.integrate
+            - toc.follow
+    
+plugins:
+      - table-reader
+      - search
+
+extra_css:
+      - stylesheets/extra.css
+  
+extra_javascript:
+      - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+      - javascripts/tablesort.js
+
+markdown_extensions:
+      - abbr
+      - tables
+      - attr_list
+      - md_in_html
+      - admonition
+      - pymdownx.critic
+      - pymdownx.caret
+      - pymdownx.keys
+      - pymdownx.mark
+      - pymdownx.tilde
+      - pymdownx.details
+      - pymdownx.superfences
+      - pymdownx.snippets
+      - pymdownx.emoji:
+            emoji_index: !!python/name:materialx.emoji.twemoji
+            emoji_generator: !!python/name:materialx.emoji.to_svg
+            options:
+                  custom_icons:
+                        - overrides/.icons
+      - pymdownx.tabbed:
+            alternate_style: true 
+            slugify: !!python/object/apply:pymdownx.slugs.slugify
+                  kwds:
+                        case: lower
+      - toc:
+              toc_depth: 2
+              permalink: true
+
+        
+nav:
+      - Home: 'index.md'
+
+      - Reference:
+            - 'reference/index.md'
+            - Schemas:
+                  - 'OGM Aardvark' : 'ogm-aardvark.md'
+                  -  Legacy Schemas : 
+                        - 'GBL 1.0' : 'gbl-1.0.md'
+                        - 'GBL 0.5': 'gbl-0.5.md'
+      
+            - Crosswalks:
+                  - 'Aardvark to GBL 1.0' : 'aardvark-gbl-1-crosswalk.md'
+                  - 'Aardvark to FGDC and ISO': 'aardvark-fgdc-iso-crosswalk.md'
+                  - 'GBL 1.0 to FGDC and ISO': 'gbl1-fgdc-iso-crosswalk.md'
+      
+            - Syntax & Controlled Values:
+                  - 'Reference URIs': 'reference-uris.md'
+                  - 'Solr Field Suffixes': 'solr-field-suffixes.md'
+                  - 'Custom Fields': 'custom-fields.md'
+                  
+            - Validation:
+                  - 'Controlled Values' : 'ogm-aardvark-controlled-values.md'
+                  - 'JSON schema files': 'json-schema.md'
+                   
+            - Tools:
+                  - 'Scripts': 'scripts.md'
+                  - 'Applications': 'applications.md'
+            
+      - How-to:
+            - 'how-to-guides/index.md'
+            - Repositories:
+                  - 'Share on OpenGeoMetadata': 'share-on-ogm.md'
+                  - 'Harvest from OpenGeoMetadata': 'harvest-ogm.md'
+            - Metadata:
+                  - 'Upgrade to OGM Aardvark': 'upgrade-metadata.md'
+                  - 'Create Metadata': 'create-metadata.md'
+                  - 'Validate Metadata': 'validate-metadata.md'
+                  - 'Configure Reference Links': 'configure-external-links.md'
+            - Publishing:
+                  - 'Index in Solr': 'index-in-solr.md'
+                  - 'View in GeoBlacklight': 'view-solr-metadata.md'
+
+      - Explanation:
+            - 'explanation/index.md'
+            - Repositories:
+                  - 'About OGM Repositories': 'about-ogm-repositories.md'
+            - Metadata:
+                  - 'About OGM Aardvark': 'about-ogm-aardvark.md'
+                  - 'Spatial Fields': 'spatial-fields.md'
+                  - 'Temporal Fields': 'temporal-fields.md'
+                  - 'JSON Format': 'JSON-format.md'
+            - 'Further Reading': 'further-reading.md'
+
+ 
+      

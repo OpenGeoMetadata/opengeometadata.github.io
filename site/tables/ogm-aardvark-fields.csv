@@ -1,0 +1,43 @@
+Label,URI,Obligation
+==**[Access Rights](ogm-aardvark/access-rights.md)**==,`dct_accessRights_s`,==**Required**==
+[Alternative Title](ogm-aardvark/alternative-title.md),`dct_alternative_sm`,Optional
+[Bounding Box](ogm-aardvark/bounding-box.md),`dcat_bbox`,Suggested
+[Centroid](ogm-aardvark/centroid.md),`dcat_centroid`,Optional
+[Creator](ogm-aardvark/creator.md),`dct_creator_sm`,Suggested
+[Date Issued](ogm-aardvark/date-issued.md),`dct_issued_s`,Optional
+[Date Range](ogm-aardvark/date-range.md),`gbl_dateRange_drsim`,Optional
+[Description](ogm-aardvark/description.md),`dct_description_sm`,Suggested
+[Display Note](ogm-aardvark/display-note.md),`gbl_displayNote_sm`,Optional
+[File Size](ogm-aardvark/file-size.md),`gbl_fileSize_s`,Optional
+[Format](ogm-aardvark/format.md),`dct_format_s`,Conditional
+[Geometry](ogm-aardvark/geometry.md),`locn_geometry`,Suggested
+[Georeferenced](ogm-aardvark/georeferenced.md),`gbl_georeferenced_b`,Optional
+==**[ID](ogm-aardvark/id.md)**==,`id`,==**Required**==
+[Identifier](ogm-aardvark/identifier.md),`dct_identifier_sm`,Suggested
+[Index Year](ogm-aardvark/index-year.md),`gbl_indexYear_im`,Suggested
+[Is Part Of](ogm-aardvark/is-part-of.md),`dct_isPartOf_sm`,Optional
+[Is Replaced By](ogm-aardvark/is-replaced-by.md),`dct_isReplacedBy_sm`,Optional
+[Is Version Of](ogm-aardvark/is-version-of.md),`dct_isVersionOf_sm`,Optional
+[Keyword](ogm-aardvark/keyword.md),`dcat_keyword_sm`,Optional
+[Language](ogm-aardvark/language.md),`dct_language_sm`,Optional
+[License](ogm-aardvark/license.md),`dct_license_sm`,Optional
+[Member Of](ogm-aardvark/member-of.md),`pcdm_memberOf_sm`,Optional
+==**[Metadata Version](ogm-aardvark/metadata-version.md)**==,`gbl_mdVersion_s`,==**Required**==
+==**[Modified](ogm-aardvark/modified.md)**==,`gbl_mdModified_dt`,==**Required**==
+[Provider](ogm-aardvark/provider.md),`schema_provider_s`,Suggested
+[Publisher](ogm-aardvark/publisher.md),`dct_publisher_sm`,Suggested
+[References](ogm-aardvark/references.md),`dct_references_s`,Suggested
+[Relation](ogm-aardvark/relation.md),`dct_relation_sm`,Optional
+[Replaces](ogm-aardvark/replaces.md),`dct_replaces_sm`,Optional
+==**[Resource Class](ogm-aardvark/resource-class.md)**==,`gbl_resourceClass_sm`,==**Required**==
+[Resource Type](ogm-aardvark/resource-type.md),`gbl_resourceType_sm`,Suggested
+[Rights Holder](ogm-aardvark/rights-holder.md),`dct_rightsHolder_sm`,Optional
+[Rights](ogm-aardvark/rights.md),`dct_rights_sm`,Suggested
+[Source](ogm-aardvark/source.md),`dct_source_sm`,Optional
+[Spatial Coverage](ogm-aardvark/spatial-coverage.md),`dct_spatial_sm`,Suggested
+[Subject](ogm-aardvark/subject.md),`dct_subject_sm`,Optional
+[Suppressed](ogm-aardvark/suppressed.md),`gbl_suppressed_b`,Optional
+[Temporal Coverage](ogm-aardvark/temporal-coverage.md),`dct_temporal_sm`,Suggested
+[Theme](ogm-aardvark/theme.md),`dcat_theme_sm`,Optional
+==**[Title](ogm-aardvark/title.md)**==,`dct_title_s`,==**Required**==
+[WxS Identifier](ogm-aardvark/wxs-identifier.md),`gbl_wxsIdentifier_s`,Conditional

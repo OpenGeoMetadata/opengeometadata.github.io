@@ -1,146 +1,271 @@
----
-layout: default
-title: Schema
-nav_order: 3
-has_children: false
-has_toc: false
----
-
 # OpenGeoMetadata (OGM) Aardvark Schema
-
-{: .fs-6 .fw-300 }
-
-[About OGM Aardvark](about-ogm-aardvark){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[How to Upgrade from GBL 1.0](upgrading){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Legacy Schemas](legacy-versions){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-
-## Fields by Group
 
 <div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
 
 ### Descriptive
-- [Title](ogm-aardvark/title) (R)
-- [Alternative Title](ogm-aardvark/alternative-title)
-- [Description](ogm-aardvark/description) (S)
-- [Language](ogm-aardvark/language)
-- [Display Note](ogm-aardvark/display-note)
+- ==[Title](#title) (R)==
+- [Alternative Title](#alternative-title)
+- [Description](#description) (S)
+- [Language](#language) (v)
+- [Display Note](#display-note)
 
 ### Credits
-- [Creator](ogm-aardvark/creator) (S)
-- [Publisher](ogm-aardvark/publisher) (S)
-- [Provider](ogm-aardvark/provider) (S)
+- [Creator](#creator) (S)
+- [Publisher](#publisher) (S)
+- [Provider](#provider) (S)
 
 ### Categories
-- [Resource Class](ogm-aardvark/resource-class) (R)
-- [Resource Type](ogm-aardvark/resource-type) (S)
-- [Subject](ogm-aardvark/subject)
-- [Theme](ogm-aardvark/theme)
-- [Keyword](ogm-aardvark/keyword)
+- ==[Resource Class](#resource-class) (R)== (v)
+- [Resource Type](#resource-type) (S) (v)
+- [Subject](#subject)
+- [Theme](#theme) (v)
+- [Keyword](#keyword)
 
-### Temporal
-- [Temporal Coverage](ogm-aardvark/temporal-coverage) (S)
-- [Date Issued](ogm-aardvark/date-issued)
-- [Index Year](ogm-aardvark/index-year) (S)
-- [Date Range](ogm-aardvark/date-range)
+### [Temporal :material-link:](#../temporal-fields)
+- [Temporal Coverage](#temporal-coverage) (S)
+- [Date Issued](#date-issued)
+- [Index Year](#index-year) (S)
+- [Date Range](#date-range)
 
 </div>
 <div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
 
-### Spatial
-- [Spatial Coverage](ogm-aardvark/spatial-coverage) (S)
-- [Geometry](ogm-aardvark/geometry) (S)
-- [Bounding Box](ogm-aardvark/bounding-box) (S)
-- [Centroid](ogm-aardvark/centroid)
-- [Georeferenced](ogm-aardvark/georeferenced)
+### [Spatial :material-link:](#../spatial-fields)
+- [Spatial Coverage](#spatial-coverage) (S)
+- [Geometry](#geometry) (S)
+- [Bounding Box](#bounding-box) (S)
+- [Centroid](#centroid)
+- [Georeferenced](#georeferenced)
 
 ### Relations
-- [Relation](ogm-aardvark/relation)
-- [Member Of](ogm-aardvark/member-of)
-- [Is Part Of](ogm-aardvark/is-part-of)
-- [Source](ogm-aardvark/source)
-- [Is Version Of](ogm-aardvark/is-version-of)
-- [Replaces](ogm-aardvark/replaces)
-- [Is Replaced By](ogm-aardvark/is-replaced-by)
+- [Relation](#relation)
+- [Member Of](#member-of)
+- [Is Part Of](#is-part-of)
+- [Source](#source)
+- [Is Version Of](#is-version-of)
+- [Replaces](#replaces)
+- [Is Replaced By](#is-replaced-by)
 
 ### Rights
-- [Rights](ogm-aardvark/rights) (S)
-- [Rights Holder](ogm-aardvark/rights-holder)
-- [License](ogm-aardvark/license)
-- [Access Rights](ogm-aardvark/access-rights) (R)
+- [Rights](#rights) (S)
+- [Rights Holder](#rights-holder)
+- [License](#license)
+- ==[Access Rights](#access-rights) (R)==
 
 </div>
 <div style="float:left; line-height:1.1" markdown="1">
 
 ### Object
-- [Format](ogm-aardvark/format) (C)
-- [File Size](ogm-aardvark/file-size)
+- [Format](#format) (C) (v)
+- [File Size](#file-size)
 
 ### Links
-- [References](ogm-aardvark/references) (S)
-- [WxS Identifier](ogm-aardvark/wxs-identifier)
+- [References](#references) (S)
+- [WxS Identifier](#wxs-identifier)
 
 ### Identifiers
-- [ID](ogm-aardvark/id) (R)
-- [Identifier](ogm-aardvark/identifier) (S)
+- ==[ID](#id) (R)==
+- [Identifier](#identifier) (S)
 
 ### Admin
-- [Modified](ogm-aardvark/modified) (R)
-- [Metadata Version](ogm-aardvark/metadata-version) (R)
-- [Suppressed](ogm-aardvark/suppressed)
+- ==[Modified](#modified) (R)==
+- ==[Metadata Version](#metadata-version) (R)== (v)
+- [Suppressed](#suppressed)
 
 ----
 
-(R) = Required  
-(C) = Conditionally Required  
-(S) = Suggested  
+!!! info "Key" 
+
+	==(R)  = Required==
+
+	(C) = Conditionally Required 
+ 
+	(S) = Suggested  
+	
+	(v) = Controlled Values
 
 </div>
 
 <br style="clear:left">
 
-## Fields in Alphabetical Order
 
-| Label                                                   | URI                    | Obligation  |
-|:--------------------------------------------------------|:-----------------------|:------------|
-| **[Access Rights](ogm-aardvark/access-rights)**       | `dct_accessRights_s`   | <span class="text-red-300">**Required**</span> |
-| [Alternative Title](ogm-aardvark/alternative-title)   | `dct_alternative_sm`   | Optional    |
-| [Bounding Box](ogm-aardvark/bounding-box)             | `dcat_bbox`            | Suggested |
-| [Centroid](ogm-aardvark/centroid)                     | `dcat_centroid`        | Optional    |
-| [Creator](ogm-aardvark/creator)                       | `dct_creator_sm`       | Suggested |
-| [Date Issued](ogm-aardvark/date-issued)               | `dct_issued_s`         | Optional    |
-| [Date Range](ogm-aardvark/date-range)                 | `gbl_dateRange_drsim`  | Optional    |
-| [Description](ogm-aardvark/description)               | `dct_description_sm`   | Suggested |
-| [Display Note](ogm-aardvark/display-note)             | `gbl_displayNote_sm`   | Optional    |
-| [File Size](ogm-aardvark/file-size)                   | `gbl_fileSize_s`       | Optional    |
-| [Format](ogm-aardvark/format)                         | `dct_format_s`         | Conditional |
-| [Geometry](ogm-aardvark/geometry)                     | `locn_geometry`        | Suggested |
-| [Georeferenced](ogm-aardvark/georeferenced)           | `gbl_georeferenced_b`  | Optional    |
-| **[ID](ogm-aardvark/id)**                             | `id`                   | <span class="text-red-300">**Required**</span> |
-| [Identifier](ogm-aardvark/identifier)                 | `dct_identifier_sm`    | Suggested |
-| [Index Year](ogm-aardvark/index-year)                 | `gbl_indexYear_im`     | Suggested |
-| [Is Part Of](ogm-aardvark/is-part-of)                 | `dct_isPartOf_sm`      | Optional    |
-| [Is Replaced By](ogm-aardvark/is-replaced-by)         | `dct_isReplacedBy_sm`  | Optional    |
-| [Is Version Of](ogm-aardvark/is-version-of)           | `dct_isVersionOf_sm`   | Optional    |
-| [Keyword](ogm-aardvark/keyword)                       | `dcat_keyword_sm`      | Optional    |
-| [Language](ogm-aardvark/language)                     | `dct_language_sm`      | Optional    |
-| [License](ogm-aardvark/license)                       | `dct_license_sm`       | Optional    |
-| [Member Of](ogm-aardvark/member-of)                   | `pcdm_memberOf_sm`     | Optional    |
-| **[Metadata Version](ogm-aardvark/metadata-version)** | `gbl_mdVersion_s`      | <span class="text-red-300">**Required**</span> |
-| **[Modified](ogm-aardvark/modified)**                 | `gbl_mdModified_dt`    | <span class="text-red-300">**Required**</span> |
-| [Provider](ogm-aardvark/provider)                     | `schema_provider_s`    | Suggested |
-| [Publisher](ogm-aardvark/publisher)                   | `dct_publisher_sm`     | Suggested |
-| [References](ogm-aardvark/references)                 | `dct_references_s`     | Suggested |
-| [Relation](ogm-aardvark/relation)                     | `dct_relation_sm`      | Optional    |
-| [Replaces](ogm-aardvark/replaces)                     | `dct_replaces_sm`      | Optional    |
-| **[Resource Class](ogm-aardvark/resource-class)**     | `gbl_resourceClass_sm` | <span class="text-red-300">**Required**</span> |
-| [Resource Type](ogm-aardvark/resource-type)           | `gbl_resourceType_sm`  | Suggested |
-| [Rights Holder](ogm-aardvark/rights-holder)           | `dct_rightsHolder_sm`  | Optional    |
-| [Rights](ogm-aardvark/rights)                         | `dct_rights_sm`        | Suggested |
-| [Source](ogm-aardvark/source)                         | `dct_source_sm`        | Optional    |
-| [Spatial Coverage](ogm-aardvark/spatial-coverage)     | `dct_spatial_sm`       | Suggested |
-| [Subject](ogm-aardvark/subject)                       | `dct_subject_sm`       | Optional    |
-| [Suppressed](ogm-aardvark/suppressed)                 | `gbl_suppressed_b`     | Optional    |
-| [Temporal Coverage](ogm-aardvark/temporal-coverage)   | `dct_temporal_sm`      | Suggested |
-| [Theme](ogm-aardvark/theme)                           | `dcat_theme_sm`        | Optional    |
-| **[Title](ogm-aardvark/title)**                       | `dct_title_s`          | <span class="text-red-300">**Required**</span> |
-| [WxS Identifier](ogm-aardvark/wxs-identifier)         | `gbl_wxsIdentifier_s`  | Conditional |
+## Access Rights
+{{ read_csv('ogm-aardvark/access-rights.csv') }}
+
+## Alternative Title
+{{ read_csv('ogm-aardvark/alternative-title.csv') }}
+
+## Bounding Box
+{{ read_csv('ogm-aardvark/bounding-box.csv') }}
+
+## Centroid
+{{ read_csv('ogm-aardvark/centroid.csv') }}
+
+## Creator
+{{ read_csv('ogm-aardvark/creator.csv') }}
+
+## Date Issued
+{{ read_csv('ogm-aardvark/date-issued.csv') }}
+
+## Date Range
+{{ read_csv('ogm-aardvark/date-range.csv') }}
+
+## Description
+{{ read_csv('ogm-aardvark/description.csv') }}
+
+## Display Note
+{{ read_csv('ogm-aardvark/display-note.csv') }}
+
+## File Size
+{{ read_csv('ogm-aardvark/file-size.csv') }}
+
+## Format
+
+{{ read_csv('ogm-aardvark/format.csv') }}
+
+### Format Recommended Values
+
+* ArcGRID
+* CD-ROM
+* DEM
+* DVD-ROM
+* Feature Class
+* Geodatabase
+* GeoJPEG
+* GeoJSON
+* GeoPackage
+* GeoPDF
+* GeoTIFF
+* JPEG
+* JPEG2000
+* KML
+* KMZ
+* LAS
+* LAZ
+* Mixed
+* Mixed
+* MrSID
+* PDF
+* PNG
+* Pulsewaves
+* Raster Dataset
+* Shapefile
+* SQLite Database
+* Tabular Data
+* TIFF
+
+
+## Geometry
+{{ read_csv('ogm-aardvark/geometry.csv') }}
+
+## ID
+{{ read_csv('ogm-aardvark/id.csv') }}
+
+## Identifier
+{{ read_csv('ogm-aardvark/identifier.csv') }}
+
+## Index Year
+{{ read_csv('ogm-aardvark/index-year.csv') }}
+
+## Is Part Of
+{{ read_csv('ogm-aardvark/is-part-of.csv') }}
+
+## Is Replaced By
+{{ read_csv('ogm-aardvark/is-replaced-by.csv') }}
+
+## Is Version Of
+{{ read_csv('ogm-aardvark/is-version-of.csv') }}
+
+## Keyword
+{{ read_csv('ogm-aardvark/keyword.csv') }}
+
+## Language
+{{ read_csv('ogm-aardvark/language.csv') }}
+
+## License
+{{ read_csv('ogm-aardvark/license.csv') }}
+
+## Member Of
+{{ read_csv('ogm-aardvark/member-of.csv') }}
+
+## Metadata Version
+{{ read_csv('ogm-aardvark/metadata-version.csv') }}
+
+## Modified
+{{ read_csv('ogm-aardvark/modified.csv') }}
+
+## Provider
+
+{{ read_csv('ogm-aardvark/provider.csv') }}
+
+## Publisher
+{{ read_csv('ogm-aardvark/publisher.csv') }}
+
+## References
+
+[References URI Keys](../reference-uris){ .md-button }
+
+{{ read_csv('ogm-aardvark/references.csv') }}
+
+## Relation
+{{ read_csv('ogm-aardvark/relation.csv') }}
+
+## Replaces
+{{ read_csv('ogm-aardvark/replaces.csv') }}
+
+## Resource Class
+
+{{ read_csv('ogm-aardvark/resource-class.csv') }}
+
+### Resource Class Controlled Values
+
+* Collections
+* Datasets
+* Imagery
+* Maps
+* Web services
+* Websites
+* Other
+
+## Resource Type
+
+{{ read_csv('ogm-aardvark/resource-type.csv') }}
+
+### Resource Type Controlled Values
+
+{{ read_csv('ogm-aardvark/resource-type-vocabulary.csv') }}
+
+## Rights Holder
+{{ read_csv('ogm-aardvark/rights-holder.csv') }}
+
+## Rights
+{{ read_csv('ogm-aardvark/rights.csv') }}
+
+## Source
+{{ read_csv('ogm-aardvark/source.csv') }}
+
+## Spatial coverage
+{{ read_csv('ogm-aardvark/spatial-coverage.csv') }}
+
+## Subject
+{{ read_csv('ogm-aardvark/subject.csv') }}
+
+## Suppressed
+{{ read_csv('ogm-aardvark/suppressed.csv') }}
+
+## Temporal Coverage
+{{ read_csv('ogm-aardvark/temporal-coverage.csv') }}
+
+## Theme
+{{ read_csv('ogm-aardvark/theme.csv') }}
+
+### Theme Controlled Values
+
+{{ read_csv('ogm-aardvark/theme-vocabulary.csv') }}
+
+## Title
+{{ read_csv('ogm-aardvark/title.csv') }}
+
+## WxS Identifier
+{{ read_csv('ogm-aardvark/wxs-identifier.csv') }}
+
