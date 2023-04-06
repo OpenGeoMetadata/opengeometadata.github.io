@@ -22,8 +22,8 @@ theme:
             - toc.follow
     
 plugins:
+      - table-reader
       - search
-      - table-reader 
 
 extra_css:
       - stylesheets/extra.css
