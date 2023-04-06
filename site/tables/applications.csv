@@ -1,0 +1,4 @@
+Name,Overview
+[GeoDataLoader](https://github.com/culibraries/geo-data-loader),A custom tool with a built-in metadata editor that can load information directly into Geoserver. Can accept templates if multiple uploads are needed.
+[Figgy](https://github.com/pulibrary/figgy),"A digital repository application in use at Princeton University Library for storing and managing digital representations of manuscripts, ephemera, vector, and raster data for export into a variety of front-end displays."
+[GEOMG](https://github.com/geobtaa/geomg),A custom tool that functions as a backend metadata editor and manager for the GeoBlacklight application.

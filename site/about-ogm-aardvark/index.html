@@ -1,0 +1,1202 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../about-ogm-repositories/">
+      
+      
+        <link rel="next" href="../spatial-fields/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5+insiders-4.32.4">
+    
+    
+      
+        <title>About OGM Aardvark - OpenGeoMetadata</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.323870f8.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.6932e648.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#about-ogm-aardvark" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="OpenGeoMetadata" class="md-header__button md-logo" aria-label="OpenGeoMetadata" data-md-component="logo">
+      
+  <img src="../images/ogm-icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OpenGeoMetadata
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              About OGM Aardvark
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg>
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../reference/" class="md-tabs__link">
+          
+  
+    
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.75A.75.75 0 0 1 .75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.495 4.495 0 0 1 15.75 3h7.5a.75.75 0 0 1 .75.75v15.063a.752.752 0 0 1-.755.75l-7.682-.052a3 3 0 0 0-2.142.878l-.89.891a.75.75 0 0 1-1.061 0l-.902-.901a2.996 2.996 0 0 0-2.121-.879H.75a.75.75 0 0 1-.75-.75Zm12.75 15.232a4.503 4.503 0 0 1 2.823-.971l6.927.047V4.5h-6.75a3 3 0 0 0-3 3ZM11.247 7.497a3 3 0 0 0-3-2.997H1.5V18h6.947c1.018 0 2.006.346 2.803.98Z"/></svg>
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../how-to-guides/" class="md-tabs__link">
+          
+  
+    
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></svg>
+    
+  
+  How-to
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../explanation/" class="md-tabs__link md-tabs__link--active">
+          
+  
+    
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/></svg>
+    
+  
+  Explanation
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OpenGeoMetadata" class="md-nav__button md-logo" aria-label="OpenGeoMetadata" data-md-component="logo">
+      
+  <img src="../images/ogm-icon.png" alt="logo">
+
+    </a>
+    OpenGeoMetadata
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../reference/" class="md-nav__link">
+      
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.75A.75.75 0 0 1 .75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.495 4.495 0 0 1 15.75 3h7.5a.75.75 0 0 1 .75.75v15.063a.752.752 0 0 1-.755.75l-7.682-.052a3 3 0 0 0-2.142.878l-.89.891a.75.75 0 0 1-1.061 0l-.902-.901a2.996 2.996 0 0 0-2.121-.879H.75a.75.75 0 0 1-.75-.75Zm12.75 15.232a4.503 4.503 0 0 1 2.823-.971l6.927.047V4.5h-6.75a3 3 0 0 0-3 3ZM11.247 7.497a3 3 0 0 0-3-2.997H1.5V18h6.947c1.018 0 2.006.346 2.803.98Z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../how-to-guides/" class="md-nav__link">
+      
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    How-to
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../explanation/" class="md-nav__link ">
+              
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Explanation
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_4">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Explanation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Repositories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Repositories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-ogm-repositories/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    About OGM Repositories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Metadata
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metadata
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    
+  
+    About OGM Aardvark
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    About OGM Aardvark
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terminology
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What changed?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credits
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spatial-fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Fields
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../temporal-fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Temporal Fields
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../JSON-format/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    JSON Format
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../further-reading/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Further Reading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../explanation/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Explanation
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Metadata
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="about-ogm-aardvark">About OGM Aardvark<a class="headerlink" href="#about-ogm-aardvark" title="Permanent link">&para;</a></h1>
+<p>Details about the OpenGeoMetadata metadata schema, OGM Aardvark</p>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>based on <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">Dublin Core</a>, with custom elements added for spatial values</li>
+<li>designed for discovery - to help users <em>find</em> items</li>
+<li>not designed for complete technical documentation, such as a GIS dataset's processing history</li>
+<li>includes elements for external links, such as downloads, web services, or supplemental metadata</li>
+<li>requires records to be formatted as JSON files</li>
+</ul>
+</div>
+<h2 id="terminology">Terminology<a class="headerlink" href="#terminology" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>GBL 1.0</strong>: The legacy metadata schema designed for GeoBlacklight versions 2.0-3.7. <a href="../gbl-1.0/">The schema is documented on this Legacy page.</a></li>
+<li><strong>OGM Aardvark</strong>: The new metadata schema that is compatible with GeoBlacklight version 4.0.</li>
+<li><strong>GeoBlacklight</strong>: When spelled out, GeoBlacklight refers to <a href="https://geoblacklight.org">the application itself</a>, not its namesake legacy metadata schema, GBL 1.0.</li>
+<li><strong>URI</strong>: This is the name we give to the metadata element itself. For example, the URI for the Subject field is <code>dct_subject_sm</code>. </li>
+<li><strong>Namespace</strong>: This is how we signify which family of standards or schemas an element belongs to. For the GeoBlacklight schema, this takes the form of the URI’s prefix. For the URI <code>dct_subject_sm</code>,  <code>dct_</code> is the prefix and signifies that this element is from Dublin Core.</li>
+<li><strong>Solr field type</strong>: This is the suffix appended to the URI and indicates what kind of Solr field should be indexed. For <code>dct_subject_sm</code>, the <code>_sm</code> stands for String Multiple. It indicates that the field type is a string and that it can have multiple values.</li>
+<li><strong>Value</strong>: This is the information that is entered in a field. It may be free text (literal value) or a URI/code (nonliteral value).</li>
+</ul>
+<p>OGM Aardvark is a discovery metadata schema for geospatial resources. It was intentionally developed with cross-application in mind and can be used to describe geospatial assets of all kinds.</p>
+<p>It is also the newest metadata application profile schema for GeoBlacklight. Launched in 2021, it replaces the GeoBlacklight metadata schema version 1.0 (<a href="../gbl-1.0/">GBL 1.0</a>). Compared to GBL 1.0, Aardvark incorporates additional fields for better descriptions of a wider range of resources, as well as syntactical updates in order to improve interoperability between institutions and between schemas. For GeoBlacklight users, it is the recommended schema for installations starting with GeoBlacklight version 4.0.</p>
+<p>For more information, see the <a href="upgrading.md">Upgrade Guide.</a></p>
+<hr />
+<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
+<h3 id="why-is-this-called-aardvark">Why is this called Aardvark?<a class="headerlink" href="#why-is-this-called-aardvark" title="Permanent link">&para;</a></h3>
+<p>The term “aardvark” represents a new naming convention to specify metadata schema versions. This convention is intended to reduce confusion between the metadata schema version and GeoBlacklight software versions, which uses numerical-based indicators.</p>
+<h3 id="why-do-we-need-an-updated-schema">Why do we need an updated schema?<a class="headerlink" href="#why-do-we-need-an-updated-schema" title="Permanent link">&para;</a></h3>
+<p>GeoBlacklight and its original metadata application schema (1.0) are well-suited to describing single layers of GIS data served out as OGC web services and documented with supplemental metadata, such as ISO 19115 (19139). Since that time, the growing community of GeoBlacklight adopters has introduced new use cases and institutional requirements. This growth brought several challenges to the metadata application schema as it was originally conceived including:</p>
+<ul>
+<li>a lack of fields for statements about rights</li>
+<li>a lack of clarity around how to define relationships between items</li>
+<li>few options for describing other types of resources, such as scanned maps, collections, and websites</li>
+<li>mandatory fields that did not have applicable values (i.e. <strong>Geometry Type</strong>)</li>
+<li>single-valued fields that could have multiple values (i.e. <strong>Language</strong>, <strong>Publisher</strong>)</li>
+<li>fields with names that were not intuitive for new users</li>
+</ul>
+<p>The minimal nature of the original GeoBlacklight schema combined with the growing environment of customized local fields has presented obstacles for new adopters. Instead of being able to rely on the official application schema to meet all or most of their needs, they must develop local solutions. Ultimately, in order to use GeoBlacklight, many adopters implemented custom fields. <a href="https://github.com/geoblacklight/geoblacklight/issues/937">A review of extant custom fields</a> in 2020 revealed that at least six institutions had added or altered fields in the GeoBlacklight schema. Altogether, over 20 custom fields were in use. The result of these custom fields was metadata that was not fully interoperable across institutions. For example, three schools had implemented three different fields for indicating rights or licenses.</p>
+<h2 id="what-changed">What changed?<a class="headerlink" href="#what-changed" title="Permanent link">&para;</a></h2>
+<h3 id="what-are-the-differences-between-gbl-10-and-ogm-aardvark">What are the differences between GBL 1.0 and OGM Aardvark?<a class="headerlink" href="#what-are-the-differences-between-gbl-10-and-ogm-aardvark" title="Permanent link">&para;</a></h3>
+<h4 id="new-elements-for-rights">New elements for rights<a class="headerlink" href="#new-elements-for-rights" title="Permanent link">&para;</a></h4>
+<p>The new set of rights elements are:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Label</th>
+<th align="left">URI</th>
+<th align="left">Description and Entry Guidelines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Access Rights</td>
+<td align="left"><code>dct_accessRights_s</code></td>
+<td align="left">One of two possible values, "Public" or "Restricted"; controls whether a user can preview or download an item. This element replaces <code>dc_rights_s</code>.</td>
+</tr>
+<tr>
+<td align="left">Rights</td>
+<td align="left"><code>dct_rights_sm</code></td>
+<td align="left">Free-text field for generic, catch-all access and usage rights. Can include clickable links.</td>
+</tr>
+<tr>
+<td align="left">License</td>
+<td align="left"><code>dct_license_sm</code></td>
+<td align="left">Field for one or more URIs. Recommended sources are <a href="https://creativecommons.org/">Creative Commons</a> or <a href="https://opendatacommons.org/">Open Data Commons</a>.</td>
+</tr>
+<tr>
+<td align="left">Rights Holder</td>
+<td align="left"><code>dct_rightsHolder_sm</code></td>
+<td align="left">Free-text field for the person or organization owning or managing rights over the resource.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="new-elements-for-item-relations">New elements for item relations<a class="headerlink" href="#new-elements-for-item-relations" title="Permanent link">&para;</a></h4>
+<p>The new schema includes seven relationship fields. The value for each field should be the ID (slug) of the related item.</p>
+<p class="note">GeoBlacklight version 3.4 and earlier has an Item Relations widget that displays items identified in the <strong>Source</strong> field. Beginning with version 4, this has been updated to use the same widget for each of these fields</p>
+<p>The new set of relationship elements are:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Label</th>
+<th align="left">URI</th>
+<th align="left">Description and Entry Guidelines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Source</td>
+<td align="left"><code>dct_source_sm</code></td>
+<td align="left">For items that have been derived from another item (e.g. a digitized shapefile from a historical map).</td>
+</tr>
+<tr>
+<td align="left">Is Part Of</td>
+<td align="left"><code>dct_isPartOf_sm</code></td>
+<td align="left">For items that are a subset of another item (e.g. a page in a book). This value type is changing from free-text in Version 1.0 to an ID (slug) in the new schema.</td>
+</tr>
+<tr>
+<td align="left">Member Of</td>
+<td align="left"><code>pcdm_memberOf_sm</code></td>
+<td align="left">For items in a collection.</td>
+</tr>
+<tr>
+<td align="left">Replaces</td>
+<td align="left"><code>dct_replaces_sm</code></td>
+<td align="left">To refer to an item that has been deprecated.</td>
+</tr>
+<tr>
+<td align="left">Is Replaced By</td>
+<td align="left"><code>dct_isReplacedBy_sm</code></td>
+<td align="left">To point the user to a new item.</td>
+</tr>
+<tr>
+<td align="left">Version</td>
+<td align="left"><code>dct_isVersionOf_sm</code></td>
+<td align="left">To indicate that an item is part of a series of resources that are updated or altered.</td>
+</tr>
+<tr>
+<td align="left">Relation</td>
+<td align="left"><code>dct_relation_sm</code></td>
+<td align="left">For a general purpose relation.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="consistent-namespaces-for-all-metadata-element-uris">Consistent namespaces for all metadata element URIs<a class="headerlink" href="#consistent-namespaces-for-all-metadata-element-uris" title="Permanent link">&para;</a></h4>
+<p>OGM Aardvark gives preference to elements found in established schemas over custom fields.</p>
+<ul>
+<li><strong><code>dct_</code></strong>: This signifies that the field is part of the <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">Dublin Core Metadata Initiative (DCMI) Metadata Terms</a>. Any Dublin Core fields from GBL 1.0 were updated to use the <code>dct_</code> namespace, instead of <code>dc_</code>.</li>
+<li><strong><code>dcat_</code></strong>: This signifies that the field is from the <a href="https://www.w3.org/TR/vocab-dcat-2/">Data Catalog Vocabulary (DCAT) Version 2</a>.</li>
+<li><strong><code>pcdm_</code></strong>: This refers to the <a href="https://github.com/duraspace/pcdm/wiki">Portland Common Data Model</a>, which is a framework for many digital repository systems. We drew from it to establish one of the item relationship fields.</li>
+<li><strong><code>gbl_</code></strong>: This stands for GeoBlacklight and is used for any field that is application-specific or has no analogous term in other schemas.</li>
+</ul>
+<h4 id="multivalued-elements-whenever-possible">Multivalued elements whenever possible<a class="headerlink" href="#multivalued-elements-whenever-possible" title="Permanent link">&para;</a></h4>
+<p>The original schema features several descriptive metadata fields that only accept one value. The new schema expands many of these to multiple. This changes the URI suffix from <code>_s</code> to<code>_sm</code>. Although it will not affect the GeoBlacklight functionality, this practice may conflict with indexing, as Solr will treat <code>dct_publisher_s</code> as a different field than <code>dct_publisher_sm</code>.</p>
+<h4 id="more-intuitive-name-for-unique-key">More intuitive name for unique key<a class="headerlink" href="#more-intuitive-name-for-unique-key" title="Permanent link">&para;</a></h4>
+<p>Metadata for GeoBlacklight instances is stored and indexed in Solr, which uses a "Unique Key Field" as the identifier for each document. The OGM Aardvark schema uses the straightforward <code>id</code> as the Unique Key Field (in GBL 1.0, this field was called <code>layer_slug_s</code>).</p>
+<h3 id="will-aardvark-work-with-my-geoblacklight-installation">Will Aardvark work with my GeoBlacklight installation?<a class="headerlink" href="#will-aardvark-work-with-my-geoblacklight-installation" title="Permanent link">&para;</a></h3>
+<p>You will need to upgrade to at least GeoBlacklight version 3.3 to test out Aardvark. All previously hardcoded field names were removed in GeoBlacklight version 3.3 (see <a href="https://github.com/geoblacklight/geoblacklight/pull/1020">this pull request</a> for more information). This means that field names are defined in the <code>settings.yml</code> file and can be configured to use Aardvark. However, only the fields in the crosswalk will have display, facet, or other functionality enabled by default in version 3.3.</p>
+<p>Some of the new fields in Aardvark will be tied to default application functionality beginning with Version 4.0. We plan to include item relation widgets for the new relationships (such as <strong>Member Of</strong> and <strong>Is Version Of</strong>) and reorganize the facets to include the new categories (such as Resource Class and Resource Type).</p>
+<h2 id="credits">Credits<a class="headerlink" href="#credits" title="Permanent link">&para;</a></h2>
+<h3 id="who-came-up-with-the-schema">Who came up with the schema?<a class="headerlink" href="#who-came-up-with-the-schema" title="Permanent link">&para;</a></h3>
+<p>The GeoBlacklight Metadata Schema Workgroup consisted of 16 people from 12 institutions. The workgroup formed during the Summer Community Sprint in August 2020 and met every three weeks thereafter through January 2021. The group wrapped up after the Winter Community Sprint in February 2021, during which time they consulted with application developers and finalized the recommendations for Aardvark.</p>
+<p><strong>Workgroup Goals</strong></p>
+<ol>
+<li>Systematically assess and evaluate the GeoBlacklight Schema 1.0</li>
+<li>Develop a new GeoBlacklight Metadata Schema that features:<ul>
+<li>improved interoperability with DCAT and Dublin Core-based schemas</li>
+<li>new fields for rights</li>
+<li>new fields for item relations</li>
+<li>new recommendations for controlled vocabularies and values</li>
+</ul>
+</li>
+<li>Develop a new <a href="https://www.loc.gov/aba/pcc/taskgroup/Metadata-Application-Profiles.html">Metadata Application Profile (MAP)</a> for GeoBlacklight</li>
+</ol>
+<p><strong>Workgroup Constraints &amp; Considerations</strong></p>
+<ul>
+<li>The GeoBlacklight schema was designed as an application-specific schema purely for discovery. It should not be a replacement for a full-fledged geospatial standard, such as ISO 19139.</li>
+<li>Elements that drive the functionality of GeoBlacklight should be examined cautiously, as changes to the schema for these elements will require new application development time to implement.</li>
+<li>New elements that are optional and additive are easier to adopt than ones that are syntactical replacements of existing fields.</li>
+<li>Although backward compatibility is usually preferred, it may not be possible to accommodate both schemas within a single application. Any breaking changes must be clearly stated and documented.</li>
+</ul>
+<p><strong>Workgroup Members</strong></p>
+<ul>
+<li>Abigail Pennington (UC San Diego)</li>
+<li>Adi Ranganath (New York University)</li>
+<li>Amy Work (UC San Diego)</li>
+<li>Andrew Battista (New York University)</li>
+<li>Diane Fritz (Auraria Library)</li>
+<li>Karen Majewicz (University of Minnesota/BTAA)</li>
+<li>Keith Jenkins (Cornell University)</li>
+<li>Kimberly Durante (Stanford University)</li>
+<li>Lena Denis (Johns Hopkins University)</li>
+<li>Mara Blake (Johns Hopkins University)</li>
+<li>Marc McGee (Harvard University)</li>
+<li>Margaret Mering (University of Nebraska-Lincoln)</li>
+<li>Michelle Janowiecki (Johns Hopkins University)</li>
+<li>Stephen Appel (University of Wisconsin-Milwaukee)</li>
+<li>Susan Powell (UC Berkeley)</li>
+<li>Tom Brittnacher (UC Santa Barbara)</li>
+</ul>
+<p><strong>Metadata Interest Group Members</strong>
+Refinements to OpenGeoMetadata have continued through the work of the ongoing Metadata Interest Group, which formed after the Workgroup sunsetted:</p>
+<ul>
+<li>Karen Majewicz (University of Minnesota/BTAA)</li>
+<li>Keith Jenkins (Cornell University)</li>
+<li>Lena Denis (Johns Hopkins University)</li>
+<li>Marc McGee (Harvard University)</li>
+<li>Rebecca Seifried (UMass Amherst)</li>
+</ul>
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs Insiders
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.path", "navigation.prune", "toc.integrate", "toc.follow"], "search": "../assets/javascripts/workers/search.6c7302c4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a3190745.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+    
+  </body>
+</html>
