@@ -78,7 +78,7 @@ nav:
                   - 'Aardvark to FGDC and ISO': 'aardvark-fgdc-iso-crosswalk.md'
                   - 'GBL 1.0 to FGDC and ISO': 'gbl1-fgdc-iso-crosswalk.md'
       
-            - Syntax & Controlled Values:
+            - Syntax:
                   - 'Reference URIs': 'reference-uris.md'
                   - 'Solr Field Suffixes': 'solr-field-suffixes.md'
                   - 'Custom Fields': 'custom-fields.md'
