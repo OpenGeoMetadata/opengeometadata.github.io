@@ -24,7 +24,7 @@ OGM Aardvark is a discovery metadata schema for geospatial resources. It was int
 
 It is also the newest metadata application profile schema for GeoBlacklight. Launched in 2021, it replaces the GeoBlacklight metadata schema version 1.0 ([GBL 1.0](gbl-1.0.md)). Compared to GBL 1.0, Aardvark incorporates additional fields for better descriptions of a wider range of resources, as well as syntactical updates in order to improve interoperability between institutions and between schemas. For GeoBlacklight users, it is the recommended schema for installations starting with GeoBlacklight version 4.0.
 
-For more information, see the [Upgrade Guide.](upgrading.md)
+For more information, see the [Upgrade Guide.](../upgrade-metadata/)
 
 ---
 

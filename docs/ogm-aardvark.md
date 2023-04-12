@@ -21,7 +21,7 @@
 - [Theme](#theme) (v)
 - [Keyword](#keyword)
 
-### [Temporal :material-link:](#../temporal-fields)
+### [Temporal :material-link:](../temporal-fields)
 - [Temporal Coverage](#temporal-coverage) (S)
 - [Date Issued](#date-issued)
 - [Index Year](#index-year) (S)
@@ -30,7 +30,7 @@
 </div>
 <div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
 
-### [Spatial :material-link:](#../spatial-fields)
+### [Spatial :material-link:](../spatial-fields)
 - [Spatial Coverage](#spatial-coverage) (S)
 - [Geometry](#geometry) (S)
 - [Bounding Box](#bounding-box) (S)
