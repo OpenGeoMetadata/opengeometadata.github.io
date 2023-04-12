@@ -2,11 +2,11 @@
 
 [OGM Aardvark](../ogm-aardvark) has five different fields in the "spatial" group:
 
-- [Spatial Coverage](ogm-aardvark/spatial-coverage.md) (S)
-- [Geometry](ogm-aardvark/geometry.md) (S)
-- [Bounding Box](ogm-aardvark/bounding-box.md) (S)
-- [Centroid](ogm-aardvark/centroid.md)
-- [Georeferenced](ogm-aardvark/georeferenced.md)
+- [Spatial Coverage](../ogm-aardvark/#spatial-coverage) (S)
+- [Geometry](../ogm-aardvark/#geometry) (S)
+- [Bounding Box](../ogm-aardvark/#bounding-box) (S)
+- [Centroid](../ogm-aardvark/#centroid)
+- [Georeferenced](../ogm-aardvark/#georeferenced)
 
 The first three -- marked with (S) -- are suggested fields that most records should probably have.
 
