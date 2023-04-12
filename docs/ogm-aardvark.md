@@ -120,7 +120,6 @@
 {{ read_csv('ogm-aardvark/file-size.csv') }}
 
 ## Format
-
 {{ read_csv('ogm-aardvark/format.csv') }}
 
 ### Format Recommended Values
@@ -154,10 +153,8 @@
 * Tabular Data
 * TIFF
 
-
 ## Geometry
 {{ read_csv('ogm-aardvark/geometry.csv') }}
-
 
 ## Georeferenced
 {{ read_csv('ogm-aardvark/georeferenced.csv') }}
@@ -199,7 +196,6 @@
 {{ read_csv('ogm-aardvark/modified.csv') }}
 
 ## Provider
-
 {{ read_csv('ogm-aardvark/provider.csv') }}
 
 ## Publisher
@@ -218,7 +214,6 @@
 {{ read_csv('ogm-aardvark/replaces.csv') }}
 
 ## Resource Class
-
 {{ read_csv('ogm-aardvark/resource-class.csv') }}
 
 ### Resource Class Controlled Values
@@ -232,11 +227,9 @@
 * Other
 
 ## Resource Type
-
 {{ read_csv('ogm-aardvark/resource-type.csv') }}
 
 ### Resource Type Controlled Values
-
 {{ read_csv('ogm-aardvark/resource-type-vocabulary.csv') }}
 
 ## Rights Holder
@@ -264,7 +257,6 @@
 {{ read_csv('ogm-aardvark/theme.csv') }}
 
 ### Theme Controlled Values
-
 {{ read_csv('ogm-aardvark/theme-vocabulary.csv') }}
 
 ## Title
