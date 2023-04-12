@@ -158,6 +158,10 @@
 ## Geometry
 {{ read_csv('ogm-aardvark/geometry.csv') }}
 
+
+## Georeferenced
+{{ read_csv('ogm-aardvark/georeferenced.csv') }}
+
 ## ID
 {{ read_csv('ogm-aardvark/id.csv') }}
 
