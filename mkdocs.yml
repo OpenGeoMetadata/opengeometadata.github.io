@@ -100,7 +100,7 @@ nav:
                   - 'Upgrade to OGM Aardvark': 'upgrade-metadata.md'
                   - 'Create Metadata': 'create-metadata.md'
                   - 'Validate Metadata': 'validate-metadata.md'
-                  - 'Configure Reference Links': 'configure-external-links.md'
+                  - 'Configure References Links': 'configure-references-links.md'
             - Publishing:
                   - 'Index in Solr': 'index-in-solr.md'
                   - 'View in GeoBlacklight': 'view-solr-metadata.md'

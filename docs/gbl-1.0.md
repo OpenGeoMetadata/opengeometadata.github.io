@@ -192,7 +192,7 @@ hide:
 | Controlled Vocabulary			| [Format Controlled Vocabulary](format-values)|
 | Element Set					| Dublin Core Metadata Element Set|
 | Example						| "Shapefile"|
-| Commentary | The most important thing to remember about the `dc_format_s` field is that it is required for Download functionality if using a single value string for downloads. (pre-GeoBlacklight version 3.0). [See the Multiple Downloads guide for more details](more-about-references#how-to-configure-multiple-download-links)|
+| Commentary | The most important thing to remember about the `dc_format_s` field is that it is required for Download functionality if using a single value string for downloads. (pre-GeoBlacklight version 3.0). See [Multiple Downloads](../configure-references-links/#multiple-downloads) for details.|
 
 ## Language
 
@@ -300,11 +300,11 @@ hide:
 | Required						| no|
 | Type							| string|
 | Description					| This element is a hash of key/value pairs for different types of external links. It integrates external services and references using the CatInterOp approach|
-| Entry Guidelines				| See [External References](https://opengeometadata.org/docs/more-about-references|
-| Controlled Vocabulary			| [References URIs](more-about-references#reference-uris)|
+| Entry Guidelines				| See [Configure References Links](../configure-references-links/)|
+| Controlled Vocabulary			| no |
 | Element Set					| DCMI Metadata Terms|
 | Example						|`"dct_references_s": "{\"http://schema.org/url\":\"http://purl.stanford.edu/bm662dm5913\",\"http://schema.org/downloadUrl\":\"http://stacks.stanford.edu/file/druid:bm662dm5913/data.zip\"}"`|
-| Commentary | All of the external links for the resource are added to the `dct_references_s` field as a serialized JSON array of key/value pairs. The download key/value pair is unique, because the value can be an array. [See this Multiple Downloads guide for more information.](more-about-references#how-to-configure-multiple-download-links)|
+| Commentary | All of the external links for the resource are added to the `dct_references_s` field as a serialized JSON array of key/value pairs. The download key/value pair is unique, because the value can be an array. See [Multiple Downloads](../configure-references-links/#multiple-downloads) for details.|
 
 ## Spatial Coverage
 

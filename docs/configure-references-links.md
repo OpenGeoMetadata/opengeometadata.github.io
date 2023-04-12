@@ -1,4 +1,4 @@
-# Configuring External Links (dct_references_s)
+# Configure References Links (dct_references_s)
 
 This page provides guidance on how to format the [References](../ogm-aardvark/#references) field in either GBL 1.0 or OGM Aardvark.
 
