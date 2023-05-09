@@ -232,11 +232,11 @@
 ### Resource Type Controlled Values
 {{ read_csv('ogm-aardvark/resource-type-vocabulary.csv') }}
 
-## Rights Holder
-{{ read_csv('ogm-aardvark/rights-holder.csv') }}
-
 ## Rights
 {{ read_csv('ogm-aardvark/rights.csv') }}
+
+## Rights Holder
+{{ read_csv('ogm-aardvark/rights-holder.csv') }}
 
 ## Source
 {{ read_csv('ogm-aardvark/source.csv') }}
