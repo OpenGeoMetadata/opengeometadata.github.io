@@ -47,7 +47,7 @@
 - [Is Replaced By](#is-replaced-by)
 
 ### Rights
-- [Rights](#rights) (S)
+- [Rights](#rights_1) (S)
 - [Rights Holder](#rights-holder)
 - [License](#license)
 - ==[Access Rights](#access-rights) (R)==
