@@ -18,7 +18,7 @@ The following elements have controlled values in the OGM Aardvark schema.
 
 ## [Theme](../ogm-aardvark#theme)
 
-
+{{ read_csv('ogm-aardvark/theme-vocabulary.csv') }}
 
 ## [Format](../ogm-aardvark#format)
 
