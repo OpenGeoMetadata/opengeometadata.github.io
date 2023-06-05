@@ -6,8 +6,8 @@ icon: octicons/tools-24
 
 Our How-to guides provide step-by-step workflows for:
 
-### [**Repositories:** How to share your metadata on OpenGeoMetadata](share-metadata)
+### [**Repositories:** How to share your metadata on OpenGeoMetadata](../share-on-ogm)
 
-### [**Metadata:** Creating, transforming, and structuring metadata](create-metadata)
+### [**Metadata:** Creating, transforming, and structuring metadata](../upgrade-metadata)
 
-### [**GeoBlacklight:** Ingesting to Solr and viewing metadata in GeoBlacklight](index-to-solr)
+### [**GeoBlacklight:** Ingesting to Solr and viewing metadata in GeoBlacklight](../index-in-solr)
