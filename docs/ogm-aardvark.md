@@ -2,26 +2,26 @@
 
 <div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
 
-### Descriptive
+#### Descriptive
 - ==[Title](#title) (R)==
 - [Alternative Title](#alternative-title)
 - [Description](#description) (S)
 - [Language](#language) (v)
 - [Display Note](#display-note)
 
-### Credits
+#### Credits
 - [Creator](#creator) (S)
 - [Publisher](#publisher) (S)
 - [Provider](#provider) (S)
 
-### Categories
+#### Categories
 - ==[Resource Class](#resource-class) (R)== (v)
 - [Resource Type](#resource-type) (S) (v)
 - [Subject](#subject)
 - [Theme](#theme) (v)
 - [Keyword](#keyword)
 
-### [Temporal :material-link:](../temporal-fields)
+#### [Temporal :material-link:](../temporal-fields)
 - [Temporal Coverage](#temporal-coverage) (S)
 - [Date Issued](#date-issued)
 - [Index Year](#index-year) (S)
@@ -30,14 +30,14 @@
 </div>
 <div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
 
-### [Spatial :material-link:](../spatial-fields)
+#### [Spatial :material-link:](../spatial-fields)
 - [Spatial Coverage](#spatial-coverage) (S)
 - [Geometry](#geometry) (S)
 - [Bounding Box](#bounding-box) (S)
 - [Centroid](#centroid)
 - [Georeferenced](#georeferenced)
 
-### Relations
+#### Relations
 - [Relation](#relation)
 - [Member Of](#member-of)
 - [Is Part Of](#is-part-of)
@@ -46,7 +46,7 @@
 - [Replaces](#replaces)
 - [Is Replaced By](#is-replaced-by)
 
-### Rights
+#### Rights
 - [Rights](#rights_1) (S)
 - [Rights Holder](#rights-holder)
 - [License](#license)
@@ -55,19 +55,19 @@
 </div>
 <div style="float:left; line-height:1.1" markdown="1">
 
-### Object
+#### Object
 - [Format](#format) (C) (v)
 - [File Size](#file-size)
 
-### Links
+#### Links
 - [References](#references) (S)
 - [WxS Identifier](#wxs-identifier)
 
-### Identifiers
+#### Identifiers
 - ==[ID](#id) (R)==
 - [Identifier](#identifier) (S)
 
-### Admin
+#### Admin
 - ==[Modified](#modified) (R)==
 - ==[Metadata Version](#metadata-version) (R)== (v)
 - [Suppressed](#suppressed)
@@ -122,7 +122,7 @@
 ## Format
 {{ read_csv('ogm-aardvark/format.csv') }}
 
-### Format Recommended Values
+### Format Values
 
 * ArcGRID
 * CD-ROM
@@ -183,6 +183,12 @@
 ## Language
 {{ read_csv('ogm-aardvark/language.csv') }}
 
+### Language Values
+
+[:octicons-link-external-24: See Library of Congress for full list.](https://www.loc.gov/standards/iso639-2/php/English_list.php)
+
+{{ read_csv('ogm-aardvark/language-vocabulary.csv') }}
+
 ## License
 {{ read_csv('ogm-aardvark/license.csv') }}
 
@@ -216,7 +222,7 @@
 ## Resource Class
 {{ read_csv('ogm-aardvark/resource-class.csv') }}
 
-### Resource Class Controlled Values
+### Resource Class Values
 
 * Collections
 * Datasets
@@ -227,10 +233,20 @@
 * Other
 
 ## Resource Type
+
 {{ read_csv('ogm-aardvark/resource-type.csv') }}
 
-### Resource Type Controlled Values
-{{ read_csv('ogm-aardvark/resource-type-vocabulary.csv') }}
+### Resource Type Values-LOC
+
+The following table lists terms from the Library of Congress Cartographic Genres. These values will be most applicable to **scanned maps**.
+
+{{ read_csv('ogm-aardvark/resource-type-vocabulary-loc.csv') }}
+
+### Resource Type Values-OGM
+
+The following table lists terms from the OpenGeoMetadata community. They are most applicable to **geospatial data**.
+
+{{ read_csv('ogm-aardvark/resource-type-vocabulary-ogm.csv') }}
 
 ## Rights
 {{ read_csv('ogm-aardvark/rights.csv') }}
@@ -256,7 +272,7 @@
 ## Theme
 {{ read_csv('ogm-aardvark/theme.csv') }}
 
-### Theme Controlled Values
+### Theme Values
 {{ read_csv('ogm-aardvark/theme-vocabulary.csv') }}
 
 ## Title
