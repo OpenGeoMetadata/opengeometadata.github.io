@@ -35,7 +35,7 @@ This is the working branch containing the content for the site using Markdown.
 * **docs** folder
 	*  Markdown documents: The content for the site. These can all live in the same directory and are organized in the public navigation menu in the nav section of **mkdocs.yml**.
 	*  	`/ogm-aardvark`: a subfolder with CSV files for each element in the Aardvark schema
-	*  	/`images` : JPGs, PNGs, and other image files
+	*  	`/images` : JPGs, PNGs, and other image files
 	*   `/javascripts/tablesort.js`: the javascript function that allows users to sort tables online
 	*   `/stylesheets/extra.css` : a CSS file that can define colors, fonts, and other customizations for the site
 	*   `/tables` : CSV files for any general information to be displayed as tables
