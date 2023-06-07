@@ -1,11 +1,24 @@
 site_name: OpenGeoMetadata
 
-theme: 
+theme:
       name: material
       highlightjs: true
-      logo: images/ogm-icon.png
+      logo: images/ogm-border-72.png
       palette:
-          primary: indigo
+        # Palette toggle for light mode
+        - scheme: default
+          toggle:
+            icon: material/brightness-7
+            name: Switch to dark mode
+
+        # Palette toggle for dark mode
+        - scheme: slate
+          primary: custom
+          toggle:
+            icon: material/brightness-4
+            name: Switch to light mode
+
+
       custom_dir: overrides
       features:
             - navigation.top
@@ -20,14 +33,14 @@ theme:
             - navigation.prune
             - toc.integrate
             - toc.follow
-    
+
 plugins:
       - table-reader
       - search
 
 extra_css:
       - stylesheets/extra.css
-  
+
 extra_javascript:
       - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
       - javascripts/tablesort.js
@@ -53,7 +66,7 @@ markdown_extensions:
                   custom_icons:
                         - overrides/.icons
       - pymdownx.tabbed:
-            alternate_style: true 
+            alternate_style: true
             slugify: !!python/object/apply:pymdownx.slugs.slugify
                   kwds:
                         case: lower
@@ -61,7 +74,7 @@ markdown_extensions:
               toc_depth: 3
               permalink: true
 
-        
+
 nav:
       - Home: 'index.md'
 
@@ -69,27 +82,27 @@ nav:
             - 'reference/index.md'
             - Schemas:
                   - 'OGM Aardvark' : 'ogm-aardvark.md'
-                  -  Legacy Schemas : 
+                  -  Legacy Schemas :
                         - 'GBL 1.0' : 'gbl-1.0.md'
                         - 'GBL 0.5': 'gbl-0.5.md'
-      
+
             - Crosswalks:
                   - 'Aardvark to GBL 1.0' : 'aardvark-gbl-1-crosswalk.md'
                   - 'Aardvark to FGDC and ISO': 'aardvark-fgdc-iso-crosswalk.md'
                   - 'GBL 1.0 to FGDC and ISO': 'gbl1-fgdc-iso-crosswalk.md'
-      
+
             - Syntax:
                   - 'Reference URIs': 'reference-uris.md'
                   - 'Solr Field Suffixes': 'solr-field-suffixes.md'
                   - 'Custom Fields': 'custom-fields.md'
-                  
+
             - Validation:
                   - 'JSON schema files': 'json-schema.md'
-                   
+
             - Tools:
                   - 'Scripts': 'scripts.md'
                   - 'Applications': 'applications.md'
-            
+
       - How-to:
             - 'how-to-guides/index.md'
             - Repositories:
@@ -114,6 +127,3 @@ nav:
                   - 'Temporal Fields': 'temporal-fields.md'
                   - 'JSON Format': 'JSON-format.md'
             - 'Further Reading': 'further-reading.md'
-
- 
-      
