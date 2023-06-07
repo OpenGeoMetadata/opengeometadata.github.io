@@ -28,7 +28,7 @@ OpenGeoMetadata is a discovery metadata schema for geospatial resources and an o
 	</div>
 
 	<div class="cell">
-		<a href = "ogm-aardvark"><img style="float: left; padding: 1em;" src="images/aardvark3-border-5pt.png"; width=150px></a>
+		<a href = "ogm-aardvark"><img style="float: left; padding: 1em;" src="images/aardvark3-border-7pt.png"; width=150px></a>
 		<h2><a href = "ogm-aardvark"> OGM Aardvark Metadata</a></h2>
 	    	Jump to the documentation for the <a href = "ogm-aardvark">Aardvark Metadata Schema</a>.
 
