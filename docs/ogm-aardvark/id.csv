@@ -1,5 +1,5 @@
 Label,ID
-URI,id
+Field name,id
 Obligation,Required
 Multivalued,false
 Field type,string

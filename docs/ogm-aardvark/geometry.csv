@@ -1,5 +1,5 @@
 Label,Geometry
-URI,locn_geometry
+Field name,locn_geometry
 Obligation,Suggested
 Multivalued,false
 Field type,string

@@ -1,5 +1,5 @@
 Label,Identifier
-URI,dct_identifier_sm
+Field name,dct_identifier_sm
 Obligation,Suggested
 Multivalued,true
 Field type,array of strings

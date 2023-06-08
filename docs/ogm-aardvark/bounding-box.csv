@@ -1,5 +1,5 @@
 Label,Bounding Box
-URI,dcat_bbox
+Field name,dcat_bbox
 Obligation,Suggested
 Multivalued,false
 Field type,string

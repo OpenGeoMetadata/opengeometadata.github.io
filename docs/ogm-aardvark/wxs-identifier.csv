@@ -1,5 +1,5 @@
 Label,WxS Identifier
-URI,gbl_wxsIdentifier_s
+Field name,gbl_wxsIdentifier_s
 Obligation,Conditional
 Multivalued,false
 Field type,string

@@ -1,5 +1,5 @@
 Label,Display Note
-URI,gbl_displayNote_sm
+Field name,gbl_displayNote_sm
 Obligation,Optional
 Multivalued,true
 Field type,array of strings

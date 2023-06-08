@@ -1,5 +1,5 @@
 Label,Date Issued
-URI,dct_issued_s
+Field name,dct_issued_s
 Obligation,Optional
 Multivalued,false
 Field type,string

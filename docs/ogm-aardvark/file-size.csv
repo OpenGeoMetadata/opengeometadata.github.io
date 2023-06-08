@@ -1,5 +1,5 @@
 Label,File Size
-URI,gbl_fileSize_s
+Field name,gbl_fileSize_s
 Obligation,Optional
 Multivalued,false
 Field type,string

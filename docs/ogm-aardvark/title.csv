@@ -1,5 +1,5 @@
 Label,Title
-URI,dct_title_s
+Field name,dct_title_s
 Obligation,Required
 Multivalued,false
 Field type,string

@@ -1,5 +1,5 @@
 Label,Theme
-URI,dcat_theme_sm
+Field name,dcat_theme_sm
 Obligation,Optional
 Multivalued,true
 Field type,array of strings

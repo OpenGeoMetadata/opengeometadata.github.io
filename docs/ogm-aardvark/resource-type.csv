@@ -1,5 +1,5 @@
 Label,Resource Type
-URI,gbl_resourceType_sm
+Field name,gbl_resourceType_sm
 Obligation,Suggested
 Multivalued,true
 Field type,array of strings

@@ -1,5 +1,5 @@
 Label,Member Of
-URI,pcdm_memberOf_sm
+Field name,pcdm_memberOf_sm
 Obligation,Optional
 Multivalued,true
 Field type,array of strings

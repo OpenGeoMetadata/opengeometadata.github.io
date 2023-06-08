@@ -1,5 +1,5 @@
 Label,Index Year
-URI,gbl_indexYear_im
+Field name,gbl_indexYear_im
 Obligation,Suggested
 Multivalued,true
 Field type,array of integers

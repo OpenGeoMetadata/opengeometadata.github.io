@@ -1,5 +1,5 @@
 Label,Alternative Title
-URI,dct_alternative_sm
+Field name,dct_alternative_sm
 Obligation,Optional
 Multivalued,true
 Field type,array of strings

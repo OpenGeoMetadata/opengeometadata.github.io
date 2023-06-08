@@ -1,5 +1,5 @@
 Label,Georeferenced
-URI,gbl_georeferenced_b
+Field name,gbl_georeferenced_b
 Obligation,Optional
 Multivalued,false
 Field type,boolean or string

@@ -1,5 +1,5 @@
 Label,Centroid
-URI,dcat_centroid
+Field name,dcat_centroid
 Obligation,Optional
 Multivalued,false
 Field type,string

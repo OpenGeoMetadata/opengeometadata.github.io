@@ -1,5 +1,5 @@
 Label,Metadata Version
-URI,gbl_mdVersion_s
+Field name,gbl_mdVersion_s
 Obligation,Required
 Multivalued,false
 Field type,string

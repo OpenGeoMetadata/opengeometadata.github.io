@@ -1,5 +1,5 @@
 Label,Date Range
-URI,gbl_dateRange_drsim
+Field name,gbl_dateRange_drsim
 Obligation,Optional
 Multivalued,true
 Field type,string

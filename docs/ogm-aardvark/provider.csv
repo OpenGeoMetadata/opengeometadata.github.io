@@ -1,5 +1,5 @@
 Label,Provider
-URI,schema_provider_s
+Field name,schema_provider_s
 Obligation,Suggested
 Multivalued,false
 Field type,string

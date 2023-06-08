@@ -1,5 +1,5 @@
 Label,Suppressed
-URI,gbl_suppressed_b
+Field name,gbl_suppressed_b
 Obligation,Optional
 Multivalued,false
 Field type,boolean or string

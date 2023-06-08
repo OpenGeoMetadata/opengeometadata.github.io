@@ -1,5 +1,5 @@
 Label,Version
-URI,dct_isVersionOf_sm
+Field name,dct_isVersionOf_sm
 Obligation,Optional
 Multivalued,true
 Field type,array of strings

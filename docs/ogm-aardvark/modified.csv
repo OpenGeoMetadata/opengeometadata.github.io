@@ -1,5 +1,5 @@
 Label,Modified
-URI,gbl_mdModified_dt
+Field name,gbl_mdModified_dt
 Obligation,Required
 Multivalued,false
 Field type,string
