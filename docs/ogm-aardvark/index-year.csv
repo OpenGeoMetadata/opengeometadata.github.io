@@ -1,4 +1,5 @@
 Label,Index Year
+URI,https://opengeometadata.org/ogm-aardvark/#index-year
 Field name,gbl_indexYear_im
 Obligation,Suggested
 Multivalued,true

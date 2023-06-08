@@ -1,4 +1,5 @@
 Label,Resource Type
+URI,https://opengeometadata.org/ogm-aardvark/#resource-type
 Field name,gbl_resourceType_sm
 Obligation,Suggested
 Multivalued,true

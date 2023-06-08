@@ -1,4 +1,5 @@
 Label,Theme
+URI,https://opengeometadata.org/ogm-aardvark/#theme
 Field name,dcat_theme_sm
 Obligation,Optional
 Multivalued,true

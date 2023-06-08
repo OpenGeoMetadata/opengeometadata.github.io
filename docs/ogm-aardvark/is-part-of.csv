@@ -1,4 +1,5 @@
 Label,Is Part Of
+URI,https://opengeometadata.org/ogm-aardvark/#is-part-of
 Field name,dct_isPartOf_sm
 Obligation,Optional
 Multivalued,true

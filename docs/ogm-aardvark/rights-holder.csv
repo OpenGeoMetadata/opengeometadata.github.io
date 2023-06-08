@@ -1,4 +1,5 @@
 Label,Rights Holder
+URI,https://opengeometadata.org/ogm-aardvark/#rights-holder
 Field name,dct_rightsHolder_sm
 Obligation,Optional
 Multivalued,true

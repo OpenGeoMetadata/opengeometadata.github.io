@@ -1,4 +1,5 @@
 Label,Identifier
+URI,https://opengeometadata.org/ogm-aardvark/#identifier
 Field name,dct_identifier_sm
 Obligation,Suggested
 Multivalued,true

@@ -1,4 +1,5 @@
 Label,Is Replaced By
+URI,https://opengeometadata.org/ogm-aardvark/#is-replaced-by
 Field name,dct_isReplacedBy_sm
 Obligation,Optional
 Multivalued,true

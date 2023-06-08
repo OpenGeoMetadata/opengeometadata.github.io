@@ -1,4 +1,5 @@
 Label,Date Range
+URI,https://opengeometadata.org/ogm-aardvark/#date-range
 Field name,gbl_dateRange_drsim
 Obligation,Optional
 Multivalued,true

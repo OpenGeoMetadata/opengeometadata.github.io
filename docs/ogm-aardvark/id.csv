@@ -1,4 +1,5 @@
 Label,ID
+URI,https://opengeometadata.org/ogm-aardvark/#id
 Field name,id
 Obligation,Required
 Multivalued,false

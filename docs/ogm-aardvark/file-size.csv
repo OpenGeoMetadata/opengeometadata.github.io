@@ -1,4 +1,5 @@
 Label,File Size
+URI,https://opengeometadata.org/ogm-aardvark/#file-size
 Field name,gbl_fileSize_s
 Obligation,Optional
 Multivalued,false

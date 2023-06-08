@@ -1,4 +1,5 @@
 Label,Display Note
+URI,https://opengeometadata.org/ogm-aardvark/#display-note
 Field name,gbl_displayNote_sm
 Obligation,Optional
 Multivalued,true

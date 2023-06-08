@@ -1,4 +1,5 @@
 Label,Replaces
+URI,https://opengeometadata.org/ogm-aardvark/#replaces
 Field name,dct_replaces_sm
 Obligation,Optional
 Multivalued,true

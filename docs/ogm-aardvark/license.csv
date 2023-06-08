@@ -1,4 +1,5 @@
 Label,License
+URI,https://opengeometadata.org/ogm-aardvark/#license
 Field name,dct_license_sm
 Obligation,Optional
 Multivalued,true

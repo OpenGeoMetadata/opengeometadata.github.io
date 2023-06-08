@@ -1,4 +1,5 @@
 Label,Alternative Title
+URI,https://opengeometadata.org/ogm-aardvark/#alternative-title
 Field name,dct_alternative_sm
 Obligation,Optional
 Multivalued,true

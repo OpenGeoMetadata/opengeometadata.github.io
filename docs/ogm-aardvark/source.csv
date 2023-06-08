@@ -1,4 +1,5 @@
 Label,Source
+URI,https://opengeometadata.org/ogm-aardvark/#source
 Field name,dct_source_sm
 Obligation,Optional
 Multivalued,true

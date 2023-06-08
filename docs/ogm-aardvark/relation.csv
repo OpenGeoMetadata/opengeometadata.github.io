@@ -1,4 +1,5 @@
 Label,Relation
+URI,https://opengeometadata.org/ogm-aardvark/#relation
 Field name,dct_relation_sm
 Obligation,Optional
 Multivalued,true

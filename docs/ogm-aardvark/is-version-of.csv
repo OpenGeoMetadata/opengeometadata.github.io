@@ -1,4 +1,5 @@
 Label,Version
+URI,https://opengeometadata.org/ogm-aardvark/#is-version-of
 Field name,dct_isVersionOf_sm
 Obligation,Optional
 Multivalued,true

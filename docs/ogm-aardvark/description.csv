@@ -1,4 +1,5 @@
 Label,Description
+URI,https://opengeometadata.org/ogm-aardvark/#description
 Field name,dct_description_sm
 Obligation,Suggested
 Multivalued,true

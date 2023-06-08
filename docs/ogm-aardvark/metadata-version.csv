@@ -1,4 +1,5 @@
 Label,Metadata Version
+URI,https://opengeometadata.org/ogm-aardvark/#metadata-version
 Field name,gbl_mdVersion_s
 Obligation,Required
 Multivalued,false

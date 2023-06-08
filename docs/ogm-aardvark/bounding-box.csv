@@ -1,4 +1,5 @@
 Label,Bounding Box
+URI,https://opengeometadata.org/ogm-aardvark/#bounding-box
 Field name,dcat_bbox
 Obligation,Suggested
 Multivalued,false

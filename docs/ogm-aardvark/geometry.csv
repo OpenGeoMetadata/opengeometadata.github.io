@@ -1,4 +1,5 @@
 Label,Geometry
+URI,https://opengeometadata.org/ogm-aardvark/#geometry
 Field name,locn_geometry
 Obligation,Suggested
 Multivalued,false
