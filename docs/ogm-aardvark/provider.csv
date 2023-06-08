@@ -1,9 +1,9 @@
 Label,Provider
 URI,https://opengeometadata.org/ogm-aardvark/#provider
 Field name,schema_provider_s
+Field type,string
 Obligation,Suggested
 Multivalued,false
-Field type,string
 Purpose,To clarify which organization is holds the resource or acts as the custodian for the metadata record and to help users understand which resources they can access
 Entry Guidelines,"This field can be any string value. However, if the value corresponds to the name of an SVG icon in GeoBlacklight, the icon will display next to the title. [See the GeoBlacklight documentation for more details.](https://geoblacklight.org/docs/customization/adding_svg_icons/)"
 Commentary,This field was named **Provenance** in the GBL 1.0 Metadata schema.

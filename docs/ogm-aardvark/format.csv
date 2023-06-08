@@ -1,9 +1,9 @@
 Label,Format
 URI,https://opengeometadata.org/ogm-aardvark/#format
 Field name,dct_format_s
+Field type,string
 Obligation,Conditionally Required
 Multivalued,false
-Field type,string
 Purpose,To display to the user the name of the file type as a text string in the download button
 Entry Guidelines,Required if the download URL is configured as a single key:value pair.
 Commentary,See recommended values below. This field is required for basic download functionality.

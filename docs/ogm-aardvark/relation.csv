@@ -1,9 +1,9 @@
 Label,Relation
 URI,https://opengeometadata.org/ogm-aardvark/#relation
 Field name,dct_relation_sm
+Field type,array of strings
 Obligation,Optional
 Multivalued,true
-Field type,array of strings
 Purpose,"To link items with a general, unspecified relationship to each other"
 Entry Guidelines,Enter only the ID of the related item(s).
 Commentary,

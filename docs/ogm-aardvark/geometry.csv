@@ -1,9 +1,9 @@
 Label,Geometry
 URI,https://opengeometadata.org/ogm-aardvark/#geometry
 Field name,locn_geometry
+Field type,string
 Obligation,Suggested
 Multivalued,false
-Field type,string
 Purpose,To display the extent of the resource and to power the map search
 Entry Guidelines,"This may be a bounding box or more complex geometry. For a bounding box, it should use the ENVELOPE(w,e,n,s) syntax. For a more complex geometry, it should use the WKT (""well-known text"") POLYGON or MULTIPOLYGON syntax. Note that WKT polygon vertices should be defined in counter-clockwise order."
 Commentary,"Since this field is not repeatable, multiple polygons should be represented using the WKT ""MULTIPOLYGON"" syntax. Geometries that span the 180th Meridian, aka the Antimeridian, should be broken up into multiple bounding boxes or polygons for each side of the earth's hemisphere. This is because Solr, the underlying indexer for GeoBlacklight, can not interpret these coordinates correctly and will display the geometry improperly (horizontally flipped)."

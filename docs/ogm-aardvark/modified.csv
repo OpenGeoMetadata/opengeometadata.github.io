@@ -1,9 +1,9 @@
 Label,Modified
 URI,https://opengeometadata.org/ogm-aardvark/#modified
 Field name,gbl_mdModified_dt
+Field type,string
 Obligation,Required
 Multivalued,false
-Field type,string
 Purpose,To inform administrators of when the metadata was last touched
 Entry Guidelines,"Use the ""W3C Date and Time Format"" (YYYY-MM-DDThh:mm:ssZ)"
 Commentary,This value should indicate when the metadata (not the resource itself) was last modified.

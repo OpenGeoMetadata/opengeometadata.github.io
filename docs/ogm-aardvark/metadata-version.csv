@@ -1,9 +1,9 @@
 Label,Metadata Version
 URI,https://opengeometadata.org/ogm-aardvark/#metadata-version
 Field name,gbl_mdVersion_s
+Field type,string
 Obligation,Required
 Multivalued,false
-Field type,string
 Purpose,To clarify which GeoBlacklight metadata schema is being used
 Entry Guidelines,Enter the string: Aardvark.
 Commentary,There have been two metadata schema versions for GeoBlacklight: 1.0 and Aardvark.

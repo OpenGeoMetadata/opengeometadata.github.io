@@ -1,9 +1,9 @@
 Label,Date Range
 URI,https://opengeometadata.org/ogm-aardvark/#date-range
 Field name,gbl_dateRange_drsim
+Field type,string
 Obligation,Optional
 Multivalued,true
-Field type,string
 Purpose,To power other time widgets that use a date range
 Entry Guidelines,"Enter a start date and end date in the Solr date range field convention. In JSON, the value should be formatted as a string that includes the brackets, rather than as an array or list containing a string. Incorrect: [""YYYY TO YYYY""] - Correct: ""[YYYY TO YYYY]"""
 Commentary,"This field is not yet supported by GeoBlacklight, but the application can be customized to use it."

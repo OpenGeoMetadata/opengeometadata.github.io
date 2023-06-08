@@ -1,9 +1,9 @@
 Label,Index Year
 URI,https://opengeometadata.org/ogm-aardvark/#index-year
 Field name,gbl_indexYear_im
+Field type,array of integers
 Obligation,Suggested
 Multivalued,true
-Field type,array of integers
 Purpose,To power time slider widgets that rely on integers for dates
 Entry Guidelines,Enter one or more 4-digit integers.
 Commentary,

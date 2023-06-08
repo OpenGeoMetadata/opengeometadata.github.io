@@ -1,9 +1,9 @@
 Label,Creator
 URI,https://opengeometadata.org/ogm-aardvark/#creator
 Field name,dct_creator_sm
+Field type,array of strings
 Obligation,Suggested
 Multivalued,true
-Field type,array of strings
 Purpose,To credit the person/organization that collected or authored the resource
 Entry Guidelines,The suggested controlled vocabulary is the Library of Congress Name Authority File.
 Commentary,"This field is best reserved for instances in which an individual person has collected, produced, or generated analyses of data (as opposed to an agency releasing a data product or resource). It can be a person or an organization."

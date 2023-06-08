@@ -1,9 +1,9 @@
 Label,Rights
 URI,https://opengeometadata.org/ogm-aardvark/#rights
 Field name,dct_rights_sm
+Field type,array of strings
 Obligation,Suggested
 Multivalued,true
-Field type,array of strings
 Purpose,"To provide a free text field for rights information, such as usage, access, or copyright"
 Entry Guidelines,"Enter free text of generic, catch-all access and usage rights. It can include clickable links if the GeoBlacklight software is customized; see the [documentation](https://geoblacklight.org/docs/customization/rendering_html_from_description/) on how to render HTML from a text field."
 Commentary,This field is intended to be flexible to accommodate different types of rights and disclaimers. Users are encouraged to adopt one of the rightsstatements.org statements.
