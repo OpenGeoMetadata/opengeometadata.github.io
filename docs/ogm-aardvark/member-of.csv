@@ -1,8 +1,9 @@
 Label,Member Of
-URI,pcdm_memberOf_sm
+URI,https://opengeometadata.org/ogm-aardvark/#member-of
+Field name,pcdm_memberOf_sm
+Field type,array of strings
 Obligation,Optional
 Multivalued,true
-Field type,array of strings
 Purpose,To link items that are part of a collection
 Entry Guidelines,Make a collection record to group records together. Enter the ID of the collection-level record.
 Commentary,

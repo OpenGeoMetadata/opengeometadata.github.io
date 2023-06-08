@@ -1,8 +1,9 @@
 Label,Spatial Coverage
-URI,dct_spatial_sm
+URI,https://opengeometadata.org/ogm-aardvark/#spatial-coverage
+Field name,dct_spatial_sm
+Field type,array of strings
 Obligation,Suggested
 Multivalued,true
-Field type,array of strings
 Purpose,To provide the user with a list of searchable and selectable place names
 Entry Guidelines,Place name text strings should be specified out to the nation level. It is typical for the place name to represent the largest extent the data layer represents. Our recommended thesaurus is GeoNames.
 Commentary,It is recommended to have at least one place name for each layer that corresponds to the logical extent of the area of that layer.

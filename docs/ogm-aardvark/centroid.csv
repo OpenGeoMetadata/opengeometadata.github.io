@@ -1,8 +1,9 @@
 Label,Centroid
-URI,dcat_centroid
+URI,https://opengeometadata.org/ogm-aardvark/#centroid
+Field name,dcat_centroid
+Field type,string
 Obligation,Optional
 Multivalued,false
-Field type,string
 Purpose,To display the center point of a resource
 Entry Guidelines,"Enter two decimal degree coordinates separated by a comma in this order: latitude,longitude."
 Commentary,This field is currently only supported by customizations to the GeoBlacklight application.

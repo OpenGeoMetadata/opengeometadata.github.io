@@ -1,8 +1,9 @@
 Label,Subject
-URI,dct_subject_sm
+URI,https://opengeometadata.org/ogm-aardvark/#subject
+Field name,dct_subject_sm
+Field type,array of strings
 Obligation,Optional
 Multivalued,true
-Field type,array of strings
 Purpose,To provide an all-purpose field for subjects
 Entry Guidelines,"Any value is allowed, but controlled vocabularies are encouraged."
 Commentary,
