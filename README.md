@@ -130,7 +130,7 @@ As of April 2023, the opengeometadata.github.io site is being published via the 
 * emojis on the tabs
 * admonitions
 
-We will reassess this in a few months to determine if it is a viable model going forward.
+We will reassess this over the coming year to determine if it is a viable model going forward.
 
 ------
 
