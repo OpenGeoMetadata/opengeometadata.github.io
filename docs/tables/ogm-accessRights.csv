@@ -1,5 +1,5 @@
 Label,Access Rights
-URI,dct_accessRights_s
+Field Name,dct_accessRights_s
 Obligation,Required
 Multivalued,false
 Field type,string

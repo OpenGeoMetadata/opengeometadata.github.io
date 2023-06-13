@@ -1,4 +1,4 @@
-Label,URI,Obligation
+Label,Field Name,Obligation
 ==**[Access Rights](ogm-aardvark/access-rights.md)**==,`dct_accessRights_s`,==**Required**==
 [Alternative Title](ogm-aardvark/alternative-title.md),`dct_alternative_sm`,Optional
 [Bounding Box](ogm-aardvark/bounding-box.md),`dcat_bbox`,Suggested
