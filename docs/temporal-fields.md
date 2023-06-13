@@ -21,7 +21,7 @@ This is a descriptive, free-text field that is intended to describe the time per
 ```
 
 ## Date Issued
-his is an optional field for describing the date of an item's publication. Although optional, this field is often useful when a clear temporal coverage value is not present. For example, a dataset with uncertain lineage may at least have a date of last update. Generally it should be structured as a single year: `YYYY`, but more precise dates can take the ISO format withtout the time value: `YYYY-MM-DD` or `YYYY-MM`.
+This is an optional field for describing the date of an item's publication. Although optional, this field is often useful when a clear temporal coverage value is not present. For example, a dataset with uncertain lineage may at least have a date of last update. Generally it should be structured as a single year: `YYYY`, but more precise dates can take the ISO format without the time value: `YYYY-MM-DD` or `YYYY-MM`.
 
 ```
 "1999"
