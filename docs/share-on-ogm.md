@@ -77,7 +77,7 @@ A hashed directory structure makes it easy to include additional materials and d
 ```
 
 !!! note
-	
+
 	Institutions may choose to use a combination of structures, such as hashed directories within categorical folders.
 
 
@@ -85,7 +85,7 @@ A hashed directory structure makes it easy to include additional materials and d
 
 Determine the file-naming rules for your metadata. There are two main approaches to naming metadata files: naming by the item's ID or naming by the file's metadata standard.
 
-### 1. Naming by item ID
+### Naming by item ID
 
 
 Each record has a unique filename based on the item’s ID. This allows multiple records to be stored in the same directory. See the [edu.harvard](https://github.com/OpenGeoMetadata/edu.harvard) repository for an example:
@@ -100,7 +100,7 @@ Each record has a unique filename based on the item’s ID. This allows multiple
            ...
 ```
 
-### 2. Naming by metadata standard
+### Naming by metadata standard
 
 
 All records use the same filename pattern, such as `*/geoblacklight.json` or `*/fgdc.json`. This requires each layer to have its own folder.

@@ -9,7 +9,7 @@ hide:
 ---
 
 
-| Label 					                	| URL                    | Required | Recommended |
+| Label 					                	| Field Name             | Required | Recommended |
 |:----------------------------------|:-----------------------|:--------:|:-----------:|
 | [Identifier](#identifier)					| `dc_identifier_s`      | X        |             |
 | [Rights](#rights)					    		| `dc_rights_s`          | X        |             |
@@ -43,7 +43,7 @@ hide:
 
 | Label							    | Identifier|
 |:----------------------|:-----------|
-| uri					  	    	| `dc_identifier_s`|
+| Field Name					  	    	| `dc_identifier_s`|
 | Required				  		| yes|
 | Type							    | string|
 | Description					  | Unique identifier for layer as a URI. It should be globally unique across all institutions, assumed not to be end-user visible|
@@ -58,7 +58,7 @@ hide:
 
 | Label							| Rights|
 |:----------------------|:-----------|
-| uri							| `dc_rights_s`|
+| Field Name							| `dc_rights_s`|
 | Required						| yes|
 | Type							| string|
 | Description					| Signals access in the geoportal and is indicated by a padlock icon. Users need to sign in to download restricted items|
@@ -72,7 +72,7 @@ hide:
 
 | Label							| Title|
 |:----------------------|:-----------|
-| uri							| `dc_title_s`|
+| Field Name							| `dc_title_s`|
 | Required						| yes|
 | Type							| string|
 | Description					| The name of the resource|
@@ -86,7 +86,7 @@ hide:
 
 | Label							| Provenance|
 |:----------------------|:-----------|
-| uri							| `dct_provenance_s`|
+| Field Name							| `dct_provenance_s`|
 | Required						| yes|
 | Type							| string|
 | Description					| The name of the institution that holds the resource or acts as the custodian for the metadata record|
@@ -100,7 +100,7 @@ hide:
 
 | Label							| Schema Version|
 |:----------------------|:-----------|
-| uri							| `geoblacklight_version`	|
+| Field Name							| `geoblacklight_version`	|
 | Required						| yes|
 | Type							| string|
 | Description					| Indicates which version of the GeoBlacklight schema is in use|
@@ -114,7 +114,7 @@ hide:
 
 | Label							| Slug|
 |:----------------------|:-----------|
-| uri							| `layer_slug_s`|
+| Field Name							| `layer_slug_s`|
 | Required						| yes|
 | Type							| string|
 | Description					| This is a string appended to the base URL of a GeoBlacklight installation to create a unique landing page for each resource. It is visible to the user and serves the purpose of forming a persistent URL for each catalog item.|
@@ -128,7 +128,7 @@ hide:
 
 | Label 						| Bounding Box|
 |:----------------------|:-----------|
-| uri							| `solr_geom`|
+| Field Name							| `solr_geom`|
 | Required						| yes|
 | Type							| string|
 | Description					| The rectangular extents of the resource. Note that this field is indexed as a Solr spatial (RPT) field|
@@ -142,7 +142,7 @@ hide:
 
 | Label 						| Solr Year|
 |:----------------------|:-----------|
-| uri							| `solr_year_i`|
+| Field Name							| `solr_year_i`|
 | Required						| no|
 | Type							| integer|
 | Description					| A four digit integer representing a year of temporal coverage or date issued for the resource. This field is used to populate the Year facet and the optional [Blacklight Range Limit gem](https://github.com/projectblacklight/blacklight_range_limit)|
@@ -156,7 +156,7 @@ hide:
 
 | Label							| Creator|
 |:----------------------|:-----------|
-| uri 							| `dc_creator_sm`|
+| Field Name 							| `dc_creator_sm`|
 | Required						| no|
 | Type							| array|
 | Description					| The person(s) or organization that created the resource|
@@ -170,7 +170,7 @@ hide:
 
 | Label| Description|
 |:----------------------|:-----------|
-| uri							| `dc_description_s`|
+| Field Name							| `dc_description_s`|
 | Required						| no|
 | Type							| string|
 | Description					| At minimum, this is a reiteration of the title in sentence format. Other relevant information, such as data creation methods, data sources, and special licenses, may also be included.|
@@ -184,7 +184,7 @@ hide:
 
 | Label							| Format|
 |:----------------------|:-----------|
-| uri							| `dc_format_s`|
+| Field Name							| `dc_format_s`|
 | Required						| yes, if download link is included AND if download URL is configured as a single key:value pair|
 | Type							| string|
 | Description					| This indicates the file format of the data. If a download link is included, this value displays on the item page in the button under the download widget|
@@ -198,7 +198,7 @@ hide:
 
 | Label							| Language|
 |:----------------------|:-----------|
-| uri							| `dc_language_sm`|
+| Field Name							| `dc_language_sm`|
 | Required						| no|
 | Type							| array|
 | Description					| Indicates the language of the data or map|
@@ -212,7 +212,7 @@ hide:
 
 | Label							| Publisher|
 |:----------------------|:-----------|
-| uri							| `dc_publisher_s`|
+| Field Name							| `dc_publisher_s`|
 | Required						| no|
 | Type							| array|
 | Description					| The organization that made the original resource available|
@@ -226,7 +226,7 @@ hide:
 
 | Label							| Source|
 |:----------------------|:-----------|
-| uri							| `dc_source_sm`|
+| Field Name							| `dc_source_sm`|
 | Required						| no|
 | Type							| array|
 | Description					| This is used to indicate parent/child relationships between data layers and activates the Data Relations widget in GeoBlacklight|
@@ -240,7 +240,7 @@ hide:
 
 | Label							| Subject|
 |:----------------------|:-----------|
-| uri							| `dc_subject_sm`|
+| Field Name							| `dc_subject_sm`|
 | Required						| no|
 | Type							| array|
 | Description					| These are theme or topic keywords|
@@ -254,7 +254,7 @@ hide:
 
 | Label							| Type|
 |:----------------------|:-----------|
-| uri							| `dc_type_s`|
+| Field Name							| `dc_type_s`|
 | Required						| no|
 | Type							| string|
 | Description					| This is a general element to indicate the larger genre of the resource|
@@ -268,7 +268,7 @@ hide:
 
 | Label							| Is Part Of|
 |:----------------------|:-----------|
-| uri							| `dct_isPartOf_sm`|
+| Field Name							| `dct_isPartOf_sm`|
 | Required						| no|
 | Type							| array|
 | Description					| Holding entity for the layer, such as the title of a collection|
@@ -282,7 +282,7 @@ hide:
 
 | Label							| Date Issued|
 |:----------------------|:-----------|
-| uri							| `dct_issued_s`|
+| Field Name							| `dct_issued_s`|
 | Required						| no|
 | Type							| string|
 | Description					| This is the publication date for the resource|
@@ -296,7 +296,7 @@ hide:
 
 | Label							| References|
 |:----------------------|:-----------|
-| uri							| `dct_references_s`|
+| Field Name							| `dct_references_s`|
 | Required						| no|
 | Type							| string|
 | Description					| This element is a hash of key/value pairs for different types of external links. It integrates external services and references using the CatInterOp approach|
@@ -310,7 +310,7 @@ hide:
 
 | Label							| Spatial Coverage|
 |:----------------------|:-----------|
-| uri							| `dct_spatial_sm`|
+| Field Name							| `dct_spatial_sm`|
 | Required						| no|
 | Type							| array|
 | Description					| This field is for place name keywords|
@@ -324,7 +324,7 @@ hide:
 
 | Label							| Temporal Coverage|
 |:----------------------|:-----------|
-| uri							| `dct_temporal_sm`|
+| Field Name							| `dct_temporal_sm`|
 | Required						| no|
 | Type							| array|
 | Description					| This represents the "Ground Condition" of the resource, meaning the time period data was collected or is intended to represent. Displays on the item page in the Year value|
@@ -338,7 +338,7 @@ hide:
 
 | Label							| Geometry Type|
 |:----------------------|:-----------|
-| uri							| `layer_geom_type_s`|
+| Field Name							| `layer_geom_type_s`|
 | Required						| no|
 | Type							| string|
 | Description					| This element shows up as Data type in GeoBlacklight, and each value has an associated icon|
@@ -352,7 +352,7 @@ hide:
 
 | Label							| Layer ID|
 |:----------------------|:-----------|
-| uri							| `layer_id_s`|
+| Field Name							| `layer_id_s`|
 | Required						| no|
 | Type							| string|
 | Description					| Indicates the layer id for any WMS or WFS web services listed in the `dct_references_s` field|
@@ -366,7 +366,7 @@ hide:
 
 | Label							| Modified Date|
 |:----------------------|:-----------|
-| uri							| `layer_modified_dt`|
+| Field Name							| `layer_modified_dt`|
 | Required						| no|
 | Type							| date-time|
 | Description					| Last modification date for the metadata record|
@@ -380,7 +380,7 @@ hide:
 
 | Label							| Suppressed|
 |:----------------------|:-----------|
-| uri							| `suppressed_b`|
+| Field Name							| `suppressed_b`|
 | Required						| no|
 | Type							| boolean|
 | Description					| If set to True, the record will not appear in search results. If is still accessible from the Data Relations widget and via direct URL.|

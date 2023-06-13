@@ -15,9 +15,9 @@ Details about the OpenGeoMetadata metadata schema, OGM Aardvark
 *   **GBL 1.0**: The legacy metadata schema designed for GeoBlacklight versions 2.0-3.7. [The schema is documented on this Legacy page.](gbl-1.0.md)
 *   **OGM Aardvark**: The new metadata schema that is compatible with GeoBlacklight version 4.0.
 *   **GeoBlacklight**: When spelled out, GeoBlacklight refers to [the application itself](https://geoblacklight.org), not its namesake legacy metadata schema, GBL 1.0.
-*   **URI**: This is the name we give to the metadata element itself. For example, the URI for the Subject field is `dct_subject_sm`. 
-*   **Namespace**: This is how we signify which family of standards or schemas an element belongs to. For the GeoBlacklight schema, this takes the form of the URI’s prefix. For the URI `dct_subject_sm`,  `dct_` is the prefix and signifies that this element is from Dublin Core.
-*   **Solr field type**: This is the suffix appended to the URI and indicates what kind of Solr field should be indexed. For `dct_subject_sm`, the `_sm` stands for String Multiple. It indicates that the field type is a string and that it can have multiple values.
+*   **Field name**: This is the name we give to the metadata element itself. For example, the field name for the Subject field is `dct_subject_sm`.
+*   **Namespace**: This is how we signify which family of standards or schemas an element belongs to. For the GeoBlacklight schema, this takes the form of the field name's prefix. For `dct_subject_sm`,  `dct_` is the prefix and signifies that this element is from Dublin Core.
+*   **Solr field type**: This is the suffix appended to the field name and indicates what kind of Solr field should be indexed. For `dct_subject_sm`, the `_sm` stands for String Multiple. It indicates that the field type is a string and that it can have multiple values.
 *   **Value**: This is the information that is entered in a field. It may be free text (literal value) or a URI/code (nonliteral value).
 
 OGM Aardvark is a discovery metadata schema for geospatial resources. It was intentionally developed with cross-application in mind and can be used to describe geospatial assets of all kinds.
@@ -56,7 +56,7 @@ The minimal nature of the original GeoBlacklight schema combined with the growin
 
 The new set of rights elements are:
 
-| Label              | URI                     | Description and Entry Guidelines |
+| Label              | Field Name                     | Description and Entry Guidelines |
 |:-------------------|:------------------------|:---------------------------------|
 | Access Rights      | `dct_accessRights_s`    | One of two possible values, "Public" or "Restricted"; controls whether a user can preview or download an item. This element replaces `dc_rights_s`. |
 | Rights             | `dct_rights_sm`         | Free-text field for generic, catch-all access and usage rights. Can include clickable links. |
@@ -73,7 +73,7 @@ GeoBlacklight version 3.4 and earlier has an Item Relations widget that displays
 
 The new set of relationship elements are:
 
-| Label              | URI                     | Description and Entry Guidelines |
+| Label              | Field Name                     | Description and Entry Guidelines |
 |:-------------------|:------------------------|:---------------------------------|
 | Source             | `dct_source_sm`         | For items that have been derived from another item (e.g. a digitized shapefile from a historical map). |
 | Is Part Of         | `dct_isPartOf_sm`       | For items that are a subset of another item (e.g. a page in a book). This value type is changing from free-text in Version 1.0 to an ID (slug) in the new schema. |
@@ -84,7 +84,7 @@ The new set of relationship elements are:
 | Relation            | `dct_relation_sm`      | For a general purpose relation.  |
 
 
-#### Consistent namespaces for all metadata element URIs
+#### Consistent namespaces for all metadata element field names
 
 OGM Aardvark gives preference to elements found in established schemas over custom fields.
 
@@ -96,7 +96,7 @@ OGM Aardvark gives preference to elements found in established schemas over cust
 
 #### Multivalued elements whenever possible
 
-The original schema features several descriptive metadata fields that only accept one value. The new schema expands many of these to multiple. This changes the URI suffix from `_s` to` _sm`. Although it will not affect the GeoBlacklight functionality, this practice may conflict with indexing, as Solr will treat `dct_publisher_s` as a different field than `dct_publisher_sm`.
+The original schema features several descriptive metadata fields that only accept one value. The new schema expands many of these to multiple. This changes the field name suffix from `_s` to` _sm`. Although it will not affect the GeoBlacklight functionality, this practice may conflict with indexing, as Solr will treat `dct_publisher_s` as a different field than `dct_publisher_sm`.
 
 #### More intuitive name for unique key
 
@@ -158,6 +158,3 @@ Refinements to OpenGeoMetadata have continued through the work of the ongoing Me
 * Lena Denis (Johns Hopkins University)
 * Marc McGee (Harvard University)
 * Rebecca Seifried (UMass Amherst)
-
-
-
