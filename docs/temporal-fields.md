@@ -2,12 +2,12 @@
 
 Aardvark has four fields in the "temporal" group. Having multiple temporal fields allows for flexibility in describing the date of a resource, allowing users to easily find records by way of text search, facet filtering, and time slider widgets (an optional customization in the GeoBlacklight software). In some cases, the same value might be used for more than one field.
 
-| Field                 | Obligation |
-|:----------------------|:---------|
-| [Temporal Coverage](../ogm-aardvark/#temporal-coverage) | Suggested |
-| [Date Issued](../ogm-aardvark/#date-issued)             |           |
-| [Index Year](../ogm-aardvark/#index-year)               | Suggested |
-| [Date Range](../ogm-aardvark/#date-range)               |           |
+| Field | Field Name | Obligation |
+|:------|:-----------|:-----------|
+| [Temporal Coverage](../ogm-aardvark/#temporal-coverage) | `dct_temporal_sm` | Suggested |
+| [Date Issued](../ogm-aardvark/#date-issued)             | `dct_issued_s` ||
+| [Index Year](../ogm-aardvark/#index-year)               | `gbl_indexYear_im` | Suggested |
+| [Date Range](../ogm-aardvark/#date-range)               | `gbl_dateRange_drsim` ||
 
 
 ## Temporal Coverage
@@ -21,7 +21,7 @@ This is a descriptive, free-text field that is intended to describe the time per
 ```
 
 ## Date Issued
-This is an optional field for describing the date of an item's publication. Although optional, this field is often useful when a clear `Temporal Coverage` value is not present. For example, a dataset with uncertain lineage may at least have a date of last update. Generally it should be structured as a single year: `YYYY`, but more precise dates can take the ISO format withtout the time value: `YYYY-MM-DD` or `YYYY-MM`.
+his is an optional field for describing the date of an item's publication. Although optional, this field is often useful when a clear temporal coverage value is not present. For example, a dataset with uncertain lineage may at least have a date of last update. Generally it should be structured as a single year: `YYYY`, but more precise dates can take the ISO format withtout the time value: `YYYY-MM-DD` or `YYYY-MM`.
 
 ```
 "1999"
@@ -31,7 +31,7 @@ This is an optional field for describing the date of an item's publication. Alth
 ```
 
 ## Index Year
-This is a suggested field for describing the date depicted in a resource. It is the only integer field in the "temporal" group and is formatted as an array of multiple values. The default GeoBlacklight application uses this field in the "Year" facet, allowing users to filter search results by year. It is also used to power customizable time-slider widgets that rely on integers for dates.
+This is a suggested field for describing the date depicted in a resource. It is the only integer field in the temporal group and is formatted as an array of multiple values. The default GeoBlacklight application uses this field in the "Year" facet, allowing users to filter search results by year. It is also used to power customizable time-slider widgets that rely on integers for dates.
 
 ```
 [1985]
@@ -41,7 +41,6 @@ This is a suggested field for describing the date depicted in a resource. It is 
 ```
 
 ## Date Range
-
 This optional field is not yet supported by GeoBlacklight software, but its intent is to power time widgets that use a date range (an optional customization to the software). The field is formatted as a start date and end date in the Solr date range field convention.
 
 ```
