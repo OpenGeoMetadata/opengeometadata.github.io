@@ -5,9 +5,9 @@ Aardvark has four fields in the "temporal" group. Having multiple temporal field
 | Field | Field Name | Obligation |
 |:------|:-----------|:-----------|
 | [Temporal Coverage](../ogm-aardvark/#temporal-coverage) | `dct_temporal_sm` | Suggested |
-| [Date Issued](../ogm-aardvark/#date-issued)             | `dct_issued_s` ||
+| [Date Issued](../ogm-aardvark/#date-issued)             | `dct_issued_s` | Optional |
 | [Index Year](../ogm-aardvark/#index-year)               | `gbl_indexYear_im` | Suggested |
-| [Date Range](../ogm-aardvark/#date-range)               | `gbl_dateRange_drsim` ||
+| [Date Range](../ogm-aardvark/#date-range)               | `gbl_dateRange_drsim` | Optional |
 
 
 ## Temporal Coverage
