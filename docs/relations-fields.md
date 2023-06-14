@@ -16,6 +16,11 @@ Starting in GeoBlacklight version 4.0, these fields are used to populate relatio
 | [Is Replaced By](../ogm-aardvark/#is-replaced-by) | `dct_isReplacedBy_sm` | Optional |
 
 ## Relation
+
+!!! warn
+
+	This field should only be used for *one* of a pair of related records. If both records use this field, it will duplicate the "Related records..." widget. To disable this behavior, you can customize the `geoblacklight.en.yml` and `settings.yml` files in your local application.
+
 Use this field to link to records that are related in a general or non-specific way. IDs entered in this field will populate a "Related records..." widget on the item's show page, as well as on the related item's show page. Nothing needs to be entered in the related item's metadata.
 
 ```
