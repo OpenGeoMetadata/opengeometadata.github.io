@@ -16,7 +16,7 @@ Starting in GeoBlacklight version 4.0, these fields are used to populate relatio
 | [Is Replaced By](../ogm-aardvark/#is-replaced-by) | `dct_isReplacedBy_sm` | Optional |
 
 ## Relation
-Use this field to link to records that are related in a general or non-specific way. IDs entered in this field will populate a "Related Records" widget on the item's show page, as well as on the related record's show page. Nothing needs to be entered in the related record's metadata.
+Use this field to link to records that are related in a general or non-specific way. IDs entered in this field will populate a "Related records..." widget on the item's show page, as well as on the related item's show page. Nothing needs to be entered in the related item's metadata.
 
 ```
 "dct_relation_sm": ["nyu_2451_34636"]
@@ -26,7 +26,7 @@ Use this field to link to records that are related in a general or non-specific 
 
 ![related records widget - source](images/rel-related-record-source.png)
 
-**Related record's show page**
+**Related item's show page**
 
 ![related records widget - link](images/rel-related-record-link.png)
 
@@ -36,9 +36,9 @@ Use this field to link to records that are related in a general or non-specific 
 
 	To link items in a book or atlas, use "Is Part Of" instead.
 
-This field links an item to its collection(s). The first step is to create a separate collection record and assign it a unique ID. Then, enter the collection record's ID in the *member item's* metadata.
+This field links an item to its collection(s). The first step is to create a separate collection record and assign it a unique ID. Then, enter the collection item's ID in the *member item's* metadata.
 
-IDs entered in this field in the *member item's* metadata will populate a "Belongs to collection..." widget on the member item's show page and a "Collection records..." widget on the collection's show page. Nothing needs to be entered in the collection record's metadata.
+IDs entered in this field in the *member item's* metadata will populate a "Belongs to collection..." widget on the member item's show page and a "Collection records..." widget on the collection item's show page. Nothing needs to be entered in the collection item's metadata.
 
 ```
 "pcdm_memberOf_sm": ["umass-macconnell-1951"]
@@ -48,7 +48,7 @@ IDs entered in this field in the *member item's* metadata will populate a "Belon
 
 ![belongs to collection widget](images/rel-belongs-collection.png)
 
-**Collection's show page**
+**Collection item's show page**
 
 ![collection records widget](images/rel-collection-records.png)
 
@@ -58,9 +58,9 @@ IDs entered in this field in the *member item's* metadata will populate a "Belon
 
 	To link items in a collection, use "Member Of" instead.
 
-This field is similar to "Member Of" but is intended to link to items that are a subset of another item, like a book or atlas. The first step is to create a separate parent record and assign it a unique ID. Then, enter the parent record's ID in the *member item's* metadata.
+This field is similar to "Member Of" but is intended to link to items that are a subset of another item, like a book or atlas. The first step is to create a separate parent record and assign it a unique ID. Then, enter the parent item's ID in the *member item's* metadata.
 
-IDs entered in this field in the *member item's* metadata will populate a "Is part of..." widget on the member item's show page and a "Has part..." widget on the parent's show page. Nothing needs to be entered in the parent record's metadata.
+IDs entered in this field in the *member item's* metadata will populate an "Is part of..." widget on the member item's show page and a "Has part..." widget on the parent item's show page. Nothing needs to be entered in the parent item's metadata.
 
 ```
 "dct_isPartOf_sm": ["88cc9b19-3294-4da9-9edd-775c81fb1c59"]
@@ -70,6 +70,45 @@ IDs entered in this field in the *member item's* metadata will populate a "Is pa
 
 ![is part of widget](images/rel-is-part-of.png)
 
-**Parent's show page**
+**Parent item's show page**
 
 ![has part widget](images/rel-has-part.png)
+
+## Source
+
+This field links an item to the dataset from which it was derived. For example, if a point shapefile is created to digitize the toponyms on a historical map, the historical map's ID would be entered in this field.
+
+IDs entered in this field will populate a "Source records..." widget on the derived item's show page and a "Derived records..." widget on the source item's show page. Nothing needs to be entered in the source item's metadata.
+
+```
+"dct_source_sm": ["princeton-1r66j405w"]
+```
+
+**Derived item's show page**
+
+![source record widget](images/rel-source-records.png)
+
+**Source item's show page**
+
+![dervied records widget](images/rel-derived-records.png)
+
+## Is Version Of
+
+Use this field to link an item that is a version, variation, or adaptation to its source dataset. The field can contain:
+
+* The ID of the most recent related record(s), or
+* The ID of a parent record (see "Member Of" and "Is Part Of" for similar examples)
+
+IDs entered in this field will populate an "Is version of..." widget on the item's show page and a "Has version..." widget on the linked item's show page. Nothing needs to be entered in the linked item's metadata.
+
+```
+"dct_isVersionOf_sm": ["nyu_2451_34636"]
+```
+
+**Item's show page**
+
+![related records widget - source](images/rel-is-version-of.png)
+
+**Linked item's show page**
+
+![related records widget - link](images/rel-has-version.png)
