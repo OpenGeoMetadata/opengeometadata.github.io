@@ -1,6 +1,6 @@
 # Relations Fields
 
-Fields in the "relations" group are used to describe how records relate to each other. All these fields are designed to store the [ID(s)](https://opengeometadata.org/ogm-aardvark/#id) of related records. More than one record can be listed within each relationship type.
+Fields in the "relations" group are used to describe how records relate to each other. All of them are designed to store the [ID(s)](https://opengeometadata.org/ogm-aardvark/#id) of related records. More than one record can be listed within each relationship field.
 
 Starting in GeoBlacklight version 4.0, these fields are used to populate relationship widgets in the application sidebar, allowing users to easily explore related records and understand how they are connected. The relationship widgets are customizable in the `geoblacklight.en.yml` and `settings.yml` files.
 
@@ -19,7 +19,7 @@ Starting in GeoBlacklight version 4.0, these fields are used to populate relatio
 
 !!! warn
 
-	This field should only be used for *one* of a pair of related records. If both records use this field, it will duplicate the "Related records..." widget. To disable this behavior, you can customize the `geoblacklight.en.yml` and `settings.yml` files in your local application.
+	This field should only be used for *one* of a pair of related records. If both records use this field, it will duplicate the "Related records..." widget on each item's show page. To disable this behavior, you can customize the `geoblacklight.en.yml` and `settings.yml` files in your local application.
 
 Use this field to link to records that are related in a general or non-specific way. IDs entered in this field will populate a "Related records..." widget on the item's show page, as well as on the related item's show page. Nothing needs to be entered in the related item's metadata.
 
@@ -99,10 +99,10 @@ IDs entered in this field will populate a "Source records..." widget on the deri
 
 ## Is Version Of
 
-Use this field to link an item that is a version, variation, or adaptation to its source dataset. The field can contain:
+Use this field to link an item that is a version, variation, or adaptation of a pre-existing dataset. The field can contain:
 
 * The ID of the most recent related record(s), or
-* The ID of a parent record (see "Member Of" and "Is Part Of" for similar examples)
+* The ID of a parent record (see "Member Of" and "Is Part Of" for similar examples).
 
 IDs entered in this field will populate an "Is version of..." widget on the item's show page and a "Has version..." widget on the linked item's show page. Nothing needs to be entered in the linked item's metadata.
 
@@ -112,8 +112,34 @@ IDs entered in this field will populate an "Is version of..." widget on the item
 
 **Item's show page**
 
-![related records widget - source](images/rel-is-version-of.png)
+![is version of widget](images/rel-is-version-of.png)
 
 **Linked item's show page**
 
-![related records widget - link](images/rel-has-version.png)
+![has version widget](images/rel-has-version.png)
+
+## Replaces
+
+This field links to a deprecated version of the dataset. It is especially useful when the deprecated version is needed for reference, such as when it has been cited in a publication and must be retained in a repository.
+
+IDs entered in this field will populate a "Replaces..." widget on the newer item's show page and an "Is replaced by..." widget on the deprecated item's show page. Nothing needs to be entered in the deprecated item's metadata.
+
+```
+"dct_replaces_sm": ["harvard-g7064-s2-1834-k3"]
+```
+
+**Newer item's show page**
+
+![replaces widget](images/rel-replaces.png)
+
+**Deprecated item's show page**
+
+![is replaced by widget](images/rel-is-replaced-by.png)
+
+## Is Replaced By
+
+!!! note
+
+	This field does not trigger a relationship widget. To do so, use the "Replaces" field in the newer item's metadata record.
+
+This field links to a newer version of the dataset. It is used for documentation purposes only, such as in the event that a deprecated record is shared with another institution. In practice, however, it may be cumbersome to update deprecated metadata records whenever a new version is created.
