@@ -4,10 +4,10 @@ Field Name,dct_source_sm
 Field Type,Array of strings
 Obligation,Optional
 Multivalued,True
-Purpose,To link items that have been derived from another item (e.g. a digitized shapefile from a historical map)
+Purpose,To link items that have been derived from another item (e.g. a digitized shapefile from a historical map).
 Entry Guidelines,Enter the ID of the item(s) from which the resource was derived.
-Commentary,This is one of several fields that describe how records relate to each other. 
+Commentary,"This is one of several fields that describe how records relate to each other. This field is intended to describe a derivate relationship where the resource is based wholly on another, rather than being a version of it (see [Is Version Of](../ogm-aardvark/#is-version-of))." 
 Controlled Vocabulary,No
 Example Value,"[""abcd-988763""]"
 Element Set,DCMI
-Group,Relations
+Group,"[Relations](../ogm-aardvark/#relations)"

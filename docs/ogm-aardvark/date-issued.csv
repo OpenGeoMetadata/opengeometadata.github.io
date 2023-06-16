@@ -10,4 +10,4 @@ Commentary,"Although the field is optional, it is often useful when a clear [Tem
 Controlled Vocabulary,No
 Example Value,"""1999"""
 Element Set,DCMI
-Group,Temporal
+Group,"[Temporal](../ogm-aardvark/#temporal)"

@@ -10,4 +10,4 @@ Commentary,"The distinction between Publisher and [Creator](../ogm-aardvark/#cre
 Controlled Vocabulary,No
 Example Value,"[""ML InfoMap (Firm)""]"
 Element Set,DCMI
-Group,Credits
+Group,"[Credits](../ogm-aardvark/#credits)"

@@ -61,7 +61,7 @@
 
 #### Links
 - [References](#references) (S)
-- [WxS Identifier](#wxs-identifier)
+- [WxS Identifier](#wxs-identifier) (C)
 
 #### Identifiers
 - ==[ID](#id) (R)==
@@ -256,7 +256,7 @@ The following table lists terms from the OpenGeoMetadata community. They are mos
 ## Source
 {{ read_csv('ogm-aardvark/source.csv') }}
 
-## Spatial coverage
+## Spatial Coverage
 {{ read_csv('ogm-aardvark/spatial-coverage.csv') }}
 
 ## Subject

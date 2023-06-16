@@ -5,9 +5,9 @@ Field Type,String
 Obligation,Required
 Multivalued,False
 Purpose,To inform administrators of when the metadata was last touched.
-Entry Guidelines,"Use the ""W3C Date and Time Format"" (YYYY-MM-DDThh:mm:ssZ)"
+Entry Guidelines,"Use the ""W3C Date and Time Format"" (YYYY-MM-DDThh:<zero-width space>mm:ssZ)"
 Commentary,This value should indicate when the metadata (not the resource itself) was last modified.
 Controlled Vocabulary,No
 Example Value,"""2015-01-01T12:00:00Z"""
 Element Set,GBL
-Group,Administrative
+Group,"[Admin](../ogm-aardvark/#admin)"

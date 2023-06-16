@@ -10,4 +10,4 @@ Commentary,"This field can be used on its own to point to an older deprecated da
 Controlled Vocabulary,No
 Example Value,"[""qrst-71717""]"
 Element Set,DCMI
-Group,Relations
+Group,"[Relations](../ogm-aardvark/#relations)"

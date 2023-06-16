@@ -10,4 +10,4 @@ Commentary,"For discoverability, improving titles for data is encouraged. This f
 Controlled Vocabulary,No
 Example Value,"[""NEZ H Districts""]"
 Element Set,DCMI
-Group,Descriptive
+Group,"[Descriptive](../ogm-aardvark/#descriptive)"

@@ -5,9 +5,9 @@ Field Type,Array of strings
 Obligation,Optional
 Multivalued,True
 Purpose,"To provide URI links to specific, known licenses."
-Entry Guidelines,Enter a license URI. Recommended sources are Creative Commons or Open Data Commons.
+Entry Guidelines,"Enter a license URI. Recommended sources are [Creative Commons](https://creativecommons.org/) or [Open Data Commons](https://opendatacommons.org/)."
 Commentary,"This field is only for URIs of known licenses. Do not enter a rightsstatement.org statement here, because those belong in the [Rights](../ogm-aardvark/#rights_1) field."
 Controlled Vocabulary,No
 Example Value,"[""https://creativecommons.org/licenses/by/4.0/""]"
 Element Set,DCMI
-Group,Rights
+Group,"[Rights](../ogm-aardvark/#rights)"

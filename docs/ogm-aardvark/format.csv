@@ -10,4 +10,4 @@ Commentary,"This field is required if the download URL (`http://schema.org/downl
 Controlled Vocabulary,Yes - not strict
 Example Value,"""Shapefile"""
 Element Set,DCMI
-Group,Object
+Group,"[Object](../ogm-aardvark/#object)"

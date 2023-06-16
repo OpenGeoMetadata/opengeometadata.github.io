@@ -10,4 +10,4 @@ Commentary,"This field can be set to ""Public"", which allows users to view and 
 Controlled Vocabulary,Yes - strict
 Example Value,"""Public"""
 Element Set,DCMI
-Group,Rights
+Group,"[Rights](../ogm-aardvark/#rights)"

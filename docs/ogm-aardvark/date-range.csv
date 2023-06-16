@@ -10,4 +10,4 @@ Commentary,"This field is not yet supported by GeoBlacklight, but the applicatio
 Controlled Vocabulary,No
 Example Value,"""[1980 TO 1995]"""
 Element Set,GBL
-Group,Temporal
+Group,"[Temporal](../ogm-aardvark/#temporal)"

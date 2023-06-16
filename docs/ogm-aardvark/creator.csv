@@ -10,4 +10,4 @@ Commentary,"The distinction between Creator and [Publisher](../ogm-aardvark/#pub
 Controlled Vocabulary,No
 Example Value,"[""Geological Survey (U.S.)""]"
 Element Set,DCMI
-Group,Credits
+Group,"[Credits](../ogm-aardvark/#credits)"

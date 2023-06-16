@@ -10,4 +10,4 @@ Commentary,"This field can be used with [Replaces](../ogm-aardvark/#replaces) to
 Controlled Vocabulary,No
 Example Value,"[""cugir-007933""]"
 Element Set,DCMI
-Group,Relations
+Group,"[Relations](../ogm-aardvark/#relations)"

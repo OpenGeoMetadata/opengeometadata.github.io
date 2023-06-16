@@ -10,4 +10,4 @@ Commentary,"This field makes up the URL for the resource in GeoBlacklight. It is
 Controlled Vocabulary,No
 Example Value,"""princeton-rv042w38t"""
 Element Set,GBL
-Group,Identifiers
+Group,"[Identifiers](../ogm-aardvark/#identifiers)"

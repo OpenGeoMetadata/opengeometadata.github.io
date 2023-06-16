@@ -10,4 +10,4 @@ Commentary,"If entering the ID of a parent record, see [Member Of](../ogm-aardva
 Controlled Vocabulary,No
 Example Value,"[""xyz-1234""]"
 Element Set,DCMI
-Group,Relations
+Group,"[Relations](../ogm-aardvark/#relations)"

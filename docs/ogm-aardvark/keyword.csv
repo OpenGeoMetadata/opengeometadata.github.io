@@ -10,4 +10,4 @@ Commentary,This field may be used for administrative purposes or to facilitate t
 Controlled Vocabulary,No
 Example Value,"[""covid19"", ""vaccination rate""]"
 Element Set,DCAT
-Group,Categories
+Group,"[Categories](../ogm-aardvark/#categories)"

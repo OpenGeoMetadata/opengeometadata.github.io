@@ -10,4 +10,4 @@ Commentary,This field was named **Provenance** in the GBL 1.0 metadata schema.
 Controlled Vocabulary,Yes - not strict
 Example Value,"""University of Minnesota"""
 Element Set,schema.org
-Group,Credits
+Group,"[Credits](../ogm-aardvark/#credits)"

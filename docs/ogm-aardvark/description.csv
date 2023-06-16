@@ -10,4 +10,4 @@ Commentary,"This field is the second-most prominent value (after [Title](../ogm-
 Controlled Vocabulary,No
 Example Value,"""This polygon shapefile represents boundaries of election districts in New York City. It was harvested from the NYC Open Data Portal."""
 Element Set,DCMI
-Group,Descriptive
+Group,"[Descriptive](../ogm-aardvark/#descriptive)"

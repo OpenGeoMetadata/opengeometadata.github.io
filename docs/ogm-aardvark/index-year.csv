@@ -10,4 +10,4 @@ Commentary,"Ideally this field should describe the date(s) depicted in a resourc
 Controlled Vocabulary,No
 Example Value,"[1980,1981,1982]"
 Element Set,GBL
-Group,Temporal
+Group,"[Temporal](../ogm-aardvark/#temporal)"

@@ -10,4 +10,4 @@ Commentary,"This field is intended to give users a sense of how large the data o
 Controlled Vocabulary,No
 Example Value,"""25.96 MB"""
 Element Set,GBL
-Group,Object
+Group,"[Object](../ogm-aardvark/#object)"

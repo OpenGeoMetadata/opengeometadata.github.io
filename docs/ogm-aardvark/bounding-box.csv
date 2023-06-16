@@ -10,4 +10,4 @@ Commentary,"If the [Geometry](../ogm-aardvark/#geometry) field uses the ENVELOPE
 Controlled Vocabulary,No
 Example Value,"""ENVELOPE(-111.1, -104.0, 45.0, 40.9)"""
 Element Set,DCAT
-Group,Spatial
+Group,"[Spatial](../ogm-aardvark/#spatial)"

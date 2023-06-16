@@ -10,4 +10,4 @@ Commentary,"This is one of several fields that describe how records relate to ea
 Controlled Vocabulary,No
 Example Value,"[""aoeu-987643""]"
 Element Set,DCMI
-Group,Relations
+Group,"[Relations](../ogm-aardvark/#relations)"

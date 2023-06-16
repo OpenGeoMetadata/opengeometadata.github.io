@@ -10,4 +10,4 @@ Commentary,"All of the external links for the resource are listed as a serialize
 Controlled Vocabulary,"The ""key"" part of the key/value pairs are predefined in [Reference URIs](../reference-uris/)."
 Example Value,"""{\""http://schema.org/url\"":\""http://purl.stanford.edu/bm662dm5913\""}"""
 Element Set,DCMI
-Group,Links
+Group,"[Links](../ogm-aardvark/#links)"

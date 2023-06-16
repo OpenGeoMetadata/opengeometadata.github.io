@@ -10,4 +10,4 @@ Commentary,"There have been two metadata schema versions for GeoBlacklight appli
 Controlled Vocabulary,Yes - strict
 Example Value,"""Aardvark"""
 Element Set,GBL
-Group,Administrative
+Group,"[Admin](../ogm-aardvark/#admin)"
