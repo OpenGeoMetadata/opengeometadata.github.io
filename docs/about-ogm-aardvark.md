@@ -4,11 +4,11 @@ Details about the OpenGeoMetadata metadata schema, OGM Aardvark
 
 !!! abstract "Summary"
 
-	* based on [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/), with custom elements added for spatial values
-	* designed for discovery - to help users _find_ items
-	* not designed for complete technical documentation, such as a GIS dataset's processing history
-	* includes elements for external links, such as downloads, web services, or supplemental metadata
-	* requires records to be formatted as JSON files
+	* Based on [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/), with custom elements added for spatial values.
+	* Designed for discovery - to help users _find_ items.
+	* Not designed for complete technical documentation, such as a GIS dataset's processing history.
+	* Includes elements for external links, such as downloads, web services, or supplemental metadata.
+	* Requires records to be formatted as JSON files ([learn more here](../JSON-format)).
 
 ## Terminology
 

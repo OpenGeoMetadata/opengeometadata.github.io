@@ -123,7 +123,8 @@ nav:
                   - 'About OGM Repositories': 'about-ogm-repositories.md'
             - Metadata:
                   - 'About OGM Aardvark': 'about-ogm-aardvark.md'
-                  - 'Spatial Fields': 'spatial-fields.md'
-                  - 'Temporal Fields': 'temporal-fields.md'
                   - 'JSON Format': 'JSON-format.md'
+                  - 'Temporal Fields': 'temporal-fields.md'
+                  - 'Spatial Fields': 'spatial-fields.md'
+                  - 'Relations Fields': 'relations-fields.md'
             - 'Further Reading': 'further-reading.md'
