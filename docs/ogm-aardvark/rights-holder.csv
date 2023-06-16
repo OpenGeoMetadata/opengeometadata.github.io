@@ -1,13 +1,13 @@
 Label,Rights Holder
 URI,https://opengeometadata.org/ogm-aardvark/#rights-holder
-Field name,dct_rightsHolder_sm
-Field type,array of strings
+Field Name,dct_rightsHolder_sm
+Field Type,Array of strings
 Obligation,Optional
-Multivalued,true
-Purpose,To clarify which person or organization owns or controls the rights for this version of the item
-Entry Guidelines,"Enter the name of the person or organization. If applicable, the suggested controlled vocabulary is the Library of Congress Name Authority File."
-Commentary,"This field can be used for instances in which an an organization owns a digital copy of an analog resource or otherwise controls access. This is different from Provider, which refers more to the resource or metadata steward."
-Controlled Vocabulary,no
-Example value,"""Johns Hopkins University Libraries"""
+Multivalued,True
+Purpose,To clarify which person or organization owns or controls the rights for this version of the item.
+Entry Guidelines,"Enter the name of the person or organization. If applicable, the suggested controlled vocabulary is the [Library of Congress Name Authority File](https://id.loc.gov/authorities/names.html)."
+Commentary,"This field can be used for instances in which an an organization owns or otherwise controls access of a digital copy of an analog resource. This is different from [Provider](../ogm-aardvark/#provider), which refers more to the resource or metadata steward."
+Controlled Vocabulary,No
+Example Value,"""Johns Hopkins University Libraries"""
 Element Set,DCMI
-Group,Rights
+Group,"[Rights](../ogm-aardvark/#rights)"

@@ -1,13 +1,13 @@
 Label,Rights
-URI,https://opengeometadata.org/ogm-aardvark/#rights
-Field name,dct_rights_sm
-Field type,array of strings
+URI,https://opengeometadata.org/ogm-aardvark/#rights_1
+Field Name,dct_rights_sm
+Field Type,Array of strings
 Obligation,Suggested
-Multivalued,true
-Purpose,"To provide a free text field for rights information, such as usage, access, or copyright"
-Entry Guidelines,"Enter free text of generic, catch-all access and usage rights. It can include clickable links if the GeoBlacklight software is customized; see the [documentation](https://geoblacklight.org/docs/customization/rendering_html_from_description/) on how to render HTML from a text field."
-Commentary,This field is intended to be flexible to accommodate different types of rights and disclaimers. Users are encouraged to adopt one of the rightsstatements.org statements.
-Controlled Vocabulary,no
-Example value,"""All data is copyrighted by China Data Center and/or its suppliers. Derived works that include the source data must be merged with other value-added data in such a way that the derived work cannot be converted back to the original source data format. This data is licensed by UC Berkeley for research, educational, and other non-commercial use by authorized users, which include persons affiliated with UC Berkeley and walk-in users who must access the data in person at the library. [https://rightsstatements.org/page/InC/1.0/?language=en](https://rightsstatements.org/page/InC/1.0/?language=en)"""
+Multivalued,True
+Purpose,"To provide a free text field for rights information, such as usage, access, or copyright."
+Entry Guidelines,"Enter free text of generic, catch-all access and usage rights."
+Commentary,"This field is intended to be flexible to accommodate different types of rights and disclaimers. Users are encouraged to adopt one of the rightsstatements.org statements. This is a plain text field by default, but it can include clickable links if the GeoBlacklight software is customized; see the [GeoBlacklight documentation](https://geoblacklight.org/docs/customization/rendering_html_from_description/) on how to render HTML from a text field."
+Controlled Vocabulary,No
+Example Value,"""All data is copyrighted by China Data Center and/or its suppliers. Derived works that include the source data must be merged with other value-added data in such a way that the derived work cannot be converted back to the original source data format. This data is licensed by UC Berkeley for research, educational, and other non-commercial use by authorized users, which include persons affiliated with UC Berkeley and walk-in users who must access the data in person at the library. [https://rightsstatements.org/page/InC/1.0/?language=en](https://rightsstatements.org/page/InC/1.0/?language=en)."""
 Element Set,DCMI
-Group,Bibliographic - general
+Group,"[Rights](../ogm-aardvark/#rights)"

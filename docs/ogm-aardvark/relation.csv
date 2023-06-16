@@ -1,13 +1,13 @@
 Label,Relation
 URI,https://opengeometadata.org/ogm-aardvark/#relation
-Field name,dct_relation_sm
-Field type,array of strings
+Field Name,dct_relation_sm
+Field Type,Array of strings
 Obligation,Optional
-Multivalued,true
-Purpose,"To link items with a general, unspecified relationship to each other"
+Multivalued,True
+Purpose,"To link items with a general, unspecified relationship to each other."
 Entry Guidelines,Enter only the ID of the related item(s).
-Commentary,
-Controlled Vocabulary,no
-Example value,"[""aoeu-987643""]"
+Commentary,"This is one of several fields that describe how records relate to each other. This field is the most general and should be used when a more specific hierarchical (parent-child) or temporal (version, replaces) relationship cannot be defined."
+Controlled Vocabulary,No
+Example Value,"[""aoeu-987643""]"
 Element Set,DCMI
-Group,Relations
+Group,"[Relations](../ogm-aardvark/#relations)"

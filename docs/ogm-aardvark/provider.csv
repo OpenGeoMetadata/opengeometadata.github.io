@@ -1,13 +1,13 @@
 Label,Provider
 URI,https://opengeometadata.org/ogm-aardvark/#provider
-Field name,schema_provider_s
-Field type,string
+Field Name,schema_provider_s
+Field Type,String
 Obligation,Suggested
-Multivalued,false
-Purpose,To clarify which organization is holds the resource or acts as the custodian for the metadata record and to help users understand which resources they can access
-Entry Guidelines,"This field can be any string value. However, if the value corresponds to the name of an SVG icon in GeoBlacklight, the icon will display next to the title. [See the GeoBlacklight documentation for more details.](https://geoblacklight.org/docs/customization/adding_svg_icons/)"
-Commentary,This field was named **Provenance** in the GBL 1.0 Metadata schema.
-Controlled Vocabulary,yes - not strict
-Example value,"""University of Minnesota"""
+Multivalued,False
+Purpose,To clarify which organization holds the resource or acts as the custodian for the metadata record and to help users understand which resources they can access.
+Entry Guidelines,"This field can be any string value. However, if the value corresponds to the name of an SVG icon in GeoBlacklight, the icon will display next to the title. See the [GeoBlacklight documentation](https://geoblacklight.org/docs/customization/adding_svg_icons/) on adding SVG icons for more details."
+Commentary,This field was named **Provenance** in the GBL 1.0 metadata schema.
+Controlled Vocabulary,Yes - not strict
+Example Value,"""University of Minnesota"""
 Element Set,schema.org
-Group,Administrative - entity
+Group,"[Credits](../ogm-aardvark/#credits)"

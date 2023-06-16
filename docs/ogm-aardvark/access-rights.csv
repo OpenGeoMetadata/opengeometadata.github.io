@@ -1,13 +1,13 @@
 Label,Access Rights
 URI,https://opengeometadata.org/ogm-aardvark/#access-rights
-Field name,dct_accessRights_s
-Field type,string
+Field Name,dct_accessRights_s
+Field Type,String
 Obligation,Required
-Multivalued,false
-Purpose,To clarify to the user if the resource is public (any user can access) or restricted (a user will need to log in to some kind of authentication protocol) and if the application should provide a web service preview and/or a download function
+Multivalued,False
+Purpose,To clarify to the user if the resource is public (any user can access) or restricted (a user will need to log in to some kind of authentication protocol) and if the application should provide a web service preview and/or a download function.
 Entry Guidelines,Only one of two values are allowed: Public or Restricted.
 Commentary,"This field can be set to ""Public"", which allows users to view and download an item, or ""Restricted"", which requires a user to log in to an authentication service."
-Controlled Vocabulary,yes - strict
-Example value,"""Public"""
+Controlled Vocabulary,Yes - strict
+Example Value,"""Public"""
 Element Set,DCMI
-Group,Rights
+Group,"[Rights](../ogm-aardvark/#rights)"

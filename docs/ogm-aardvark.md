@@ -1,5 +1,8 @@
 # OpenGeoMetadata (OGM) Aardvark Schema
 
+!!! tip
+	To read more about certain metadata categories (like "Spatial"), click the hyperlinked headings in the table below. 
+
 <div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
 
 #### Descriptive
@@ -61,7 +64,7 @@
 
 #### Links
 - [References](#references) (S)
-- [WxS Identifier](#wxs-identifier)
+- [WxS Identifier](#wxs-identifier) (C)
 
 #### Identifiers
 - ==[ID](#id) (R)==
@@ -141,7 +144,6 @@
 * KMZ
 * LAS
 * LAZ
-* Mixed
 * Mixed
 * MrSID
 * PDF
@@ -257,7 +259,7 @@ The following table lists terms from the OpenGeoMetadata community. They are mos
 ## Source
 {{ read_csv('ogm-aardvark/source.csv') }}
 
-## Spatial coverage
+## Spatial Coverage
 {{ read_csv('ogm-aardvark/spatial-coverage.csv') }}
 
 ## Subject

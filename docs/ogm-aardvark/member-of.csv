@@ -1,13 +1,13 @@
 Label,Member Of
 URI,https://opengeometadata.org/ogm-aardvark/#member-of
-Field name,pcdm_memberOf_sm
-Field type,array of strings
+Field Name,pcdm_memberOf_sm
+Field Type,Array of strings
 Obligation,Optional
-Multivalued,true
-Purpose,To link items that are part of a collection
+Multivalued,True
+Purpose,To link items that are part of a collection.
 Entry Guidelines,Make a collection record to group records together. Enter the ID of the collection-level record.
-Commentary,
-Controlled Vocabulary,no
-Example value,"[""xyz-12394""]"
+Commentary,"This is one of several fields that describe how records relate to each other. To link to a book or atlas (rather than a collection), see [Is Part Of](../ogm-aardvark/#is-part-of)."
+Controlled Vocabulary,No
+Example Value,"[""xyz-12394""]"
 Element Set,PCDM
-Group,Relations
+Group,"[Relations](../ogm-aardvark/#relations)"

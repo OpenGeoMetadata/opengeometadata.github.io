@@ -1,13 +1,13 @@
 Label,ID
 URI,https://opengeometadata.org/ogm-aardvark/#id
-Field name,id
-Field type,string
+Field Name,id
+Field Type,String
 Obligation,Required
-Multivalued,false
-Purpose,To provide a unique alpha-numeric ID for the item that will act as the primary key in Solr and to create a unique landing page for the item
-Entry Guidelines,This string must be a globally unique value. The value should be alpha-numeric characters separated by dashes.
-Commentary,"This field makes up the URL for the resource in GeoBlacklight. It is visible to the user and is used to create permalinks. The value should be alpha-numeric characters separated by dashes. If having a readable slug is desired, it is common to use the form institution-keyword1-keyword2. It should also be globally unique across all institutions in your GeoBlacklight index."
-Controlled Vocabulary,no
-Example value,"""princeton-rv042w38t"""
+Multivalued,False
+Purpose,To provide a unique alpha-numeric ID for the item that will act as the primary key in Solr and to create a unique landing page for the item.
+Entry Guidelines,"Enter a string of alpha-numeric characters separated by dashes. The ID must be globally unique across all institutions in your GeoBlacklight index."
+Commentary,"This field makes up the URL for the resource in GeoBlacklight. It is visible to the user and is used to create permalinks. If having a readable slug is desired, it is common to use the form institution-keyword1-keyword2."
+Controlled Vocabulary,No
+Example Value,"""princeton-rv042w38t"""
 Element Set,GBL
-Group,Administrative
+Group,"[Identifiers](../ogm-aardvark/#identifiers)"
