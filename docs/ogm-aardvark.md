@@ -37,7 +37,7 @@
 - [Centroid](#centroid)
 - [Georeferenced](#georeferenced)
 
-#### Relations
+#### [Relations :material-link:](../relations-fields)
 - [Relation](#relation)
 - [Member Of](#member-of)
 - [Is Part Of](#is-part-of)
@@ -74,14 +74,14 @@
 
 ----
 
-!!! info "Key" 
+!!! info "Key"
 
 	==(R)  = Required==
 
-	(C) = Conditionally Required 
- 
+	(C) = Conditionally Required
+
 	(S) = Suggested  
-	
+
 	(v) = Controlled Values
 
 </div>
@@ -280,4 +280,3 @@ The following table lists terms from the OpenGeoMetadata community. They are mos
 
 ## WxS Identifier
 {{ read_csv('ogm-aardvark/wxs-identifier.csv') }}
-
