@@ -1,5 +1,8 @@
 # OpenGeoMetadata (OGM) Aardvark Schema
 
+!!! tip
+	To read more about certain metadata categories (like "Spatial"), click the hyperlinked headings in the table below. 
+
 <div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
 
 #### Descriptive
