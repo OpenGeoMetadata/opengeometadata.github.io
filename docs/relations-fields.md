@@ -112,11 +112,11 @@ IDs entered in this field will populate an "Is version of..." widget on the item
 
 **Item's show page**
 
-![is version of widget](images/rel-is-version-of.png)
+![is version of widget](images/rel-is-version-of2.png)
 
 **Linked item's show page**
 
-![has version widget](images/rel-has-version.png)
+![has version widget](images/rel-has-version2.png)
 
 ## Replaces
 
