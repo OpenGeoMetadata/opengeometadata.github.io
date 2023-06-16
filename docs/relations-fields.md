@@ -17,7 +17,7 @@ Starting in GeoBlacklight version 4.0, most of these fields are used to populate
 
 ## Relation
 
-!!! warn
+!!! warning
 
 	This field should only be used for *one* of a pair of related records. If both records use this field, it will duplicate the "Related records..." widget on each item's show page. To disable this behavior, you can customize the `geoblacklight.en.yml` and `settings.yml` files in your local application.
 
