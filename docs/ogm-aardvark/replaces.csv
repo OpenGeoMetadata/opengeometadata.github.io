@@ -1,13 +1,13 @@
 Label,Replaces
 URI,https://opengeometadata.org/ogm-aardvark/#replaces
-Field name,dct_replaces_sm
-Field type,array of strings
+Field Name,dct_replaces_sm
+Field Type,Array of strings
 Obligation,Optional
-Multivalued,true
-Purpose,To point the user to deprecated item(s)
-Entry Guidelines,Enter the ID of the deprecated related item(s).
-Commentary,"Replaces and Is Replaced By can be used for a revised version of a research dataset where the original is needed for reference. For example, if the original dataset has already been cited somewhere, it can be retained in a repository with a clear indication that it has been superseded by a new version."
-Controlled Vocabulary,no
-Example value,"[""qrst-71717""]"
+Multivalued,True
+Purpose,To point the user to a deprecated item(s).
+Entry Guidelines,Enter the ID of the deprecated item(s).
+Commentary,"This field can be used on its own to point to an older deprecated dataset, or it can be used with [Is Replaced By](../ogm-aardvark/#is-replaced-by) to link a revised version with its original."
+Controlled Vocabulary,No
+Example Value,"[""qrst-71717""]"
 Element Set,DCMI
 Group,Relations

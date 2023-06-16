@@ -1,13 +1,13 @@
 Label,Is Part Of
 URI,https://opengeometadata.org/ogm-aardvark/#is-part-of
-Field name,dct_isPartOf_sm
-Field type,array of strings
+Field Name,dct_isPartOf_sm
+Field Type,Array of strings
 Obligation,Optional
-Multivalued,true
-Purpose,To link items that are a subset of another item (e.g. a page in a book)
+Multivalued,True
+Purpose,"To link items that are a subset of another item (e.g. a page in a book, or a map in an atlas)."
 Entry Guidelines,Make a parent record to group records together. Enter the ID of the parent record(s).
-Commentary,
-Controlled Vocabulary,no
-Example value,"[""77f-0001""]"
+Commentary,"This is one of several fields that describe how records relate to each other. To link to a collection (rather than a book or atlas), see [Member Of](../ogm-aardvark/#member-of)."
+Controlled Vocabulary,No
+Example Value,"[""77f-0001""]"
 Element Set,DCMI
 Group,Relations

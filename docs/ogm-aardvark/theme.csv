@@ -1,13 +1,13 @@
 Label,Theme
 URI,https://opengeometadata.org/ogm-aardvark/#theme
-Field name,dcat_theme_sm
-Field type,array of strings
+Field Name,dcat_theme_sm
+Field Type,Array of strings
 Obligation,Optional
-Multivalued,true
+Multivalued,True
 Purpose,To provide a dedicated field that is restricted to terms based on ISO Topic Categories
 Entry Guidelines,Insert one or more of the Themes from the list (see below).
 Commentary,"Although ISO Topic categories are well established and widely used, the spellings of these terms vary across domains and disciplines. The Aardvark Profile uses shortened terms for better readability, and adds three new values ""Events"", ""Imagery"", and ""Land Cover"" (the latter two split from imageryBaseMapsEarthCover)."
-Controlled Vocabulary,yes - strict
-Example value,"[""Boundaries"", ""Land Cover""]"
+Controlled Vocabulary,Yes - strict
+Example Value,"[""Boundaries"", ""Land Cover""]"
 Element Set,DCAT
 Group,Categories

@@ -74,14 +74,14 @@
 
 ----
 
-!!! info "Key" 
+!!! info "Key"
 
 	==(R)  = Required==
 
-	(C) = Conditionally Required 
- 
+	(C) = Conditionally Required
+
 	(S) = Suggested  
-	
+
 	(v) = Controlled Values
 
 </div>
@@ -141,7 +141,6 @@
 * KMZ
 * LAS
 * LAZ
-* Mixed
 * Mixed
 * MrSID
 * PDF
@@ -280,4 +279,3 @@ The following table lists terms from the OpenGeoMetadata community. They are mos
 
 ## WxS Identifier
 {{ read_csv('ogm-aardvark/wxs-identifier.csv') }}
-

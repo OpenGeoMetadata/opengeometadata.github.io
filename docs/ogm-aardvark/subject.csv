@@ -1,13 +1,13 @@
 Label,Subject
 URI,https://opengeometadata.org/ogm-aardvark/#subject
-Field name,dct_subject_sm
-Field type,array of strings
+Field Name,dct_subject_sm
+Field Type,Array of strings
 Obligation,Optional
-Multivalued,true
+Multivalued,True
 Purpose,To provide an all-purpose field for subjects
 Entry Guidelines,"Any value is allowed, but controlled vocabularies are encouraged."
 Commentary,
-Controlled Vocabulary,no
-Example value,"[""Elections"", ""Voting""]"
+Controlled Vocabulary,No
+Example Value,"[""Elections"", ""Voting""]"
 Element Set,DCMI
 Group,Categories

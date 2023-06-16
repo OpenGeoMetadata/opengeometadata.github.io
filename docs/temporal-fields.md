@@ -44,5 +44,5 @@ This is a suggested field for describing the date depicted in a resource. It is 
 This optional field is not yet supported by GeoBlacklight software, but its intent is to power time widgets that use a date range (an optional customization to the software). The field is formatted as a start date and end date in the Solr date range field convention.
 
 ```
-["1985 TO 1987"]
+"[1985 TO 1987]"
 ```

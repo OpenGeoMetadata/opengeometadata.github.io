@@ -1,13 +1,13 @@
 Label,Source
 URI,https://opengeometadata.org/ogm-aardvark/#source
-Field name,dct_source_sm
-Field type,array of strings
+Field Name,dct_source_sm
+Field Type,Array of strings
 Obligation,Optional
-Multivalued,true
+Multivalued,True
 Purpose,To link items that have been derived from another item (e.g. a digitized shapefile from a historical map)
 Entry Guidelines,Enter the ID of the item(s) from which the resource was derived.
-Commentary,
-Controlled Vocabulary,no
-Example value,"[""abcd-988763""]"
+Commentary,This is one of several fields that describe how records relate to each other. 
+Controlled Vocabulary,No
+Example Value,"[""abcd-988763""]"
 Element Set,DCMI
 Group,Relations
