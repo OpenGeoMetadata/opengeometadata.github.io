@@ -10,7 +10,7 @@ These are URIs that can be used as keys in the [`dct_references_s`](../ogm-aardv
 | Type                      | Reference URI    | Function in GeoBlacklight   |
 |:--------------------------|:--------------|:-----------------------------|
 | Download data dictionary / documentation | `http://lccn.loc.gov/sh85035852` | Link to download documentation |
-| Download file | `http://schema.org/downloadUrl` | Link to download file (for multiple download links, [see below](#how-to-configure-multiple-download-links) |
+| Download file | `http://schema.org/downloadUrl` | Link to download file (for multiple files, see the [multiple downloads](../configure-references-links/#multiple-downloads) guidelines) |
 | Full layer description | `http://schema.org/url` | View further descriptive information about the layer |
 | International Image Interoperability Framework (IIIF) Image API | `http://iiif.io/api/image` | Load the image viewer using [Leaflet-IIIF](https://github.com/mejackreed/Leaflet-IIIF) |
 | International Image Interoperability Framework (IIIF) Presentation API Manifest | `http://iiif.io/api/presentation#manifest` | View the IIIF manifest |
