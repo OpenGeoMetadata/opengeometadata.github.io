@@ -21,6 +21,7 @@ These are URIs that can be used as keys in the [`dct_references_s`](../ogm-aardv
 | OpenIndexMap	            | `https://openindexmaps.org`	                    | Provide an index map preview   |
 | Web Mapping Service (WMS) | `http://www.opengis.net/def/serviceType/ogc/wms` | Link to preview layer, inspect features, and download data (vector: KMZ, raster: GeoTIFF) |
 | Web Feature Service (WFS) | `http://www.opengis.net/def/serviceType/ogc/wfs` | Link to download vectors (GeoJSON, shapefile) |
+| XYZ tiles | `https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames` | Link to an [XYZ tile server](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#Tile_servers) |
 
 ### ArcGIS URIs
 
