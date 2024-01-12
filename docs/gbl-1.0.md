@@ -189,7 +189,7 @@ hide:
 | Type							| string|
 | Description					| This indicates the file format of the data. If a download link is included, this value displays on the item page in the button under the download widget|
 | Entry Guidelines				| Choose from set values (see Format list)|
-| Controlled Vocabulary			| [Format Controlled Vocabulary](format-values)|
+| Controlled Vocabulary			| See [Format Controlled Vocabulary](../ogm-aardvark/#format-values) for the OGM Aardvark schema|
 | Element Set					| Dublin Core Metadata Element Set|
 | Example						| "Shapefile"|
 | Commentary | The most important thing to remember about the `dc_format_s` field is that it is required for Download functionality if using a single value string for downloads. (pre-GeoBlacklight version 3.0). See [Multiple Downloads](../configure-references-links/#multiple-downloads) for details.|
