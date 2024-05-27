@@ -122,16 +122,6 @@ Publisher:
 2. GitHub Actions will automatically push the changes to the gh-pages branch
 
 
-### Differences from local server previews and public view
-
-As of April 2023, the opengeometadata.github.io site is being published via the sponsored version of Material for MkDocs, known as "[Insiders](https://squidfunk.github.io/mkdocs-material/insiders/)." This enables a few extra features that you will only see online, not in your local instance, including:
-
-* breadcrumbs
-* emojis on the tabs
-* admonitions
-
-We will reassess this over the coming year to determine if it is a viable model going forward.
-
 ------
 
 Questions about this repository or other elements of the OpenGeoMetadata project?
