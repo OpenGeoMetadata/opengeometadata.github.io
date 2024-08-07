@@ -234,7 +234,7 @@ hide:
 | Controlled Vocabulary			| no|
 | Element Set					| Dublin Core Metadata Element Set|
 | Example						| "stanford-vr593vj7147"|
-| Commentary |The `dc_source_sm` field exists to indicate parent-child relationships between records. Common uses include: individual sheets within a map series that can point to a Shapefile that serves as an index map, individual Shapefile layers that have been derived from a Geodatabase that can point to the record for the GeoDatabase, or collection-level and related individual layer records. [See Using the Data Relations Widget](https://geoblacklight.org/guides.html#using-the-data-relations-widget) for more information.|
+| Commentary |The `dc_source_sm` field exists to indicate parent-child relationships between records. Common uses include: individual sheets within a map series that can point to a Shapefile that serves as an index map, individual Shapefile layers that have been derived from a Geodatabase that can point to the record for the GeoDatabase, or collection-level and related individual layer records. [See Using the Data Relations Widget](https://geoblacklight.org/docs/data_relations_widget/) for more information.|
 
 ## Subject
 
