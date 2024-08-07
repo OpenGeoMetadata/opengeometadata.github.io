@@ -38,7 +38,7 @@ This option involves updating your local transformation workflow that extracts v
 Programmatically convert the JSON files
 
 ![convert-jsons](images/transform-option2.png)
-Fig.2 - Programmatic transformation process using Geoblacklight 1.0 Metadata JSONs
+Fig.2 - Programmatic transformation process using GeoBlacklight 1.0 Metadata JSONs
 
 
 ### Scenarios
