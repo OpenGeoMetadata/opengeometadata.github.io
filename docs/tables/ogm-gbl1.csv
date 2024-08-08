@@ -7,6 +7,7 @@ Creator,`dct_creator_sm`,`dc_creator_sm`,new namespace
 Date Issued,`dct_issued_s`,`dct_issued_s`,no change
 Date Range,`gbl_dateRange_drsim`,-,new field
 Description,`dct_description_sm`,`dc_description_s`,new namespace; single to multi-valued
+Display Note,`gbl_displayNote_sm`,-,new field
 File Size,`gbl_fileSize_s`,-,new field
 Format,`dct_format_s`,`dc_format_s`,new namespace
 Geometry,`locn_geometry`,`solr_geom`,new field

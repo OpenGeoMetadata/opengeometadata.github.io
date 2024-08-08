@@ -7,6 +7,7 @@ dct_creator_sm,idinfo/citation/citeinfo/originator,MD_DataIdentification/citatio
 dct_issued_s,idinfo/citation/citeinfo/pubdate,MD_DataIdentification/citation/CI_Citation/citation/CI_Date/date
 gbl_dateRange_drsim,idinfo/timeperd/timeinfo/rngdates/begdate and idinfo/timeperd/timeinfo/rngdates/enddate,-
 dct_description_sm,descript/abstract,MD_DataIdentification/abstract
+gbl_displayNote_sm,-,-
 gbl_fileSize_s,distinfo/stdorder/digform/digtinfo/transize,-
 dct_format_s,spdoinfo/direct,MD_Distribution/distributionFormat/MD_Format/name
 locn_geometry,idinfo/spdom/bounding/westbc AND eastbc AND northbc AND southbc,-
