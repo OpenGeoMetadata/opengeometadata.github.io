@@ -1,0 +1,26 @@
+﻿Reference Type,Reference URI,Note
+ArcGIS DynamicMapLayer,`urn:x-esri:serviceType:ArcGIS#DynamicMapLayer`,-
+ArcGIS FeatureLayer,`urn:x-esri:serviceType:ArcGIS#FeatureLayer`,-
+ArcGIS ImageMapLayer,`urn:x-esri:serviceType:ArcGIS#ImageMapLayer`,-
+ArcGIS TiledMapLayer,`urn:x-esri:serviceType:ArcGIS#TiledMapLayer`,-
+Cloud Optimized GeoTIFF (COG),`https://github.com/cogeotiff/cog-spec`,-
+Data dictionary / supplemental documentation,`http://lccn.loc.gov/sh85035852`,Functions as a link to download documentation (not a viewer)
+Download file,`http://schema.org/downloadUrl`,Link to download file (for multiple files  see the [multiple downloads](../configure-references-links/#multiple-downloads) guidelines)
+GeoJSON,`http://geojson.org/geojson-spec.html`,-
+Full layer description,`http://schema.org/url`,To view further descriptive information about the layer or a link to its landing page
+International Image Interoperability Framework (IIIF) Image API,`http://iiif.io/api/image`,Load the image viewer using [Leaflet-IIIF](https://github.com/mejackreed/Leaflet-IIIF)
+International Image Interoperability Framework (IIIF) Presentation API Manifest,`http://iiif.io/api/presentation#manifest`,View the IIIF manifest - uses the Clover viewer by default https://samvera-labs.github.io/clover-iiif/docs
+Metadata in FGDC,`http://www.opengis.net/cat/csw/csdgm`,Provides an HTML view of an XML file in the FGDC standard
+Metadata in HTML,`http://www.w3.org/1999/xhtml`,View structured metadata in any standard expressed as HTML
+Metadata in ISO 19139,`http://www.isotc211.org/schemas/2005/gmd/`,Provides an HTML view of an XML file in the ISO 19139 standard
+Metadata in MODS,`http://www.loc.gov/mods/v3`,Provides a raw XML view of metadata in the MODS format
+oEmbed,`https://oembed.com`,-
+OpenIndexMap,`https://openindexmaps.org`,Provides an interactive preview of a GeoJSON file formatted as an OpenIndexMap
+PMTiles,`https://github.com/protomaps/PMTiles`,-
+Tile Mapping Service (TMS),`https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification`,-
+TileJSON,`https://github.com/mapbox/tilejson-spec`,-
+Web Coverage Service (WCS),`http://www.opengis.net/def/serviceType/ogc/wcs`,-
+Web Feature Service (WFS),`http://www.opengis.net/def/serviceType/ogc/wfs`,"Provides a to download generated vector datasets (GeoJSON,  shapefile)"
+Web Mapping Service (WMS),`http://www.opengis.net/def/serviceType/ogc/wms`,Provides a service to visually preview a layer and inspect its features
+WMTS,`http://www.opengis.net/def/serviceType/ogc/wmts`,-
+XYZ tiles,`https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames`,Link to an [XYZ tile server](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#Tile_servers)
