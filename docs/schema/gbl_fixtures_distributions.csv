@@ -1,4 +1,4 @@
-friendlier_id,reference_type,distribution_url,label
+ID,Type,URL,Label
 princeton-fk4544658v-wmts,documentation_external,https://catalog.princeton.edu/catalog/99125413918506421,
 princeton-fk4544658v-wmts,iiif_image,https://iiif-cloud-staging.princeton.edu/iiif/2/05%2F71%2F04%2F0571046f9c7149a3b950899323f70788%2Fintermediate_file/info.json,
 princeton-fk4544658v-wmts,iiif_manifest,https://figgy-staging.princeton.edu/concern/scanned_maps/2a91d82c-541c-426c-b787-cc62afe8f248/manifest,
