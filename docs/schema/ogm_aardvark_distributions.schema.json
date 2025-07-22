@@ -1,0 +1,30 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "opengeometadata-aardvark-distributions-csv-table-schema",
+  "fields": [
+    {
+      "name": "ID",
+      "type": "string",
+      "description": "Identifier matching a primary record's 'ID' field. Used for joining metadata and distribution info.",
+      "example": "tufts-cambridgegrid100-04"
+    },
+    {
+      "name": "Type",
+      "type": "string",
+      "description": "Type of distribution or service endpoint. Examples: iiif_manifest, wms, download, etc.",
+      "example": "iiif_manifest"
+    },
+    {
+      "name": "URL",
+      "type": "string",
+      "description": "Fully qualified URL to a downloadable file, service, or documentation endpoint.",
+      "example": "https://iiif.example.edu/iiif/1234/manifest"
+    },
+    {
+      "name": "Label",
+      "type": "string",
+      "description": "Optional label or description of the distribution type, for display purposes.",
+      "example": "Full-resolution TIFF download"
+    }
+  ]
+}
