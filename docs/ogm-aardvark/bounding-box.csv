@@ -2,7 +2,7 @@ Label,Bounding Box
 URI,https://opengeometadata.org/ogm-aardvark/#bounding-box
 Field Name,dcat_bbox
 Field Type,String
-Obligation,Suggested
+Obligation,Mandatory - used in GeoBlacklight software to provide more relevant search results
 Multivalued,False
 Purpose,To support overlap ratio boosting in spatial searches.
 Entry Guidelines,"This should be a bounding box in this format: ENVELOPE(W,E,N,S)."
@@ -10,4 +10,4 @@ Commentary,"If the [Geometry](../ogm-aardvark/#geometry) field uses the ENVELOPE
 Controlled Vocabulary,No
 Example Value,"""ENVELOPE(-111.1, -104.0, 45.0, 40.9)"""
 Element Set,DCAT
-Group,"[Spatial](../ogm-aardvark/#spatial)"
+Group,[Spatial](../spatial-fields)
