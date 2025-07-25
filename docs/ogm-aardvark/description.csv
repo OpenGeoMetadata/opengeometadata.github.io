@@ -2,7 +2,7 @@ Label,Description
 URI,https://opengeometadata.org/ogm-aardvark/#description
 Field Name,dct_description_sm
 Field Type,Array of strings
-Obligation,Mandatory - used in Google indexing
+Obligation,Mandatory - used in search engine indexing
 Multivalued,True
 Purpose,To provide the user with a summary of the resource.
 Entry Guidelines,"At a minimum, this is a reiteration of the title in sentence format. Other relevant information, such as data creation methods, data sources, and special licenses, may also be included."
