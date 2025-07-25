@@ -1,96 +1,14 @@
 # OpenGeoMetadata (OGM) Aardvark Schema
 
-!!! tip
-	To read more about certain metadata categories (like "Spatial"), click the hyperlinked headings in the table below. 
+!!! info "Definitions"
 
-<div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
+	Mandatory = meets the minimum community standard
 
-#### Descriptive
-- ==[Title](#title) (R)==
-- [Alternative Title](#alternative-title)
-- [Description](#description) (S)
-- [Language](#language) (v)
-- [Display Note](#display-note)
+	Suggested = improves searching and/or citation generation
 
-#### Credits
-- [Creator](#creator) (S)
-- [Publisher](#publisher) (S)
-- [Provider](#provider) (S)
-
-#### Categories
-- ==[Resource Class](#resource-class) (R)== (v)
-- [Resource Type](#resource-type) (S) (v)
-- [Subject](#subject)
-- [Theme](#theme) (v)
-- [Keyword](#keyword)
-
-#### [Temporal :material-link:](../temporal-fields)
-- [Temporal Coverage](#temporal-coverage) (S)
-- [Date Issued](#date-issued)
-- [Index Year](#index-year) (S)
-- [Date Range](#date-range)
-
-</div>
-<div style="float:left; margin-right:5em; line-height:1.1" markdown="1">
-
-#### [Spatial :material-link:](../spatial-fields)
-- [Spatial Coverage](#spatial-coverage) (S)
-- [Geometry](#geometry) (S)
-- [Bounding Box](#bounding-box) (S)
-- [Centroid](#centroid)
-- [Georeferenced](#georeferenced)
-
-#### [Relations :material-link:](../relations-fields)
-- [Relation](#relation)
-- [Member Of](#member-of)
-- [Is Part Of](#is-part-of)
-- [Source](#source)
-- [Is Version Of](#is-version-of)
-- [Replaces](#replaces)
-- [Is Replaced By](#is-replaced-by)
-
-#### Rights
-- [Rights](#rights_1) (S)
-- [Rights Holder](#rights-holder)
-- [License](#license)
-- ==[Access Rights](#access-rights) (R)==
-
-</div>
-<div style="float:left; line-height:1.1" markdown="1">
-
-#### Object
-- [Format](#format) (C) (v)
-- [File Size](#file-size)
-
-#### Links
-- [References](#references) (S)
-- [WxS Identifier](#wxs-identifier) (C)
-
-#### Identifiers
-- ==[ID](#id) (R)==
-- [Identifier](#identifier) (S)
-
-#### Admin
-- ==[Modified](#modified) (R)==
-- ==[Metadata Version](#metadata-version) (R)== (v)
-- [Suppressed](#suppressed)
+{{ read_csv('ogm-aardvark/ogm-aardvark.csv') }}
 
 ----
-
-!!! info "Key"
-
-	==(R)  = Required==
-
-	(C) = Conditionally Required
-
-	(S) = Suggested  
-
-	(v) = Controlled Values
-
-</div>
-
-<br style="clear:left">
-
 
 ## Access Rights
 {{ read_csv('ogm-aardvark/access-rights.csv') }}
