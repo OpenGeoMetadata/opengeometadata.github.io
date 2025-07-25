@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "hydra": "http://www.w3.org/ns/hydra/core#",
+    "ogm": "https://opengeometadata.org/ns/ogm#",
+
+    "q": "schema:query",
+    "page": "hydra:pageIndex",
+    "per_page": "hydra:itemsPerPage",
+    "sort": { "@id": "ogm:sort" },
+    "callback": { "@id": "ogm:callback" },
+    "fields": { "@id": "ogm:fields", "@container": "@list" },
+    "facets": { "@id": "ogm:facets", "@container": "@list" },
+
+    "filters": {
+      "@id": "ogm:filters",
+      "@context": {
+        "@vocab": "ogm:filter/",
+        "geo": {
+          "@id": "ogm:geoFilter",
+          "@context": {
+            "type": "ogm:geoFilterType",
+            "field": "schema:location",
+            "lat": "schema:latitude",
+            "lon": "schema:longitude",
+            "top_left": { "@id": "ogm:topLeft" },
+            "bottom_right": { "@id": "ogm:bottomRight" },
+            "center": { "@id": "ogm:center" },
+            "distance": { "@id": "ogm:distanceValue" },
+            "points": {
+              "@id": "ogm:polygonPoint",
+              "@container": "@list"
+            },
+            "shape": "ogm:shapeGeoJSON",
+            "relation": {
+              "@id": "ogm:spatialRelation",
+              "@type": "@vocab"
+            }
+          }
+        }
+      }
+    }
+  }
+}
