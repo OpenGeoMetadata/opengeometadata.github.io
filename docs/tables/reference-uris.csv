@@ -8,6 +8,7 @@ Data dictionary / supplemental documentation,`http://lccn.loc.gov/sh85035852`,Fu
 Download file,`http://schema.org/downloadUrl`,Link to download file (for multiple files  see the [multiple downloads](../configure-references-links/#multiple-downloads) guidelines)
 GeoJSON,`http://geojson.org/geojson-spec.html`,-
 Full layer description,`http://schema.org/url`,To view further descriptive information about the layer or a link to its landing page
+International Image Interoperability Framework (IIIF) Annotation,`https://iiif.io/api/extension/georef/1/context.json`,To display georeferenced maps that have IIIF Annotations and/or are part of Allmaps
 International Image Interoperability Framework (IIIF) Image API,`http://iiif.io/api/image`,Load the image viewer using [Leaflet-IIIF](https://github.com/mejackreed/Leaflet-IIIF)
 International Image Interoperability Framework (IIIF) Presentation API Manifest,`http://iiif.io/api/presentation#manifest`,View the IIIF manifest - uses the Clover viewer by default https://samvera-labs.github.io/clover-iiif/docs
 Metadata in FGDC,`http://www.opengis.net/cat/csw/csdgm`,Provides an HTML view of an XML file in the FGDC standard
