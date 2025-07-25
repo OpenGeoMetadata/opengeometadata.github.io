@@ -2,7 +2,7 @@ Label,Publisher
 URI,https://opengeometadata.org/ogm-aardvark/#publisher
 Field Name,dct_publisher_sm
 Field Type,Array of strings
-Obligation,Suggested
+Obligation,Suggested - helpful for generating citations
 Multivalued,True
 Purpose,To credit the entity that made a resource available for the first time.
 Entry Guidelines,The suggested controlled vocabulary is the [Library of Congress Name Authority File](https://id.loc.gov/authorities/names.html).
@@ -10,4 +10,4 @@ Commentary,"The distinction between Publisher and [Creator](../ogm-aardvark/#cre
 Controlled Vocabulary,No
 Example Value,"[""ML InfoMap (Firm)""]"
 Element Set,DCMI
-Group,"[Credits](../ogm-aardvark/#credits)"
+Group,Credits

@@ -2,9 +2,11 @@
 
 !!! info "Definitions"
 
-	Mandatory = meets the minimum community standard
+	**Mandatory** = meets the minimum community standard for high-quality metadata
 
-	Suggested = improves searching and/or citation generation
+	**Suggested** = improves searching and/or citation generation
+	
+	To check which fields are required for current GeoBlacklight functionality, see the [GeoBlacklight documentation](https://geoblacklight.org/docs/metadata/)
 
 {{ read_csv('ogm-aardvark/ogm-aardvark.csv') }}
 

@@ -2,7 +2,7 @@ Label,References
 URI,https://opengeometadata.org/ogm-aardvark/#references
 Field Name,dct_references_s
 Field Type,String (serialized JSON)
-Obligation,Suggested
+Obligation,Mandatory - used for download links and to direct users to more information
 Multivalued,False
 Purpose,To provide external URLs for accessing or describing the resource.
 Entry Guidelines,"This field defines external services and references using the CatInterOp approach. The field value is a serialized JSON array of key/value pairs, with keys representing namespace URI's and values the URL. See [Configure References Links](../configure-references-links/) for detailed information about configuring this field."
@@ -10,4 +10,4 @@ Commentary,"All of the external links for the resource are listed as a serialize
 Controlled Vocabulary,"The ""key"" part of the key/value pairs are predefined in [Reference URIs](../reference-uris/)."
 Example Value,"""{\""http://schema.org/url\"":\""http://purl.stanford.edu/bm662dm5913\""}"""
 Element Set,DCMI
-Group,"[Links](../ogm-aardvark/#links)"
+Group,Links

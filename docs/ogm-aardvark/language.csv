@@ -10,4 +10,4 @@ Commentary,"This field is intended to indicate the language of the dataset, map,
 Controlled Vocabulary,"Yes - not strict. Ideally, choose from the ISO 639-3 language codes in the list of [Language Values](../ogm-aardvark/#language-values) below."
 Example Value,"[""eng""]"
 Element Set,DCMI
-Group,"[Descriptive](../ogm-aardvark/#descriptive)"
+Group,Descriptive

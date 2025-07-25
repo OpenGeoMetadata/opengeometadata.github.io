@@ -2,7 +2,7 @@ Label,Rights
 URI,https://opengeometadata.org/ogm-aardvark/#rights_1
 Field Name,dct_rights_sm
 Field Type,Array of strings
-Obligation,Suggested
+Obligation,Optional
 Multivalued,True
 Purpose,"To provide a free text field for rights information, such as usage, access, or copyright."
 Entry Guidelines,"Enter free text of generic, catch-all access and usage rights."
@@ -10,4 +10,4 @@ Commentary,"This field is intended to be flexible to accommodate different types
 Controlled Vocabulary,No
 Example Value,"""All data is copyrighted by China Data Center and/or its suppliers. Derived works that include the source data must be merged with other value-added data in such a way that the derived work cannot be converted back to the original source data format. This data is licensed by UC Berkeley for research, educational, and other non-commercial use by authorized users, which include persons affiliated with UC Berkeley and walk-in users who must access the data in person at the library. [https://rightsstatements.org/page/InC/1.0/?language=en](https://rightsstatements.org/page/InC/1.0/?language=en)."""
 Element Set,DCMI
-Group,"[Rights](../ogm-aardvark/#rights)"
+Group,Rights

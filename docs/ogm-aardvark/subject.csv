@@ -10,4 +10,4 @@ Commentary,"Institutions may rely on existing vocabularies specific to a field o
 Controlled Vocabulary,No
 Example Value,"[""Elections"", ""Voting""]"
 Element Set,DCMI
-Group,"[Categories](../ogm-aardvark/#categories)"
+Group,Categories

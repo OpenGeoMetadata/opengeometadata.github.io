@@ -10,4 +10,4 @@ Commentary,"This field is useful for multipart items with identical metadata, su
 Controlled Vocabulary,Yes - strict
 Example Value,"true or ""true"""
 Element Set,GBL
-Group,"[Admin](../ogm-aardvark/#admin)"
+Group,Admin
