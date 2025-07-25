@@ -2,7 +2,7 @@ Label,Geometry
 URI,https://opengeometadata.org/ogm-aardvark/#geometry
 Field Name,locn_geometry
 Field Type,String
-Obligation,Mandatory - powers the map search and extent indicators in GeoBlacklight software 
+Obligation,Mandatory - powers the map search and extent indicators in GeoBlacklight 
 Multivalued,False
 Purpose,To display the extent of the resource and to power the map search.
 Entry Guidelines,"This may be a bounding box or more complex geometry. For a bounding box, it should use the ENVELOPE(W,E,N,S) syntax. For a more complex geometry, it should use the WKT (""well-known text"") POLYGON or MULTIPOLYGON syntax. Note that WKT polygon vertices should be defined in counter-clockwise order."

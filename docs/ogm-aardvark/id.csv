@@ -2,7 +2,7 @@ Label,ID
 URI,https://opengeometadata.org/ogm-aardvark/#id
 Field Name,id
 Field Type,String
-Obligation,Mandatory - serves as the unique identifier; critical from GeoBlacklight functioning
+Obligation,Mandatory - serves as the unique identifier; critical for GeoBlacklight functioning
 Multivalued,False
 Purpose,To provide a unique text string for the item that will act as the primary key in Solr and to create a unique landing page for the item.
 Entry Guidelines,"Enter a string that only contains alpha-numeric characters (A-Z, a-z, 0-9), hyphens, underscores, and colons. This ID must be unique within your instance's GeoBlacklight index."
