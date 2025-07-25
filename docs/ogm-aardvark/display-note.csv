@@ -10,4 +10,4 @@ Commentary,"Starting in GeoBlacklight version 4.1, text in this field is promine
 Controlled Vocabulary,No
 Example Value,"[""Danger: This text will be displayed in a red box"",""Info: This text will be displayed in a blue box"",""Tip: This text will be displayed in a green box"",""Warning: This text will be displayed in a yellow box"",""This is text without a tag and it will be assigned the default 'note' style""]"
 Element Set,GBL
-Group,"[Descriptive](../ogm-aardvark/#descriptive)"
+Group,Descriptive

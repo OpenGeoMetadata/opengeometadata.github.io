@@ -10,4 +10,4 @@ Commentary,This field is currently only supported by customizations to the GeoBl
 Controlled Vocabulary,No
 Example Value,"""46.4218,-94.087"""
 Element Set,DCAT
-Group,"[Spatial](../ogm-aardvark/#spatial)"
+Group,[Spatial](../spatial-fields)

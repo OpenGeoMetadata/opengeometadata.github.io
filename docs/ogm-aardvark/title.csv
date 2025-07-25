@@ -2,7 +2,7 @@ Label,Title
 URI,https://opengeometadata.org/ogm-aardvark/#title
 Field Name,dct_title_s
 Field Type,String
-Obligation,Required
+Obligation,Mandatory - used to generate citations; GeoBlacklight will use a default placeholder if no title is provided
 Multivalued,False
 Purpose,To provide the user with the name of the resource.
 Entry Guidelines,Titles should include place names and dates when available.
@@ -10,4 +10,4 @@ Commentary,"The title is the most prominent metadata field that users see when b
 Controlled Vocabulary,No
 Example Value,"""Address Points: Ann Arbor, Michigan, 2010"""
 Element Set,DCMI
-Group,"[Descriptive](../ogm-aardvark/#descriptive)"
+Group,Descriptive

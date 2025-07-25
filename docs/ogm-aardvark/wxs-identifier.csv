@@ -2,7 +2,7 @@ Label,WxS Identifier
 URI,https://opengeometadata.org/ogm-aardvark/#wxs-identifier
 Field Name,gbl_wxsIdentifier_s
 Field Type,String
-Obligation,Conditionally required
+Obligation,Optional - only required if using GeoServer with a GeoBlacklight instance
 Multivalued,False
 Purpose,"To identify the layer or store for a WFS, WMS, or WCS web service so the application can construct the full web service link."
 Entry Guidelines,"Only the layer name is added here. The base service endpoint URLs (e.g. ""https://maps-public.geo.nyu.edu/geoserver/sdr/wms"") are added to the [References](../ogm-aardvark/#references) field."
@@ -10,4 +10,4 @@ Commentary,This value is only used when a WxS service is listed in the [Referenc
 Controlled Vocabulary,No
 Example Value,"""druid:vr593vj7147"""
 Element Set,GBL
-Group,"[Links](../ogm-aardvark/#links)"
+Group,Links

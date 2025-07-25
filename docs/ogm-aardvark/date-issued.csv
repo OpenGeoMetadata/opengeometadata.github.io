@@ -2,7 +2,7 @@ Label,Date Issued
 URI,https://opengeometadata.org/ogm-aardvark/#date-issued
 Field Name,dct_issued_s
 Field Type,String
-Obligation,Optional
+Obligation,Suggested - used to generate citations
 Multivalued,False
 Purpose,"To provide the user with the date when an item was published, and to allow administrators to determine the age of the resource."
 Entry Guidelines,"A single year is the preferred format. For more precise dates, use the ISO format without the time value: YYYY-MM-DD or YYYY-MM."
@@ -10,4 +10,4 @@ Commentary,"Although the field is optional, it is often useful when a clear [Tem
 Controlled Vocabulary,No
 Example Value,"""1999"""
 Element Set,DCMI
-Group,"[Temporal](../ogm-aardvark/#temporal)"
+Group,[Temporal](../temporal-fields)

@@ -2,7 +2,7 @@ Label,Theme
 URI,https://opengeometadata.org/ogm-aardvark/#theme
 Field Name,dcat_theme_sm
 Field Type,Array of strings
-Obligation,Optional
+Obligation,Suggested - helpful for starting a search
 Multivalued,True
 Purpose,To provide a dedicated field that is restricted to terms based on ISO Topic Categories.
 Entry Guidelines,"Insert one or more of the values from the list of [Theme Values](../ogm-aardvark/#theme-values) below."
@@ -10,4 +10,4 @@ Commentary,"Although ISO Topic categories are well established and widely used, 
 Controlled Vocabulary,Yes - strict
 Example Value,"[""Boundaries"", ""Land Cover""]"
 Element Set,DCAT
-Group,"[Categories](../ogm-aardvark/#categories)"
+Group,Categories

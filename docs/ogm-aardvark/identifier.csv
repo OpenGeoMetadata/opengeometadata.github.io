@@ -2,7 +2,7 @@ Label,Identifier
 URI,https://opengeometadata.org/ogm-aardvark/#identifier
 Field Name,dct_identifier_sm
 Field Type,Array of strings
-Obligation,Suggested
+Obligation,Optional
 Multivalued,True
 Purpose,To provide a general purpose field for identifiers.
 Entry Guidelines,"Enter a DOI, catalog number, and/or other system number."
@@ -10,4 +10,4 @@ Commentary,"This is a general purpose field that can contain one or more string 
 Controlled Vocabulary,No
 Example Value,"[""5864 .L7 E635 1998 .G7""]"
 Element Set,DCMI
-Group,"[Identifiers](../ogm-aardvark/#identifiers)"
+Group,Identifiers

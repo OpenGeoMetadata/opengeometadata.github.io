@@ -2,7 +2,7 @@ Label,Creator
 URI,https://opengeometadata.org/ogm-aardvark/#creator
 Field Name,dct_creator_sm
 Field Type,Array of strings
-Obligation,Suggested
+Obligation,Suggested - helpful for generating citations
 Multivalued,True
 Purpose,To credit the person/organization that collected or authored the resource.
 Entry Guidelines,The suggested controlled vocabulary is the [Library of Congress Name Authority File](https://id.loc.gov/authorities/names.html).
@@ -10,4 +10,4 @@ Commentary,"The distinction between Creator and [Publisher](../ogm-aardvark/#pub
 Controlled Vocabulary,No
 Example Value,"[""Geological Survey (U.S.)""]"
 Element Set,DCMI
-Group,"[Credits](../ogm-aardvark/#credits)"
+Group,Credits

@@ -2,7 +2,7 @@ Label,Resource Type
 URI,https://opengeometadata.org/ogm-aardvark/#resource-type
 Field Name,gbl_resourceType_sm
 Field Type,Array of strings
-Obligation,Suggested
+Obligation,Suggested - helpful for narrowing down a search
 Multivalued,True
 Purpose,To provide a secondary level of categories for classifying the spatial type or structure of a dataset.
 Entry Guidelines,Choose one or more terms from the lists of [Library of Congress](../ogm-aardvark/#resource-type-values-loc) or [OpenGeoMetadata](https://opengeometadata.org/ogm-aardvark/#resource-type-values-ogm) Resource Type Values below. Other terms are allowed.
@@ -10,4 +10,4 @@ Commentary,This field combines an established list of terms for scanned maps (Ca
 Controlled Vocabulary,Yes - not strict
 Example Value,"[""Point data""]"
 Element Set,GBL
-Group,"[Categories](../ogm-aardvark/#categories)"
+Group,Categories

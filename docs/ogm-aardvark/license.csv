@@ -10,4 +10,4 @@ Commentary,"This field is only for URIs of known licenses. Do not enter a rights
 Controlled Vocabulary,No
 Example Value,"[""https://creativecommons.org/licenses/by/4.0/""]"
 Element Set,DCMI
-Group,"[Rights](../ogm-aardvark/#rights)"
+Group,Rights
