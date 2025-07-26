@@ -1,0 +1,13 @@
+Label,Replaces
+URI,https://opengeometadata.org/ogm-aardvark/#replaces
+Field Name,dct_replaces_sm
+Field Type,Array of strings
+Obligation,Optional
+Multivalued,True
+Purpose,To point the user to a deprecated item(s).
+Entry Guidelines,Enter the ID of the deprecated item(s).
+Commentary,"This field can be used on its own to point to an older deprecated dataset, or it can be used with [Is Replaced By](../ogm-aardvark/#is-replaced-by) to link a revised version with its original."
+Controlled Vocabulary,No
+Example Value,"[""qrst-71717""]"
+Element Set,DCMI
+Group,[Relations](../relations-fields)
