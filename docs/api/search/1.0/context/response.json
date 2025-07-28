@@ -1,0 +1,64 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@import": "https://opengeometadata.org/context/aardvark-v1.jsonld",
+
+    "schema": "https://schema.org/",
+    "hydra": "http://www.w3.org/ns/hydra/core#",
+    "rdfs":  "http://www.w3.org/2000/01/rdf-schema#",
+    "ogm":   "https://opengeometadata.org/ns/ogm#",
+
+    "status": "schema:status",
+
+    "query_time": {
+      "@id": "ogm:queryTime",
+      "@context": {
+        "elasticsearch":       "ogm:searchBackendTime",
+        "item_processing": {
+          "@id": "ogm:itemProcessing",
+          "@context": {
+            "total":              "ogm:totalTime",
+            "per_item":           "ogm:perItemTime",
+            "thumbnail_service":  "ogm:thumbnailServiceTime",
+            "citation_service":   "ogm:citationServiceTime",
+            "viewer_service":     "ogm:viewerServiceTime"
+          }
+        },
+        "total_response_time": "ogm:totalResponseTime"
+      }
+    },
+
+    "meta": "ogm:meta",
+
+    "pages": {
+      "@id": "ogm:pagination",
+      "@context": {
+        "current_page": "hydra:pageIndex",
+        "next_page":    "ogm:nextPage",
+        "prev_page":    "ogm:previousPage",
+        "total_pages":  "ogm:totalPages",
+        "limit_value":  "hydra:itemsPerPage",
+        "offset_value": "ogm:offset",
+        "total_count":  "hydra:totalItems",
+        "first_page?":  "ogm:isFirstPage",
+        "last_page?":   "ogm:isLastPage"
+      }
+    },
+
+    "spelling_suggestions": "ogm:spellingSuggestion",
+
+    "data":     "hydra:member",
+    "included": "ogm:included",
+
+    "type": "@type",
+    "id":   "@id",
+
+    "score":      "ogm:score",
+    "attributes": "schema:additionalProperty",
+
+    "links":  "hydra:link",
+    "label":  "rdfs:label",
+    "value":  "schema:value",
+    "hits":   "ogm:hits"
+  }
+}
