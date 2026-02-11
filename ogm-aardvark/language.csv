@@ -1,0 +1,13 @@
+Label,Language
+URI,https://opengeometadata.org/ogm-aardvark/#language
+Field Name,dct_language_sm
+Field Type,Array of strings
+Obligation,Optional
+Multivalued,True
+Purpose,To provide the user with the language of the resource.
+Entry Guidelines,Enter a 3-letter code using the ISO 639-2 standard.
+Commentary,"This field is intended to indicate the language of the dataset, map, and/or supporting documentation."
+Controlled Vocabulary,"Yes - not strict. Ideally, choose from the ISO 639-3 language codes in the list of [Language Values](../ogm-aardvark/#language-values) below."
+Example Value,"[""eng""]"
+Element Set,DCMI
+Group,Descriptive
