@@ -1,0 +1,13 @@
+Label,Format
+URI,https://opengeometadata.org/ogm-aardvark/#format
+Field Name,dct_format_s
+Field Type,String
+Obligation,Mandatory - used to generate citations; critical for GeoBlacklight functioning
+Multivalued,False
+Purpose,To display to the user the name of the file type as a text string in the download button.
+Entry Guidelines,"Enter a string describing the file format, preferably from the list of [Format Values](../ogm-aardvark/#format-values)."
+Commentary,"This field is required if the download URL (`http://schema.org/downloadUrl`) in the [References](../ogm-aardvark/#references) field is configured as a single key:value pair. The field is not required if using the [multiple downloads](../configure-references-links/#multiple-downloads) option."
+Controlled Vocabulary,Yes - not strict
+Example Value,"""Shapefile"""
+Element Set,DCMI
+Group,Object

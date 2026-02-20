@@ -1,0 +1,13 @@
+Label,Index Year
+URI,https://opengeometadata.org/ogm-aardvark/#index-year
+Field Name,gbl_indexYear_im
+Field Type,Array of integers
+Obligation,Suggested - powers a search facet in GeoBlacklight
+Multivalued,True
+Purpose,"To power the ""Year"" facet and time slider widgets that rely on integers for dates."
+Entry Guidelines,Enter one or more 4-digit integers.
+Commentary,"Ideally this field should describe the date(s) depicted in a resource. Because it powers the ""Year"" facet, it is one of the key ways users can find items by their date."
+Controlled Vocabulary,No
+Example Value,"[1980,1981,1982]"
+Element Set,GBL
+Group,[Temporal](../temporal-fields)

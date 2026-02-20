@@ -1,0 +1,13 @@
+Label,Display Note
+URI,https://opengeometadata.org/ogm-aardvark/#display-note
+Field Name,gbl_displayNote_sm
+Field Type,Array of strings
+Obligation,Optional
+Multivalued,True
+Purpose,"To highlight additional information about a resource, such as warnings or tips for using the data."
+Entry Guidelines,"Prefix the string with ""Danger:"", ""Info:"", ""Tip:"", or ""Warning:"" to specify the type of note."
+Commentary,"Starting in GeoBlacklight version 4.1, text in this field is prominently displayed in a shaded box just after the title, with the prefixes controlling the style of the displayed note. Styles and additional prefixes (for example, in other languages) can be added by customizing the GeoBlacklight software; see the [v4.1.0 release notes](https://github.com/geoblacklight/geoblacklight/releases/tag/v4.1.0)."
+Controlled Vocabulary,No
+Example Value,"[""Danger: This text will be displayed in a red box"",""Info: This text will be displayed in a blue box"",""Tip: This text will be displayed in a green box"",""Warning: This text will be displayed in a yellow box"",""This is text without a tag and it will be assigned the default 'note' style""]"
+Element Set,GBL
+Group,Descriptive
