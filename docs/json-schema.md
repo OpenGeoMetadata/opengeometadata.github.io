@@ -5,3 +5,8 @@
 
 ### [:material-code-json: GBL 1.0 Metadata](schema/geoblacklight-schema-1.0.json)
 
+## Repository files
+
+### [:material-code-json: withdrawn.json](schema/ogm-withdrawals-1.0.json)
+
+Validates a repository's [`withdrawn.json`](../repository-files/#withdrawnjson) file.

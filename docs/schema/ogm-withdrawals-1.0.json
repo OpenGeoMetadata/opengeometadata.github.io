@@ -47,7 +47,7 @@
           "type": "string"
         },
         "is_replaced_by": {
-          "description": "Identifiers of the records that replace this one, mirroring dct_isReplacedBy_sm.",
+          "description": "Identifiers of the records that replace this one.",
           "type": "array",
           "items": { "$ref": "#/$defs/identifier" },
           "uniqueItems": true
