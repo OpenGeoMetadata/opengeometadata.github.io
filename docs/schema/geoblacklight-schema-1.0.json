@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Schema for GeoBlacklight. See https://github.com/geoblacklight/geoblacklight/wiki/Schema for more details.",
+  "description": "Schema for GeoBlacklight. See https://opengeometadata.org/gbl-1.0 for more details.",
   "id": "http://geoblacklight.org/v1.0/schema",
   "title": "GeoBlacklight Schema - v1.0",
   "definitions": {
@@ -8,14 +8,7 @@
       "title": "layer",
       "description": "A GIS data layer. See [this example](https://github.com/OpenGeoMetadata/edu.stanford.purl/blob/master/bb/099/zb/1450/geoblacklight.json) metadata layer.",
       "type": "object",
-      "required": [
-        "dc_title_s",
-        "dc_identifier_s",
-        "dc_rights_s",
-        "dct_provenance_s",
-        "layer_slug_s",
-        "solr_geom"
-      ],
+      "required": ["dc_title_s", "dc_identifier_s", "dc_rights_s", "dct_provenance_s", "layer_slug_s", "solr_geom"],
       "properties": {
         "uuid": {
           "type": "string",
@@ -24,7 +17,7 @@
         },
         "dc_identifier_s": {
           "type": "string",
-          "description": "Unique identifier for layer as a URI. It should be globally unique across all institutions, assumed not to be end-user visible, and is usually of the form `http://institution/id`. See https://github.com/geoblacklight/geoblacklight/wiki/Schema for more detailed documentation.",
+          "description": "Unique identifier for layer as a URI. It should be globally unique across all institutions, assumed not to be end-user visible, and is usually of the form `http://institution/id`. See https://opengeometadata.org/gbl-1.0#identifier for more detailed documentation.",
           "example": "http://purl.stanford.edu/vr593vj7147"
         },
         "dc_title_s": {
@@ -39,10 +32,7 @@
         },
         "dc_rights_s": {
           "type": "string",
-          "enum": [
-            "Public",
-            "Restricted"
-          ],
+          "enum": ["Public", "Restricted"],
           "description": "Access rights for the layer."
         },
         "dct_provenance_s": {
@@ -68,15 +58,7 @@
         },
         "layer_geom_type_s": {
           "type": "string",
-          "enum": [
-            "Point",
-            "Line",
-            "Polygon",
-            "Raster",
-            "Scanned Map",
-            "Image",
-            "Mixed"
-          ],
+          "enum": ["Point", "Line", "Polygon", "Raster", "Scanned Map", "Image", "Mixed"],
           "description": "Geometry type for layer data, using controlled vocabulary. *Optional*"
         },
         "layer_modified_dt": {
@@ -86,7 +68,7 @@
         },
         "layer_slug_s": {
           "type": "string",
-          "description": "Identifies a layer in human-readable keywords. Note this value is visible to the user, and used for Permalinks. The value should be alpha-numeric characters separated by dashes, and is typically of the form `institution-keyword1-keyword2`. It should also be globally unique across all institutions in *your* GeoBlacklight index. See https://github.com/geoblacklight/geoblacklight/wiki/Schema for more detailed documentation.",
+          "description": "Identifies a layer in human-readable keywords. Note this value is visible to the user, and used for Permalinks. The value should be alpha-numeric characters separated by dashes, and is typically of the form `institution-keyword1-keyword2`. It should also be globally unique across all institutions in *your* GeoBlacklight index. See https://opengeometadata.org/gbl-1.0#slug for more detailed documentation.",
           "pattern": "^[-a-zA-Z0-9]+$",
           "example": "stanford-andhra-pradesh-village-boundaries"
         },
@@ -134,11 +116,7 @@
         },
         "dc_type_s": {
           "type": "string",
-          "enum": [
-            "Dataset",
-            "Image",
-            "PhysicalObject"
-          ],
+          "enum": ["Dataset", "Image", "PhysicalObject"],
           "description": "Resource type of the layer, using DCMI Type Vocabulary, usually a `Dataset`. *Optional*"
         },
         "dct_spatial_sm": {
@@ -194,9 +172,7 @@
         "geoblacklight_version": {
           "type": "string",
           "description": "The version of the GeoBlacklight Schema to which this metadata record conforms.",
-          "enum": [
-            "1.0"
-          ]
+          "enum": ["1.0"]
         }
       }
     }
@@ -204,7 +180,8 @@
   "anyOf": [
     {
       "$ref": "#/definitions/layer"
-    }, {
+    },
+    {
       "type": "array",
       "items": {
         "$ref": "#/definitions/layer"
