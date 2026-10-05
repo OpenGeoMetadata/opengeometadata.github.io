@@ -1,0 +1,346 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "opengeometadata-aardvark-primary-csv-table-schema",
+  "fields": [
+    {
+      "name": "Title",
+      "type": "string",
+      "description": "Primary title of the resource, often taken from metadata or scanned map.",
+      "example": "100 Foot Grid Cambridge MA 2004"
+    },
+    {
+      "name": "Alternative Title",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "Secondary titles, often in a different language or format.",
+      "example": [
+        "Index Map",
+        "NEZ H Districts"
+      ]
+    },
+    {
+      "name": "Description",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "A human-readable summary or abstract of the resource.",
+      "example": [
+        "This polygon shapefile represents the public schools in Boston."
+      ]
+    },
+    {
+      "name": "Language",
+      "type": "string",
+      "description": "Three-letter ISO 639-2 language code of the resource's content.",
+      "example": "eng",
+      "constraints": {
+        "enum": [
+          "abk", "ace", "ach", "ada", "ady", "aar", "afh", "afr", "afa", "ain", "aka", "akk", "alb", "sqi", "gsw", "ale", "alg", "als", "tut", "amh", "anp", "apa", "ara", "arg", "arp", "arw", "arm", "hye", "rup", "art", "asm", "ast", "ath", "aus", "ava", "ave", "awa", "aym", "aze", "ban", "bat", "bal", "bam", "bai", "bad", "bnt", "bas", "bak", "baq", "eus", "btk", "bej", "bel", "bem", "ben", "ber", "bho", "bih", "bik", "byn", "bin", "bis", "zbl", "nob", "bos", "bra", "bre", "bug", "bul", "bua", "bur", "mya", "cad", "spa", "cat", "cau", "ceb", "cel", "cai", "khm", "chg", "cmc", "cha", "che", "chr", "nya", "chy", "chb", "chi", "zho", "chn", "chp", "cho", "zha", "chu", "chk", "chv", "nwc", "syc", "rar", "cop", "cor", "cos", "cre", "mus", "crp", "cpe", "cpf", "cpp", "crh", "hrv", "cus", "cze", "ces", "dak", "dan", "dar", "del", "chp", "div", "zza", "din", "doi", "dgr", "dra", "dua", "dut", "nld", "dum", "dyu", "dzo", "frs", "bin", "efi", "egy", "eka", "elx", "eng", "enm", "ang", "myv", "epo", "est", "ewe", "ewo", "fan", "fat", "fao", "fij", "fil", "fin", "fiu", "fon", "fre", "fra", "frm", "fro", "fur", "ful", "gaa", "gla", "car", "glg", "lug", "gay", "gba", "gez", "geo", "kat", "ger", "deu", "nds", "gmh", "goh", "gem", "kik", "gil", "gon", "gor", "got", "grb", "grc", "gre", "ell", "kal", "grn", "guj", "gwi", "hai", "hat", "hau", "haw", "heb", "her", "hil", "him", "hin", "hmo", "hit", "hmn", "hun", "hup", "iba", "ice", "isl", "ido", "ibo", "ijo", "ilo", "arc", "smn", "inc", "ine", "ind", "inh", "ina", "ile", "iku", "ipk", "ira", "gle", "mga", "sga", "iro", "ita", "jpn", "jav", "kac", "jrb", "jpr", "kbd", "kab", "kal", "xal", "kam", "kan", "kau", "pam", "kaa", "krc", "kar", "kas", "csb", "kaw", "kaz", "kha", "khi", "kho", "kik", "kmb", "kin", "zza", "kir", "tlh", "kom", "kon", "kok", "kor", "kos", "kpe", "kro", "kua", "kum", "kur", "kru", "kut", "kir", "lad", "lah", "lam", "day", "lao", "lat", "lav", "ast", "ltz", "lez", "lim", "lin", "lit", "jbo", "nds", "dsb", "loz", "lub", "lua", "lui", "smj", "lun", "luo", "lus", "ltz", "rup", "mac", "mkd", "mad", "mag", "mai", "mak", "mlg", "may", "msa", "mal", "div", "mlt", "mnc", "mdr", "man", "mni", "mno", "glv", "mao", "mri", "arn", "mar", "chm", "mah", "mwr", "mas", "myn", "men", "mic", "min", "mwl", "moh", "mdf", "rum", "ron", "mkh", "hmn", "lol", "mon", "cnr", "mos", "mul", "mun", "nqo", "nah", "nau", "nav", "nde", "nbl", "ndo", "nap", "nep", "new", "nia", "nic", "ssa", "niu", "zxx", "nog", "non", "nai", "nde", "frr", "sme", "nso", "nor", "nob", "nno", "zxx", "nub", "iii", "nym", "nya", "nyn", "nno", "nyo", "nzi", "ile", "oci", "pro", "arc", "xal", "oji", "chu", "nwc", "chu", "ori", "orm", "osa", "oss", "oto", "pal", "pau", "pli", "pam", "pag", "pan", "pap", "paa", "pus", "nso", "per", "fas", "peo", "phi", "phn", "fil", "pon", "pol", "por", "pra", "pro", "pan", "pus", "que", "raj", "rap", "rar", "qaa-qtz", "roa", "rum", "ron", "roh", "rom", "run", "rus", "kho", "sal", "sam", "smi", "smo", "sad", "sag", "san", "sat", "srd", "sas", "nds", "sco", "gla", "sel", "sem", "nso", "srp", "srr", "shn", "sna", "iii", "scn", "sid", "sgn", "bla", "snd", "sin", "sit", "sio", "sms", "den", "sla", "slo", "slk", "slv", "sog", "som", "son", "snk", "wen", "nso", "sot", "sai", "nbl", "alt", "sma", "spa", "srn", "zgh", "suk", "sux", "sun", "sus", "swa", "ssw", "swe", "gsw", "syr", "tgl", "tah", "tai", "tgk", "tmh", "tam", "tat", "tel", "ter", "tet", "tha", "tib", "bod", "tig", "tir", "tem", "tiv", "tlh", "tli", "tpi", "tkl", "tog", "ton", "tsi", "tso", "tsn", "tum", "tup", "tur", "ota", "tuk", "tvl", "tyv", "twi", "udm", "uga", "uig", "ukr", "umb", "mis", "und", "hsb", "urd", "uig", "uzb", "vai", "cat", "ven", "vie", "vol", "vot", "wak", "wln", "war", "was", "wel", "cym", "fry", "him", "wol", "xho", "sah", "yao", "yap", "yid", "yor", "ypk", "znd", "zap", "zza", "zen", "zha", "zul", "zun"
+        ]
+      }
+    },
+    {
+      "name": "Display Note",
+      "type": "string",
+      "description": "Free-text note to display in item details."
+    },
+    {
+      "name": "Creator",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "Primary entity or individual responsible for creating the resource.",
+      "example": [
+        "Geological Survey (U.S.)"
+      ]
+    },
+    {
+      "name": "Publisher",
+      "type": "string",
+      "description": "Entity that published or distributed the resource.",
+      "example": "Cambridge (Mass.) Geographic Information Systems"
+    },
+    {
+      "name": "Provider",
+      "type": "string",
+      "description": "Institution that provides the metadata and access to the resource.",
+      "example": "Tufts"
+    },
+    {
+      "name": "Resource Class",
+      "type": "string",
+      "description": "Broad classification of the resource (e.g., Datasets, Maps).",
+      "example": "Datasets"
+    },
+    {
+      "name": "Resource Type",
+      "type": "string",
+      "description": "More specific type of resource (e.g., Polygon data, Index maps).",
+      "example": "Polygon data"
+    },
+    {
+      "name": "Subject",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "Topics or subjects describing the resource.",
+      "example": [
+        "Transportation",
+        "Boundaries"
+      ]
+    },
+    {
+      "name": "Theme",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "High-level thematic categories, often from a controlled vocabulary."
+    },
+    {
+      "name": "Keyword",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "Free-text keywords or phrases related to the resource."
+    },
+    {
+      "name": "Temporal Coverage",
+      "type": "string",
+      "description": "Time period covered by the resource.",
+      "example": "1980-1990"
+    },
+    {
+      "name": "Date Issued",
+      "type": "string",
+      "format": "date",
+      "description": "Date of publication or release in ISO 8601 format.",
+      "example": "2004"
+    },
+    {
+      "name": "Index Year",
+      "type": "integer",
+      "description": "Single year for search facets and sorting.",
+      "example": 2004
+    },
+    {
+      "name": "Date Range",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "Time span for the data in Solr range format.",
+      "example": [
+        "[1980 TO 1990]"
+      ]
+    },
+    {
+      "name": "Spatial Coverage",
+      "type": "string",
+      "description": "Place names, region, or bounding description.",
+      "example": "Cambridge, Massachusetts"
+    },
+    {
+      "name": "Geometry",
+      "type": "string",
+      "description": "WKT or ENVELOPE string of the resource geometry.",
+      "example": "ENVELOPE(-71.2, -70.8, 42.5, 42.3)"
+    },
+    {
+      "name": "Bounding Box",
+      "type": "string",
+      "description": "Bounding box of the resource in ENVELOPE(W,E,N,S) format."
+    },
+    {
+      "name": "Centroid",
+      "type": "string",
+      "description": "Center point of the resource in 'lat,long' format.",
+      "example": "42.3744,-71.1169"
+    },
+    {
+      "name": "Georeferenced",
+      "type": "boolean",
+      "description": "Whether the resource is georeferenced.",
+      "example": true
+    },
+    {
+      "name": "Relation",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "General related resources or identifiers."
+    },
+    {
+      "name": "Member Of",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "Collections or sets the resource belongs to."
+    },
+    {
+      "name": "Is Part Of",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "Parent resource or collection identifier."
+    },
+    {
+      "name": "Source",
+      "type": "string",
+      "description": "Originating metadata system or source collection."
+    },
+    {
+      "name": "Is Version Of",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "Previous versions of the resource."
+    },
+    {
+      "name": "Replaces",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "Older resources that this replaces."
+    },
+    {
+      "name": "Is Replaced By",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "Newer versions replacing this one."
+    },
+    {
+      "name": "Rights",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "Statement about rights held on the resource."
+    },
+    {
+      "name": "Rights Holder",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "Entity holding the rights for the resource."
+    },
+    {
+      "name": "License",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "description": "License URI or text indicating permissions for use."
+    },
+    {
+      "name": "Access Rights",
+      "type": "string",
+      "description": "Access classification such as 'Public' or 'Restricted'.",
+      "constraints": {
+        "enum": ["Public", "Restricted"]
+      }
+    },
+    {
+      "name": "Format",
+      "type": "string",
+      "description": "Format of the downloadable file or map service.",
+      "example": "Shapefile",
+      "constraints": {
+        "enum": [
+          "ArcGRID",
+          "CD-ROM",
+          "DEM",
+          "DVD-ROM",
+          "Feature Class",
+          "Geodatabase",
+          "GeoJPEG",
+          "GeoJSON",
+          "GeoPackage",
+          "GeoPDF",
+          "GeoTIFF",
+          "JPEG",
+          "JPEG2000",
+          "KML",
+          "KMZ",
+          "LAS",
+          "LAZ",
+          "Mixed",
+          "MrSID",
+          "PDF",
+          "PNG",
+          "Pulsewaves",
+          "Raster Dataset",
+          "Shapefile",
+          "SQLite Database",
+          "Tabular Data",
+          "TIFF"
+        ]
+      }
+    },
+    {
+      "name": "File Size",
+      "type": "string",
+      "description": "Size of the downloadable resource.",
+      "example": "5.3 MB"
+    },
+    {
+      "name": "WxS Identifier",
+      "type": "string",
+      "description": "Internal identifier used in web services."
+    },
+    {
+      "name": "ID",
+      "type": "string",
+      "constraints": {
+        "required": true
+      },
+      "description": "Unique identifier for the record.",
+      "example": "tufts-cambridgegrid100-04"
+    },
+    {
+      "name": "Identifier",
+      "type": "array",
+      "separator": "|",
+      "items": {
+        "type": "string"
+      },
+      "description": "Other identifiers such as DOIs, ARKs, UUIDs."
+    },
+    {
+      "name": "Suppressed",
+      "type": "boolean",
+      "description": "Whether the record should be excluded from public display."
+    }
+  ]
+}
