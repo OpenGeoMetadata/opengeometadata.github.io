@@ -1,0 +1,13 @@
+Label,Suppressed
+URI,https://opengeometadata.org/ogm-aardvark/#suppressed
+Field Name,gbl_suppressed_b
+Field Type,Boolean or string
+Obligation,Optional
+Multivalued,False
+Purpose,"To hide items from users in the search results. If set to ""true"", the record will not appear in search results. It is still accessible from the data relations widgets and via direct URL."
+Entry Guidelines,Only one of two values are allowed: true or false.
+Commentary,"This field is useful for multipart items with identical metadata, such as pages in an atlas or series."
+Controlled Vocabulary,Yes - strict
+Example Value,"true or ""true"""
+Element Set,GBL
+Group,Admin

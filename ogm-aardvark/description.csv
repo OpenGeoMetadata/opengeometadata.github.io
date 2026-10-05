@@ -1,0 +1,13 @@
+Label,Description
+URI,https://opengeometadata.org/ogm-aardvark/#description
+Field Name,dct_description_sm
+Field Type,Array of strings
+Obligation,Mandatory - used in search engine indexing
+Multivalued,True
+Purpose,To provide the user with a summary of the resource.
+Entry Guidelines,"At a minimum, this is a reiteration of the title in sentence format. Other relevant information, such as data creation methods, data sources, and special licenses, may also be included."
+Commentary,"This field is the second-most prominent value (after [Title](../ogm-aardvark/#title)) that users see when search or browsing for items. If the description is minimal or lacking, it can be improved by concatenating available metadata fields, such as title, date, format, and place. This is a plain text field by default, but it can include clickable links if the GeoBlacklight software is customized; see the [GeoBlacklight documentation](https://geoblacklight.org/docs/rendering_html_from_description/) on how to render HTML from a text field."
+Controlled Vocabulary,No
+Example Value,"""This polygon shapefile represents boundaries of election districts in New York City. It was harvested from the NYC Open Data Portal."""
+Element Set,DCMI
+Group,Descriptive

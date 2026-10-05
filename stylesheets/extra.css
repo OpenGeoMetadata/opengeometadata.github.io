@@ -1,0 +1,179 @@
+/*-----------------------------------------------------------
+  LAYOUT & WIDTH
+-----------------------------------------------------------*/
+
+/* Set wider max content width */
+.md-grid {
+  max-width: 90%;
+}
+
+
+/*-----------------------------------------------------------
+  COLOR SCHEMES
+-----------------------------------------------------------*/
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #2b6ca1;
+  --md-accent-fg-color: #09c36c;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #09c36c;
+  --md-accent-fg-color: #2b6ca1;
+}
+
+
+/*-----------------------------------------------------------
+  TYPOGRAPHY
+-----------------------------------------------------------*/
+
+/* Headings */
+.md-typeset h2 {
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+/* Paragraphs and list items (scoped to content area) */
+.md-typeset > p,
+.md-typeset > ul > li,
+.md-typeset > ol > li {
+  font-size: 1.1em;
+  margin: 0 0 0.75em;
+}
+
+/* Navigation section label */
+.md-nav__item--section > .md-nav__link[for] {
+  color: inherit;
+}
+
+/* Tabs */
+.md-tabs__link {
+  font-size: 1.75em;
+}
+
+/* Header topic text */
+.md-header__topic {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+
+/*-----------------------------------------------------------
+  BREADCRUMBS (Navigation Path)
+-----------------------------------------------------------*/
+
+.md-path {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3em;
+  margin-bottom: 1.25rem;
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+
+.md-path__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 !important;  /* override default margin from theme or browser */
+  padding: 0;
+}
+
+.md-path__item {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 !important;  /* force removal of top/bottom/side spacing */
+}
+
+/* Breadcrumb links (non-current) */
+.md-path__link {
+  color: var(--md-default-fg-color--light);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.md-path__link:hover {
+  color: var(--md-primary-fg-color);
+}
+
+.md-path__link:focus {
+  outline: 2px dotted var(--md-primary-fg-color);
+  outline-offset: 2px;
+}
+
+/* Ensure proper spacing on inner span */
+.md-path__link,
+.md-path__link > .md-ellipsis {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: inline;
+}
+
+/* Breadcrumb separator */
+.md-path__item + .md-path__item::before {
+  content: "›";
+  color: var(--md-default-fg-color--lighter);
+  margin: 0 0.25rem;
+  padding: 0;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* Current breadcrumb (non-clickable final item) */
+.md-path__current {
+  /* color: #6a6a6a; */
+  font-weight: 600;
+  cursor: default;
+  text-decoration: none;
+}
+/*-----------------------------------------------------------
+  NAVIGATION / SIDEBAR
+-----------------------------------------------------------*/
+
+/* Hide hamburger menu label */
+label[for="__drawer"] {
+  display: none;
+}
+
+
+/*-----------------------------------------------------------
+  UTILITY CLASSES
+-----------------------------------------------------------*/
+
+.center {
+  text-align: center;
+}
+
+
+/*-----------------------------------------------------------
+  CUSTOM GRID LAYOUT
+-----------------------------------------------------------*/
+
+/* Responsive single-column layout */
+@media screen and (max-width: 640px) {
+  #grid-col {
+    grid-template-columns: 100%;
+  }
+}
+
+/* Grid container */
+#grid-line {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+/* Grid cell styling */
+div.cell {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+}
+
+/* Span full width */
+.spancol {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
