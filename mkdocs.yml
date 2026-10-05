@@ -88,6 +88,7 @@ nav:
                   -  Legacy Schemas :
                         - 'GBL 1.0' : 'gbl-1.0.md'
                         - 'GBL 0.5': 'gbl-0.5.md'
+                  - 'Repository Files' : 'repository-files.md'
 
             - Crosswalks:
                   - 'Aardvark to GBL 1.0' : 'aardvark-gbl-1-crosswalk.md'
@@ -110,6 +111,7 @@ nav:
             - 'how-to-guides/index.md'
             - Repositories:
                   - 'Share on OpenGeoMetadata': 'share-on-ogm.md'
+                  - 'Withdraw Records': 'withdraw-records.md'
                   - 'Harvest from OpenGeoMetadata': 'harvest-ogm.md'
             - Metadata:
                   - 'Upgrade to OGM Aardvark': 'upgrade-metadata.md'

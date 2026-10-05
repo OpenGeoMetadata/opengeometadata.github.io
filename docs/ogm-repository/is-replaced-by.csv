@@ -1,0 +1,10 @@
+Label,Is Replaced By
+URI,https://opengeometadata.org/repository-files/#is-replaced-by
+Field Name,is_replaced_by
+Field Type,Array of strings
+Obligation,Optional
+Multivalued,True
+Purpose,To point to the record(s) that replace the withdrawn one.
+Entry Guidelines,Enter the ID of each replacement record.
+Commentary,"Mirrors [Is Replaced By](../ogm-aardvark/#is-replaced-by) (`dct_isReplacedBy_sm`). If you are keeping the old record published, use that field on the record instead of withdrawing it."
+Example Value,"[""stanford-cc123dd4567""]"
