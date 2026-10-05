@@ -1,0 +1,9 @@
+Value,Use when
+superseded,A newer record replaces this one and this one is no longer published. List the newer record in Is Replaced By.
+duplicate,The record describes the same item as another record that is still published.
+upstream-removed,The item was removed from the system the record was generated from.
+rights,The item can no longer be shared for licensing or other rights reasons.
+privacy,The record or item exposes personal or sensitive information.
+quality,The record is too incomplete or inaccurate to keep publishing.
+out-of-scope,The item no longer belongs in your collection.
+other,None of the above.

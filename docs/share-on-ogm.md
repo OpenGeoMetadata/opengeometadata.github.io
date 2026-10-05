@@ -105,22 +105,29 @@ Each record has a unique filename based on the item’s ID. This allows multiple
 
 All records use the same filename pattern, such as `*/geoblacklight.json` or `*/fgdc.json`. This requires each layer to have its own folder.
 
-**Optional: layers.json**
+??? note "Legacy: layers.json"
 
-Adopting the file-naming by metadata standard approach can make it difficult for end-users to find the relevant metadata files for an item of interest. Including a `layers.json` file in the main repository folder allows for easy mapping of layers to their location within an organization's repository (e.g., `Layer-Id : Folder`). See the [edu.stanford.purl](https://github.com/OpenGeoMetadata/edu.stanford.purl/blob/master/layers.json) repository for an example:
+	Adopting the file-naming by metadata standard approach can make it difficult for end-users to find the relevant metadata files for an item of interest. Some repositories include a `layers.json` file in the main repository folder that maps layers to their location within the repository (e.g., `Layer-Id : Folder`). See the [edu.stanford.purl](https://github.com/OpenGeoMetadata/edu.stanford.purl/blob/main/layers.json) repository for an example:
 
-```
-{
-  "druid:bb338jh0716": "bb/338/jh/0716",
-  "druid:bb509gh7292": "bb/509/gh/7292",
-  "druid:bc899yk4538": "bc/899/yk/4538",
-  ...
-}
-```
+	```
+	{
+	  "druid:bb338jh0716": "bb/338/jh/0716",
+	  "druid:bb509gh7292": "bb/509/gh/7292",
+	  "druid:bc899yk4538": "bc/899/yk/4538",
+	  ...
+	}
+	```
+
+	New repositories don't need one. Harvesters don't use `layers.json`, and its keys aren't always the records' identifiers.
 
 !!! note
 
-	GeoCombine will harvest all metadata records in an OpenGeoMetadata repository that end with the extension `.json`, regardless of how the records are structured. The one exception is files named `layers.json` - this file will be skipped during ingest.
+	GeoCombine will harvest all metadata records in an OpenGeoMetadata repository that end with the extension `.json`, regardless of how the records are structured. The exceptions are these reserved names at the root of a repository, which are skipped during ingest. Don't use them for metadata records:
+
+	* `layers.json`
+	* `withdrawn.json` (see [Withdraw Records](../withdraw-records))
+
+	See [Repository Files](../repository-files) for what each one is for.
 
 
 ## 5. Document your repository
@@ -147,7 +154,16 @@ Information about your metadata:
 * How often the repository is updated
 * How metadata is validated, if applicable
 
+## How We Handle Withdrawn Records
+
+Whether you list withdrawn records in `withdrawn.json`, and who to contact to have a record taken down.
+
 ## How to Contribute
 
 Contact information; whether or not your repository is open for metadata contributions and enhancements.
 ```
+
+## Withdrawing records
+
+When you remove a record that other institutions may have harvested, list it in a `withdrawn.json` file so their harvesters delete it too. See [Withdraw Records](../withdraw-records).
+

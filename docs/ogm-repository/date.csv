@@ -1,0 +1,10 @@
+Label,Date
+URI,https://opengeometadata.org/repository-files/#date
+Field Name,date
+Field Type,String
+Obligation,Required
+Multivalued,False
+Purpose,To record when the record was withdrawn.
+Entry Guidelines,"Enter a date (`2026-03-14`), or a date and time with a UTC offset or `Z` (`2026-03-14T09:30Z`, `2026-03-14T09:30:00-07:00`). Seconds and fractional seconds are optional."
+Commentary,"Follows the W3C Date and Time Format. A time without a UTC offset, a year on its own, and a year and month on their own are not valid. The date is for audit and reporting; harvesters do not use it to decide what to delete."
+Example Value,"""2026-03-14"""

@@ -1,0 +1,10 @@
+Label,Reason
+URI,https://opengeometadata.org/repository-files/#reason
+Field Name,reason
+Field Type,String
+Obligation,Optional
+Multivalued,False
+Purpose,To record why the record was withdrawn.
+Entry Guidelines,Enter one of the [reason values](#reason-values).
+Commentary,"Harvesters must treat a value they do not recognize as `other`, not as an error, so the list can grow without breaking older harvesters."
+Example Value,"""superseded"""
