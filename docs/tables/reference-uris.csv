@@ -16,6 +16,7 @@ Metadata in HTML,`http://www.w3.org/1999/xhtml`,View structured metadata in any 
 Metadata in ISO 19139,`http://www.isotc211.org/schemas/2005/gmd/`,Provides an HTML view of an XML file in the ISO 19139 standard
 Metadata in MODS,`http://www.loc.gov/mods/v3`,Provides a raw XML view of metadata in the MODS format
 oEmbed,`https://oembed.com`,-
+Inline frame embed,`https://schema.org/embedUrl`,Used for embedded preview of the content via HTML inline frame
 OpenIndexMap,`https://openindexmaps.org`,Provides an interactive preview of a GeoJSON file formatted as an OpenIndexMap
 PMTiles,`https://github.com/protomaps/PMTiles`,-
 Tile Mapping Service (TMS),`https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification`,-
