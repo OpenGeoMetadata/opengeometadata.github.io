@@ -1,0 +1,13 @@
+Label,Is Version Of
+URI,https://opengeometadata.org/ogm-aardvark/#is-version-of
+Field Name,dct_isVersionOf_sm
+Field Type,Array of strings
+Obligation,Optional
+Multivalued,True
+Purpose,To indicate that an item is part of a series of resources that are updated or altered and to provide a link to a different variant or adaption.
+Entry Guidelines,Enter the ID of the most recent related record OR create a parent record to group versions together.
+Commentary,"If entering the ID of a parent record, see [Member Of](../ogm-aardvark/#member-of) and [Is Part Of](../ogm-aardvark/#is-part-of) for similar examples."
+Controlled Vocabulary,No
+Example Value,"[""xyz-1234""]"
+Element Set,DCMI
+Group,[Relations](../relations-fields)

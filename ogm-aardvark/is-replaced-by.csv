@@ -1,0 +1,13 @@
+Label,Is Replaced By
+URI,https://opengeometadata.org/ogm-aardvark/#is-replaced-by
+Field Name,dct_isReplacedBy_sm
+Field Type,Array of strings
+Obligation,Optional
+Multivalued,True
+Purpose,To point the user to a newer item(s).
+Entry Guidelines,Enter the ID of the newer item(s) that should be used instead.
+Commentary,"This field can be used with [Replaces](../ogm-aardvark/#replaces) to link an original dataset to a newer version. For example, if this dataset has already been cited somewhere but is now deprecated, it can be retained in a repository and this field can be used to link to its newer version."
+Controlled Vocabulary,No
+Example Value,"[""cugir-007933""]"
+Element Set,DCMI
+Group,[Relations](../relations-fields)

@@ -1,0 +1,13 @@
+Label,Keyword
+URI,https://opengeometadata.org/ogm-aardvark/#keyword
+Field Name,dcat_keyword_sm
+Field Type,Array of strings
+Obligation,Optional
+Multivalued,True
+Purpose,To improve search results with hidden free text tags and to give administrators a field for internal tags.
+Entry Guidelines,"Enter tags that will be useful for enhancing searches and interpretation. Keywords will be in the metadata, but will be hidden to the user by default."
+Commentary,This field may be used for administrative purposes or to facilitate text searching without cluttering a facet or interface. They may be helpful for grouping items by an accession code or for alternate spellings of common terms.
+Controlled Vocabulary,No
+Example Value,"[""covid19"", ""vaccination rate""]"
+Element Set,DCAT
+Group,Categories

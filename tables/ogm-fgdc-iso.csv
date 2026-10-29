@@ -1,0 +1,45 @@
+OGM Aardvark,FGDC CSDGM,ISO 19139
+dct_accessRights_s,idinfo/acconst,MD_DataIdentification/resourceConstraints/MD_LegalConstraints/accessConstraints
+dct_alternative_sm,-,-
+dcat_bbox,idinfo/spdom/bounding/westbc AND eastbc AND northbc AND southbc,MD_DataIdentification/extent/EX_Extent/geographicElement/EX_GeographicBoundingBox/west AND south AND east AND north
+dcat_centroid,-,-
+dct_creator_sm,idinfo/citation/citeinfo/originator,MD_DataIdentification/citation/CI_Citation/citation/citedResponsibleParty/CI_ResponsibleParty/individualName OR organsationName (@type = originator)
+dct_issued_s,idinfo/citation/citeinfo/pubdate,MD_DataIdentification/citation/CI_Citation/citation/CI_Date/date
+gbl_dateRange_drsim,idinfo/timeperd/timeinfo/rngdates/begdate and idinfo/timeperd/timeinfo/rngdates/enddate,-
+dct_description_sm,descript/abstract,MD_DataIdentification/abstract
+gbl_displayNote_sm,-,-
+gbl_fileSize_s,distinfo/stdorder/digform/digtinfo/transize,-
+dct_format_s,spdoinfo/direct,MD_Distribution/distributionFormat/MD_Format/name
+locn_geometry,idinfo/spdom/bounding/westbc AND eastbc AND northbc AND southbc,-
+gbl_georeferenced_b,-,-
+id,not applicable,not applicable
+dct_identifier_sm,-,MD_DataIdentification/citation/CI_Citation/citation/MD_Identifier/code
+gbl_indexYear_im,idinfo/timeprd/timeinfo/sngdate/caldate and idinfo/timeperd/timeinfo/mdattim/sngdate/caldate and idinfo/timeperd/timeinfo/rngdates/begdate and idinfo/keywords/temporal/tempkey,MD_DataIdentification/extent/EX_Extent/EX_TemporalExtent/extent/TimePeriod OR TimeInstant [YYYY]
+dct_isPartOf_sm,-,-
+idinfo/citation/citeinfo/lworkcit/citeinfo/title,MD_AggregateInformation/aggregateDataSetName/CI_Citation/title,-
+dct_isReplacedBy_sm,-,-
+dcat_keyword_sm,-,-
+dct_language_sm,-,MD_DataIdentification/language
+dct_license_sm,-,-
+pcdm_memberOf_sm,-,-
+gbl_mdVersion_s,-,-
+gbl_mdModified_dt,metainfo/metd,-
+schema_provider_s,distinfo/distrib/cntinfo/cntorgp/cntorg,MD_Distributor/CI_ResponsibleParty/organisationName
+dct_publisher_sm,idinfo/citation/citeinfo/pubinfo/publisher,MD_DataIdentification/citation/CI_Citation/citation/citedResponsibleParty/CI_ResponsibleParty/individualName OR organsationName (@type = publisher)
+dct_references_s,not applicable,not applicable
+dct_relation_sm,-,-
+dct_replaces_sm,-,-
+gbl_resourceClass_sm,idinfo/citation/citeinfo/geoform,-
+gbl_resourceType_sm,"spdoinfo/ptvctinf/sdtsterm/sdtstype, idinfo/keywords/theme/themekey",MD_GeometricObjectTypeCode
+dct_rights_sm,"idinfo/useconst, idinfo/useconst, idinfo/acconst",-
+dct_rightsHolder_sm,-,-
+dct_source_sm,dataqual/lineage/srcinfo/srccite/citeinfo/title,DQ_DataQuality/lineage/LI_Lineage/source/LI_Source/sourceCitation/CI_Citation/title
+dct_spatial_sm,idinfo/keywords/place,MD_DataIdentification/descriptiveKeywords/MD_Keywords/keyword (@type='place')
+dct_subject_sm,idinfo/keywords/theme/themekey,MD_DataIdentification/descriptiveKeywords/MD_Keywords/keyword (@type='theme') AND MD_DataIdentification/topicCategory/MD_TopicCategoryCode
+gbl_suppressed_b,not applicable,not applicable
+dct_temporal_sm,idinfo/timeprd/timeinfo/sngdate/caldate and idinfo/timeperd/timeinfo/mdattim/sngdate and idinfo/timeperd/timeinfo/rngdates and idinfo/keywords/temporal/tempkey,MD_DataIdentification/extent/EX_Extent/EX_TemporalExtent/extent/TimePeriod OR TimeInstant
+dcat_theme_sm,-,-
+dct_title_s,idinfo/citation/citeinfo/title,MD_DataIdentification/citation/CI_Citation/title
+hierarchyLevelName,-,-
+dct_isVersionOf_sm,-,-
+gbl_wxsIdentifier_s,not applicable,not applicable
