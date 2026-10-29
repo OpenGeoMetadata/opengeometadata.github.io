@@ -2,7 +2,6 @@
 
 Contributors are invited to share their metadata via our GitHub organization, which allows other institutions to periodically harvest and ingest the records into their own catalogs for wider exposure. Follow the steps below to get started.
 
-
 ## 1. Submit a request
 
 Submit a request to set up a new repository for your organization
@@ -14,23 +13,25 @@ Submit a request to join OpenGeoMetadata as an owner by commenting on this issue
 
 Choose a unique namespace for your repository. Participating institutions are able to create their own unique namespace. This ensures that each institution maintains and is responsible for unique identifiers that correspond with items or layers in its collection.
 
-* The most common format is to list the domain (.edu, .org, .uk) and then the institution’s name: `edu.institution`.
-* An institution using unique identifiers with a linked persistent URL, like [ARK](https://en.wikipedia.org/wiki/Archival_Resource_Key), may want to name their repository with a suffix: `edu.institution.arks`.
-* Institutions or collaborative organizations can also choose to adopt their own name for an OpenGeoMetadata repository: `big-ten`.
+- The most common format is to list the domain (.edu, .org, .uk) and then the institution’s name: `edu.institution`.
+- An institution using unique identifiers with a linked persistent URL, like [ARK](https://en.wikipedia.org/wiki/Archival_Resource_Key), may want to name their repository with a suffix: `edu.institution.arks`.
+- Providers with very large collections can break them up into separate repositories and add a suffix, e.g. `gov.usgs.tnm` and `gov.usgs.htmc` for two different sets of public data offered by USGS.
 
 Here are some examples of each of the following conventions:
 
-* Princeton: [edu.princeton.arks](https://github.com/OpenGeoMetadata/edu.princeton.arks)
-* Stanford: [edu.stanford.purl](https://github.com/OpenGeoMetadata/edu.stanford.purl)
-* New York University: [edu.nyu](https://github.com/OpenGeoMetadata/edu.nyu)
-* Big Ten Academic Alliance: [big-ten](https://github.com/OpenGeoMetadata/big-ten)
+- Princeton: [edu.princeton.arks](https://github.com/OpenGeoMetadata/edu.princeton.arks)
+- Stanford: [edu.stanford.purl](https://github.com/OpenGeoMetadata/edu.stanford.purl)
+- New York University: [edu.nyu](https://github.com/OpenGeoMetadata/edu.nyu)
+- Big Ten Academic Alliance: [geobtaa](https://github.com/OpenGeoMetadata/geobtaa)
+- USDA NAIP imagery: [gov.udsa.naip](https://github.com/OpenGeoMetadata/gov.usda.naip)
+
+Note that these are conventions and not strict rules; any name valid on GitHub is allowed.
 
 ## 3. Select a structure
 
 Select a directory structure for your repository. Metadata files in GitHub can be organized within directories (i.e., folders) using various structures.
 
 ### Flat
-
 
 For an organization with a small number of records (e.g., 250 records), a basic, flat directory structure within a repository is acceptable. A separate directory should be created for each layer or item described, then named according to the layer's unique identifier. Each directory should contain the metadata for that layer, in whichever standardized format an institution deems appropriate. The following is an example of one directory per item:
 
@@ -41,7 +42,6 @@ layer125/
 ```
 
 ### Categorical
-
 
 Some institutions may want to organize their records into logical groupings. For example, folders could be named for the Resource Class (i.e., Datasets, Maps), Collection, Date of Accession, or other attribute. With this structure, multiple layer files could be placed in the same directory, providing they have unique filenames. In the following example, an institution has divided records by their collection:
 
@@ -55,7 +55,6 @@ State_Fed_Orthoimagery/
 
 ### Hashed
 
-
 Institutions that have a large number of records (e.g., greater than several thousand) may enhance repository performance by dividing the records into a hashed directory. This involves creating nested subdirectories, typically by using an item’s ID to programmatically name them. In the following example, the item’s ID is on the left and the set of nested folders is on the right:
 
 ```
@@ -64,9 +63,8 @@ bb509gh7292: bb/509/gh/7292
 bc899yk4538: bc/899/yk/4538
 ```
 
+A hashed directory structure makes it easy to include additional materials and documentation related to an individual resource. For example, a directory might contain metadata in multiple geospatial metadata formats, as well as auxiliary files like preview images.
 
-
-A hashed directory structure makes it easy to include additional materials and documentation related to an individual resource. For example, a directory might contain metadata in multiple geospatial metadata formats, as well as auxiliary files like preview images. See the [edu.stanford.purl](https://github.com/OpenGeoMetadata/edu.stanford.purl/tree/master/bc/899/yk/4538) repository for an example:
 ```
 /bc/899/yk/4538/geoblacklight.json
                 iso19110.xml
@@ -76,10 +74,11 @@ A hashed directory structure makes it easy to include additional materials and d
                 preview.jpg
 ```
 
+These structures are also easier to browse online, because GitHub will truncate the number of displayed items in a directory when it exceeds a few thousand.
+
 !!! note
 
-	Institutions may choose to use a combination of structures, such as hashed directories within categorical folders.
-
+    Institutions may choose to use a combination of structures, such as hashed directories within categorical folders.
 
 ## 4. Determine file names
 
@@ -87,8 +86,7 @@ Determine the file-naming rules for your metadata. There are two main approaches
 
 ### Naming by item ID
 
-
-Each record has a unique filename based on the item’s ID. This allows multiple records to be stored in the same directory. See the [edu.harvard](https://github.com/OpenGeoMetadata/edu.harvard) repository for an example:
+Each record has a unique filename based on the item’s ID. This allows multiple records to be stored in the same directory.
 
 ```
 /HGL4/json/CAMBRIDGE09_ADDRESSBLOCKS.json
@@ -101,7 +99,6 @@ Each record has a unique filename based on the item’s ID. This allows multiple
 ```
 
 ### Naming by metadata standard
-
 
 All records use the same filename pattern, such as `*/geoblacklight.json` or `*/fgdc.json`. This requires each layer to have its own folder.
 
@@ -120,8 +117,7 @@ Adopting the file-naming by metadata standard approach can make it difficult for
 
 !!! note
 
-	GeoCombine will harvest all metadata records in an OpenGeoMetadata repository that end with the extension `.json`, regardless of how the records are structured. The one exception is files named `layers.json` - this file will be skipped during ingest.
-
+    Harvesters should harvest all of the JSON-format records found in a repository that match the target schema version, regardless of the subdirectory structure.
 
 ## 5. Document your repository
 
@@ -151,3 +147,23 @@ Information about your metadata:
 
 Contact information; whether or not your repository is open for metadata contributions and enhancements.
 ```
+
+## 6. Opt-in to sharing
+
+Many OGM institutions use [GeoCombine](https://github.com/OpenGeoMetadata/GeoCombine), a Ruby-based toolkit designed to automate the harvesting process. As of version v0.10.0 of GeoCombine, repositories must opt-in to harvesting by declaring their supported OGM schema version(s). This helps GeoCombine skip harvesting of any repository that offers no records in the user's desired schema version, substantially speeding up the harvest process. Repositories that opt-in by declaring a supported schema will be automatically harvested by GeoCombine the next time the tool is run.
+
+To opt-in to metadata sharing, [add custom properties](https://docs.github.com/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#adding-custom-properties) to your repository indicating the metadata schema(s) used:
+
+- [`Aardvark`](https://github.com/orgs/OpenGeoMetadata/repositories?q=props.supported_schemas%3AAardvark) - includes metadata in the [OGM Aardvark schema](https://opengeometadata.org/ogm-aardvark)
+- [`1.0`](https://github.com/orgs/OpenGeoMetadata/repositories?q=props.supported_schemas%3A1.0) - includes metadata in the (deprecated) [GeoBlacklight 1.0 schema](https://opengeometadata.org/gbl-1.0/)
+
+### Additional tags
+
+You can also add corresponding [topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics) to your repository to publicly indicate its purpose. Some topics you might consider adding include:
+
+- `ogm-aardvark` - indicates that the repository contains metadata in the [OGM Aardvark schema](https://opengeometadata.org/ogm-aardvark)
+- `gbl-1.0` - indicates that the repository contains metadata in the [GeoBlacklight 1.0 schema](https://opengeometadata.org/gbl-1.0/)
+- `fgdc` - indicates that the repository contains metadata in the [FGDC schema](https://www.fgdc.gov/metadata/csdgm-standard)
+- `iso19139` - indicates that the repository contains metadata in the [ISO 19139 schema](https://www.iso.org/standard/67253.html)
+
+Finally, consider also adding an open license to your metadata repository, such as [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).
