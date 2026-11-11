@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opengeometadata.org/schema/ogm-withdrawals-1.0.json",
+  "title": "OGM Withdrawals Log",
+  "description": "The withdrawn.json file at the root of an OpenGeoMetadata repository: a log of records the repository has deliberately stopped publishing, so that harvesters can remove them. Entries are treated as a set keyed by id; when an id appears more than once, the last entry wins. An id that is still published in the repository is available, whatever this file says. Unknown properties are allowed and must be ignored by consumers.",
+  "type": "object",
+  "required": ["ogm_version", "withdrawn"],
+  "properties": {
+    "$schema": {
+      "description": "The URL of this schema.",
+      "type": "string",
+      "format": "uri"
+    },
+    "ogm_version": {
+      "description": "Version of the withdrawals convention the file follows. Minor versions only add optional properties, so any 1.x file is valid against this schema.",
+      "type": "string",
+      "pattern": "^1\\.[0-9]+$"
+    },
+    "withdrawn": {
+      "description": "One entry per withdrawn record. If an id appears more than once, the last entry wins.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/withdrawal" }
+    }
+  },
+  "$defs": {
+    "withdrawal": {
+      "type": "object",
+      "required": ["id", "date"],
+      "properties": {
+        "id": {
+          "description": "The record's identifier exactly as it appeared in the record, i.e. the Solr uniqueKey (id in Aardvark, layer_slug_s in GeoBlacklight 1.0). Not a druid or a file path. If a repository published the same item in multiple schemas, list each.",
+          "$ref": "#/$defs/identifier"
+        },
+        "date": {
+          "description": "When the record was withdrawn: a date (2026-03-14), or a date and time with a UTC offset or Z (2026-03-14T09:30Z, 2026-03-14T09:30:00-07:00). Follows W3C-DTF; seconds and fractional seconds are optional. For audit and reporting.",
+          "type": "string",
+          "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(T([01][0-9]|2[0-3]):[0-5][0-9](:[0-5][0-9](\\.[0-9]+)?)?(Z|[+-]([01][0-9]|2[0-3]):[0-5][0-9]))?$"
+        },
+        "reason": {
+          "description": "Why the record was withdrawn. Recommended values: superseded, duplicate, upstream-removed, rights, privacy, quality, out-of-scope, other. Consumers must treat an unrecognized value as other, not as an error.",
+          "type": "string",
+          "minLength": 1,
+          "examples": ["superseded", "duplicate", "upstream-removed", "rights", "privacy", "quality", "out-of-scope", "other"]
+        },
+        "note": {
+          "description": "Free text for whoever reads the log or a harvest report; not for display to end users. Must not contain personal information, legal detail, or a complainant's identity.",
+          "type": "string"
+        },
+        "is_replaced_by": {
+          "description": "Identifiers of the records that replace this one.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/identifier" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "identifier": {
+      "description": "A record identifier, with no leading or trailing whitespace.",
+      "type": "string",
+      "pattern": "^\\S(.*\\S)?$"
+    }
+  }
+}

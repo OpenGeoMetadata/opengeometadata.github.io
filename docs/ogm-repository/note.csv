@@ -1,0 +1,10 @@
+Label,Note
+URI,https://opengeometadata.org/repository-files/#note
+Field Name,note
+Field Type,String
+Obligation,Optional
+Multivalued,False
+Purpose,To explain the withdrawal to whoever reads the log or a harvest report.
+Entry Guidelines,Enter a short free-text explanation.
+Commentary,"Notes are not meant for display to end users. Because `withdrawn.json` is public and kept in git history, do not include personal information, legal detail, or the identity of anyone who requested the withdrawal."
+Example Value,"""Replaced by the 2026 parcel release."""

@@ -1,0 +1,10 @@
+Label,ID
+URI,https://opengeometadata.org/repository-files/#id
+Field Name,id
+Field Type,String
+Obligation,Required
+Multivalued,False
+Purpose,To identify the withdrawn record so that harvesters can delete it from their indexes.
+Entry Guidelines,"Enter the record's identifier exactly as it appeared in the record: the value of [ID](../ogm-aardvark/#id) (`id`) for OGM Aardvark records, or `layer_slug_s` for GBL 1.0 records. Do not add leading or trailing spaces."
+Commentary,"This is the value a harvester deletes from Solr, so it must match character for character. It is not a druid, ARK, file path, or the value of [Identifier](../ogm-aardvark/#identifier). If your repository published the same item under different identifiers in more than one schema (for example, in both `metadata-1.0/` and `metadata-aardvark/`), add an entry for each."
+Example Value,"""stanford-bb058zh0946"""
