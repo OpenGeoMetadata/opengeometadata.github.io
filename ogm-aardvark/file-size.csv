@@ -1,0 +1,13 @@
+Label,File Size
+URI,https://opengeometadata.org/ogm-aardvark/#file-size
+Field Name,gbl_fileSize_s
+Field Type,String
+Obligation,Optional
+Multivalued,False
+Purpose,To inform the user of the size of the file download.
+Entry Guidelines,Enter the size in megabytes.
+Commentary,"This field is intended to give users a sense of how large the data or image they are interested in downloading, and serves to alert users about huge files."
+Controlled Vocabulary,No
+Example Value,"""25.96 MB"""
+Element Set,GBL
+Group,Object

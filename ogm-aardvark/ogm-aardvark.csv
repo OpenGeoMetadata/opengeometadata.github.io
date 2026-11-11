@@ -1,0 +1,43 @@
+Label,Field Name,Category,Mandatory,Suggested,Controlled Values
+[Access Rights](#access-rights),dct_accessRights_s,Rights,X, , 
+[Alternative Title](#alternative-title),dct_alternative_sm,Descriptive, , , 
+[Bounding Box](#bounding-box),dcat_bbox,[Spatial](../spatial-fields),X, , 
+[Centroid](#centroid),dcat_centroid,[Spatial](../spatial-fields), , , 
+[Creator](#creator),dct_creator_sm,Credits, ,X, 
+[Date Issued](#date-issued),dct_issued_s,[Temporal](../temporal-fields), ,X, 
+[Date Range](#date-range),gbl_dateRange_drsim,[Temporal](../temporal-fields), , , 
+[Description](#description),dct_description_sm,Descriptive,X, , 
+[Display Note](#display-note),gbl_displayNote_sm,Descriptive, , , 
+[File Size](#file-size),gbl_fileSize_s,Object, , , 
+[Format](#format),dct_format_s,Object,X, ,X
+[Geometry](#geometry),locn_geometry,[Spatial](../spatial-fields),X, , 
+[Georeferenced](#georeferenced),gbl_georeferenced_b,[Spatial](../spatial-fields), , , 
+[ID](#id),id,Identifiers,X, , 
+[Identifier](#identifier),dct_identifier_sm,Identifiers, , , 
+[Index Year](#index-year),gbl_indexYear_im,[Temporal](../temporal-fields), ,X, 
+[Is Part Of](#is-part-of),dct_isPartOf_sm,[Relations](../relations-fields), , , 
+[Is Replaced By](#is-replaced-by),dct_isReplacedBy_sm,[Relations](../relations-fields), , , 
+[Is Version Of](#is-version-of),dct_isVersionOf_sm,[Relations](../relations-fields), , , 
+[Keyword](#keyword),dcat_keyword_sm,Categories, , , 
+[Language](#language),dct_language_sm,Descriptive, , ,X
+[License](#license),dct_license_sm,Rights, , , 
+[Member Of](#member-of),pcdm_memberOf_sm,[Relations](../relations-fields), , , 
+[Metadata Version](#metadata-version),gbl_mdVersion_s,Admin,X, ,X
+[Modified](#modified),gbl_mdModified_dt,Admin, , , 
+[Provider](#provider),schema_provider_s,Credits,X, , 
+[Publisher](#publisher),dct_publisher_sm,Credits, ,X, 
+[References](#references),dct_references_s,Links,X, , 
+[Relation](#relation),dct_relation_sm,[Relations](../relations-fields), , , 
+[Replaces](#replaces),dct_replaces_sm,[Relations](../relations-fields), , , 
+[Resource Class](#resource-class),gbl_resourceClass_sm,Categories,X, ,X
+[Resource Type](#resource-type),gbl_resourceType_sm,Categories, ,X,X
+[Rights Holder](#rights-holder),dct_rightsHolder_sm,Rights, , , 
+[Rights](#rights),dct_rights_sm,Rights, , , 
+[Source](#source),dct_source_sm,[Relations](../relations-fields), , , 
+[Spatial Coverage](#spatial-coverage),dct_spatial_sm,[Spatial](../spatial-fields), ,X, 
+[Subject](#subject),dct_subject_sm,Categories, , , 
+[Suppressed](#suppressed),gbl_suppressed_b,Admin, , , 
+[Temporal Coverage](#temporal-coverage),dct_temporal_sm,[Temporal](../temporal-fields), , , 
+[Theme](#theme),dcat_theme_sm,Categories, ,X,X
+[Title](#title),dct_title_s,Descriptive,X, , 
+[WxS Identifier](#wxs-identifier),gbl_wxsIdentifier_s,Links, , , 

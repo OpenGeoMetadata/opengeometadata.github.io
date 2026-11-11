@@ -1,0 +1,6 @@
+Label,Field Name,Field Type,Obligation
+[ID](#id),id,String,Required
+[Date](#date),date,String,Required
+[Reason](#reason),reason,String,Optional
+[Note](#note),note,String,Optional
+[Is Replaced By](#is-replaced-by),is_replaced_by,Array of strings,Optional
